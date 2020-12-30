@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  30 DEC 2020 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  30 DEC 2020 11:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -1372,7 +1372,14 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+ (main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '5':
+(biblatex)                - Entry '5' (bibliography.bib): Invalid format '30.12
+.2020' of date field 'date' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
 
@@ -1531,9 +1538,6 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 36
 
 ] (chapters/01_introduction.tex
 chapter 1.
-
-LaTeX Warning: Citation 'latex' on page 1 undefined on input line 7.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1576,12 +1580,13 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 48
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
+ [4
 
 
-LaTeX Warning: Empty bibliography on input line 50.
-
+]
+chapter without number
 No complaints by nag.
-[4
+[5
 
 
 ] (main.aux)
@@ -1592,20 +1597,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43983 strings out of 479697
- 1010141 string characters out of 2867607
- 2029657 words of memory out of 3000000
- 60166 multiletter control sequences out of 15000+200000
- 441241 words of font info for 150 fonts, out of 3000000 for 9000
+ 44013 strings out of 479697
+ 1010799 string characters out of 2867607
+ 2029708 words of memory out of 3000000
+ 60190 multiletter control sequences out of 15000+200000
+ 441360 words of font info for 152 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  112i,19n,113p,10601b,2305s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
@@ -1614,9 +1617,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on main.pdf (10 pages, 72412 bytes).
+Output written on main.pdf (11 pages, 79409 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 73805 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 73813 words of extra memory for PDF output out of 74296 (max. 10000000)
 
