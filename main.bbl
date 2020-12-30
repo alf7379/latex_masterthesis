@@ -45,25 +45,55 @@
       \field{title}{LaTeX : A Documentation Preparation System User's Guide and Reference Manual}
       \field{year}{1994}
     \endentry
-    \entry{5}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=092a193a15b8d68e88dec06c3d0053ce}{%
-           family={TestAuthor},
-           familyi={T\bibinitperiod}}}%
+    \entry{Zha2020}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0a20404f9dc3e2655dc39ceacd3decc3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shiyin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4550097950899197ea81fbc998687b7}{%
+           family={Liew},
+           familyi={L\bibinitperiod},
+           given={Jun\bibnamedelima Hao},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c600a8d986504b864d4994f2eed6156f}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yunchao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=538e9ef9bb72bb10104826bb68eafbfd}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Shikui},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5150da6c54dbb181303e4feed7ea53f1}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{092a193a15b8d68e88dec06c3d0053ce}
-      \strng{fullhash}{092a193a15b8d68e88dec06c3d0053ce}
-      \strng{bibnamehash}{092a193a15b8d68e88dec06c3d0053ce}
-      \strng{authorbibnamehash}{092a193a15b8d68e88dec06c3d0053ce}
-      \strng{authornamehash}{092a193a15b8d68e88dec06c3d0053ce}
-      \strng{authorfullhash}{092a193a15b8d68e88dec06c3d0053ce}
-      \field{labelalpha}{Tes}
-      \field{sortinit}{T}
-      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \strng{namehash}{c50bd3f70a8334114046c0f152eeb855}
+      \strng{fullhash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{bibnamehash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{authorbibnamehash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{authornamehash}{c50bd3f70a8334114046c0f152eeb855}
+      \strng{authorfullhash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \field{labelalpha}{Zha+20}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{TestTitle}
-      \warn{\item Entry '5' (bibliography.bib): Invalid format '30.12.2020' of date field 'date' - ignoring}
+      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Interactive Object Segmentation With Inside-Outside Guidance}
+      \field{year}{2020}
+      \field{pages}{12234\bibrangedash 12244}
+      \range{pages}{11}
     \endentry
   \enddatalist
 \endrefsection

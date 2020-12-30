@@ -4,10 +4,8 @@
 %\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
-% TODO: change citation style in settings
 \input{settings}
 
-% TODO: change thesis information
 \newcommand*{\getUniversity}{University of Applied Sciences Munich}
 \newcommand*{\getFaculty}{Department of Computer Science and Mathematics}
 \newcommand*{\getTitle}{Interactive Segmentation Methods}
@@ -19,6 +17,12 @@
 \newcommand*{\getSubmissionDate}{Submission date}
 \newcommand*{\getSubmissionLocation}{Munich}
 
+\includeonly{
+	pages/title,
+	pages/disclaimer,
+	pages/abstract,
+	chapters/01_chapter01/00_chapter
+}
 \begin{document}
 
 % Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
@@ -27,20 +31,21 @@
 \input{pages/cover}
 
 \frontmatter{}
-
-\input{pages/title}
-\input{pages/disclaimer}
-\input{pages/acknowledgments}
-\input{pages/abstract}
+% import also possible with input, but then "\includeonly{}" is not applieable
+\include{pages/title}
+\include{pages/disclaimer}
+\include{pages/acknowledgments}
+\include{pages/abstract}
 \microtypesetup{protrusion=false}
 \tableofcontents{}
 \microtypesetup{protrusion=true}
 
 \mainmatter{}
 
-\input{chapters/01_introduction}
+
+% \include{chapters/00_example}
+\include{chapters/01_chapter01/00_chapter}
 % TODO: add more chapters here
-HELLO THERE \cite{latex}.
 \appendix{}
 
 \microtypesetup{protrusion=false}

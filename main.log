@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  30 DEC 2020 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  30 DEC 2020 17:29
 entering extended mode
 **./main.tex
 (main.tex
@@ -1194,7 +1194,7 @@ Package caption Info: listings package is loaded.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 28.
+(scrhack)             need that hack, on input line 29.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
@@ -1299,38 +1299,40 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for T1+pplx on input line 2
-2.
+6.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
-(main.aux)
+(main.aux (pages/title.aux) (pages/disclaimer.aux)
+No file pages/acknowledgments.aux.
+(pages/abstract.aux) (chapters/01_chapter01/00_chapter.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 26.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 22.
+line 26.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 22.
-Package scrbase Info: activating american \contentsname on input line 22.
-Package scrbase Info: activating american \listfigurename on input line 22.
-Package scrbase Info: activating american \listtablename on input line 22.
+ line 26.
+Package scrbase Info: activating american \contentsname on input line 26.
+Package scrbase Info: activating american \listfigurename on input line 26.
+Package scrbase Info: activating american \listtablename on input line 26.
 \big@size=\dimen293
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
@@ -1372,16 +1374,9 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with '5':
-(biblatex)                - Entry '5' (bibliography.bib): Invalid format '30.12
-.2020' of date field 'date' - ignoring.
-
-)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -1405,19 +1400,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \c@lstlisting=\count452
-Package scrhack Info: undefining \float@addtolists on input line 22.
+Package scrhack Info: undefining \float@addtolists on input line 26.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
-LaTeX Info: Redefining \microtypecontext on input line 22.
+LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 22.
+LaTeX Info: Redefining \showhyphens on input line 26.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1427,7 +1422,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1441,9 +1436,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count453
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1455,7 +1450,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 22.
+(scrbook)           before \begin{document} on input line 26.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1465,15 +1460,17 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count454
 ))
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 22.
+line 26.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 22.
+line 26.
  (pages/cover.tex [1
 
 
 
-{C:/Users/Alex/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]) (pages/title.te
-x
+{C:/Users/Alex/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+\openout2 = `pages/title.aux'.
+
+ (pages/title.tex
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
 26.
 
@@ -1513,38 +1510,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-]) (pages/disclaimer.tex [2]) (pages/acknowledgments.tex [3
+
+])
+\openout2 = `pages/disclaimer.aux'.
+
+ (pages/disclaimer.tex [2
+
 
 
 ])
-(pages/abstract.tex
+\openout2 = `pages/abstract.aux'.
+
+ (pages/abstract.tex
 chapter without number
-) [4
+) [3
+
+
+
+
 
 
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 36
+Package tocbasic Info: character protrusion at toc deactivated on input line 40
 .
  (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5
+ [4
 
 
 
 
-] (chapters/01_introduction.tex
+
+
+]
+\openout2 = `chapters/01_chapter01/00_chapter.aux'.
+
+ (chapters/01_chapter01/00_chapter.tex
 chapter 1.
+(chapters/01_chapter01/01_section1.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-5.
+3.
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1554,9 +1569,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 86.
-)
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 84.
+))
 [1
+
 
 
 
@@ -1564,7 +1580,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 47.
  [2]
-Package tocbasic Info: character protrusion at lof deactivated on input line 47
+Package tocbasic Info: character protrusion at lof deactivated on input line 52
 .
  (main.lof)
 \tf@lof=\write7
@@ -1573,8 +1589,10 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 47
  [3
 
 
+
+
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 48
+Package tocbasic Info: character protrusion at lot deactivated on input line 53
 .
  (main.lot)
 \tf@lot=\write8
@@ -1589,26 +1607,21 @@ No complaints by nag.
 [5
 
 
-] (main.aux)
+] (main.aux (pages/title.aux) (pages/disclaimer.aux)
+No file pages/acknowledgments.aux.
+(pages/abstract.aux) (chapters/01_chapter01/00_chapter.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44013 strings out of 479697
- 1010799 string characters out of 2867607
- 2029708 words of memory out of 3000000
- 60190 multiletter control sequences out of 15000+200000
- 441360 words of font info for 152 fonts, out of 3000000 for 9000
+ 44060 strings out of 479697
+ 1012652 string characters out of 2867607
+ 2039792 words of memory out of 3000000
+ 60205 multiletter control sequences out of 15000+200000
+ 442226 words of font info for 164 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  112i,19n,113p,10601b,2305s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
@@ -1617,9 +1630,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on main.pdf (11 pages, 79409 bytes).
+Output written on main.pdf (10 pages, 80964 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 73813 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 73805 words of extra memory for PDF output out of 74296 (max. 10000000)
 
