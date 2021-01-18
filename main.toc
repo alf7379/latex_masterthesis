@@ -1,7 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {american}{}
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{\nonumberline Zusammenfassung}{iii}{chapter*.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -9,10 +9,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}Subsection}{1}{subsection.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{3}{chapter*.7}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{3}{chapter*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{4}{chapter*.8}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{4}{chapter*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{5}{chapter*.9}%
+\contentsline {chapter}{\nonumberline Literatur}{5}{chapter*.9}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

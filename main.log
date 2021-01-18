@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  30 DEC 2020 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.31)  31 DEC 2020 08:59
 entering extended mode
 **./main.tex
 (main.tex
@@ -240,10 +240,10 @@ Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS)
 \symupright=\mathgroup4
 )
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/10/27 3.51 The Babel package
+Package: babel 2020/12/16 3.52 The Babel package
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/10/27 3.51 Babel common definitions
+File: babel.def 2020/12/16 3.52 Babel common definitions
 \babel@savecnt=\count189
 \U@D=\dimen139
 \l@babelnohyphens=\language79
@@ -260,19 +260,9 @@ File: babel.def 2020/10/27 3.51 Babel common definitions
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ldf
-Language: ngerman 2020/07/21 v2.12 German support for babel (post-1996 orthogra
-phy)
-
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.ld
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\british.ld
 f
-Language: ngermanb 2020/07/21 v2.12 German support for babel (post-1996 orthogr
-aphy)
-Package babel Info: Making " an active character on input line 121.
-))
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\american.l
-df
-Language: american 2017/06/06 v3.3r English support from the babel system
+Language: british 2017/06/06 v3.3r English support from the babel system
 
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
 f
@@ -283,7 +273,50 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language73) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language73) on input line 108.
+))
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\UKenglish.
+ldf
+Language: UKenglish 2017/06/06 v3.3r English support from the babel system
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f
+Language: english 2017/06/06 v3.3r English support from the babel system
+))
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\USenglish.
+ldf
+Language: USenglish 2017/06/06 v3.3r English support from the babel system
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f
+Language: english 2017/06/06 v3.3r English support from the babel system
+))
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f
+Language: english 2017/06/06 v3.3r English support from the babel system
+)
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\american.l
+df
+Language: american 2017/06/06 v3.3r English support from the babel system
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f
+Language: english 2017/06/06 v3.3r English support from the babel system
+))
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 2020/07/21 v2.12 German support for babel (post-1996 orthogra
+phy)
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.ld
+f
+Language: ngermanb 2020/07/21 v2.12 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 121.
 )))
+
+Package Babel Warning: The package option `english' should not be used
+(Babel)                with a more specific one (like `american') on input line
+ 7.
+
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
@@ -1330,10 +1363,22 @@ Package nag Info: Command \RaggedLeft not defined, skipping amendment on input
 line 26.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
  line 26.
-Package scrbase Info: activating american \contentsname on input line 26.
-Package scrbase Info: activating american \listfigurename on input line 26.
-Package scrbase Info: activating american \listtablename on input line 26.
 \big@size=\dimen293
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
+File: ngerman.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+))
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
 
@@ -1352,20 +1397,75 @@ Package biblatex Info: ... file 'english.lbx' found.
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 ))
-Package biblatex Info: Trying to load language 'ngerman'...
-Package biblatex Info: ... file 'ngerman.lbx' found.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
-File: ngerman.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
-File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 )
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
-File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'USenglish'...
+Package biblatex Info: ... file 'USenglish.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\USenglish.l
+bx
+File: USenglish.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\american.lb
+x
+File: american.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\american.lb
+x
+File: american.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'UKenglish'...
+Package biblatex Info: ... file 'UKenglish.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\UKenglish.l
+bx
+File: UKenglish.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\british.lbx
+File: british.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\british.lbx
+File: british.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\british.lbx
+File: british.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1617,11 +1717,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44060 strings out of 479697
- 1012652 string characters out of 2867607
- 2039792 words of memory out of 3000000
- 60205 multiletter control sequences out of 15000+200000
- 442226 words of font info for 164 fonts, out of 3000000 for 9000
+ 44172 strings out of 479696
+ 1016851 string characters out of 2867589
+ 2087774 words of memory out of 3000000
+ 60272 multiletter control sequences out of 15000+200000
+ 441793 words of font info for 158 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  112i,19n,113p,10601b,2305s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
@@ -1630,9 +1730,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on main.pdf (10 pages, 80964 bytes).
+Output written on main.pdf (10 pages, 82432 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
  73805 words of extra memory for PDF output out of 74296 (max. 10000000)
 
