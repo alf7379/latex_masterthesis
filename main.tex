@@ -4,21 +4,25 @@
 %\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
-% TODO: change citation style in settings
 \input{settings}
 
-% TODO: change thesis information
-\newcommand*{\getUniversity}{Technische Universität München}
-\newcommand*{\getFaculty}{Department of Informatics}
-\newcommand*{\getTitle}{Thesis title}
-\newcommand*{\getTitleGer}{Titel der Abschlussarbeit}
-\newcommand*{\getAuthor}{Author}
-\newcommand*{\getDoctype}{Thesis type (Bachelor's Thesis in Informatics, Master's Thesis in Robotics, \ldots)}
-\newcommand*{\getSupervisor}{Supervisor}
+\newcommand*{\getUniversity}{University of Applied Sciences Munich}
+\newcommand*{\getFaculty}{Department of Computer Science and Mathematics}
+\newcommand*{\getTitle}{Interactive Segmentation Methods}
+\newcommand*{\getTitleGer}{}
+\newcommand*{\getAuthor}{Alexander Fertig}
+\newcommand*{\getDoctype}{Master's Thesis in Computer Science}
+\newcommand*{\getSupervisor}{Prof. Dr. David Spieler}
 \newcommand*{\getAdvisor}{Advisor}
 \newcommand*{\getSubmissionDate}{Submission date}
 \newcommand*{\getSubmissionLocation}{Munich}
 
+%\includeonly{
+%	pages/title,
+%	pages/disclaimer,
+%	pages/abstract,
+%	chapters/03_chapter03
+%}
 \begin{document}
 
 % Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
@@ -27,20 +31,24 @@
 \input{pages/cover}
 
 \frontmatter{}
-
-\input{pages/title}
-\input{pages/disclaimer}
-\input{pages/acknowledgments}
-\input{pages/abstract}
+% import also possible with input, but then "\includeonly{}" is not applieable
+\include{pages/title}
+\include{pages/disclaimer}
+\include{pages/acknowledgments}
+\include{pages/abstract}
 \microtypesetup{protrusion=false}
 \tableofcontents{}
 \microtypesetup{protrusion=true}
 
 \mainmatter{}
 
-\input{chapters/01_introduction}
-% TODO: add more chapters here
 
+% \include{chapters/00_example}
+\include{chapters/01_chapter01/chapter1}
+\include{chapters/02_chapter02/chapter2}
+\include{chapters/03_chapter03/chapter3}
+
+% TODO: add more chapters here
 \appendix{}
 
 \microtypesetup{protrusion=false}

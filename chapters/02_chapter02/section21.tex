@@ -1,17 +1,15 @@
-% !TeX root = ../main.tex
+% !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\chapter{Introduction}\label{chapter:introduction}
+\section{ML, DL, CNNs}\label{ord:ch2:sec1}
+Citation test~\parencite{latex} \cite{Zha2020}.
 
-\section{Section}
-Citation test~\parencite{latex}.
+\subsection{Subsection}\label{ord:ch2:sec1:subsec1}
 
-\subsection{Subsection}
-
-See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
+See~\autoref{tab:ch2:sample}, \autoref{fig:ch2:sample-drawing}, \autoref{fig:ch2:sample-plot}, \autoref{fig:ch2:sample-listing}.
 
 \begin{table}[htpb]
-  \caption[Example table]{An example for a simple table.}\label{tab:sample}
+  \caption[Example table]{An example for a simple table.}\label{tab:ch2:sample}
   \centering
   \begin{tabular}{l l l l}
     \toprule
@@ -40,7 +38,7 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
       (R2) edge (R1)
       (R1) edge (R4);
   \end{tikzpicture}
-  \caption[Example drawing]{An example for a simple drawing.}\label{fig:sample-drawing}
+  \caption[Example drawing]{An example for a simple drawing.}\label{fig:ch2:sample-drawing}
 \end{figure}
 
 \begin{figure}[htpb]
@@ -76,7 +74,7 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
       \addlegendentry{Example B};
     \end{axis}
   \end{tikzpicture}
-  \caption[Example plot]{An example for a simple plot.}\label{fig:sample-plot}
+  \caption[Example plot]{An example for a simple plot.}\label{fig:ch1:sample-plot}
 \end{figure}
 
 \begin{figure}[htpb]
@@ -86,5 +84,5 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
     SELECT * FROM tbl WHERE tbl.str = "str"
   \end{lstlisting}
   \end{tabular}
-  \caption[Example listing]{An example for a source code listing.}\label{fig:sample-listing}
+  \caption[Example listing]{An example for a source code listing.}\label{fig:ch2:sample-listing}
 \end{figure}
