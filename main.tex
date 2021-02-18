@@ -4,7 +4,9 @@
 %\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
-\input{settings}
+\input{settings/settings}
+%\include{settings/acronyms}glossaries
+\include{settings/glossaries}
 
 \newcommand*{\getUniversity}{University of Applied Sciences Munich}
 \newcommand*{\getFaculty}{Department of Computer Science and Mathematics}
@@ -55,6 +57,7 @@
 \listoffigures{}
 \listoftables{}
 \microtypesetup{protrusion=true}
+\printglossaries
 \printbibliography{}
 
 \end{document}

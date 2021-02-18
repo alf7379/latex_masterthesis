@@ -159,7 +159,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortlocale</bcf:key>
-      <bcf:value>ngerman</bcf:value>
+      <bcf:value>american</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
@@ -2358,10 +2358,14 @@
     <bcf:citekey order="6">Zha2020</bcf:citekey>
     <bcf:citekey order="7">latex</bcf:citekey>
     <bcf:citekey order="8">Zha2020</bcf:citekey>
-    <bcf:citekey order="9">latex</bcf:citekey>
+    <bcf:citekey order="9">Zha2020</bcf:citekey>
     <bcf:citekey order="10">Zha2020</bcf:citekey>
-    <bcf:citekey order="11">latex</bcf:citekey>
+    <bcf:citekey order="11">Zha2020</bcf:citekey>
     <bcf:citekey order="12">Zha2020</bcf:citekey>
+    <bcf:citekey order="13">Zha2020</bcf:citekey>
+    <bcf:citekey order="14">Zha2020</bcf:citekey>
+    <bcf:citekey order="15">latex</bcf:citekey>
+    <bcf:citekey order="16">Zha2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
