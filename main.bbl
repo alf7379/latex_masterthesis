@@ -1,0 +1,240 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{PASCAL10}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b238e543a5f5967004bd87fe51af1b53}{%
+           family={Everingham},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=991d15a9ac8c45292e2aa7bfc8c28007}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03fe732f745576c10e0c06a73741997b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi K.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18b28a498fc18943accd93ed7d96eda9}{%
+           family={Winn},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e77fd9dd5d9af3c798867760f8828744}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a66ffae49e96758d42b043d24b1f7703}
+      \strng{fullhash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \strng{bibnamehash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \strng{authorbibnamehash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \strng{authornamehash}{a66ffae49e96758d42b043d24b1f7703}
+      \strng{authorfullhash}{fb7cdb2319af0b29e7ab9fe57bcd1de4}
+      \field{labelalpha}{Eve+}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://www.pascal-network.org/challenges/VOC/voc2010/workshop/index.html}
+      \field{title}{The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2010 {(VOC2010)} {R}esults}
+    \endentry
+    \entry{latex}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{labelalpha}{Lam94}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LaTeX : A Documentation Preparation System User's Guide and Reference Manual}
+      \field{year}{1994}
+    \endentry
+    \entry{Man18DEXTR}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d2eb910e68f1d734427dd100f730285f}{%
+           family={Maninis},
+           familyi={M\bibinitperiod},
+           given={K.-K.},
+           giveni={K\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6274d3e5b7ba962232805ddd6631076}{%
+           family={Caelles},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e27ebcb46f92444ef082f7074d6426b8}{%
+           family={Pont-Tuset},
+           familyi={P\bibinithyphendelim T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=991d15a9ac8c45292e2aa7bfc8c28007}{%
+           family={{Van Gool}},
+           familyi={V\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \strng{fullhash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \strng{bibnamehash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \strng{authorbibnamehash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \strng{authornamehash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \strng{authorfullhash}{0a52a5df1306e5db4fdfc7b96d502519}
+      \field{labelalpha}{Man+18}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Extreme Cut: From Extreme Points to Object Segmentation}
+      \field{year}{2018}
+    \endentry
+    \entry{Zhao2017pyramid}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b2c00b2ccbbe98f22709d2cb8ccc0bba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hengshuang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3797f666351febe439e04520ec708726}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Jianping},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b21d751b50214e5e719eb624ac756bc0}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Xiaojuan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e88500bd6ca50746707a22554761b61a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c919379669a576a7dc662e44abbbcd6c}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Jiaya},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d937fde512d560128e35204bf539d03}
+      \strng{fullhash}{87ea04d339c63c32f36152b13384134e}
+      \strng{bibnamehash}{87ea04d339c63c32f36152b13384134e}
+      \strng{authorbibnamehash}{87ea04d339c63c32f36152b13384134e}
+      \strng{authornamehash}{1d937fde512d560128e35204bf539d03}
+      \strng{authorfullhash}{87ea04d339c63c32f36152b13384134e}
+      \field{labelalpha}{Zha+17}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Pyramid Scene Parsing Network}
+      \field{year}{2017}
+    \endentry
+    \entry{Zha20IOG}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0a20404f9dc3e2655dc39ceacd3decc3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shiyin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4550097950899197ea81fbc998687b7}{%
+           family={Liew},
+           familyi={L\bibinitperiod},
+           given={Jun\bibnamedelima Hao},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c600a8d986504b864d4994f2eed6156f}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yunchao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=538e9ef9bb72bb10104826bb68eafbfd}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Shikui},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5150da6c54dbb181303e4feed7ea53f1}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c50bd3f70a8334114046c0f152eeb855}
+      \strng{fullhash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{bibnamehash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{authorbibnamehash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \strng{authornamehash}{c50bd3f70a8334114046c0f152eeb855}
+      \strng{authorfullhash}{9c3a97a4fdf38b9fa9c68d6973724b94}
+      \field{labelalpha}{Zha+20}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Interactive Object Segmentation With Inside-Outside Guidance}
+      \field{year}{2020}
+      \field{pages}{12234\bibrangedash 12244}
+      \range{pages}{11}
+    \endentry
+  \enddatalist
+  \missing{Zha2020}
+  \missing{Zha20IOGIOG}
+\endrefsection
+\endinput
+
