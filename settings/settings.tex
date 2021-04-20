@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[sc]{mathpazo}
-\usepackage[british,UKenglish,USenglish,english,american]{babel}
+\usepackage[british,UKenglish,USenglish,american]{babel}
 \usepackage[autostyle]{csquotes}
 \usepackage[%
   backend=biber,
@@ -25,7 +25,8 @@
 \usepackage[final]{microtype}
 \usepackage{caption}
 %\usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
-\usepackage{hyperref} % hidelinks removes colored boxes around references and links
+\usepackage{hyperref}
+\usepackage{xspace} 
 %\usepackage{acronym}
 %\usepackage[nohyperlinks, printonlyused]{acronym}
 \usepackage[acronym]{glossaries}
@@ -69,3 +70,23 @@
   keywordstyle=\bfseries\color{TUMBlue},
   stringstyle=\color{TUMAccentGreen}
 }
+
+
+% beautifully typesetted abbrevs.
+
+% Add a period to the end of an abbreviation unless there's one
+% already, then \xspace.
+% taken from cvpr.sty
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+\DeclareRobustCommand\onecomma{\futurelet\@let@token\@onecomma}
+\def\@onecomma{\ifx\@let@token,\else,\null\fi\xspace}
+
+\def\eg{e.g.\onecomma} %\def\Eg{E.g.\onecomma}
+\def\ie{i.e.\onecomma} %\def\Ie{I.e.\onecomma}
+\def\cf{cf\onedot} \def\Cf{Cf\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{vs\onedot}
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et~al}\onedot}
+\makeatother
