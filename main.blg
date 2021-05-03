@@ -1,21 +1,15 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[0] Config.pm:315> INFO - Logfile is 'main.blg'
-[97] biber-MSWIN64:330> INFO - === 
-[116] Biber.pm:415> INFO - Reading 'main.bcf'
-[221] Biber.pm:952> INFO - Found 8 citekeys in bib section 0
-[247] Biber.pm:4334> INFO - Processing section 0
-[262] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[267] bibtex.pm:1682> INFO - LaTeX decoding ...
-[284] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[332] Utils.pm:411> ERROR - Name "Kaiming He, Xiangyu Zhang, Shaoqing Ren," has too many commas, skipping entry 'He16ResNet'
-[332] Utils.pm:395> WARN - Entry with key 'He16ResNet' in section '0' is cited and found but not created (likely due to sourcemap)
-[350] Utils.pm:395> WARN - I didn't find a database entry for 'Zha2020' (section 0)
-[351] Utils.pm:395> WARN - I didn't find a database entry for 'Zha20IOGIOG' (section 0)
-[365] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[366] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[366] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[366] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[373] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[378] bbl.pm:754> INFO - Output to main.bbl
-[378] Biber.pm:128> INFO - WARNINGS: 3
-[379] Biber.pm:132> INFO - ERRORS: 1
+[17] Config.pm:315> INFO - Logfile is 'main.blg'
+[362] biber-MSWIN64:330> INFO - === 
+[700] Biber.pm:415> INFO - Reading 'main.bcf'
+[898] Biber.pm:952> INFO - Found 36 citekeys in bib section 0
+[1041] Biber.pm:4334> INFO - Processing section 0
+[1087] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[1290] bibtex.pm:1682> INFO - LaTeX decoding ...
+[1372] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[1746] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1763] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1779] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[1790] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[1931] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[3130] bbl.pm:754> INFO - Output to main.bbl

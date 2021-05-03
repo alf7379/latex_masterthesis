@@ -13,29 +13,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example drawing}}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example drawing}}{4}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Example plot}}{4}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Example listing}}{4}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Example drawing}}{4}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Intersection over Union. The \textit {area of overlap} represents the intersection of the GT with the made prediction. The \textit {area of union} represents the amount of the total area of GT and prediction \cite {Sha18-DLCV}.\relax }}{6}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Example plot}}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Encoder-Decoder-Architecture \cite {Bad17-EncoderDecoder}. On the left the encoder network, which reduces the size of the feature maps while processing. On the right is the decoder network, which reconstructs the feature map to the size of the original input. The yellow layer on the very right is the classification layer, here represented as softmax layer to create the output segmentation.\relax }}{7}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Example listing}}{5}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces tbd\relax }}{8}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Example drawing}}{6}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces tbd\relax }}{8}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Example plot}}{6}{figure.caption.17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Example listing}}{6}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces tbd\relax }}{9}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Procedure of setting the three IOG clicks \cite {Zha20IOG}. Set the two background clicks (blue) at the diagonal corner locations of the object. Gather a bounding box based on the background clicks. Set a foreground point (red) at the middle of the object.\relax }}{9}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Procedure of setting the three IOG clicks \cite {Zha20-IOG}. Set the two background clicks (blue) at the diagonal corner locations of the object. Gather a bounding box based on the background clicks. Set a foreground point (red) at the middle of the object.\relax }}{15}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces IOG architecture (not final).\relax }}{11}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces IOG architecture (not final).\relax }}{17}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -1,40 +1,377 @@
-@book{latex,
-	title = {LaTeX : A Documentation Preparation System User's Guide and Reference Manual},
-	publisher = {Addison-Wesley Professional},
-	year = {1994},
-	author = {Leslie Lamport}
+
+@article{Bad17-EncoderDecoder,  
+	author={Badrinarayanan, Vijay and Kendall, Alex and Cipolla, Roberto},  
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},   title={SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation},   
+	year={2017},  
+	volume={39},  
+	number={12},  
+	pages={2481-2495},  
+	doi={10.1109/TPAMI.2016.2644615}
 }
 
-% TODO add Seminar Paper Semantic Segmenatation
-@misc{PASCAL10,
+@inproceedings{Banko01-ScalingData,
+	title = "Scaling to Very Very Large Corpora for Natural Language Disambiguation",
+	author = "Banko, Michele  and
+	Brill, Eric",
+	booktitle = "Proceedings of the 39th Annual Meeting of the Association for Computational Linguistics",
+	month = jul,
+	year = "2001",
+	address = "Toulouse, France",
+	publisher = "Association for Computational Linguistics",
+	url = "https://www.aclweb.org/anthology/P01-1005",
+	doi = "10.3115/1073012.1073017",
+	pages = "26--33",
+}
+
+@article{Bengar2019-Temporal,
+	title={Temporal Coherence for Active Learning in Videos},
+	author={Zolfaghari Bengar, Javad and Gonzalez-Garcia, Abel and Villalonga, Gabriel and Raducanu, 
+	Bogdan and Aghdam, Hamed H and Mozerov, Mikhail and Lopez, Antonio M and van de Weijer, Joost},
+	journal={arXiv preprint arXiv:1908.11757},
+	year={2019}
+}
+
+@online{Cer20-AnnotationsTools,
+	ALTauthor = {E. Cerna},
+	ALTeditor = {bohemian.ai},
+	title = {Image Annotation Tools: Which One to Pick in 2020?},
+	date = {2020-02-11},
+	url = {https://bohemian.ai/blog/image-annotation-tools-which-one-pick-2020/},
+	OPTorganization = {bohemian.ai},
+	OPTpubstate = {11.02.2020},
+	OPTurldate = {02.05.2021},
+}
+
+@article{Chen18-SyntheticData,
+	author    = {Yuhua Chen and
+	Wen Li and
+	Xiaoran Chen and
+	Luc Van Gool},
+	title     = {Learning Semantic Segmentation from Synthetic Data: {A} Geometrically
+	Guided Input-Output Adaptation Approach},
+	journal   = {CoRR},
+	volume    = {abs/1812.05040},
+	year      = {2018},
+	url       = {http://arxiv.org/abs/1812.05040},
+	archivePrefix = {arXiv},
+	eprint    = {1812.05040},
+	timestamp = {Mon, 18 Jan 2021 13:55:36 +0100},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1812-05040.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+}
+
+@article{Chen16-DeepLab,
+	title={DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs},
+	author={Liang-Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L Yuille},
+	journal={arXiv:1606.00915},
+	year={2016}
+}
+
+@article{Cor16-Cityscapes,
+	author    = {Marius Cordts and Mohamed Omran and Sebastian Ramos and Timo Rehfeld and Markus Enzweiler and Rodrigo Benenson and	Uwe Franke and Stefan Roth and Bernt Schiele},
+	title     = {The Cityscapes Dataset for Semantic Urban Scene Understanding},
+	journal   = {CoRR},
+	volume    = {abs/1604.01685},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1604.01685},
+	archivePrefix = {arXiv},
+	eprint    = {1604.01685},
+	timestamp = {Mon, 13 Aug 2018 16:47:48 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/CordtsORREBFRS16.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+}
+
+@inproceedings{Csu13-EvalMetric,
+	author = {Csurka, Gabriela and Larlus, Diane},
+	year = {2013},
+	month = {01},
+	pages = {},
+	title = {What is a good evaluation measure for semantic segmentation?},
+	volume = {26},
+	journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+	doi = {10.5244/C.27.32}
+}
+
+@article{Dai17-ReconstructionIndoorScenes,
+	author    = {Angela Dai and
+	Angel X. Chang and
+	Manolis Savva and
+	Maciej Halber and
+	Thomas A. Funkhouser and
+	Matthias Nie{\ss}ner},
+	title     = {ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes},
+	journal   = {CoRR},
+	volume    = {abs/1702.04405},
+	year      = {2017},
+	url       = {http://arxiv.org/abs/1702.04405},
+	archivePrefix = {arXiv},
+	eprint    = {1702.04405},
+	timestamp = {Mon, 13 Aug 2018 16:47:34 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/DaiCSHFN17.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Deng09-ImageNet,
+	AUTHOR = {Deng, J. and Dong, W. and Socher, R. and Li, L.-J. and Li, K. and Fei-Fei, L.},
+	TITLE = {{ImageNet: A Large-Scale Hierarchical Image Database}},
+	BOOKTITLE = {CVPR09},
+	YEAR = {2009},
+	BIBSOURCE = "http://www.image-net.org/papers/imagenet_cvpr09.bib"}
+
+@misc{Dum18-ConvolutionArithmetic,
+	title={A guide to convolution arithmetic for deep learning}, 
+	author={Vincent Dumoulin and Francesco Visin},
+	year={2018},
+	eprint={1603.07285},
+	archivePrefix={arXiv},
+	primaryClass={stat.ML}
+}
+
+@Article{Eve20-PascalVOC,
 	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
-	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2010 {(VOC2010)} {R}esults",
-	howpublished = "http://www.pascal-network.org/challenges/VOC/voc2010/workshop/index.html"
-}	
+	title = "The Pascal Visual Object Classes (VOC) Challenge",
+	journal = "International Journal of Computer Vision",
+	volume = "88",
+	year = "2010",
+	number = "2",
+	month = jun,
+	pages = "303--338",
+} 
 
-@inproceedings{He16ResNet,
-	author 	= {Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun},
-	title 	= {Deep residual learning for image recognition},
-	booktitle	= {Computer Vision and Pattern Recognition (CVPR)},
-	year 		= {2016}
+@book{Ger17-HandsOn,
+	author = {A. Géron}, 
+	title = {Hands-On Machine Learning with Scikit-Learn \& TensorFlow},
+	publisher = {O'Reilly},
+	year = {2017},
+	ISBN = {978-1-491-96229-9}
+} 
+
+@book{Goodfellow-et-al-2016,
+	author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+	title={Deep Learning},
+	publisher={MIT Press},
+	year={2016},
+	note={\url{http://www.deeplearningbook.org} [Zugriff am: 02.05.2021]}
 }
 
-@inproceedings{Zhao2017pyramid,
-	title={Pyramid Scene Parsing Network}, 
-	author={Hengshuang Zhao and Jianping Shi and Xiaojuan Qi and Xiaogang Wang and Jiaya Jia},
-	year={2017},
-	booktitle	= {Computer Vision and Pattern Recognition (CVPR)}
-
+@article{Gudivada2017-DataQuality,
+	author = {Gudivada, Venkat and Apon, Amy and Ding, Junhua},
+	year = {2017},
+	month = {07},
+	pages = {1-20},
+	title = {Data Quality Considerations for Big Data and Machine Learning: Going Beyond Data Cleaning and Transformations},
+	volume = {10},
+	journal = {International Journal on Advances in Software}
 }
 
-@inproceedings{Man18DEXTR,
+@article{Halevy09-UnreasonableEffectivenessOfData,
+	author = {Halevy, Alon and Norvig, Peter and Pereira, Fernando},
+	year = {2009},
+	month = {05},
+	pages = {8 - 12},
+	title = {The Unreasonable Effectiveness of Data},
+	volume = {24},
+	journal = {Intelligent Systems, IEEE},
+	doi = {10.1109/MIS.2009.36}
+}
+
+@inproceedings{He16-ResNet,
+	author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+	title = {Deep residual learning for image recognition},
+	booktitle = {Computer Vision and Pattern Recognition (CVPR)},
+	year = {2016},
+}
+
+@online{HR18-AI,
+	ALTauthor = {Henning Steiner},
+	ALTeditor = {Hessischer Rundfunk},
+	title = {Selbstlernende Maschinen - wie Künstliche Intelligenz entsteht},	
+	Date = {2018-07-29},
+	url = {https://www.hr-inforadio.de/podcast/wissen/selbstlernende-maschinen---wie-kuenstliche-intelligenz-entsteht,podcast-episode-53312.html},
+	OPTurldate = {29.04.2021},
+}
+
+@article{KK12-CRF,
+	author    = {Philipp Kr{\"{a}}henb{\"{u}}hl and
+	Vladlen Koltun},
+	title     = {Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials},
+	journal   = {CoRR},
+	volume    = {abs/1210.5644},
+	year      = {2012},
+	url       = {http://arxiv.org/abs/1210.5644},
+	archivePrefix = {arXiv},
+	eprint    = {1210.5644},
+	timestamp = {Mon, 13 Aug 2018 16:46:27 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1210-5644.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@unpublished{Fer19-SemSeg,
+	author={Fertig, Alexander},
+	title={Semantic Segmentation: State of the Art},
+	school={Munich University of applied Sciences},
+	year={2019},
+	note={unpublished seminar paper}
+}
+
+@unpublished{Fer18-BA,
+	author={Fertig, Alexander},
+	title={Konzept und Umsetzung eines Systems zur Objektklassifikation
+	von Fahrzeugen auf Basis von LiDAR- und Kamera-Sensoren},
+	school={Technische Hochschule Ingolstadt},
+	year={2018},
+	note={Bachelor’s Thesis},
+}
+
+@inproceedings{Li18-SateliteImagery, 
+	author={Li, Weijia and He, Conghui and Fang, Jiarui and Fu, Haohuan}, 
+	 booktitle={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},   
+	 title={Semantic Segmentation Based Building Extraction Method Using Multi-source GIS Map Datasets and Satellite Imagery},   
+	 year={2018},  
+	 volume={},  
+	 number={},  
+	 pages={233-2333},  
+	 doi={10.1109/CVPRW.2018.00043}
+}
+
+@online{Li17-StanfordLecture,
+	ALTauthor = {Li, Fei-Fei and Johnson, Justin and Yeung, Serena},
+	title = {Detection and Segmentation},
+	date = {2018-05-01},
+	url = {http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf},
+	OPTorganization = {Stanford University},
+}
+
+@inproceedings{LiJ09-SceneUnderstanding,
+	author = {Li, Li-Jia and Socher, Richard and Li, Fei-Fei},
+	year = {2009},
+	month = {06},
+	pages = {2036-2043},
+	title = {Towards total scene understanding: Classification, annotation and segmentation in an automatic framework},
+	journal = {2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2009},
+	doi = {10.1109/CVPRW.2009.5206718}
+}
+
+@article{Lin14-Coco,
+	added-at = {2017-06-07T00:00:00.000+0200},
+	author = {Lin, Tsung-Yi and Maire, Michael and Belongie, Serge J. and Bourdev, Lubomir D. and Girshick, Ross B. and Hays, James and Perona, Pietro and Ramanan, Deva and Dollár, Piotr and Zitnick, C. Lawrence},
+	biburl = {https://www.bibsonomy.org/bibtex/2bfebcf1f3dbeea120efc48564248c49c/dblp},
+	ee = {http://arxiv.org/abs/1405.0312},
+	interhash = {a3a26c6fe173264a6b812e3b7b4119bd},
+	intrahash = {bfebcf1f3dbeea120efc48564248c49c},
+	journal = {CoRR},
+	keywords = {dblp},
+	timestamp = {2017-06-08T15:21:14.000+0200},
+	title = {Microsoft COCO: Common Objects in Context.},
+	url = {http://dblp.uni-trier.de/db/journals/corr/corr1405.html#LinMBHPRDZ14},
+	volume = {abs/1405.0312},
+	year = 2014
+}
+
+@inproceedings{LSD15-FCN,  
+	author={Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},  
+	booktitle={2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={Fully convolutional networks for semantic segmentation},   
+	year={2015},  
+	volume={},  
+	number={},  
+	pages={3431-3440},  
+	doi={10.1109/CVPR.2015.7298965}
+}
+
+@inproceedings{Man18-DEXTR,
 	author 	= {K.-K. Maninis and S. Caelles and J. Pont-Tuset and L. {Van Gool}},
 	title 	= {Deep Extreme Cut: From Extreme Points to Object Segmentation},
 	booktitle	= {Computer Vision and Pattern Recognition (CVPR)},
 	year 		= {2018}
 }
 
-@inproceedings{Zha20IOG,
+@inproceedings{Men15-AutonVehicles,
+	author = {Menze, Moritz and Geiger, Andreas},
+	year = {2015},
+	month = {06},
+	pages = {3061-3070},
+	title = {Object scene flow for autonomous vehicles},
+	doi = {10.1109/CVPR.2015.7298925}
+}
+
+@inproceedings{Neu17-MapillaryDataset,
+	title=    {The Mapillary Vistas Dataset for Semantic Understanding of Street Scenes},
+	author=   {Neuhold, Gerhard and Ollmann, Tobias and Rota Bul\`o, Samuel and Kontschieder, Peter},
+	booktitle={International Conference on Computer Vision (ICCV)},
+	year=     {2017},
+	url=      {https://www.mapillary.com/dataset/vistas}
+}
+
+@inproceedings{NHH15-DeConvNet,  
+	author={Noh, Hyeonwoo and Hong, Seunghoon and Han, Bohyung},  
+	booktitle={2015 IEEE International Conference on Computer Vision (ICCV)},   title={Learning Deconvolution Network for Semantic Segmentation},   
+	year={2015},  
+	volume={},  
+	number={},  
+	pages={1520-1528},  
+	doi={10.1109/ICCV.2015.178}
+}
+
+@article{RF15-U-Net,
+	author    = {Olaf Ronneberger and
+	Philipp Fischer and
+	Thomas Brox},
+	title     = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+	journal   = {CoRR},
+	volume    = {abs/1505.04597},
+	year      = {2015},
+	url       = {http://arxiv.org/abs/1505.04597},
+	archivePrefix = {arXiv},
+	eprint    = {1505.04597},
+	timestamp = {Mon, 13 Aug 2018 16:46:52 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/RonnebergerFB15.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{SZ15-VGG16,
+	title={Very Deep Convolutional Networks for Large-Scale Image Recognition}, 
+	author={Karen Simonyan and Andrew Zisserman},
+	year={2015},
+	eprint={1409.1556},
+	archivePrefix={arXiv}
+}
+
+@book{Sha18-DLCV,
+	title={Deep Learning for Computer Vision: Expert Techniques to Train Advanced Neural Networks Using TensorFlow and Keras},
+	author={Shanmugamani, R. and Moore, S.M.},
+	isbn={9781788295628},
+	url={https://books.google.de/books?id=dgdOswEACAAJ},
+	year={2018},
+	publisher={Packt Publishing}
+}
+
+@online{TF21-MeanIoU,
+	ALTauthor = {TensorFlow},
+	ALTeditor = {},
+	title = {tf.keras.metrics.MeanIoU},
+	date = {2021-04-14},
+	url = {https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU},
+	OPTurldate = {30.04.2021},
+}
+
+@INPROCEEDINGS{Tran19-BloodCell,  
+	author={Tran, Thanh and Kwon, Oh-Heum and Kwon, Ki-Ryong and Lee, Suk-Hwan and Kang, Kyung-Won},  
+	booktitle={2018 IEEE International Conference on Electronics and Communication Engineering (ICECE)},   
+	title={Blood Cell Images Segmentation using Deep Learning Semantic Segmentation},   year={2018},  
+	volume={},  
+	number={},  
+	pages={13-16},  
+	doi={10.1109/ICECOME.2018.8644754}
+}
+
+@inproceedings{Zhao17-PSP,
+	title={Pyramid Scene Parsing Network}, 
+	author={Hengshuang Zhao and Jianping Shi and Xiaojuan Qi and Xiaogang Wang and Jiaya Jia},
+	year={2017},
+	booktitle	= {Computer Vision and Pattern Recognition (CVPR)}
+}
+
+@inproceedings{Zha20-IOG,
 	title={Interactive Object Segmentation With Inside-Outside Guidance},
 	author={Zhang, Shiyin and Liew, Jun Hao and Wei, Yunchao and Wei, Shikui and Zhao, Yao},
 	booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
@@ -42,7 +379,7 @@
 	year={2020}
 }
 
-@article{Xu16,
+@article{Xu16-InteractiveObjectSelection,
 	author    = {Ning Xu and
 	Brian L. Price and
 	Scott Cohen and

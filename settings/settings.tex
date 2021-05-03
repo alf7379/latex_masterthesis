@@ -3,17 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[sc]{mathpazo}
-\usepackage[british,UKenglish,USenglish,american]{babel}
+\usepackage[USenglish,british,UKenglish,american]{babel}
 \usepackage[autostyle]{csquotes}
-\usepackage[%
-  backend=biber,
-  url=false,
-  style=alphabetic,
-  maxnames=4,
-  minnames=3,
-  maxbibnames=99,
-  giveninits,
-  uniquename=init]{biblatex}
 \usepackage{graphicx}
 \usepackage{scrhack} % necessary for listings package
 \usepackage{listings}
@@ -31,7 +22,19 @@
 %\usepackage[nohyperlinks, printonlyused]{acronym}
 \usepackage[acronym]{glossaries}
 
-\addbibresource{bibliography.bib}
+
+\usepackage[%
+backend=biber,
+url=false,
+style=alphabetic,
+maxnames=4,
+minnames=3,
+maxbibnames=99,
+giveninits,
+uniquename=init]{biblatex}
+%\addbibresource{bibliography.bib}
+\bibliography{bibliography}
+
 
 \setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
 \linespread{1.05} % adjust line spread for mathpazo font

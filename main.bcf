@@ -2347,27 +2347,68 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bibliography.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">latex</bcf:citekey>
-    <bcf:citekey order="2">Zha2020</bcf:citekey>
-    <bcf:citekey order="3">latex</bcf:citekey>
-    <bcf:citekey order="4">Zha2020</bcf:citekey>
-    <bcf:citekey order="5">Man18DEXTR</bcf:citekey>
-    <bcf:citekey order="6">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="7">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="8">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="9">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="10">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="11">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="12">Zha20IOGIOG</bcf:citekey>
-    <bcf:citekey order="13">He16ResNet</bcf:citekey>
-    <bcf:citekey order="14">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="15">Zhao2017pyramid</bcf:citekey>
-    <bcf:citekey order="16">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="17">Zha20IOG</bcf:citekey>
-    <bcf:citekey order="18">PASCAL10</bcf:citekey>
+    <bcf:citekey order="1">HR18-AI</bcf:citekey>
+    <bcf:citekey order="2">Eve20-PascalVOC</bcf:citekey>
+    <bcf:citekey order="3">Csu13-EvalMetric</bcf:citekey>
+    <bcf:citekey order="4">TF21-MeanIoU</bcf:citekey>
+    <bcf:citekey order="5">Fer19-SemSeg</bcf:citekey>
+    <bcf:citekey order="6">Sha18-DLCV</bcf:citekey>
+    <bcf:citekey order="7">Sha18-DLCV</bcf:citekey>
+    <bcf:citekey order="8">Csu13-EvalMetric</bcf:citekey>
+    <bcf:citekey order="9">NHH15-DeConvNet</bcf:citekey>
+    <bcf:citekey order="10">Bad17-EncoderDecoder</bcf:citekey>
+    <bcf:citekey order="11">SZ15-VGG16</bcf:citekey>
+    <bcf:citekey order="12">RF15-U-Net</bcf:citekey>
+    <bcf:citekey order="13">NHH15-DeConvNet</bcf:citekey>
+    <bcf:citekey order="14">Bad17-EncoderDecoder</bcf:citekey>
+    <bcf:citekey order="15">SZ15-VGG16</bcf:citekey>
+    <bcf:citekey order="16">Bad17-EncoderDecoder</bcf:citekey>
+    <bcf:citekey order="17">Bad17-EncoderDecoder</bcf:citekey>
+    <bcf:citekey order="18">Li17-StanfordLecture</bcf:citekey>
+    <bcf:citekey order="19">NHH15-DeConvNet</bcf:citekey>
+    <bcf:citekey order="20">Dum18-ConvolutionArithmetic</bcf:citekey>
+    <bcf:citekey order="21">LSD15-FCN</bcf:citekey>
+    <bcf:citekey order="22">Chen16-DeepLab</bcf:citekey>
+    <bcf:citekey order="23">KK12-CRF</bcf:citekey>
+    <bcf:citekey order="24">RF15-U-Net</bcf:citekey>
+    <bcf:citekey order="25">Banko01-ScalingData</bcf:citekey>
+    <bcf:citekey order="26">Halevy09-UnreasonableEffectivenessOfData</bcf:citekey>
+    <bcf:citekey order="27">Ger17-HandsOn</bcf:citekey>
+    <bcf:citekey order="28">Fer19-SemSeg</bcf:citekey>
+    <bcf:citekey order="29">Gudivada2017-DataQuality</bcf:citekey>
+    <bcf:citekey order="30">Ger17-HandsOn</bcf:citekey>
+    <bcf:citekey order="31">Ger17-HandsOn</bcf:citekey>
+    <bcf:citekey order="32">Eve20-PascalVOC</bcf:citekey>
+    <bcf:citekey order="33">Lin14-Coco</bcf:citekey>
+    <bcf:citekey order="34">Deng09-ImageNet</bcf:citekey>
+    <bcf:citekey order="35">Goodfellow-et-al-2016</bcf:citekey>
+    <bcf:citekey order="36">Cer20-AnnotationsTools</bcf:citekey>
+    <bcf:citekey order="37">Bengar2019-Temporal</bcf:citekey>
+    <bcf:citekey order="38">Chen18-SyntheticData</bcf:citekey>
+    <bcf:citekey order="39">LiJ09-SceneUnderstanding</bcf:citekey>
+    <bcf:citekey order="40">Li18-SateliteImagery</bcf:citekey>
+    <bcf:citekey order="41">Cor16-Cityscapes</bcf:citekey>
+    <bcf:citekey order="42">Men15-AutonVehicles</bcf:citekey>
+    <bcf:citekey order="43">Neu17-MapillaryDataset</bcf:citekey>
+    <bcf:citekey order="44">Tran19-BloodCell</bcf:citekey>
+    <bcf:citekey order="45">Dai17-ReconstructionIndoorScenes</bcf:citekey>
+    <bcf:citekey order="46">Man18-DEXTR</bcf:citekey>
+    <bcf:citekey order="47">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="48">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="49">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="50">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="51">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="52">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="53">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="54">He16-ResNet</bcf:citekey>
+    <bcf:citekey order="55">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="56">Zhao17-PSP</bcf:citekey>
+    <bcf:citekey order="57">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="58">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="59">Eve20-PascalVOC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

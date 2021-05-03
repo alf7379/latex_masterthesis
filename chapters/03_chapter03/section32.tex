@@ -3,7 +3,7 @@
 
 \section{IOG}\label{ord:ch3:sec1}
 
-The paper "Interactive Object Segmentation with Inside-Outside-Guidance"\cite{Zha20IOG} published by \citeauthor{Zha20IOG} \etal in 2020 provides a state-of-the-art method to perform interactive object segmentation.
+The paper "Interactive Object Segmentation with Inside-Outside-Guidance"\cite{Zha20-IOG} published by \citeauthor{Zha20-IOG} \etal in 2020 provides a state-of-the-art method to perform interactive object segmentation.
 
 \subsection{Method Description}\label{ord:ch3:sec1:subsec1}
 The execution of this method outputs a binary segmentation for a single object of interest within an image. 
@@ -12,10 +12,10 @@ To segment multiple objects in one image, the method has t be applied for each o
 IOG is an interactive segmentation method and hence requires user input. 
 The input is given by a three mouse clicks on the object's foreground and on its background.
 The procedure is shown in Figure \ref{fig:ch3:sec1:iog} and described in the following:
-first, in order to form an \emph{"almost-tight bounding box"}\cite[p. 12235]{Zha20IOG} two exterior clicks are set at the two diagonal locations corners of the object (top-left and bottom-right or bottom-left and top-right).
+first, in order to form an \emph{"almost-tight bounding box"}\cite[p. 12235]{Zha20-IOG} two exterior clicks are set at the two diagonal locations corners of the object (top-left and bottom-right or bottom-left and top-right).
 Based on these two points the other two corner points are derived, which leads to four points on the background. 
 Second, to define the object inside the bounding box a single click around the center of the desired object is made, this click is processed as foreground point. 
-The background points \emph{"provide "outside" guidance (indicating the background regions) while the interior click gives an "inside" guidance (indicating the foreground region), thus giving the name \textit{Inside-Outside-Guidance}"}\cite[p. 12235]{Zha20IOG}.
+The background points \emph{"provide "outside" guidance (indicating the background regions) while the interior click gives an "inside" guidance (indicating the foreground region), thus giving the name \textit{Inside-Outside-Guidance}"}\cite[p. 12235]{Zha20-IOG}.
 %TODO how to cite a text with quotes properly?
 
 These three points are preprocessed before they are input to the actual model. To include context from the surrounding region the bounding box is enlarged by $p_{\text{box}}$ pixels. 
@@ -32,7 +32,7 @@ The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenate
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap31_clicks.png}
-	\caption{Procedure of setting the three IOG clicks \cite{Zha20IOG}. Set the two background clicks (blue) at the diagonal corner locations of the object. Gather a bounding box based on the background clicks. Set a foreground point (red) at the middle of the object.}
+	\caption{Procedure of setting the three IOG clicks \cite{Zha20-IOG}. Set the two background clicks (blue) at the diagonal corner locations of the object. Gather a bounding box based on the background clicks. Set a foreground point (red) at the middle of the object.}
 	%TODO Bitte die Bildunterschriften so aussagekräftig wie möglich. Ich beginne immer mit einer kurzen Überschrift und beschreibe dann in 2-5 Sätzen was genau gezeigt wird oder was man in der Figure sehen kann. Der Leser tendiert dazu sich zu allererst oder auch nur die Figures anzusehen, daher ist es gut wenn diese für sich stehen und alles wichtige in deren Unterschrift beschrieben wird. Natürlich knapp aber präzise..
 	\label{fig:ch3:sec1:iog}
 	% TODO Bitte die Bildunterschriften so aussagekräftig wie möglich. Ich beginne immer mit einer kurzen Überschrift und beschreibe dann in 2-5 Sätzen was genau gezeigt wird oder was man in der Figure sehen kann. Der Leser tendiert dazu sich zu allererst oder auch nur die Figures anzusehen, daher ist es gut wenn diese für sich stehen und alles wichtige in deren Unterschrift beschrieben wird. Natürlich knapp aber präzise.
@@ -40,36 +40,36 @@ The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenate
 
 \subsection{Architecture}\label{ord:ch3:sec1:subsec2}
 
-The architecture of the IOG method is based on a \emph{"coarse-to-fine design"}\cite[p. 12237]{Zha20IOGIOG} (see Figure \ref{fig:ch3:sec1:arch}), containing two main parts: the CoarseNet and the FineNet.
+The architecture of the IOG method is based on a \emph{"coarse-to-fine design"}\cite[p. 12237]{Zha20-IOG} (see Figure \ref{fig:ch3:sec1:arch}), containing two main parts: the CoarseNet and the FineNet.
 %TODO also cite other papers e.g. FPN (feature pyramid networks) or U-Net
 
 \paragraph{CoarseNet}
-The CoarseNet contains the heavy encoder part, that mainly consists of a classifier often referred to as backbone. In IOG a ResNet-101 \cite{He16ResNet} is used .
+The CoarseNet contains the heavy encoder part, that mainly consists of a classifier often referred to as backbone. In IOG a ResNet-101 \cite{He16-ResNet} is used .
 % TODO describe backbone and PSP as encoder 
 This ResNet-101 is implemented without the head of fully connected layers. It contains four ResNet blocks and the fourth block outputs 2048 feature maps of the size $32 \times 32$ \Unit{px}.
-After the backbone a PSP-network is applied in order to enrich "the representation with global contextual information"\cite{Zha20IOG}.
-The coarse prediction from the PSP-Network \cite{Zhao2017pyramid} has a spatial dimension of  $32 \times 32$ \Unit{px} with 512 feature maps. 
+After the backbone a PSP-network is applied in order to enrich "the representation with global contextual information"\cite{Zha20-IOG}.
+The coarse prediction from the PSP-Network \cite{Zhao17-PSP} has a spatial dimension of  $32 \times 32$ \Unit{px} with 512 feature maps. 
 From this onward the layers are enlarged by a four staged upsampling process to obtain the original input size of  $512 \times 512$ \Unit{px}. 
 During the upsampling process activations from the residual parts of the ResNet are transferred from the ResNet using so lateral connections and concatenated with the upsampled feature maps.
 %TODO describe this with encoder-decoder 
 A benefit of this architecture is the fusion of information from different network stages.
 
 \paragraph{FineNet}
-The FineNet is based on a "multi-scale fusion structure"\cite{Zha20IOG}. 
+The FineNet is based on a "multi-scale fusion structure"\cite{Zha20-IOG}. 
 The activations from all four stages of the upsampling process from the CoarseNet are further processed along different paths. 
-Depending on the spatial dimension, a number of additional convolution and upsampling operations are applied in order to use \emph{"features at deeper layers for better trade-off between accuracy and efficiency"} \cite[p. 12237]{Zha20IOG}.
+Depending on the spatial dimension, a number of additional convolution and upsampling operations are applied in order to use \emph{"features at deeper layers for better trade-off between accuracy and efficiency"} \cite[p. 12237]{Zha20-IOG}.
 These different paths are concatenated to create the networks final layer.
 A sigmoid is applied to this final layer, which results in a probability map as final prediction of the IOG network.
 The author shows in an ablation study, that the FineNet enhances the networks IoU by $0.8\%$. 
-The ablation study is performed with a ResNet-50 as backbone and PASCAL-1k \cite{PASCAL10} as dataset. 
+The ablation study is performed with a ResNet-50 as backbone and PASCAL-1k \cite{Eve20-PascalVOC} as dataset. 
 \\
 This architecture especially performs well due to its application of lateral connections from different levels in order to recover local detail.
 The combination of layers with high localization detail with the layers, that contain high detection details, is helpful to prevent a information loss during the down- and upsampling process.
 
 \begin{figure}
+	%TODO adapt figure.
 	\includegraphics[width=\linewidth]{figures/chap31_arch.png}
 	\caption{IOG architecture (not final).}
-	%TODO adapt figure.
 	\label{fig:ch3:sec1:arch}
 \end{figure}
 
@@ -83,7 +83,7 @@ Hence, the ResNet does not require another execution and leads to a fast refinem
 Further, the normal IOG process is executed from the PSP-module. 
 Zhang states that the usage of the lightweight-branch performs better than adding the refinement click into the normal 5-channel input.
 
-In their experiments Zhang compares the IOG method to other state-of-the-art methods on different benchmarks, as shown in Figure \ref{fig:ch3:sec1:comparison}.
+In their experiments Zhang compares the IOG method to other state-of-the-art methods on different benchmarks, as shown in Figure %TODO.
 They also evaluate the generalization abilities of IOG on unseen classes.
 Zhang claims that IOG outperforms all other methods.
 
