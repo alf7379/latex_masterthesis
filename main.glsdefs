@@ -1,0 +1,540 @@
+\ifglsentryexists{cd}{}%
+{%
+\gls@defglossaryentry{cd}%
+{%
+name={CD},%
+sort={CD},%
+type={acronym},%
+first={compact disk\glsspace (CD)},%
+firstplural={compact disks\glsspace (CDs)},%
+text={CD},%
+plural={CDs},%
+description={compact disk},%
+descriptionplural={compact disk\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={compact disk},%
+longplural={compact disks},%
+short={CD},%
+shortplural={CDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gpu}{}%
+{%
+\gls@defglossaryentry{gpu}%
+{%
+name={GPU},%
+sort={GPU},%
+type={acronym},%
+first={Graphical Processing Unit\glsspace (GPU)},%
+firstplural={Graphical Processing Units\glsspace (GPUs)},%
+text={GPU},%
+plural={GPUs},%
+description={Graphical Processing Unit},%
+descriptionplural={Graphical Processing Unit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graphical Processing Unit},%
+longplural={Graphical Processing Units},%
+short={GPU},%
+shortplural={GPUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dl}{}%
+{%
+\gls@defglossaryentry{dl}%
+{%
+name={DL},%
+sort={DL},%
+type={acronym},%
+first={Deep Learning\glsspace (DL)},%
+firstplural={Deep Learnings\glsspace (DLs)},%
+text={DL},%
+plural={DLs},%
+description={Deep Learning},%
+descriptionplural={Deep Learning\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deep Learning},%
+longplural={Deep Learnings},%
+short={DL},%
+shortplural={DLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ml}{}%
+{%
+\gls@defglossaryentry{ml}%
+{%
+name={ML},%
+sort={ML},%
+type={acronym},%
+first={Machine Learning\glsspace (ML)},%
+firstplural={Machine Learnings\glsspace (MLs)},%
+text={ML},%
+plural={MLs},%
+description={Machine Learning},%
+descriptionplural={Machine Learning\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Machine Learning},%
+longplural={Machine Learnings},%
+short={ML},%
+shortplural={MLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ai}{}%
+{%
+\gls@defglossaryentry{ai}%
+{%
+name={AI},%
+sort={AI},%
+type={acronym},%
+first={Artificial Intellegence\glsspace (AI)},%
+firstplural={Artificial Intellegences\glsspace (AIs)},%
+text={AI},%
+plural={AIs},%
+description={Artificial Intellegence},%
+descriptionplural={Artificial Intellegence\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Artificial Intellegence},%
+longplural={Artificial Intellegences},%
+short={AI},%
+shortplural={AIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cnn}{}%
+{%
+\gls@defglossaryentry{cnn}%
+{%
+name={CNN},%
+sort={CNN},%
+type={acronym},%
+first={Convolutional Neural Network\glsspace (CNN)},%
+firstplural={Convolutional Neural Networks\glsspace (CNNs)},%
+text={CNN},%
+plural={CNNs},%
+description={Convolutional Neural Network},%
+descriptionplural={Convolutional Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Convolutional Neural Network},%
+longplural={Convolutional Neural Networks},%
+short={CNN},%
+shortplural={CNNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gt}{}%
+{%
+\gls@defglossaryentry{gt}%
+{%
+name={GT},%
+sort={GT},%
+type={acronym},%
+first={Ground Truth\glsspace (GT)},%
+firstplural={Ground Truths\glsspace (GTs)},%
+text={GT},%
+plural={GTs},%
+description={Ground Truth},%
+descriptionplural={Ground Truth\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ground Truth},%
+longplural={Ground Truths},%
+short={GT},%
+shortplural={GTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{iou}{}%
+{%
+\gls@defglossaryentry{iou}%
+{%
+name={IoU},%
+sort={IoU},%
+type={acronym},%
+first={Intersection over Union\glsspace (IoU)},%
+firstplural={Intersection over Unions\glsspace (IoUs)},%
+text={IoU},%
+plural={IoUs},%
+description={Intersection over Union},%
+descriptionplural={Intersection over Union\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Intersection over Union},%
+longplural={Intersection over Unions},%
+short={IoU},%
+shortplural={IoUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{miou}{}%
+{%
+\gls@defglossaryentry{miou}%
+{%
+name={mIoU},%
+sort={mIoU},%
+type={acronym},%
+first={mean Intersection over Union\glsspace (mIoU)},%
+firstplural={mean Intersection over Unions\glsspace (mIoUs)},%
+text={mIoU},%
+plural={mIoUs},%
+description={mean Intersection over Union},%
+descriptionplural={mean Intersection over Union\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mean Intersection over Union},%
+longplural={mean Intersection over Unions},%
+short={mIoU},%
+shortplural={mIoUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{op}{}%
+{%
+\gls@defglossaryentry{op}%
+{%
+name={OP},%
+sort={OP},%
+type={acronym},%
+first={Overall Pixel\glsspace (OP)},%
+firstplural={Overall Pixels\glsspace (OPs)},%
+text={OP},%
+plural={OPs},%
+description={Overall Pixel},%
+descriptionplural={Overall Pixel\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Overall Pixel},%
+longplural={Overall Pixels},%
+short={OP},%
+shortplural={OPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pc}{}%
+{%
+\gls@defglossaryentry{pc}%
+{%
+name={PC},%
+sort={PC},%
+type={acronym},%
+first={Per-Class\glsspace (PC)},%
+firstplural={Per-Classs\glsspace (PCs)},%
+text={PC},%
+plural={PCs},%
+description={Per-Class},%
+descriptionplural={Per-Class\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Per-Class},%
+longplural={Per-Classs},%
+short={PC},%
+shortplural={PCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{iog}{}%
+{%
+\gls@defglossaryentry{iog}%
+{%
+name={IOG},%
+sort={IOG},%
+type={acronym},%
+first={Inside Outside Guidance\glsspace (IOG)},%
+firstplural={Inside Outside Guidances\glsspace (IOGs)},%
+text={IOG},%
+plural={IOGs},%
+description={Inside Outside Guidance},%
+descriptionplural={Inside Outside Guidance\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inside Outside Guidance},%
+longplural={Inside Outside Guidances},%
+short={IOG},%
+shortplural={IOGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dextr}{}%
+{%
+\gls@defglossaryentry{dextr}%
+{%
+name={DEXTR},%
+sort={DEXTR},%
+type={acronym},%
+first={Deep Extreme Cut\glsspace (DEXTR)},%
+firstplural={Deep Extreme Cuts\glsspace (DEXTRs)},%
+text={DEXTR},%
+plural={DEXTRs},%
+description={Deep Extreme Cut},%
+descriptionplural={Deep Extreme Cut\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deep Extreme Cut},%
+longplural={Deep Extreme Cuts},%
+short={DEXTR},%
+shortplural={DEXTRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fcn}{}%
+{%
+\gls@defglossaryentry{fcn}%
+{%
+name={FCN},%
+sort={FCN},%
+type={acronym},%
+first={Fully Convolutional Network\glsspace (FCN)},%
+firstplural={Fully Convolutional Networks\glsspace (FCNs)},%
+text={FCN},%
+plural={FCNs},%
+description={Fully Convolutional Network},%
+descriptionplural={Fully Convolutional Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fully Convolutional Network},%
+longplural={Fully Convolutional Networks},%
+short={FCN},%
+shortplural={FCNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{psp}{}%
+{%
+\gls@defglossaryentry{psp}%
+{%
+name={PSP},%
+sort={PSP},%
+type={acronym},%
+first={Pyramid Scene Parsing\glsspace (PSP)},%
+firstplural={Pyramid Scene Parsings\glsspace (PSPs)},%
+text={PSP},%
+plural={PSPs},%
+description={Pyramid Scene Parsing},%
+descriptionplural={Pyramid Scene Parsing\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Pyramid Scene Parsing},%
+longplural={Pyramid Scene Parsings},%
+short={PSP},%
+shortplural={PSPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{crf}{}%
+{%
+\gls@defglossaryentry{crf}%
+{%
+name={CRF},%
+sort={CRF},%
+type={acronym},%
+first={Conditional Random Fields\glsspace (CRF)},%
+firstplural={Conditional Random Fieldss\glsspace (CRFs)},%
+text={CRF},%
+plural={CRFs},%
+description={Conditional Random Fields},%
+descriptionplural={Conditional Random Fields\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Conditional Random Fields},%
+longplural={Conditional Random Fieldss},%
+short={CRF},%
+shortplural={CRFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{spp}{}%
+{%
+\gls@defglossaryentry{spp}%
+{%
+name={SPP},%
+sort={SPP},%
+type={acronym},%
+first={Spatial Pyramid Pooling\glsspace (SPP)},%
+firstplural={Spatial Pyramid Poolings\glsspace (SPPs)},%
+text={SPP},%
+plural={SPPs},%
+description={Spatial Pyramid Pooling},%
+descriptionplural={Spatial Pyramid Pooling\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Spatial Pyramid Pooling},%
+longplural={Spatial Pyramid Poolings},%
+short={SPP},%
+shortplural={SPPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{aspp}{}%
+{%
+\gls@defglossaryentry{aspp}%
+{%
+name={ASPP},%
+sort={ASPP},%
+type={acronym},%
+first={Atrous Spatial Pyramid Pooling\glsspace (ASPP)},%
+firstplural={Atrous Spatial Pyramid Poolings\glsspace (ASPPs)},%
+text={ASPP},%
+plural={ASPPs},%
+description={Atrous Spatial Pyramid Pooling},%
+descriptionplural={Atrous Spatial Pyramid Pooling\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Atrous Spatial Pyramid Pooling},%
+longplural={Atrous Spatial Pyramid Poolings},%
+short={ASPP},%
+shortplural={ASPPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

@@ -18,10 +18,13 @@
 %\usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
 \usepackage{hyperref}
 \usepackage{xspace} 
-%\usepackage{acronym}
-%\usepackage[nohyperlinks, printonlyused]{acronym}
-\usepackage[acronym]{glossaries}
 
+% \usepackage{footmisc}
+
+\usepackage[printonlyused]{acronym}
+% \usepackage[nohyperlinks, printonlyused]{acronym}
+\usepackage[acronym, automake, toc, nonumberlist]{glossaries}
+\makeglossaries
 
 \usepackage[%
 backend=biber,

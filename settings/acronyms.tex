@@ -1,10 +1,32 @@
-% Example
-% \acp{NPO}: Non-Profit Organisations (NPOs)
-% \acsp{NPO}: NPOs
-% \acfp{NPO}: Non-Profit Organisations (NPOs)
-% \aclp{NPO}: Non-Profit Organisations
+% Don’t use \glsin chapter or section headings as it can have some unpleasantside-effects. Instead use \glsentrytextfor regular entries and one of \glsentryshort, \glsentrylong or \glsentryfull for acronyms. Alternatively useglossaries-extrawhich provides special commands for use insection headings and captions, such as \glsfmtshort{〈label〉}
 
-% only include actually used acronyms in the list
-\begin{acronym}
-	\acro{dl}[DL]{Deep Learning}
-\end{acronym}
+% Apply in text:
+% gls{}
+% glspl{} --> plural form with 's'
+
+\newacronym{cd}{CD}{compact disk}
+\newacronym{gpu}{GPU}{Graphical Processing Unit}
+
+
+\newacronym{dl}{DL}{Deep Learning}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{ai}{AI}{Artificial Intellegence}
+	
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+
+\newacronym{gt}{GT}{Ground Truth}
+\newacronym{iou}{IoU}{Intersection over Union}
+\newacronym{miou}{mIoU}{mean Intersection over Union}
+\newacronym{op}{OP}{Overall Pixel}
+\newacronym{pc}{PC}{Per-Class}
+	
+	
+	
+\newacronym{iog}{IOG}{Inside Outside Guidance}
+\newacronym{dextr}{DEXTR}{Deep Extreme Cut}
+\newacronym{fcn}{FCN}{Fully Convolutional Network}
+\newacronym{psp}{PSP}{Pyramid Scene Parsing}
+\newacronym{crf}{CRF}{Conditional Random Fields}
+\newacronym{spp}{SPP}{Spatial Pyramid Pooling}
+\newacronym{aspp}{ASPP}{Atrous Spatial Pyramid Pooling}
+

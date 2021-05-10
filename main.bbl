@@ -23,11 +23,10 @@
       \field{labelalpha}{18}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{extraalpha}{1}
       \field{labeltitlesource}{title}
       \field{day}{1}
       \field{month}{5}
-      \field{title}{Detection and Segmentation}
+      \field{title}{Detection and segmentation}
       \field{year}{2018}
       \field{dateera}{ce}
       \verb{urlraw}
@@ -37,56 +36,51 @@
       \verb http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf
       \endverb
     \endentry
-    \entry{HR18-AI}{online}{}
-      \field{labelalpha}{18}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{extraalpha}{2}
+    \entry{Acu18-Polygon-RNN++}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2fd3c2f3adf190bb18d50eaf1038f470}{%
+           family={Acuna},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20ec73bb970f885836ca6742ae143b45}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b69b2ce80ada4f8884b287f56fafcf6}{%
+           family={Kar},
+           familyi={K\bibinitperiod},
+           given={Amlan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=132467c4a712be4725c988c89c68a30e}{%
+           family={Fidler},
+           familyi={F\bibinitperiod},
+           given={Sanja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e40b731d4591972c7a818339d617437}
+      \strng{fullhash}{9e40b731d4591972c7a818339d617437}
+      \strng{bibnamehash}{9e40b731d4591972c7a818339d617437}
+      \strng{authorbibnamehash}{9e40b731d4591972c7a818339d617437}
+      \strng{authornamehash}{9e40b731d4591972c7a818339d617437}
+      \strng{authorfullhash}{9e40b731d4591972c7a818339d617437}
+      \field{labelalpha}{Acu+18}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{29}
-      \field{month}{7}
-      \field{title}{Selbstlernende Maschinen - wie Künstliche Intelligenz entsteht}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++}
       \field{year}{2018}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.hr-inforadio.de/podcast/wissen/selbstlernende-maschinen---wie-kuenstliche-intelligenz-entsteht,podcast-episode-53312.html
-      \endverb
-      \verb{url}
-      \verb https://www.hr-inforadio.de/podcast/wissen/selbstlernende-maschinen---wie-kuenstliche-intelligenz-entsteht,podcast-episode-53312.html
-      \endverb
-    \endentry
-    \entry{Cer20-AnnotationsTools}{online}{}
-      \field{labelalpha}{20}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labeltitlesource}{title}
-      \field{day}{11}
-      \field{month}{2}
-      \field{title}{Image Annotation Tools: Which One to Pick in 2020?}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://bohemian.ai/blog/image-annotation-tools-which-one-pick-2020/
-      \endverb
-      \verb{url}
-      \verb https://bohemian.ai/blog/image-annotation-tools-which-one-pick-2020/
-      \endverb
-    \endentry
-    \entry{TF21-MeanIoU}{online}{}
-      \field{labelalpha}{21}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labeltitlesource}{title}
-      \field{day}{14}
-      \field{month}{4}
-      \field{title}{tf.keras.metrics.MeanIoU}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU
-      \endverb
-      \verb{url}
-      \verb https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU
+      \field{pages}{859\bibrangedash 868}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CVPR.2018.00096
       \endverb
     \endentry
     \entry{Banko01-ScalingData}{inproceedings}{}
@@ -104,12 +98,6 @@
            giveni={E\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Toulouse, France}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computational Linguistics}%
-      }
       \strng{namehash}{8c184306b081f6d7de92cd31d717a30c}
       \strng{fullhash}{8c184306b081f6d7de92cd31d717a30c}
       \strng{bibnamehash}{8c184306b081f6d7de92cd31d717a30c}
@@ -121,8 +109,7 @@
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 39th Annual Meeting of the Association for Computational Linguistics}
-      \field{month}{7}
+      \field{booktitle}{Annual Meeting of the Association for Computational Linguistics}
       \field{title}{Scaling to Very Very Large Corpora for Natural Language Disambiguation}
       \field{year}{2001}
       \field{pages}{26\bibrangedash 33}
@@ -137,7 +124,7 @@
       \verb https://www.aclweb.org/anthology/P01-1005
       \endverb
     \endentry
-    \entry{Bad17-EncoderDecoder}{article}{}
+    \entry{Bad17-SegNet}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=2b517df4f81c42dc3c5b32aede012cf9}{%
            family={Badrinarayanan},
@@ -169,9 +156,9 @@
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)}
       \field{number}{12}
-      \field{title}{SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation}
+      \field{title}{SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image segmentation}
       \field{volume}{39}
       \field{year}{2017}
       \field{pages}{2481\bibrangedash 2495}
@@ -209,7 +196,7 @@
         {{un=0,uniquepart=base,hash=7e4cdd805dbfc99ccee4571698195692}{%
            family={Yuille},
            familyi={Y\bibinitperiod},
-           given={Alan\bibnamedelima L},
+           given={Alan\bibnamedelima L.},
            giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
            givenun=0}}%
       }
@@ -219,16 +206,78 @@
       \strng{authorbibnamehash}{c0db6e31d214cb90a9557639a905cee8}
       \strng{authornamehash}{f4c73e3374bcf7706b0553e62f2cbdd0}
       \strng{authorfullhash}{c0db6e31d214cb90a9557639a905cee8}
-      \field{labelalpha}{Che+16}
+      \field{labelalpha}{Che+18}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv:1606.00915}
-      \field{title}{DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs}
-      \field{year}{2016}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)}
+      \field{number}{4}
+      \field{title}{DeepLab: segmentation Image segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs}
+      \field{volume}{40}
+      \field{year}{2018}
+      \field{pages}{834\bibrangedash 848}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2017.2699184
+      \endverb
     \endentry
-    \entry{Chen18-SyntheticData}{article}{}
+    \entry{Chen18-DeepLab3+}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=41859f30c12640f5249fa065131fc2f4}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yukun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0b33c7651e3d639b1e91032533984f9}{%
+           family={Papandreou},
+           familyi={P\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c62e96f68033a3d3cd4639e35a2de4da}{%
+           family={Schroff},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c707ec5b5997dc408a14a34a8380166c}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Hartwig},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c011734d8cdc0ef9f40fdc893c60e11}
+      \strng{fullhash}{63608d0342c85312dc1553fbee18162e}
+      \strng{bibnamehash}{63608d0342c85312dc1553fbee18162e}
+      \strng{authorbibnamehash}{63608d0342c85312dc1553fbee18162e}
+      \strng{authornamehash}{6c011734d8cdc0ef9f40fdc893c60e11}
+      \strng{authorfullhash}{63608d0342c85312dc1553fbee18162e}
+      \field{labelalpha}{Che+18}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European Conference on Computer Vision (ECCV)}
+      \field{title}{Encoder-Decoder with Atrous Separable Convolution for segmentation Image segmentation}
+      \field{year}{2018}
+      \field{pages}{833\bibrangedash 851}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/978-3-030-01234-2_49
+      \endverb
+    \endentry
+    \entry{Chen18-SyntheticData}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=1,uniquepart=given,hash=811ceb0cea7550f0abce68827e166ba5}{%
            family={Chen},
@@ -248,76 +297,35 @@
            given={Xiaoran},
            giveni={X\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=4e3c4333156c93f2e568db6387d4c7f1}{%
-           family={Gool},
-           familyi={G\bibinitperiod},
-           given={Luc\bibnamedelima Van},
-           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+        {{un=0,uniquepart=base,hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \strng{fullhash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \strng{bibnamehash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \strng{authorbibnamehash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \strng{authornamehash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \strng{authorfullhash}{046cee509cb156e4d1b2027cfd6ccff8}
-      \field{labelalpha}{Che+18}
+      \strng{namehash}{2771983a44559e33a84f0114851bec0d}
+      \strng{fullhash}{2771983a44559e33a84f0114851bec0d}
+      \strng{bibnamehash}{2771983a44559e33a84f0114851bec0d}
+      \strng{authorbibnamehash}{2771983a44559e33a84f0114851bec0d}
+      \strng{authornamehash}{2771983a44559e33a84f0114851bec0d}
+      \strng{authorfullhash}{2771983a44559e33a84f0114851bec0d}
+      \field{labelalpha}{Che+19}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{Learning Semantic Segmentation from Synthetic Data: {A} Geometrically Guided Input-Output Adaptation Approach}
-      \field{volume}{abs/1812.05040}
-      \field{year}{2018}
-      \verb{eprint}
-      \verb 1812.05040
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1812.05040
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1812.05040
-      \endverb
-    \endentry
-    \entry{Csu13-EvalMetric}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c882d00b910577173c124d39d0ea7e7f}{%
-           family={Csurka},
-           familyi={C\bibinitperiod},
-           given={Gabriela},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a3df968b840ba01bd10cb0a23602fde1}{%
-           family={Larlus},
-           familyi={L\bibinitperiod},
-           given={Diane},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \strng{fullhash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \strng{bibnamehash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \strng{authorbibnamehash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \strng{authornamehash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \strng{authorfullhash}{4e676288b4d1e85708b59b6c07ed6a0d}
-      \field{labelalpha}{CL13}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Trans. Pattern Anal. Mach. Intell.}
-      \field{month}{01}
-      \field{title}{What is a good evaluation measure for semantic segmentation?}
-      \field{volume}{26}
-      \field{year}{2013}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Learning segmentation segmentation From Synthetic Data: A Geometrically Guided Input-Output Adaptation Approach}
+      \field{year}{2019}
+      \field{pages}{1841\bibrangedash 1850}
+      \range{pages}{10}
       \verb{doi}
-      \verb 10.5244/C.27.32
+      \verb 10.1109/CVPR.2019.00194
       \endverb
     \endentry
-    \entry{Cor16-Cityscapes}{article}{}
-      \name{author}{8}{}{%
+    \entry{Cor16-Cityscapes}{inproceedings}{}
+      \name{author}{9}{}{%
         {{un=0,uniquepart=base,hash=51a6c58200922aa207f1eb5b87370852}{%
            family={Cordts},
            familyi={C\bibinitperiod},
@@ -348,15 +356,18 @@
            given={Markus},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5e2a88b511026f553ef9d621377ea519}{%
-           family={Uwe\bibnamedelima Franke},
-           familyi={U\bibinitperiod\bibinitdelim F\bibinitperiod},
-           given={Rodrigo\bibnamedelima Benenson},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0,
-           prefix={and},
-           prefixi={a\bibinitperiod},
-           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=b85b9efefe92bdad29985847fb978d46}{%
+           family={Benenson},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d996aac909f5d2ef612d23aaebcb75ce}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=507b5db9b42e37f1dc7fd50bac7cd869}{%
            family={Roth},
            familyi={R\bibinitperiod},
@@ -371,32 +382,64 @@
            givenun=0}}%
       }
       \strng{namehash}{b18004675e90898b462c83bb7448409b}
-      \strng{fullhash}{34907f8d24a01c786ba05b43e5ad92da}
-      \strng{bibnamehash}{34907f8d24a01c786ba05b43e5ad92da}
-      \strng{authorbibnamehash}{34907f8d24a01c786ba05b43e5ad92da}
+      \strng{fullhash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{bibnamehash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authorbibnamehash}{cc545828e2bf016705d2e732a65c3d91}
       \strng{authornamehash}{b18004675e90898b462c83bb7448409b}
-      \strng{authorfullhash}{34907f8d24a01c786ba05b43e5ad92da}
+      \strng{authorfullhash}{cc545828e2bf016705d2e732a65c3d91}
       \field{labelalpha}{Cor+16}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{The Cityscapes Dataset for Semantic Urban Scene Understanding}
-      \field{volume}{abs/1604.01685}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{The Cityscapes Dataset for segmentation Urban Scene Understanding}
       \field{year}{2016}
-      \verb{eprint}
-      \verb 1604.01685
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1604.01685
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1604.01685
+      \field{pages}{3213\bibrangedash 3223}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/CVPR.2016.350
       \endverb
     \endentry
-    \entry{Dai17-ReconstructionIndoorScenes}{article}{}
+    \entry{Csu13-EvalMetric}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7fb08a80b07d249df951a0674382edfb}{%
+           family={Csurka},
+           familyi={C\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           suffix={Gabriela\bibnamedelima andLarlus},
+           suffixi={G\bibinitperiod\bibinitdelim a\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=5a3c11e2931f5c99d33069b6ed09adca}{%
+           family={Perronnin},
+           familyi={P\bibinitperiod},
+           given={Florent},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{106065e82cd49e7c83beaaaca4d1267b}
+      \strng{fullhash}{106065e82cd49e7c83beaaaca4d1267b}
+      \strng{bibnamehash}{106065e82cd49e7c83beaaaca4d1267b}
+      \strng{authorbibnamehash}{106065e82cd49e7c83beaaaca4d1267b}
+      \strng{authornamehash}{106065e82cd49e7c83beaaaca4d1267b}
+      \strng{authorfullhash}{106065e82cd49e7c83beaaaca4d1267b}
+      \field{labelalpha}{CP13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{British Machine Vision Conference (BMVC)}
+      \field{title}{What is a good evaluation measure for segmentation segmentation?}
+      \field{year}{2013}
+      \field{pages}{32.1\bibrangedash 32.11}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.5244/C.27.32
+      \endverb
+    \endentry
+    \entry{Dai17-ReconstructionIndoorScenes}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=964283da01a9c1039ae067c7e4454635}{%
            family={Dai},
@@ -422,131 +465,96 @@
            given={Maciej},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=44fe728f3a0f3743e705b9f165e9503c}{%
+        {{un=0,uniquepart=base,hash=d5f84e30e5cf00a362dfcbcca460dd64}{%
            family={Funkhouser},
            familyi={F\bibinitperiod},
-           given={Thomas\bibnamedelima A.},
-           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=3e07f51dbc36ece3b41bb5bcfe5b3b07}{%
-           family={Nie{ß}ner},
+           family={Nießner},
            familyi={N\bibinitperiod},
            given={Matthias},
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
       \strng{namehash}{f4b11c6afcd9923c7ecadaaf10efb518}
-      \strng{fullhash}{4596bea482dcee3edef90aeb72d0a13e}
-      \strng{bibnamehash}{4596bea482dcee3edef90aeb72d0a13e}
-      \strng{authorbibnamehash}{4596bea482dcee3edef90aeb72d0a13e}
+      \strng{fullhash}{8b573147aaab01a2eacecba2e3324a61}
+      \strng{bibnamehash}{8b573147aaab01a2eacecba2e3324a61}
+      \strng{authorbibnamehash}{8b573147aaab01a2eacecba2e3324a61}
       \strng{authornamehash}{f4b11c6afcd9923c7ecadaaf10efb518}
-      \strng{authorfullhash}{4596bea482dcee3edef90aeb72d0a13e}
+      \strng{authorfullhash}{8b573147aaab01a2eacecba2e3324a61}
       \field{labelalpha}{Dai+17}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes}
-      \field{volume}{abs/1702.04405}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{ScanNet: Richly-Annotated 3D Reconstructions of Indoor Scenes}
       \field{year}{2017}
-      \verb{eprint}
-      \verb 1702.04405
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1702.04405
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1702.04405
+      \field{pages}{2432\bibrangedash 2443}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/CVPR.2017.261
       \endverb
     \endentry
     \entry{Deng09-ImageNet}{inproceedings}{}
       \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=cbaf4f8829c5ef01cf9659d1d6975526}{%
+        {{un=0,uniquepart=base,hash=0ae7fdc13773f928525f673b05f37149}{%
            family={Deng},
            familyi={D\bibinitperiod},
-           given={J.},
+           given={Jia},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=955e4fa0c47a616eecedbeeb06aa65fa}{%
+        {{un=0,uniquepart=base,hash=7d87c5957b07153c7f18918b92830bf8}{%
            family={Dong},
            familyi={D\bibinitperiod},
-           given={W.},
+           given={Wei},
            giveni={W\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=edd3c4a3b6388614c15fdfa581b52069}{%
+        {{un=0,uniquepart=base,hash=d5670b2600fea169724521e252d9d09d}{%
            family={Socher},
            familyi={S\bibinitperiod},
-           given={R.},
+           given={Richard},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4db47e780a7092458880617d8c3231f7}{%
+        {{un=0,uniquepart=base,hash=2afdae52015b97674d81efea449edce2}{%
            family={Li},
            familyi={L\bibinitperiod},
-           given={L.-J.},
+           given={Li-Jia},
            giveni={L\bibinithyphendelim J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1a48ecf9984adc4526895c8abf1d2b80}{%
+        {{un=0,uniquepart=base,hash=4838f7fdd28d5cefb28f3b3c734976d4}{%
            family={Li},
            familyi={L\bibinitperiod},
-           given={K.},
+           given={Kai},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=f536a9246365f63717886015403a0964}{%
+        {{un=0,uniquepart=base,hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
            family={Fei-Fei},
            familyi={F\bibinithyphendelim F\bibinitperiod},
-           given={L.},
+           given={Li},
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{97613aef4c50675aa62b9e0dec8151ee}
-      \strng{fullhash}{fec3a590a384f905f4a8183a7c8ec390}
-      \strng{bibnamehash}{fec3a590a384f905f4a8183a7c8ec390}
-      \strng{authorbibnamehash}{fec3a590a384f905f4a8183a7c8ec390}
-      \strng{authornamehash}{97613aef4c50675aa62b9e0dec8151ee}
-      \strng{authorfullhash}{fec3a590a384f905f4a8183a7c8ec390}
+      \strng{namehash}{05518b38b72fc1069da19d9f61510ea9}
+      \strng{fullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \strng{bibnamehash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \strng{authorbibnamehash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \strng{authornamehash}{05518b38b72fc1069da19d9f61510ea9}
+      \strng{authorfullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
       \field{labelalpha}{Den+09}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{CVPR09}
-      \field{title}{{ImageNet: A Large-Scale Hierarchical Image Database}}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{ImageNet: A large-scale hierarchical image database}
       \field{year}{2009}
-    \endentry
-    \entry{Dum18-ConvolutionArithmetic}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=1328d3ceef6add8461994fc364c664df}{%
-           family={Dumoulin},
-           familyi={D\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6b5929470a8840e4c6f9b8836bd55286}{%
-           family={Visin},
-           familyi={V\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ac3e7f97a270527500aed940113f1070}
-      \strng{fullhash}{ac3e7f97a270527500aed940113f1070}
-      \strng{bibnamehash}{ac3e7f97a270527500aed940113f1070}
-      \strng{authorbibnamehash}{ac3e7f97a270527500aed940113f1070}
-      \strng{authornamehash}{ac3e7f97a270527500aed940113f1070}
-      \strng{authorfullhash}{ac3e7f97a270527500aed940113f1070}
-      \field{labelalpha}{DV18}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{stat.ML}
-      \field{eprinttype}{arXiv}
-      \field{title}{A guide to convolution arithmetic for deep learning}
-      \field{year}{2018}
-      \verb{eprint}
-      \verb 1603.07285
+      \field{pages}{248\bibrangedash 255}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CVPR.2009.5206848
       \endverb
     \endentry
     \entry{Eve20-PascalVOC}{article}{}
@@ -594,40 +602,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Computer Vision}
-      \field{month}{6}
       \field{number}{2}
       \field{title}{The Pascal Visual Object Classes (VOC) Challenge}
       \field{volume}{88}
       \field{year}{2010}
       \field{pages}{303\bibrangedash 338}
       \range{pages}{36}
-    \endentry
-    \entry{Fer19-SemSeg}{unpublished}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=07cf632aa7b71b23f715eb978f53e8a8}{%
-           family={Fertig},
-           familyi={F\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Munich University of applied Sciences}%
-      }
-      \strng{namehash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \strng{fullhash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \strng{bibnamehash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \strng{authorbibnamehash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \strng{authornamehash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \strng{authorfullhash}{07cf632aa7b71b23f715eb978f53e8a8}
-      \field{labelalpha}{Fer19}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{unpublished seminar paper}
-      \field{title}{Semantic Segmentation: State of the Art}
-      \field{year}{2019}
     \endentry
     \entry{Gudivada2017-DataQuality}{article}{}
       \name{author}{3}{}{%
@@ -662,7 +642,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal on Advances in Software}
-      \field{month}{07}
+      \field{number}{1}
       \field{title}{Data Quality Considerations for Big Data and Machine Learning: Going Beyond Data Cleaning and Transformations}
       \field{volume}{10}
       \field{year}{2017}
@@ -690,6 +670,9 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
       \list{publisher}{1}{%
         {MIT Press}%
       }
@@ -704,7 +687,7 @@
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{\url{http://www.deeplearningbook.org} [Zugriff am: 02.05.2021]}
+      \field{note}{\url{http://www.deeplearningbook.org}}
       \field{title}{Deep Learning}
       \field{year}{2016}
     \endentry
@@ -717,8 +700,11 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Sebastopol, CA, USA}%
+      }
       \list{publisher}{1}{%
-        {O'Reilly}%
+        {O'Reilly Media, Inc.}%
       }
       \strng{namehash}{6db3f9db9806d565fead2924629a3c78}
       \strng{fullhash}{6db3f9db9806d565fead2924629a3c78}
@@ -734,6 +720,56 @@
       \field{isbn}{978-1-491-96229-9}
       \field{title}{Hands-On Machine Learning with Scikit-Learn \& TensorFlow}
       \field{year}{2017}
+    \endentry
+    \entry{He15-SPP}{article}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{extraname}{1}
+      \field{labelalpha}{He+15}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}
+      \field{number}{9}
+      \field{title}{Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition}
+      \field{volume}{37}
+      \field{year}{2015}
+      \field{pages}{1904\bibrangedash 1916}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2015.2389824
+      \endverb
     \endentry
     \entry{He16-ResNet}{inproceedings}{}
       \name{author}{4}{}{%
@@ -768,14 +804,17 @@
       \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authornamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{extraname}{2}
       \field{labelalpha}{He+16}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR)}
-      \field{title}{Deep residual learning for image recognition}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Residual Learning for Image Recognition}
       \field{year}{2016}
+      \field{pages}{770\bibrangedash 778}
+      \range{pages}{9}
     \endentry
     \entry{Halevy09-UnreasonableEffectivenessOfData}{article}{}
       \name{author}{3}{}{%
@@ -809,8 +848,8 @@
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Intelligent Systems, IEEE}
-      \field{month}{05}
+      \field{journaltitle}{IEEE Intelligent Systems}
+      \field{number}{2}
       \field{title}{The Unreasonable Effectiveness of Data}
       \field{volume}{24}
       \field{year}{2009}
@@ -820,7 +859,128 @@
       \verb 10.1109/MIS.2009.36
       \endverb
     \endentry
-    \entry{KK12-CRF}{article}{}
+    \entry{Hu19-TwoStreamFusionNetwork}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ce4fd9974b44266e4d9b7da0d672a8ea}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca6ca976a174617c53efa252f4bcf585}{%
+           family={Soltoggio},
+           familyi={S\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbc062f1ae80568ca4453bc6da7c8ae9}{%
+           family={Lock},
+           familyi={L\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4a7936a6ce80807e4367e40ea2e3614}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \strng{fullhash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \strng{bibnamehash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \strng{authorbibnamehash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \strng{authornamehash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \strng{authorfullhash}{6a533738c2caf2bc8d49a1d5b4ab6a02}
+      \field{labelalpha}{Hu+19}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Networks}
+      \field{title}{A fully convolutional two-stream fusion network for interactive image segmentation}
+      \field{volume}{109}
+      \field{year}{2019}
+      \field{pages}{31\bibrangedash 42}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.neunet.2018.10.009
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.neunet.2018.10.009
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.neunet.2018.10.009
+      \endverb
+    \endentry
+    \entry{Jad20-LossFunction}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ade8788ae575f3b262ea443a23ec74ac}{%
+           family={Jadon},
+           familyi={J\bibinitperiod},
+           given={Shruti},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ade8788ae575f3b262ea443a23ec74ac}
+      \strng{fullhash}{ade8788ae575f3b262ea443a23ec74ac}
+      \strng{bibnamehash}{ade8788ae575f3b262ea443a23ec74ac}
+      \strng{authorbibnamehash}{ade8788ae575f3b262ea443a23ec74ac}
+      \strng{authornamehash}{ade8788ae575f3b262ea443a23ec74ac}
+      \strng{authorfullhash}{ade8788ae575f3b262ea443a23ec74ac}
+      \field{labelalpha}{Jad20}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)}
+      \field{title}{A survey of loss functions for semantic segmentation}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/CIBCB48159.2020.9277638
+      \endverb
+    \endentry
+    \entry{JG18-ClickCarving}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a6a96378ffc051702bd86b4931d86ded}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Suyog},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f67e08fa64fd602c4ec562da14d65216}{%
+           family={Grauman},
+           familyi={G\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{fullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{bibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authorbibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authornamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authorfullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \field{labelalpha}{JG16}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AAAI Conference on Human Computation and Crowdsourcing}
+      \field{number}{1}
+      \field{title}{Click Carving: Segmenting Objects in Video with Point Clicks}
+      \field{volume}{4}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
+      \endverb
+      \verb{url}
+      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
+      \endverb
+    \endentry
+    \entry{KK12-CRF}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f7c378608b911bbcd2f03a441af99088}{%
            family={Krähenbühl},
@@ -835,30 +995,31 @@
            giveni={V\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
       \strng{namehash}{f19c01399117baac72a0c605a86b001a}
       \strng{fullhash}{f19c01399117baac72a0c605a86b001a}
       \strng{bibnamehash}{f19c01399117baac72a0c605a86b001a}
       \strng{authorbibnamehash}{f19c01399117baac72a0c605a86b001a}
       \strng{authornamehash}{f19c01399117baac72a0c605a86b001a}
       \strng{authorfullhash}{f19c01399117baac72a0c605a86b001a}
-      \field{labelalpha}{KK12}
+      \field{labelalpha}{KK11}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
+      \field{booktitle}{Neural Information Processing Systems (NIPS)}
       \field{title}{Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials}
-      \field{volume}{abs/1210.5644}
-      \field{year}{2012}
-      \verb{eprint}
-      \verb 1210.5644
-      \endverb
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{109\bibrangedash 117}
+      \range{pages}{9}
       \verb{urlraw}
-      \verb http://arxiv.org/abs/1210.5644
+      \verb https://proceedings.neurips.cc/paper/2011/file/beda24c1e1b46055dff2c39c98fd6fc1-Paper.pdf
       \endverb
       \verb{url}
-      \verb http://arxiv.org/abs/1210.5644
+      \verb https://proceedings.neurips.cc/paper/2011/file/beda24c1e1b46055dff2c39c98fd6fc1-Paper.pdf
       \endverb
     \endentry
     \entry{Li18-SateliteImagery}{inproceedings}{}
@@ -899,8 +1060,8 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}
-      \field{title}{Semantic Segmentation Based Building Extraction Method Using Multi-source GIS Map Datasets and Satellite Imagery}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}
+      \field{title}{segmentation segmentation Based Building Extraction Method Using Multi-source GIS Map Datasets and Satellite Imagery}
       \field{year}{2018}
       \field{pages}{233\bibrangedash 2333}
       \range{pages}{2101}
@@ -908,8 +1069,61 @@
       \verb 10.1109/CVPRW.2018.00043
       \endverb
     \endentry
-    \entry{Lin14-Coco}{article}{}
-      \name{author}{10}{}{%
+    \entry{Liew17-RegionalInteractiveImageSeg}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=b4550097950899197ea81fbc998687b7}{%
+           family={Liew},
+           familyi={L\bibinitperiod},
+           given={JunHao},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c600a8d986504b864d4994f2eed6156f}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yunchao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5a94e36625701b04b0f82e1d472fd69}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d9e0bd345453ccfc99be34e2b115b47}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Sim-Heng},
+           giveni={S\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee4de6563d3aa74999c7a69f8f345e56}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jiashi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{75bd4db8c64afce7d7cc0dc05f23723f}
+      \strng{fullhash}{8d3a8ef8881cd6fc746e9263f7274872}
+      \strng{bibnamehash}{8d3a8ef8881cd6fc746e9263f7274872}
+      \strng{authorbibnamehash}{8d3a8ef8881cd6fc746e9263f7274872}
+      \strng{authornamehash}{75bd4db8c64afce7d7cc0dc05f23723f}
+      \strng{authorfullhash}{8d3a8ef8881cd6fc746e9263f7274872}
+      \field{labelalpha}{Lie+17}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Computer Vision (ICCV)}
+      \field{title}{Regional Interactive Image Segmentation Networks}
+      \field{year}{2017}
+      \field{pages}{2746\bibrangedash 2754}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICCV.2017.297
+      \endverb
+    \endentry
+    \entry{Lin14-Coco}{inproceedings}{}
+      \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=08f925fe4692d130a1d7cb7d94483351}{%
            family={Lin},
            familyi={L\bibinitperiod},
@@ -922,23 +1136,11 @@
            given={Michael},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=8f74ba6d25e498a6a4044b39ee30c903}{%
+        {{un=0,uniquepart=base,hash=044d1db5259b74e4975282f599d8e767}{%
            family={Belongie},
            familyi={B\bibinitperiod},
-           given={Serge\bibnamedelima J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=41d1867a5948033a654e06e5a0c87f22}{%
-           family={Bourdev},
-           familyi={B\bibinitperiod},
-           given={Lubomir\bibnamedelima D.},
-           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c2c60ceb4a241891e128295a5ae80aef}{%
-           family={Girshick},
-           familyi={G\bibinitperiod},
-           given={Ross\bibnamedelima B.},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=797fc3624ba315db58eef7279ace5bf3}{%
            family={Hays},
@@ -971,28 +1173,78 @@
            giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{09e81a5dade3507a3206604d2fcd5871}
-      \strng{fullhash}{99c0d934968c1f6af7da091395340c35}
-      \strng{bibnamehash}{99c0d934968c1f6af7da091395340c35}
-      \strng{authorbibnamehash}{99c0d934968c1f6af7da091395340c35}
-      \strng{authornamehash}{09e81a5dade3507a3206604d2fcd5871}
-      \strng{authorfullhash}{99c0d934968c1f6af7da091395340c35}
+      \strng{namehash}{72b744e79c74738c617fd08b4f3d7e36}
+      \strng{fullhash}{efa664e154982dfbb2d86b95a77d1448}
+      \strng{bibnamehash}{efa664e154982dfbb2d86b95a77d1448}
+      \strng{authorbibnamehash}{efa664e154982dfbb2d86b95a77d1448}
+      \strng{authornamehash}{72b744e79c74738c617fd08b4f3d7e36}
+      \strng{authorfullhash}{efa664e154982dfbb2d86b95a77d1448}
       \field{labelalpha}{Lin+14}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{CoRR}
-      \field{title}{Microsoft COCO: Common Objects in Context.}
-      \field{volume}{abs/1405.0312}
+      \field{booktitle}{European Conference on Computer Vision (ECCV)}
+      \field{title}{Microsoft COCO: Common Objects in Context}
       \field{year}{2014}
-      \verb{urlraw}
-      \verb http://dblp.uni-trier.de/db/journals/corr/corr1405.html#LinMBHPRDZ14
+      \field{pages}{740\bibrangedash 755}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-10602-1_48
       \endverb
-      \verb{url}
-      \verb http://dblp.uni-trier.de/db/journals/corr/corr1405.html#LinMBHPRDZ14
+    \endentry
+    \entry{Ling19-Curve-GCN}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=20ec73bb970f885836ca6742ae143b45}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a3433149c20baec10f299b1558363b5}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b69b2ce80ada4f8884b287f56fafcf6}{%
+           family={Kar},
+           familyi={K\bibinitperiod},
+           given={Amlan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c715611466fb58affe15fbbc79ecf84}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wenzheng},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=132467c4a712be4725c988c89c68a30e}{%
+           family={Fidler},
+           familyi={F\bibinitperiod},
+           given={Sanja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af98bf36546dc157e2a451c357ba63a3}
+      \strng{fullhash}{8d5b8a4594ddc359e93918b9250a4351}
+      \strng{bibnamehash}{8d5b8a4594ddc359e93918b9250a4351}
+      \strng{authorbibnamehash}{8d5b8a4594ddc359e93918b9250a4351}
+      \strng{authornamehash}{af98bf36546dc157e2a451c357ba63a3}
+      \strng{authorfullhash}{8d5b8a4594ddc359e93918b9250a4351}
+      \field{labelalpha}{Lin+19}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Fast Interactive Object Annotation With Curve-GCN}
+      \field{year}{2019}
+      \field{pages}{5252\bibrangedash 5261}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CVPR.2019.00540
       \endverb
-      \keyw{dblp}
     \endentry
     \entry{LSD15-FCN}{inproceedings}{}
       \name{author}{3}{}{%
@@ -1026,11 +1278,9 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
-      \field{title}{Fully convolutional networks for semantic segmentation}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Fully Convolutional Networks for segmentation segmentation}
       \field{year}{2015}
-      \field{pages}{3431\bibrangedash 3440}
-      \range{pages}{10}
       \verb{doi}
       \verb 10.1109/CVPR.2015.7298965
       \endverb
@@ -1049,32 +1299,31 @@
            given={Richard},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=9147b1a8523fee33e02ea8ada6fde536}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Fei-Fei},
-           giveni={F\bibinithyphendelim F\bibinitperiod},
-           givenun=1}}%
+        {{un=0,uniquepart=base,hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
+           family={Fei-Fei},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \strng{fullhash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \strng{bibnamehash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \strng{authorbibnamehash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \strng{authornamehash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \strng{authorfullhash}{f0f7ab866b2f3b8a0f860b6b6ccade5f}
-      \field{labelalpha}{LSL09}
+      \strng{namehash}{68c604435c768694a3f5b527d244802f}
+      \strng{fullhash}{68c604435c768694a3f5b527d244802f}
+      \strng{bibnamehash}{68c604435c768694a3f5b527d244802f}
+      \strng{authorbibnamehash}{68c604435c768694a3f5b527d244802f}
+      \strng{authornamehash}{68c604435c768694a3f5b527d244802f}
+      \strng{authorfullhash}{68c604435c768694a3f5b527d244802f}
+      \field{labelalpha}{LSF09}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops 2009}
-      \field{month}{06}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Towards total scene understanding: Classification, annotation and segmentation in an automatic framework}
       \field{year}{2009}
       \field{pages}{2036\bibrangedash 2043}
       \range{pages}{8}
       \verb{doi}
-      \verb 10.1109/CVPRW.2009.5206718
+      \verb 10.1109/CVPR.2009.5206718
       \endverb
     \endentry
     \entry{Man18-DEXTR}{inproceedings}{}
@@ -1098,8 +1347,8 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=991d15a9ac8c45292e2aa7bfc8c28007}{%
-           family={{Van Gool}},
-           familyi={V\bibinitperiod},
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
            given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
@@ -1115,9 +1364,14 @@
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR)}
-      \field{title}{Deep Extreme Cut: From Extreme Points to Object Segmentation}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Extreme Cut: From Extreme Points to Object segmentation}
       \field{year}{2018}
+      \field{pages}{616\bibrangedash 625}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CVPR.2018.00071
+      \endverb
     \endentry
     \entry{Men15-AutonVehicles}{inproceedings}{}
       \name{author}{2}{}{%
@@ -1145,13 +1399,103 @@
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{06}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Object scene flow for autonomous vehicles}
       \field{year}{2015}
       \field{pages}{3061\bibrangedash 3070}
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/CVPR.2015.7298925
+      \endverb
+    \endentry
+    \entry{Maj20-One-Click}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2618fc47832a811e82325662946a43b8}{%
+           family={Majumder},
+           familyi={M\bibinitperiod},
+           given={Soumajit},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0eb59b1a91b2d44802fe6d15ff448b2d}{%
+           family={Khurana},
+           familyi={K\bibinitperiod},
+           given={Ansh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6493b49f57c350309098b0b4d3e923c}{%
+           family={Angela\bibnamedelima Yao},
+           familyi={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           given={Abhinav\bibnamedelima Rai},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={and},
+           prefixi={a\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{9953244b149943b277bce94656dcda63}
+      \strng{fullhash}{9953244b149943b277bce94656dcda63}
+      \strng{bibnamehash}{9953244b149943b277bce94656dcda63}
+      \strng{authorbibnamehash}{9953244b149943b277bce94656dcda63}
+      \strng{authornamehash}{9953244b149943b277bce94656dcda63}
+      \strng{authorfullhash}{9953244b149943b277bce94656dcda63}
+      \field{labelalpha}{MKA20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{DAGM German Conference on Pattern Recognition (GCPR)}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Multi-stage Fusion for One-Click Segmentation}
+      \field{volume}{12544}
+      \field{year}{2020}
+      \field{pages}{174\bibrangedash 187}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/978-3-030-71278-5\_13
+      \endverb
+    \endentry
+    \entry{MVL18-ITIS}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4fb23db0a87d68adac6e6ace61709dff}{%
+           family={Mahadevan},
+           familyi={M\bibinitperiod},
+           given={Sabarinath},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f216a3bd9b455b394f1010a5201ddf46}{%
+           family={Voigtlaender},
+           familyi={V\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89e3f1ee83923a2c7a44b7597b35fccd}{%
+           family={Leibe},
+           familyi={L\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \strng{fullhash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \strng{bibnamehash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \strng{authorbibnamehash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \strng{authornamehash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \strng{authorfullhash}{09950e052558233c9d7ac2fc9cbabc8a}
+      \field{labelalpha}{MVL18}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{British Machine Vision Conference (BMVC)}
+      \field{title}{Iteratively Trained Interactive Segmentation}
+      \field{year}{2018}
+      \field{pages}{212}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb http://bmvc2018.org/contents/papers/0652.pdf
+      \endverb
+      \verb{url}
+      \verb http://bmvc2018.org/contents/papers/0652.pdf
       \endverb
     \endentry
     \entry{Neu17-MapillaryDataset}{inproceedings}{}
@@ -1168,11 +1512,11 @@
            given={Tobias},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e1629ebec2b28f0c5545beb8c91e1773}{%
-           family={Rota\bibnamedelima Bulò},
-           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Samuel},
-           giveni={S\bibinitperiod},
+        {{un=0,uniquepart=base,hash=dd963f1a269bff9fd0d1c69849c6c33a}{%
+           family={Bulò},
+           familyi={B\bibinitperiod},
+           given={Samuel\bibnamedelima Rota},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=b4077a7f373f389c03be04898000050c}{%
            family={Kontschieder},
@@ -1181,25 +1525,24 @@
            giveni={P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{43ef98eb0e4846dc4ac9684463fbc9f9}
-      \strng{fullhash}{43ef98eb0e4846dc4ac9684463fbc9f9}
-      \strng{bibnamehash}{43ef98eb0e4846dc4ac9684463fbc9f9}
-      \strng{authorbibnamehash}{43ef98eb0e4846dc4ac9684463fbc9f9}
-      \strng{authornamehash}{43ef98eb0e4846dc4ac9684463fbc9f9}
-      \strng{authorfullhash}{43ef98eb0e4846dc4ac9684463fbc9f9}
+      \strng{namehash}{2306660db48d1e8e40072da91a0a5224}
+      \strng{fullhash}{2306660db48d1e8e40072da91a0a5224}
+      \strng{bibnamehash}{2306660db48d1e8e40072da91a0a5224}
+      \strng{authorbibnamehash}{2306660db48d1e8e40072da91a0a5224}
+      \strng{authornamehash}{2306660db48d1e8e40072da91a0a5224}
+      \strng{authorfullhash}{2306660db48d1e8e40072da91a0a5224}
       \field{labelalpha}{Neu+17}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{International Conference on Computer Vision (ICCV)}
-      \field{title}{The Mapillary Vistas Dataset for Semantic Understanding of Street Scenes}
+      \field{booktitle}{IEEE International Conference on Computer Vision (ICCV)}
+      \field{title}{The Mapillary Vistas Dataset for segmentation Understanding of Street Scenes}
       \field{year}{2017}
-      \verb{urlraw}
-      \verb https://www.mapillary.com/dataset/vistas
-      \endverb
-      \verb{url}
-      \verb https://www.mapillary.com/dataset/vistas
+      \field{pages}{5000\bibrangedash 5009}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICCV.2017.534
       \endverb
     \endentry
     \entry{NHH15-DeConvNet}{inproceedings}{}
@@ -1234,8 +1577,8 @@
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2015 IEEE International Conference on Computer Vision (ICCV)}
-      \field{title}{Learning Deconvolution Network for Semantic Segmentation}
+      \field{booktitle}{IEEE International Conference on Computer Vision (ICCV)}
+      \field{title}{Learning Deconvolution Network for segmentation segmentation}
       \field{year}{2015}
       \field{pages}{1520\bibrangedash 1528}
       \range{pages}{9}
@@ -1243,7 +1586,47 @@
       \verb 10.1109/ICCV.2015.178
       \endverb
     \endentry
-    \entry{RF15-U-Net}{article}{}
+    \entry{NS94-Watershed}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b58b782806ec15222ca08732b16dd6e4}{%
+           family={Najman},
+           familyi={N\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26bc99340c0aa3f557ea8527e9c71abd}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5289c1278b03fcb49b65e320c42262e5}
+      \strng{fullhash}{5289c1278b03fcb49b65e320c42262e5}
+      \strng{bibnamehash}{5289c1278b03fcb49b65e320c42262e5}
+      \strng{authorbibnamehash}{5289c1278b03fcb49b65e320c42262e5}
+      \strng{authornamehash}{5289c1278b03fcb49b65e320c42262e5}
+      \strng{authorfullhash}{5289c1278b03fcb49b65e320c42262e5}
+      \field{labelalpha}{NS94}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Signal Processing}
+      \field{number}{1}
+      \field{title}{Watershed of a Continuous Function}
+      \field{volume}{38}
+      \field{year}{1994}
+      \field{pages}{99\bibrangedash 112}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/0165-1684(94)90059-0
+      \endverb
+    \endentry
+    \entry{RF15-U-Net}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
            family={Ronneberger},
@@ -1275,19 +1658,54 @@
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
-      \field{volume}{abs/1505.04597}
+      \field{booktitle}{Medical Image Computing and Computer-Assisted Intervention (MICCAI)}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image segmentation}
       \field{year}{2015}
-      \verb{eprint}
-      \verb 1505.04597
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-24574-4_28
       \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1505.04597
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1505.04597
+    \endentry
+    \entry{RKB04-GrabCut}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=574542c2f7c4308c28c190f314a2de4c}{%
+           family={Rother},
+           familyi={R\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2f15cfb437774c22b5947d50bf3de13}{%
+           family={Kolmogorov},
+           familyi={K\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce1ee0c7b0f0c05c900a3a8391793436}{%
+           family={Blake},
+           familyi={B\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \strng{fullhash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \strng{bibnamehash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \strng{authorbibnamehash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \strng{authornamehash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \strng{authorfullhash}{faace2f1da6b88b9e9d395e7996d80f4}
+      \field{labelalpha}{RKB04}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ACM SIGGRAPH 2004 Papers}
+      \field{title}{"GrabCut": Interactive Foreground Extraction Using Iterated Graph Cuts}
+      \field{year}{2004}
+      \field{pages}{309\bibrangedash 314}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/1186562.1015720
       \endverb
     \endentry
     \entry{Sha18-DLCV}{book}{}
@@ -1305,6 +1723,9 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Birmingham, United Kingdom}%
+      }
       \list{publisher}{1}{%
         {Packt Publishing}%
       }
@@ -1320,7 +1741,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781788295628}
-      \field{title}{Deep Learning for Computer Vision: Expert Techniques to Train Advanced Neural Networks Using TensorFlow and Keras}
+      \field{title}{Deep Learning for Computer Vision}
       \field{year}{2018}
       \verb{urlraw}
       \verb https://books.google.de/books?id=dgdOswEACAAJ
@@ -1329,7 +1750,7 @@
       \verb https://books.google.de/books?id=dgdOswEACAAJ
       \endverb
     \endentry
-    \entry{SZ15-VGG16}{misc}{}
+    \entry{SZ15-VGG16}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=9d16b7284df92c9adaee86c37ab992df}{%
            family={Simonyan},
@@ -1344,22 +1765,40 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \name{editor}{2}{}{%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
       \strng{namehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{fullhash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{bibnamehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{authornamehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{editorbibnamehash}{afe3c75951d1843ce2846d6c16647f41}
+      \strng{editornamehash}{afe3c75951d1843ce2846d6c16647f41}
+      \strng{editorfullhash}{afe3c75951d1843ce2846d6c16647f41}
       \field{labelalpha}{SZ15}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
+      \field{booktitle}{3rd International Conference on Learning Representations}
       \field{title}{Very Deep Convolutional Networks for Large-Scale Image Recognition}
       \field{year}{2015}
-      \verb{eprint}
-      \verb 1409.1556
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1409.1556
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1409.1556
       \endverb
     \endentry
     \entry{Tran19-BloodCell}{inproceedings}{}
@@ -1406,13 +1845,66 @@
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2018 IEEE International Conference on Electronics and Communication Engineering (ICECE)}
-      \field{title}{Blood Cell Images Segmentation using Deep Learning Semantic Segmentation}
+      \field{booktitle}{IEEE International Conference on Electronics and Communication Engineering (ICECE)}
+      \field{title}{Blood Cell Images segmentation using Deep Learning segmentation segmentation}
       \field{year}{2018}
       \field{pages}{13\bibrangedash 16}
       \range{pages}{4}
       \verb{doi}
       \verb 10.1109/ICECOME.2018.8644754
+      \endverb
+    \endentry
+    \entry{Xu16-InteractiveObjectSelection}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=7d37b8eddbfa29411e3973fce2cd7773}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dfa99f16a9c255f04a60fe7e9ab8c821}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74c2067d921dddf57370b00772c2b5fe}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97818b77246970c2c7705d5072d62a59}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jimei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e886c8b7a02b34d7438382dfd3c7db2a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{119c6afdf7c4997260e4c2330cad107e}
+      \strng{fullhash}{919ac8e91564d988e2f4c7876a700da2}
+      \strng{bibnamehash}{919ac8e91564d988e2f4c7876a700da2}
+      \strng{authorbibnamehash}{919ac8e91564d988e2f4c7876a700da2}
+      \strng{authornamehash}{119c6afdf7c4997260e4c2330cad107e}
+      \strng{authorfullhash}{919ac8e91564d988e2f4c7876a700da2}
+      \field{labelalpha}{Xu+16}
+      \field{sortinit}{X}
+      \field{sortinithash}{e90038f30fa4b9ce59606fc8347e3cc7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Interactive Object Selection}
+      \field{year}{2016}
+      \field{pages}{373\bibrangedash 381}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/CVPR.2016.47
       \endverb
     \endentry
     \entry{Zhao17-PSP}{inproceedings}{}
@@ -1459,9 +1951,14 @@
       \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Computer Vision and Pattern Recognition (CVPR)}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Pyramid Scene Parsing Network}
       \field{year}{2017}
+      \field{pages}{6230\bibrangedash 6239}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CVPR.2017.660
+      \endverb
     \endentry
     \entry{Zha20-IOG}{inproceedings}{}
       \name{author}{5}{}{%
@@ -1471,12 +1968,12 @@
            given={Shiyin},
            giveni={S\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=b4550097950899197ea81fbc998687b7}{%
+        {{un=1,uniquepart=given,hash=b4550097950899197ea81fbc998687b7}{%
            family={Liew},
            familyi={L\bibinitperiod},
            given={Jun\bibnamedelima Hao},
            giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=c600a8d986504b864d4994f2eed6156f}{%
            family={Wei},
            familyi={W\bibinitperiod},
@@ -1507,13 +2004,16 @@
       \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
-      \field{title}{Interactive Object Segmentation With Inside-Outside Guidance}
+      \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Interactive Object segmentation With Inside-Outside Guidance}
       \field{year}{2020}
-      \field{pages}{12234\bibrangedash 12244}
+      \field{pages}{12231\bibrangedash 12241}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/CVPR42600.2020.01225
+      \endverb
     \endentry
-    \entry{Bengar2019-Temporal}{article}{}
+    \entry{Zol19-Temporal}{inproceedings}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=e20fd79fa8f3ada073dc5ebe04928000}{%
            family={Zolfaghari\bibnamedelima Bengar},
@@ -1539,11 +2039,11 @@
            given={Bogdan},
            giveni={B\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4c8db6e69a5c1d7b24dabaf9ce856868}{%
-           family={Aghdam},
-           familyi={A\bibinitperiod},
-           given={Hamed\bibnamedelima H},
-           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+        {{un=0,uniquepart=base,hash=c4e7419f4d431c7bd16ba0948e51b3c1}{%
+           family={Habibi\bibnamedelima Aghdam},
+           familyi={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=4bde4de3490297bf19528cbd085c0e92}{%
            family={Mozerov},
@@ -1554,7 +2054,7 @@
         {{un=0,uniquepart=base,hash=749ec952a5e4a3a5b0711577ba93fb67}{%
            family={Lopez},
            familyi={L\bibinitperiod},
-           given={Antonio\bibnamedelima M},
+           given={Antonio\bibnamedelima M.},
            giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=bce9b338a10fcb65e3fb5392f89732f5}{%
@@ -1568,19 +2068,93 @@
            prefixun=0}}%
       }
       \strng{namehash}{7fb6f5cfb4f43d9fcf546e86929b720a}
-      \strng{fullhash}{d0c5aeff02b2e8ee58062acc5b341248}
-      \strng{bibnamehash}{d0c5aeff02b2e8ee58062acc5b341248}
-      \strng{authorbibnamehash}{d0c5aeff02b2e8ee58062acc5b341248}
+      \strng{fullhash}{375944d069fd4b04f9107ccc451f2f74}
+      \strng{bibnamehash}{375944d069fd4b04f9107ccc451f2f74}
+      \strng{authorbibnamehash}{375944d069fd4b04f9107ccc451f2f74}
       \strng{authornamehash}{7fb6f5cfb4f43d9fcf546e86929b720a}
-      \strng{authorfullhash}{d0c5aeff02b2e8ee58062acc5b341248}
+      \strng{authorfullhash}{375944d069fd4b04f9107ccc451f2f74}
       \field{labelalpha}{Zol+19}
       \field{sortinit}{Z}
       \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1908.11757}
+      \field{booktitle}{IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)}
       \field{title}{Temporal Coherence for Active Learning in Videos}
       \field{year}{2019}
+      \field{pages}{914\bibrangedash 923}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICCVW.2019.00120
+      \endverb
+    \endentry
+    \entry{Zoph20-EfficientNet}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=5bd998e520b36d0d6f616f399068dcee}{%
+           family={Zoph},
+           familyi={Z\bibinitperiod},
+           given={Barrett},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13a058656fdbdf7b306e1bcfa5ce2d93}{%
+           family={Ghiasi},
+           familyi={G\bibinitperiod},
+           given={Golnaz},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5be07c427051f588ee76d0a1251cfe65}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36f768d557ebd6960e735fda4fd686c7}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Hanxiao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31e3846ac865cf918de1a6029f3d963d}{%
+           family={Cubuk},
+           familyi={C\bibinitperiod},
+           given={Ekin\bibnamedelima Dogus},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=841a83a4bb5e622d6e1bde4818879016}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{758fe39659c652ff8a85cbdd15275d55}
+      \strng{fullhash}{04e4a91aafb5127b8249c98ec021d6d0}
+      \strng{bibnamehash}{04e4a91aafb5127b8249c98ec021d6d0}
+      \strng{authorbibnamehash}{04e4a91aafb5127b8249c98ec021d6d0}
+      \strng{authornamehash}{758fe39659c652ff8a85cbdd15275d55}
+      \strng{authorfullhash}{04e4a91aafb5127b8249c98ec021d6d0}
+      \field{labelalpha}{Zop+20}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Rethinking Pre-training and Self-training}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{3833\bibrangedash 3845}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper/2020/hash/27e9661e033a73a6ad8cefcde965c54d-Abstract.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper/2020/hash/27e9661e033a73a6ad8cefcde965c54d-Abstract.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

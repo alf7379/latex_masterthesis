@@ -5,8 +5,7 @@
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
 \input{settings/settings}
-%\include{settings/acronyms}glossaries
-\include{settings/glossaries}
+% \include{settings/glossaries}
 
 \newcommand*{\getUniversity}{University of Applied Sciences Munich}
 \newcommand*{\getFaculty}{Department of Computer Science and Mathematics}
@@ -22,6 +21,7 @@
 
 %\includeonly{chapters/03_chapter03/chapter3}
 \begin{document}
+	
 % Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
 % (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
 \pagenumbering{alph}
@@ -33,7 +33,10 @@
 \include{pages/disclaimer}
 \include{pages/acknowledgments}
 \include{pages/abstract}
+
+\include{settings/acronyms}
 \microtypesetup{protrusion=false}
+\setcounter{tocdepth}{1}
 \tableofcontents{}
 \microtypesetup{protrusion=true}
 
@@ -52,7 +55,9 @@
 \listoffigures{}
 \listoftables{}
 \microtypesetup{protrusion=true}
+%\printglossary[type=acronymtype, nonumberlist] % type=main,style=long
 \printglossaries{}
+%\printacronyms{}
 \printbibliography{}
 
 \end{document}

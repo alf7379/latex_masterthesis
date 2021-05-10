@@ -1,187 +1,320 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Semantic Image Segmentation}\label{ord:ch2:sec2}
+\section{Image Segmentation}\label{ord:ch2:sec2}
 
 \subsection{General}\label{ord:ch2:sec2:subsec1}
+Image segmentation is an advanced task of modern computer vision.
+The term \emph{segmentation} means to obtain regions or structures from an image.
+In order to partition the image into segments a high level of understanding is required.
+Modern techniques of \gls{dl} have proven themselves to be most adequate for this task.
+Deep \glspl{cnn} are usually applied nowadays to perform image segmentation.
+In this context segmentation is treated as a classification task with $K$ classes.
+A class $k$ is assigned to every pixel of the image.
+The output is a segmentation map, which has the size of the input image each pixel containing a label of its class $k$. 
+Pixels with a the same class label form a segment, that may be further processed afterwards.
+There two main variants to perform image segmentation:
+\begin{itemize}
+	% Semantic segmentation
+	\item \textbf{Semantic segmentation} classifies each pixel with one class.
+	There is no differentiation made if there are multiple objects of one class, they all belong to the same segment.
+	% Instance segmentation
+	\item \textbf{Instance segmentation} differentiates between different objects, which have the same class, by assigning them a unique label.
+	In the result several segments may have the same class, but are treated as independent instances of this class.
+\end{itemize}
 
-Semantic Image Segmentation is an advanced task of modern computer vision.
-In general, segmentation means to obtain regions or structures from an image and portioning the image into segments.
-So instead of processing the image, this approach aims to achieve a high level understanding of the image.
-In the scope of semantic Image Segmentation, the segmentation is performed on pixel level trough the classification of each pixel in an image. 
-Pixels with a common class form a segment.
+% Supervised-learning, data with labels on pixel-level.
+As classification is a problem of supervised learning, this also applies on image segmentation.
+Therefore, a dataset with labels on pixel-level is required.
+A label $\hat{y}$ is represented by a map, that has the same size as the corresponding input image $x$ and contains a class label for each pixel $\hat{y}_{rc}$ with $r$ and $c$ referring to the corresponding row and column of the map. 
+In this context the label $\hat{y}$ is also referred to as mask or \gls{gt}.
 
-In order to fulfill this target modern techniques of Deep Learning have proven themselves to be most adequate for this task.
-Usually deep convolution networks are applied to process the input image and output a segmentation results.
-As this forms a problem of supervised learning, a dataset with labels on pixel-level is required.
-
-
-Further, there also exists the Semantic Instance Segmentation, which not only aims to predict one class, but also several instances of one class.
-
-
-
-
-
-
-
-
-
+% Loss function.
+To train a segmentation network a loss function is required, that considers the loss of every pixel in the image and optimizes the prediction for each pixel individually.
+In \cite{Jad20-LossFunction} several loss functions are examined.
+Jadon concludes, that there is no universal loss function, instead their performance depends on the characteristics of the dataset.
+Cross entropy loss works best on a balanced dataset, while for imbalanced datasets the dice coefficient or focal loss is suitable.
 
 
 \subsection{Evaluation Metric}\label{ord:ch2:sec2:subsec2}
-To ensure an objective comparison of several methods a evaluation metric is required, which incorporates the basic idea of semantic segmentation.
-As this challenge is an classification task on pixel-level, a measure of evaluation is the Overall Pixel (OP) accuracy, which represents the proportion of all correctly labeled pixels in an image.
+To ensure an objective comparison of several methods a evaluation metric is required, which incorporates the basic idea of segmentation.
+As this challenge is an classification task on pixel-level, a measure of evaluation is the \gls{op} accuracy, which represents the proportion of all correctly labeled pixels in an image.
 % "One significant limitation of this measure is its bias in the presence of very imbalanced classes. This is the case for the background class on PASCAL VOC datasets, which covers 70-75% of all pixels" \cite{Csu13-EvalMetric}
-Further, the OP measurement can be refined by calculating the accuracy for each class.
-This results in the Per-Class (PC) accuracy, which represents the proportion of correctly labeled pixels of one class.
+Further, the \gls{op} measurement can be refined by calculating the accuracy for each class.
+This results in the \gls{pc} accuracy, which represents the proportion of correctly labeled pixels of one class.
 %TODO define "true positives" etc. in Chapter2 Section1
-The most commonly used evaluation metric is the Jaccard Index, also known as the Intersection over Union (IoU), which is used in the PASCAL VOC challenge \cite{Eve20-PascalVOC} since 2008 \cite{Csu13-EvalMetric}. 
-The IoU measures the ratio of overlap between GT and prediction (true positives) and of the total area. 
+The most commonly used evaluation metric is the \gls{iou}, also known as the Jaccard Index, which is used in the PASCAL VOC challenge \cite{Eve20-PascalVOC} since 2008 \cite{Csu13-EvalMetric}. 
+The \gls{iou} measures the ratio of overlap (true positives) between \gls{gt} and prediction and of the total area. 
 It is defined as
 \begin{equation} \label{equ:iou}
 	\centering
 	IoU = \frac{\textnormal{true positives}}{\textnormal{true positives} + \textnormal{false negatives} + \textnormal{ false positves}}
 \end{equation}
-and is calculated for each instance or semantic class.
-To evaluate all instances or classes of an image or a dataset the IoU is averaged, which results in the \textit{mean Intersection over Union} (mIoU) \cite{TF21-MeanIoU} \cite{Fer19-SemSeg}.
+and is calculated for each instance or segmentation class.
+To evaluate all instances or classes of an image or a dataset the \gls{iou} is averaged, which results in the \gls{miou} 
+\footnote{TensorFlow, \textit{tf.keras.metrics.MeanIoU}: \url{https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU}}.
 
 \begin{figure}
 	\includegraphics[scale=0.5]{figures/chap222_iou.png}
-	\caption{Intersection over Union. The \textit{area of overlap} represents the intersection of the GT with the made prediction. The \textit{area of union} represents the amount of the total area of GT and prediction \cite{Sha18-DLCV}.}
+	\caption[Intersection over Union]{
+		\glsentrylong{iou}. The \textit{area of overlap} represents the intersection of the \gls{gt} with the made prediction. 
+		The \textit{area of union} represents the total area of \gls{gt} and the prediction \cite{Sha18-DLCV}.}
 	\label{fig:ch2:sec2:iou}
 \end{figure}
+% TODO get licence or change grafic 
 
-An advantage is the inclusion of \textit{false positives} and \textit{false negatives} into the IoU calculation.
-A limitation of the IoU metric is that the correctness of the segments boundaries is not taken into account, as discussed in \cite{Csu13-EvalMetric}. 
-For this issue they suggest to combine the IoU with another complementary metric, evaluating the boundary of a segment.
-Regardless the IoU is a suitable and commonly used metric for semantic segmentation.
+An advantage of this metric is the inclusion of \textit{false positives} and \textit{false negatives} into the calculation.
+A limitation of the \gls{iou} metric is that the correctness of the segments boundaries is not taken into account. 
+In order to compensate this issue, Csurka suggests in \cite{Csu13-EvalMetric} to combine the \gls{iou} with another complementary metric, evaluating the boundary of a segment.
+Regardless, the \gls{iou} is a suitable and informative metric, which is also the most common to evaluate semantic segmentation models.
 
 
 
 \subsection{Architecture}\label{ord:ch2:sec2:subsec3}
-The established network architectures for the task of image classification follow a common scheme: 
-An input image with lots of features is processed and continuously downsized to make only one prediction.
-% For image classification there are established architectures that follow one scheme deep neural networks (DNN) with many layers as \eg VGG-16 \cite{SZ15-VGG16}.
-% While processing the input image feature maps continuously get smaller, because only one class is predicted.
-In contrast, for semantic image segmentation a class is predicted for each pixel of the image.
-Therefore some kind of enlargement in the architecture is required to enable the model to make that high amount of predictions.
-% To make this kind of prediction possible, also a reinvention in architecture was required, that enables the model to make that high amount of predictions.
-In the following important architectures and their characteristics are examined.
+For image classification established \gls{cnn} architectures follow a common scheme: 
+A multi dimensional input image is processed and continuously downsized to a one dimensional tensor in order to make one prediction.
+In contrast, for image segmentation a prediction is made for each pixel of the image.
+Therefore, an adaption in architecture required, that enables the model to make a prediction for every pixel of the image.
+In the following characteristics of important architectures and components are examined.
 
 \subsubsection{Encoder-Decoder-Architecture}
-The Encoder-Decoder-Architecture as its name anticipates is based on two main parts: the encoder network and the decoder network, visualized in Figure \ref{fig:ch2:sec2:encoder-decoder}.
+The Encoder-Decoder-Architecture as its name anticipates is based on two main parts: the encoder network and the decoder network, visualized in Figure \ref{fig:ch2:sec2:encoder-decoder}. 
+Representatives of the encoder-decoder-architecture are among others the U-Net \cite{RF15-U-Net}, the DeConvNet \cite{NHH15-DeConvNet} and the SegNet \cite{Bad17-SegNet}.
 
-The encoder network is very similar to a CNN.
+The encoder network is very similar to a \gls{cnn}.
 It consists out of convolution and pooling layers, that reduce the size of the feature maps and extract features.
-The encoder networks of the DeConvNet \cite{NHH15-DeConvNet} and the SegNet \cite{Bad17-EncoderDecoder} even mostly include parts of a popular CNN, the VGG-16 \cite{SZ15-VGG16}. 
+The encoder networks of the DeConvNet \cite{NHH15-DeConvNet} and the SegNet \cite{Bad17-SegNet} are even represented by of a popular \gls{cnn}, the VGG-16 \cite{SZ15-VGG16}. 
 In this context the process of applying the encoder network is also called \textit{downsampling}, due to the size reduction of the feature maps.
 
 The decoder network is the counterpart of the encoder network.
 It reconstructs the feature maps to their original size, which is also referred to as \textit{upsampling}.
 To reach this original size often a reversed architecture of the encoder network is used.
-The elemental components of this reconstruction are the operations \textit{unpooling} and \textit{transpose convolution}.
+The elemental components of this reconstruction are the operations \textit{unpooling} and \textit{transpose convolution}, introduced in the following.
 
-After the encoder network a generally a softmax classifier is applied, that creates a prediction in the form of a probability map.
-% probability map with K channels, one channel per class k
+After the encoder network generally a softmax classifier is applied, that predicts the class for each pixel.
+The output is a probability map with $K$ channels for $K$ number of classes \cite{Bad17-SegNet}.
+% TODO introduce K as number of classes.
 
-% We can observe that coarse-tofine object structures are reconstructed through the propagation in the deconvolutional layers; lower layers tend to capture overall coarse configuration of an object (e.g. location, shape and region), while more complex patterns are discovered in higher layers. Note that unpooling and deconvolution play different roles for the construction of segmentation masks. Unpooling captures example-specific structures by tracing the original locations with strong activations back to image space. As a result, it effectively reconstructs the detailed structure of an object in finer resolutions. On the other hand, learned filters in deconvolutional layers tend to capture class-specific shapes. Through deconvolutions, the activations closely related to the target classes are amplified while noisy activations from other regions are suppressed effectively. By the combination of unpooling and deconvolution, our network generates accurate segmentation maps \cite{NHH15-DeConvNet}.
-
-
-Representatives of the encoder-decoder-architecture are among others the U-Net \cite{RF15-U-Net}, the DeConvNet \cite{NHH15-DeConvNet} and the SegNet \cite{Bad17-EncoderDecoder}.
-\cite{SZ15-VGG16}
 \begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap223_SegNetArch.png}
-	\caption{Encoder-Decoder-Architecture \cite{Bad17-EncoderDecoder}. On the left the encoder network, which reduces the size of the feature maps while processing. On the right is the decoder network, which reconstructs the feature map to the size of the original input. The yellow layer on the very right is the classification layer, here represented as softmax layer to create the output segmentation.}
+	\includegraphics[width=\linewidth]{figures/chap223_segnet_arch.png}
+	\caption[Encoder-Decoder-Architecture]{
+		Encoder-Decoder-Architecture from SegNet. 
+		On the left the encoder network, which reduces the size of the feature maps while processing. 
+		On the right is the decoder network, which reconstructs the feature map to the size of the original input. 
+		The yellow layer on the very right is the classification layer, here represented as softmax layer to create the output segmentation. 
+		Copyright \copyright 2017 Creative Commons License. Reprinted by permission from \cite{Bad17-SegNet}.}
 	\label{fig:ch2:sec2:encoder-decoder}
 \end{figure}
 
-\paragraph{Unpooling}
-\cite{Li17-StanfordLecture}
-\cite{NHH15-DeConvNet}
+\paragraph{Unpooling.}
+The unpooling operation is the equivalent of the pooling operation.
+Instead of reducing the size of feature maps $F^{n}_{c}$, they are enlarged.
+%TODO define $F^{n}_{c}$ 
+%TODO define what is learning?
+As for pooling, no features are learned and there exist multiple methods to perform unpooling, two of them are illustrated in Figure \ref{fig:ch2:sec2:unpooling_1}.
+Nevertheless, unpooling is not capable to fully reconstruct information lost during the process of downsampling.
+The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while for \textit{nearest neighbor} the feature maps $F^{n}_{c}$ contain redundant information.
+% In order to achieve a fine and detailed segmentation result, this is an interfering effect.
+%For an architecture with max pooling and a mirrored structure of encoder and decoder network, this effect can be mitigated by saving the location of the maximal value during max pooling.
+% In the following the unpooling result can be specified based on this information, as exemplified in Figure \ref{fig:ch2:sec2:unpooling_2} \cite{NHH15-DeConvNet} \cite{Fer19-SemSeg}.
 
-\paragraph{Transpose Convolution}
-\cite{Dum18-ConvolutionArithmetic}
-
+% TODO recreate figure by myself with drawing program.
 \begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap223_TransposeConv.png}
-	\caption{tbd}
-	\label{fig:ch2:sec2:transpose-conv}
+	\includegraphics[width=\linewidth]{figures/chap223_unpooling1.png}
+	\caption[Unpooling methods \textit{nearest neighbor} and \textit{bed of nails}]{
+		Unpooling methods \textit{nearest neighbor} and \textit{bed of nails}.
+		With \textit{nearest neighbor} enlarged feature maps are filled up with the same input value. 
+		With \textit{bed of nails} sparse feature maps are created, that contain the input value filled up with zeros.
+		\textit{TODO recreate figure with drawing program}}	
+	\label{fig:ch2:sec2:unpooling_1}
+\end{figure}
+% \footref{fn:LJY10_StanfordLecture}
+%	\footnotemark{\ref{footnote:LJY10_StanfordLecture}} 
+
+% \begin{figure}
+% 	\includegraphics[width=\linewidth]{figures/chap223_unpooling2.png}
+% 	\caption[Max Unpooling]{\textit{Max unpooling} \cite{Li17-StanfordLecture}. During max pooling the location of the maximal element is remembered. During max unpooling this location-information is reapplied to achieve a specified result, compared to the \textit{bed of nails} method.}
+%	\label{fig:ch2:sec2:unpooling_2}
+%\end{figure}
+
+% We can observe that coarse-tofine object structures are reconstructed through the propagation in the deconvolutional layers; lower layers tend to capture overall coarse configuration of an object (e.g. location, shape and region), while more complex patterns are discovered in higher layers. 
+% Note that unpooling and deconvolution play different roles for the construction of segmentation masks. Unpooling captures example-specific structures by tracing the original locations with strong activations back to image space. As a result, it effectively reconstructs the detailed structure of an object in finer resolutions. On the other hand, learned filters in deconvolutional layers tend to capture class-specific shapes. Through deconvolutions, the activations closely related to the target classes are amplified while noisy activations from other regions are suppressed effectively. By the combination of unpooling and deconvolution, our network generates accurate segmentation maps \cite{NHH15-DeConvNet}.
+
+\paragraph{Transposed Convolution.}
+As for pooling it is unpooling, the counterpart of convolution is transposed convolution
+\footnote{Vincent Dumoulin and Francesco Visin, 2018, "A guide to convolution arithmetic for deep learning": \url{https://arxiv.org/abs/1603.07285}}
+\footnote{F.-F. Li, J. Johnson and S. Yeung, 2018, "Stanford Lecture Detection and Segmentation": \url{http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf}\label{fn:LJY10_StanfordLecture}}.
+%TODO define term hyperparameter.
+Therefore, these operations also share common features and characteristics, like learnable filters or hyperparameters as \textit{kernel size}, \textit{padding} and \textit{stride}.
+Transposes convolution can be used to enlarge feature maps or dense sparse feature maps, as created by the unpooling method "bed of nails".
+% TODO clarify if Noh or Noh et al.
+% Purpose of transposed conv for reconstruction.
+In \cite{NHH15-DeConvNet} Noh observes, that the lower layers of the decoder network handle coarse details (\eg location, shape and region), while the higher layers capture the fine and more complicated details.
+This leads to a coarse-to-fine approach for the reconstruction through the decoder network.
+In literature transposed convolution is also referred to as  \textit{deconvolution} \cite{NHH15-DeConvNet}, \textit{inverse convolution} \cite{Bad17-SegNet} or \textit{backwards convolution} \cite{LSD15-FCN}.
+
+% TODO recreate figure by myself with drawing program.
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap223_transpose_conv.png}
+	\caption[Transposed Convolution]{
+		Example of the transposed convolution \cite{Li17-StanfordLecture} with $kernal size = 3 \times 3$, $stride = 2$ and $padding = 1$. 
+		On the left is the input of size $2 \times 2$ \Unit{px} before the application of transposed convolution.
+		On the right is the output of size $4 \times 4$ \Unit{px}. 
+		The red and blue square visualize the application of the convolution kernel with $stride = 2$. 
+		\textit{TODO recreate figure with drawing program}}
+	\label{fig:ch2:sec2:transposed-conv}
 \end{figure}
 
-\subsubsection{Fully Convolutional Networks}
-\cite{LSD15-FCN}
+
+\subsubsection{Skip Connections} \label{ord:ch2:sec2:subsec3:skipconnections}
+Another architectural component frequently used for the task of image segmentation are skip connections, alternatively also named lateral or shortcut connections.
+A skip connection is a link between two layers, that are not ordered strictly consecutively. 
+The receiving layer may takes multiple inputs, one from the sequential previous layer and another from the layer connected by the skip connection.
+These inputs are combined by the concatenation operation
+\footnote{Concatenation is a frequently used operator to fuse multiple layer outputs in the form of tensors into a single tensor, as in PyTorch: \url{https://pytorch.org/docs/stable/generated/torch.cat.html}}.
+Skip connections can be integrated in other architectures as \eg the encoder-decoder-architecture from \cite{RF15-U-Net} shown in Figure \ref{fig:ch2:sec2:unet}.
+
 \begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap223_FCN.png}
-	\caption{tbd}
-	\label{fig:ch2:sec2:fcn}
-\end{figure}
-
-\paragraph{CRF}
-% \cite{Chen16-DeepLab}  --> Atrous Convolution, and Fully Connected CRFs
-\cite{Chen16-DeepLab}
-\cite{KK12-CRF}
-
-
-\paragraph{Atrous Spatial Pyramid Pooling}
-
-% \paragraph{Atrous Convolution}
-
-\subsubsection{Lateral connections}
-\cite{RF15-U-Net}
-\begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap223_Unet.png}
-	\caption{tbd}
+	\includegraphics[width=\linewidth]{figures/chap223_unet.png}
+	\caption[U-Net]{
+		U-Net architecture. The left part of the shown network architecture represents the encoder network, while the right part represents the decoder network. 
+		In between, the skip connections establish additional lateral links (visualized in gray) between the encoder and decoder network. 
+		The skip connections exist on several levels to persistently combine classification and localization information. 
+		Copyright \copyright 2015 Springer Nature. Reprinted by permission from \cite{RF15-U-Net}.}
 	\label{fig:ch2:sec2:unet}
 \end{figure}
 
+The task of segmentation segmentation aims to answer the questions of classification \emph{What is in the image?} and the question of localization \emph{Where is it in the image?}.
+While downsampling, the network extracts features and learns to answer the question of classification.
+During this process the size of feature maps decrease and localization information is lost.
+As a result it gets harder to perform a detailed reconstruction and answers the question of localization.
+% This is due irretrievable loss of information during downsampling.
+One solution to neutralize this effect, is the adverting from the idea of building a strictly sequential architecture and instead include skip connections.
+By doing so, layers that still contain localization information can be directly connected to layers that contain the developed classification information.
 
+The \gls{fcn} introduced by Long, is based on the encoder-decoder-architecture with a relatively small decoder.
+To compensate the absent of a deep decoder and refine the network, Long applies skip connections, that combine lower layers with the final prediction layer.
+In order to compare the effect of skip connections three models are created: one without skip-connection (\gls{fcn}-32s) and two with skip connection (\gls{fcn}-16s and \gls{fcn}-8s).
+The number indicates the upsampling factor required from this point to the final predictions.
+The \gls{fcn}-16s and \gls{fcn}-8s require less upsampling, due to their fusion with a lower layer.
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap223_fcn_results.png}	
+	\caption[\gls{fcn} Predictions]{
+		Results of several variants of the \gls{fcn}. 
+		It can be observed that the \gls{fcn}-32s creates a relatively coarse prediction compared to the networks with skip connections.
+		In contrast the \gls{fcn}-8s achieves the best result with significantly improved level of detail and sharper borders.
+		Copyright \copyright 2015 IEEE. Reprinted by permission from \cite{LSD15-FCN}.}
+	\label{fig:ch2:sec2:fcn_res}
+\end{figure}
+The results shown in Figure \ref{fig:ch2:sec2:fcn_res} highlight the effect of skip connections in order to solve the question of localization.
+
+\subsubsection{Pyramid Scene Parsing Network}
+% Problem / disadvantage of missing gobal context / subregions information
+In \cite{Zhao17-PSP} it is stated that in segmentation architectures the receptive field does not include enough context information.
+Further, Zhao claims that in order to differentiate between various classes the context information on global and subregion level is useful.
+To address this problem the \gls{psp} Network is introduced, that aims to enlarge the receptive field.
+% Idea: fused information from different subregions
+To improve the context information different subregions can be fused, similar as in \cite{He15-SPP}.
+% similar to \cite{He15-SPP} -> removes the fixed size contraint from CNNs
+In \cite{Zhao17-PSP} the pyramid pooling module is proposed, which is a hierarchical structure using multiple processing streams, also referred to as pyramid levels.
+Each pyramid level applies convolution operations with different filter sizes resulting in feature maps of different pyramid scales.
+Afterwards the feature maps are upsampled to a mutual size and then concatenated, as illustrated in Figure \ref{fig:ch2:sec2:psp}.
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap223_psp.png}
+	\caption[Pyramid Scene Parsing Network]{
+		\gls{psp} Network with the pyramid pooling module in the middle.
+		The pyramid pooling model contains four pyramid levels illustrated in different colors.
+		The respective sizes of the pyramid levels are $1 \times 1$, $2 \times 2$, $3 \times 3$ and  $6 \times 6$.
+		After the passage of the pyramid levels the results are upsampled and concatenated.
+		The number of pyramid levels and their size can be modified.
+		Copyright \copyright 2015 IEEE. Reprinted by permission from \cite{Zhao17-PSP}.}
+	\label{fig:ch2:sec2:psp}
+\end{figure}
+
+
+
+\subsubsection{DeepLab}
+DeepLab is a \gls{dl} model for semantic segmentation developed by researchers from Google and first published in \cite{Chen16-DeepLab}.
+In order to improve the segmentation result, three main techniques were introduced: Atrous Convolution, \gls{aspp} and \gls{crf}.
+\begin{itemize}
+	\item \textbf{Atrous convolution} or dilated convolution modifies the kernel used for the convolution operation. 
+	The size of the kernel is extended and the upcoming gabs between the parameters are filled up with zeros.
+	The benefit is the coverage of a greater receptive field, without increasing the number of convolution parameters and so the computational load.
+	\item \textbf{\gls{aspp}} is based on the concept of \gls{spp} introduced in \cite{He15-SPP}.
+	\gls{spp} aims to combine images of different resolutions in order to obtain multi-scale information without increasing the computation time.
+	\gls{aspp} applies atrous convolution to the concept of \gls{spp}.
+	A input is applied to several atrous convolution kernels of different sizes and the result is their combined output. 	
+	\item \textbf{\gls{crf}} aim to achieve sharper boundaries by considering the surrounding pixels before performing classification.
+	The functionality can be reviewed in detail in \cite{Chen16-DeepLab} and \cite{KK12-CRF}.
+	In contrast to most other segmentation models DeepLab does not use skip connections, but instead relies on \gls{crf} in order to recover fine details and the boundaries of objects to answer the question of localization.
+\end{itemize}
 
 \subsection{Data}\label{ord:ch2:sec2:subsec4}
-% TODO introduce GT in Subsec 1
-As semantic segmentation is a problem of supervised learning it requires labeled data (GT).
-For a dataset to be suitable in the field of DL among others the following criteria should be met: Quantity, quality and representation capabilities.
+As segmentation segmentation is a problem of supervised learning it requires \gls{gt}.
+For a dataset to be suitable in the field of \gls{dl} among others the following criteria should be met: quantity, quality and representation capabilities.
 \begin{itemize}
 	% Quantity data - size matters.
-	\item The quantity of a dataset used for training a DL model is crucial for its success.
+	\item The quantity of a dataset used for training a \gls{dl} model is crucial for its success.
 	In general, small datasets, may not cover all vital characteristics to completely map a given objective.
 	It has been shown in \cite{Banko01-ScalingData}, that the performance of networks can improve significantly using a larger dataset for training.
 	Also, in \cite{Halevy09-UnreasonableEffectivenessOfData} the effect of larger datasets is examined. 
-	It is claimed that, using a larger dataset for training can benefit the networks performance more than modifying the architecture of the network \cite{Ger17-HandsOn} \cite{Fer19-SemSeg}.
+	It is claimed that, using a larger dataset for training can benefit the networks performance more than modifying the architecture of the network \cite{Ger17-HandsOn}.
 	This highlights the importance of datasets with sufficient quantity to increase the performance of networks.
 	% Quality data.
-	\item The performance of a model highly depends on the quality of the training data. 
+	\item The quality of the training data has a high impact on the model performance as well.
 	Data, that is inconsistent, incomplete, erroneous or too noise, can lead to significant decrease in performance \cite{Gudivada2017-DataQuality}.
 	Training with poor quality data makes it more difficult for a model to detect and understand the elemental features and patterns, that are required by a model to perform well \cite{Ger17-HandsOn}.
-	% TODO affect of poor quality data for object detection or semantic segmentation. "With respect to the task of semantic segmentation correctness is very significant, for the accuracy of the edges is crucial if a pixel is labelled with the correct class or not."	
+	% TODO affect of poor quality data for object detection or segmentation segmentation. "With respect to the task of segmentation segmentation correctness is very significant, for the accuracy of the edges is crucial if a pixel is labelled with the correct class or not."	
 	% Representative data.
-	\item Another elemental characteristic of a dataset is the representation of the problem, that the corresponding network should solve.
+	\item The capability of dataset to represent a given problem is another elemental characteristic.
 	To enable a model to generalize and perform well, it is essential for the training data to be representative to the problem \cite{Ger17-HandsOn}.
 	The best approach to do so, is to include samples of this specific problem or of samples from the same domain.	
-	But instead, often general 'all-use-datasets', like Pascal VOC \cite{Eve20-PascalVOC}, COCO \cite{Lin14-Coco} or ImageNet \cite{Deng09-ImageNet}, are applied on a specific problem, that is not covered within the samples of these datasets.
+	But instead, often general 'all-use-datasets', like Pascal VOC \cite{Eve20-PascalVOC}, COCO \cite{Lin14-Coco} or ImageNet \cite{Deng09-ImageNet}, are used as training data on a specific problem, that is not covered within the samples of these datasets.
+	% TODO \cite{Xu16-InteractiveObjectSelection}  The performance is evaluated on MS COCO with seen and unseen categories. Two points can be seen here: 	1. The significant drop in IU (Intersection over Union) from seen to unseen categories.  2. This network using user interaction suffers a way smaller drop in IU.
 %	For example, the aim of a DL model may be to detect a certain manufacturing part from an industrial scope.
 %	But without a dataset that represents this problem well enough, by containing samples from industrial scopes, the performance of the DL model may be significantly worse.
-	This may results in a decrease of performance, because the capabilities of DL model are strongly connected with the representation of the data \cite{Goodfellow-et-al-2016}.
+	This may results in a decrease of performance, because the capabilities of \gls{dl} models are strongly connected with the representation of the data \cite{Goodfellow-et-al-2016}.
 \end{itemize} 
-% Very hard and expensive to obtain data for semantic segmentation and special domains.
+% Very hard and expensive to obtain data for segmentation segmentation and special domains.
 It can be a challenge to obtain a dataset, that meets these criteria.
-The creation of new image datasets can be considered very expensive in time and cost.
-Datasets for semantic segmentation are even more difficult to create due to the high effort required to label images on pixel-level.
-Especially, datasets that cover uncommon or even restricted domains (e.g. medical or industrial domain) are rare to find.
+The creation of new image datasets are considered to be very expensive in time and cost.
+Datasets for image segmentation are even more difficult to create due to the high effort required to label images on pixel-level.
+Especially, uncommon, restricted or private domains (\eg medical or industrial domains) are rarely covered in public datasets.
 For example, the manufacturing process in a closed industrial environment may contain unique objects or uncommon surroundings, that are hardly ever represented in common datasets.
 
 % New ways to obtain GT -> Labeltool, Interactive methods, AI-Simulation 
-To facilitate the process of creating a new dataset and label images with pixel-level accuracy, new approaches have been created.
-An efficient and common way is a program, that simplifies the process of labeling by providing an user interface and multiple methods to create and save label.
-These programs are often called \textit{Labeltools} or \textit{Annotation tools} and due to the high demand on labeled training data there are various Labeltools available \cite{Cer20-AnnotationsTools}.
-To simplify the quite manual labeling process for a human user there are interactive methods (see Chapter \ref{ord:ch2:sec3}), that support the applicant to create a label.
-Another approach is to create synthetic datasets like the SYNTHIA dataset \cite{Bengar2019-Temporal} and use them to as training data for semantic segmentation \cite{Chen18-SyntheticData}.
+New approaches have been created, in order to facilitate the process of creating new dataset and label images with pixel-level accuracy.
+An efficient and common way is a program, that simplifies labeling process by providing an user interface and multiple methods to create and save label.
+These programs are often called \textit{labeltools} or \textit{annotation tools} and due to the high demand on labeled training data there are various labeltools available\footnote{E. Cerna, \textit{Image Annotation Tools: Which One to Pick in 2020?} \url{https://bohemian.ai/blog/image-annotation-tools-which-one-pick-2020/}}.
+To simplify the quite manual process of labeling for a human user there are interactive methods (see Chapter \ref{ord:ch2:sec3}), that support the applicant in creating a label.
+Another approach is to create synthetic datasets like the SYNTHIA dataset \cite{Zol19-Temporal} and use them to as training data for semantic segmentation \cite{Chen18-SyntheticData}.
 
 
 \subsection{State-of-the-art}\label{ord:ch2:sec2:subsec5}
+
+An overview about the performance of previously introduced and current state-of-the-art networks is given in Table \ref{tab:ch2:stae-of-the-art}.
+As benchmark dataset the Pascal VOC test set \cite{Eve20-PascalVOC} and as metric the \gls{miou} were selected, due to their widespread usage.
+Notable is the rapid increase on performance over the last years, which emphasizes the relevance and research interest on this field of study.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|r|r}
+		\textbf{Model} & \textbf{\gls{miou} (val)} & \textbf{\gls{miou} (test)}\\
+		\hline
+		FCN \cite{LSD15-FCN} 						& -	   & 62.2\\
+		DeconvNet \cite{NHH15-DeConvNet}			& -    & 72.5\\
+		DeepLab-CRF \Cite{Chen16-DeepLab} 			& 77.7 & 79.7\\
+		PSPNet \cite{Zhao17-PSP}					& -	   & 85.4\\
+		DeepLab3+ \cite{Chen18-DeepLab3+} 			& 84.6 & 89.0\\
+		EfficientNet \cite{Zoph20-EfficientNet} 	& 90.0 & 90.5\\
+	\end{tabular}
+	\caption[Comparison of semantic segmentation models on Pascal VOC 2012.]{Comparison of semantic segmentation models on Pascal VOC 2012. Other overviews show the evolution of the state-of-the-art performance over time \footnotemark. }
+	\label{tab:ch2:stae-of-the-art}
+\end{table}
+\footnotetext{Papers with code, Semantic Segmentation on PASCAL VOC 2012 test: \url{https://paperswithcode.com/sota/semantic-segmentation-on-pascal-voc-2012}}
 \subsection{Application}\label{ord:ch2:sec2:subsec6}
-Semantic Segmentation finds application in various tasks and is widely used over different domains.
-Due to its capability to perform classification on pixel-level it is applied on scene understanding \cite{LiJ09-SceneUnderstanding} or the evaluation of satellite images \cite{Li18-SateliteImagery}.
-In the field of autonomous driving Semantic Segmentation is used for street scene analysis \cite{Cor16-Cityscapes} \cite{Men15-AutonVehicles} \cite{Neu17-MapillaryDataset}.
-In medicine this method can be used to segment blood cells \cite{Tran19-BloodCell}.
-Or it is applied in order to fulfill abstract tasks like the reconstruction of indoor scenes \cite{Dai17-ReconstructionIndoorScenes}.
-This listing of only some applications gives an idea of how versatile and functional Semantic Segmentation is and what can be achieved with it in the future.
+Image segmentation finds application in various tasks and is widely used over different domains.
+Due to its capability to perform classification on pixel-level it is often applied on scene understanding \cite{LiJ09-SceneUnderstanding} or the evaluation of satellite images \cite{Li18-SateliteImagery}.
+In the field of autonomous driving semantic segmentation is used for street scene analysis \cite{Cor16-Cityscapes} \cite{Men15-AutonVehicles} \cite{Neu17-MapillaryDataset}.
+In medicine this method can be used to segment cancer cells, tumors \cite{RF15-U-Net} or blood cells \cite{Tran19-BloodCell}.
+Further, it is applied in order to fulfill abstract tasks like the reconstruction of indoor scenes \cite{Dai17-ReconstructionIndoorScenes}.
+This listing of only some applications gives an idea of how versatile and functional image segmentation is and what can be achieved with it in the future.

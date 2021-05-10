@@ -1,21 +1,82 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Interactive Semantic Segmentation}\label{ord:ch2:sec3}
+\section{Interactive Segmentation}\label{ord:ch2:sec3}
 
-While semantic segmentation performs the task of segmenting an image just with the image itself, Interactive Semantic Segmentation takes advantage of additional information interactively provided by an user.
-The idea of this concept is to enhance the segmentation result by adding a new sort of information, that is already processed by an user.
-Because of this, the user input has great value for the network and provides high level guidance for the task of segmentation.
-Depending on the type of interaction, the receipt of the user input may be more or less elaborately, which leads to a weighing of the advantages and disadvantages.
-On the one side interactively provided user input contains high level information, but on the other side user interactions may be very expensive, especially in the context of the big amount of images in datasets required for deep learning tasks.
-%TODO declare if these methods are used for semantic segmentation or instance segmentation.
-In the following basic concepts of interactive semantic segmentation are introduced by presenting specific methods.
+Image segmentation takes as input $x$ only the image itself, in contrast interactive segmentation takes beside the image some additional information interactively provided by an user as input.
+% Interactive segmentation segmentation takes advantage of additional information interactively provided by an user.
+This additional information is especially beneficial, because it is manually picked using the valuable image processing capabilities of human users.
+Due to this, interactive segmentation networks are provided with a high level guidance about the location of the desired object.
+Depending on the type of interaction, the receipt of the user input may be more or less elaborately, which leads to a fundamental difficulty of interactive methods in general.
+To perform the user interactionwith in order to obtain the additional input may be considered expensive.
+Especially, for deep learning tasks a great quantity of images is required.
+
+% TODO interactive segmentation methods on semantic segmentaiton?
+Interactive methods are mostly applied for the task of instance segmentation.
+%, but may also be used for semantic segmentation is applicable in the given context.
+They mostly focus on extracting one object from an image, rather than segmenting a whole image at once.
+In the following several concepts of interactive segmentation methods are introduced.
+
+\subsection{Classical Concepts}\label{ord:ch2:sec3:subsec1}
+Before the upcomming of \gls{dl} and \glspl{cnn}, segmentation was already performed with classical image processing.
+These methods also focus on the extraction of a foreground object from the background by little user interaction.
+
+% GrabCut
+A prominent algorithm is GrabCut \cite{RKB04-GrabCut} published in 2004.
+As user interaction GrabCut requires a loose bounding box.
+Everything outside the bounding box and the borders itself are defined as background, while the inside of the box is segmented based on contrast and color information.
+Further, the goodness of the result may be enhanced by iteratively defining explicit parts as fore- or background.
+
+% Watershed
+Another still relevant method to perform instance segmentation is the Watershed algorithm \cite{NS94-Watershed}.
+This method interactively collects fore- and background regions from an user in order to perform segmentation.
+The Watershed algorithm is part of the benchmark study and elaborately examined in Section \ref{ord:ch3:sec2}.
  
+% Final tought
+These methods may perform very well on certain images, but reach their limitations as they deal with more complex structures.
+This is due to their rather simple processing of superficial characteristics \eg edges, textures, contrast and color.
+On the contrary \gls{dl} based methods are capable to examine images on a deeper level and so understand more complicated structures.
 
-\subsection{Subsection}\label{ord:ch2:sec3:subsec1}
 
-\subsection{Points from users}\label{ord:ch2:sec3:subsec2}
+\subsection{User Point Concepts}\label{ord:ch2:sec3:subsec2}
 
-A common and well known practice to obtain user input dates back to 1985, when Apple with co-founder Steve Jobs introduced the \textbf{Xerox}-computer with the first stage of development of the computer mouse.
+% DL focus 
 
-Multiple methods use user-clicks on specific characteristics o
+% Obtaining points on fore- and background
+% additional channel - RBG + UserPoints
+
+% Processing in the a cnn
+
+%  Figure as example of workflow?
+
+
+% Describe Evaluation metrics: clicks requried for certain iou and iou at certain amount of clicks
+
+
+
+% Special Methods 
+%    - One clicks
+%    - Iterative learning
+%    - Fusion networks
+
+
+% DL Methods with user input as layers
+\cite{Xu16-InteractiveObjectSelection}
+\cite{MVL18-ITIS}
+\cite{Maj20-One-Click}
+\cite{Hu19-TwoStreamFusionNetwork}
+\cite{Liew17-RegionalInteractiveImageSeg}
+\cite{JG18-ClickCarving}
+
+
+
+\cite{Man18-DEXTR}
+\cite{Zha20-IOG}
+
+\subsection{Polygon Concepts}\label{ord:ch2:sec3:subsec3}
+% DL Methods with Polygons
+\cite{Acu18-Polygon-RNN++}
+\cite{Ling19-Curve-GCN} 
+
+\subsection{Drawing Concepts}\label{ord:ch2:sec3:subsec4}
+% Superpixels
