@@ -19,23 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{Li17-StanfordLecture}{online}{}
-      \field{labelalpha}{18}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{month}{5}
-      \field{title}{Detection and segmentation}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf
-      \endverb
-      \verb{url}
-      \verb http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf
-      \endverb
-    \endentry
     \entry{Acu18-Polygon-RNN++}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=2fd3c2f3adf190bb18d50eaf1038f470}{%
@@ -122,6 +105,42 @@
       \endverb
       \verb{url}
       \verb https://www.aclweb.org/anthology/P01-1005
+      \endverb
+    \endentry
+    \entry{BJ01-GraphCut}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf7c8cb01b610c83613f8cc830a9f032}{%
+           family={Boykov},
+           familyi={B\bibinitperiod},
+           given={Y.Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f7c88407f85868361aae1679ae8f216}{%
+           family={Jolly},
+           familyi={J\bibinitperiod},
+           given={M.-P.},
+           giveni={M\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \strng{fullhash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \strng{bibnamehash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \strng{authorbibnamehash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \strng{authornamehash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \strng{authorfullhash}{bddd859cac2ee9072c2b73da1cd7c438}
+      \field{labelalpha}{BJ01}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings Eighth IEEE International Conference on Computer Vision (ICCV)}
+      \field{title}{Interactive graph cuts for optimal boundary region segmentation of objects in N-D images}
+      \field{volume}{1}
+      \field{year}{2001}
+      \field{pages}{105\bibrangedash 112 vol.1}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/ICCV.2001.937505
       \endverb
     \endentry
     \entry{Bad17-SegNet}{article}{}
@@ -498,6 +517,43 @@
       \verb 10.1109/CVPR.2017.261
       \endverb
     \endentry
+    \entry{Dan80-EuclideanDistanceMapping}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bfafd41f2475d4442d63d3868a7334be}{%
+           family={Danielsson},
+           familyi={D\bibinitperiod},
+           given={Per-Erik},
+           giveni={P\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bfafd41f2475d4442d63d3868a7334be}
+      \strng{fullhash}{bfafd41f2475d4442d63d3868a7334be}
+      \strng{bibnamehash}{bfafd41f2475d4442d63d3868a7334be}
+      \strng{authorbibnamehash}{bfafd41f2475d4442d63d3868a7334be}
+      \strng{authornamehash}{bfafd41f2475d4442d63d3868a7334be}
+      \strng{authorfullhash}{bfafd41f2475d4442d63d3868a7334be}
+      \field{labelalpha}{Dan80}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Graphics and Image Processing}
+      \field{number}{3}
+      \field{title}{Euclidean distance mapping}
+      \field{volume}{14}
+      \field{year}{1980}
+      \field{pages}{227\bibrangedash 248}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/0146-664X(80)90054-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0146664X80900544
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0146664X80900544
+      \endverb
+    \endentry
     \entry{Deng09-ImageNet}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=0ae7fdc13773f928525f673b05f37149}{%
@@ -735,12 +791,12 @@
            given={Xiangyu},
            giveni={X\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+        {{un=1,uniquepart=given,hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
            familyi={R\bibinitperiod},
            given={Shaoqing},
            giveni={S\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
            familyi={S\bibinitperiod},
@@ -785,12 +841,12 @@
            given={Xiangyu},
            giveni={X\bibinitperiod},
            givenun=1}}%
-        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+        {{un=1,uniquepart=given,hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
            familyi={R\bibinitperiod},
            given={Shaoqing},
            giveni={S\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
            familyi={S\bibinitperiod},
@@ -940,44 +996,6 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.1109/CIBCB48159.2020.9277638
-      \endverb
-    \endentry
-    \entry{JG18-ClickCarving}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a6a96378ffc051702bd86b4931d86ded}{%
-           family={Jain},
-           familyi={J\bibinitperiod},
-           given={Suyog},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f67e08fa64fd602c4ec562da14d65216}{%
-           family={Grauman},
-           familyi={G\bibinitperiod},
-           given={Kristen},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{fullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{bibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authorbibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authornamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authorfullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \field{labelalpha}{JG16}
-      \field{sortinit}{J}
-      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{AAAI Conference on Human Computation and Crowdsourcing}
-      \field{number}{1}
-      \field{title}{Click Carving: Segmenting Objects in Video with Point Clicks}
-      \field{volume}{4}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
-      \endverb
-      \verb{url}
-      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
       \endverb
     \endentry
     \entry{KK12-CRF}{inproceedings}{}
@@ -1373,6 +1391,41 @@
       \verb 10.1109/CVPR.2018.00071
       \endverb
     \endentry
+    \entry{Mey12-WatershedConcept}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6806b25b3cb3dab0e92c2fe7c2e25565}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Fernand},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \strng{fullhash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \strng{bibnamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \strng{authorbibnamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \strng{authornamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \strng{authorfullhash}{6806b25b3cb3dab0e92c2fe7c2e25565}
+      \field{labelalpha}{Mey12}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{The watershed concept and its use in segmentation : a brief history}
+      \field{volume}{abs/1202.0216}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1202.0216
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1202.0216
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1202.0216
+      \endverb
+    \endentry
     \entry{Men15-AutonVehicles}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=da7f0e06c0e9a8e9474f0e27852d427c}{%
@@ -1706,6 +1759,77 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1145/1186562.1015720
+      \endverb
+    \endentry
+    \entry{RM03-Superpixel}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c960163b90d3348c2d10aa3dc204093d}{%
+           family={Ren},
+           familyi={R\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5ac09104603448a6f905bd494b6d549b}{%
+           family={Malik},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c40f38ade212aed024a373ed45d79069}
+      \strng{fullhash}{c40f38ade212aed024a373ed45d79069}
+      \strng{bibnamehash}{c40f38ade212aed024a373ed45d79069}
+      \strng{authorbibnamehash}{c40f38ade212aed024a373ed45d79069}
+      \strng{authornamehash}{c40f38ade212aed024a373ed45d79069}
+      \strng{authorfullhash}{c40f38ade212aed024a373ed45d79069}
+      \field{labelalpha}{RM03}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings Ninth IEEE International Conference on Computer Vision}
+      \field{title}{Learning a classification model for segmentation}
+      \field{year}{2003}
+      \field{pages}{10\bibrangedash 17 vol.1}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/ICCV.2003.1238308
+      \endverb
+    \endentry
+    \entry{SHL16-SuperpixelEvaluation}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=38d78a7ede21a7daa1bc6ab12af5b209}{%
+           family={Stutz},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9709daf6a30bbc4fa10021197e7c88eb}{%
+           family={Hermans},
+           familyi={H\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89e3f1ee83923a2c7a44b7597b35fccd}{%
+           family={Leibe},
+           familyi={L\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a47b619686ad9c2e305c5fff43b79834}
+      \strng{fullhash}{a47b619686ad9c2e305c5fff43b79834}
+      \strng{bibnamehash}{a47b619686ad9c2e305c5fff43b79834}
+      \strng{authorbibnamehash}{a47b619686ad9c2e305c5fff43b79834}
+      \strng{authornamehash}{a47b619686ad9c2e305c5fff43b79834}
+      \strng{authorfullhash}{a47b619686ad9c2e305c5fff43b79834}
+      \field{labelalpha}{SHL16}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1612.01601}
+      \field{title}{Superpixels: An Evaluation of the State-of-the-Art}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1612.01601
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1612.01601
       \endverb
     \endentry
     \entry{Sha18-DLCV}{book}{}

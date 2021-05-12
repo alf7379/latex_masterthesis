@@ -5,7 +5,7 @@
 
 The paper "Interactive Object segmentation with Inside-Outside-Guidance"\cite{Zha20-IOG} published by \citeauthor{Zha20-IOG} \etal in 2020 provides a state-of-the-art method to perform interactive object segmentation.
 
-\subsection{Method Description}\label{ord:ch3:sec1:subsec1}
+\subsection{Method Description}\label{ord:ch3:sec4:subsec1}
 The execution of this method outputs a binary segmentation for a single object of interest within an image. 
 To segment multiple objects in one image, the method has t be applied for each of them sequentially.
 
@@ -38,7 +38,7 @@ The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenate
 	% TODO Bitte die Bildunterschriften so aussagekräftig wie möglich. Ich beginne immer mit einer kurzen Überschrift und beschreibe dann in 2-5 Sätzen was genau gezeigt wird oder was man in der Figure sehen kann. Der Leser tendiert dazu sich zu allererst oder auch nur die Figures anzusehen, daher ist es gut wenn diese für sich stehen und alles wichtige in deren Unterschrift beschrieben wird. Natürlich knapp aber präzise.
 \end{figure}
 
-\subsection{Architecture}\label{ord:ch3:sec1:subsec2}
+\subsection{Architecture}\label{ord:ch3:sec4:subsec2}
 
 The architecture of the \gls{iog} method is based on a \emph{"coarse-to-fine design"}\cite[p. 12237]{Zha20-IOG} (see Figure \ref{fig:ch3:sec1:arch}), containing two main parts: the CoarseNet and the FineNet.
 %TODO also cite other papers e.g. FPN (feature pyramid networks) or U-Net
@@ -73,7 +73,7 @@ The combination of layers with high localization detail with the layers, that co
 	\label{fig:ch3:sec1:arch}
 \end{figure}
 
-\subsection{Refinement}\label{ord:ch3:sec1:subsec3}
+\subsection{Refinement}\label{ord:ch3:sec4:subsec3}
 If a segmentation results does not meet the user's expectations a refinement can be performed iteratively. 
 This is done by an additional user click, which can be a fore- or background click on the region with the greatest error. 
 In the refinement iteration of the model, this new point is processed in the same way as the initial user click positions to create a heatmap for fore- and background.

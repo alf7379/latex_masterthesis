@@ -178,6 +178,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{rnn}{}%
+{%
+\gls@defglossaryentry{rnn}%
+{%
+name={RNN},%
+sort={RNN},%
+type={acronym},%
+first={Recurrent Neural Network\glsspace (RNN)},%
+firstplural={Recurrent Neural Networks\glsspace (RNNs)},%
+text={RNN},%
+plural={RNNs},%
+description={Recurrent Neural Network},%
+descriptionplural={Recurrent Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Recurrent Neural Network},%
+longplural={Recurrent Neural Networks},%
+short={RNN},%
+shortplural={RNNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gcn}{}%
+{%
+\gls@defglossaryentry{gcn}%
+{%
+name={GCN},%
+sort={GCN},%
+type={acronym},%
+first={Graph Convolutional Network\glsspace (GCN)},%
+firstplural={Graph Convolutional Networks\glsspace (GCNs)},%
+text={GCN},%
+plural={GCNs},%
+description={Graph Convolutional Network},%
+descriptionplural={Graph Convolutional Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graph Convolutional Network},%
+longplural={Graph Convolutional Networks},%
+short={GCN},%
+shortplural={GCNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{gt}{}%
 {%
 \gls@defglossaryentry{gt}%
@@ -323,6 +383,156 @@ long={Per-Class},%
 longplural={Per-Classs},%
 short={PC},%
 shortplural={PCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ap}{}%
+{%
+\gls@defglossaryentry{ap}%
+{%
+name={AP},%
+sort={AP},%
+type={acronym},%
+first={Average Precision\glsspace (AP)},%
+firstplural={Average Precisions\glsspace (APs)},%
+text={AP},%
+plural={APs},%
+description={Average Precision},%
+descriptionplural={Average Precision\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Average Precision},%
+longplural={Average Precisions},%
+short={AP},%
+shortplural={APs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ifcn}{}%
+{%
+\gls@defglossaryentry{ifcn}%
+{%
+name={iFCN},%
+sort={iFCN},%
+type={acronym},%
+first={interactive Fully Convolutional Network\glsspace (iFCN)},%
+firstplural={interactive Fully Convolutional Networks\glsspace (iFCNs)},%
+text={iFCN},%
+plural={iFCNs},%
+description={interactive Fully Convolutional Network},%
+descriptionplural={interactive Fully Convolutional Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={interactive Fully Convolutional Network},%
+longplural={interactive Fully Convolutional Networks},%
+short={iFCN},%
+shortplural={iFCNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fctsfn}{}%
+{%
+\gls@defglossaryentry{fctsfn}%
+{%
+name={FCTSFN},%
+sort={FCTSFN},%
+type={acronym},%
+first={Fully Convolutional Two-Stream Fusion Network\glsspace (FCTSFN)},%
+firstplural={Fully Convolutional Two-Stream Fusion Networks\glsspace (FCTSFNs)},%
+text={FCTSFN},%
+plural={FCTSFNs},%
+description={Fully Convolutional Two-Stream Fusion Network},%
+descriptionplural={Fully Convolutional Two-Stream Fusion Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fully Convolutional Two-Stream Fusion Network},%
+longplural={Fully Convolutional Two-Stream Fusion Networks},%
+short={FCTSFN},%
+shortplural={FCTSFNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{itis}{}%
+{%
+\gls@defglossaryentry{itis}%
+{%
+name={ITIS},%
+sort={ITIS},%
+type={acronym},%
+first={Iterativly Trained Interative Segmentation\glsspace (ITIS)},%
+firstplural={Iterativly Trained Interative Segmentations\glsspace (ITISs)},%
+text={ITIS},%
+plural={ITISs},%
+description={Iterativly Trained Interative Segmentation},%
+descriptionplural={Iterativly Trained Interative Segmentation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Iterativly Trained Interative Segmentation},%
+longplural={Iterativly Trained Interative Segmentations},%
+short={ITIS},%
+shortplural={ITISs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{risnet}{}%
+{%
+\gls@defglossaryentry{risnet}%
+{%
+name={RIS-Net},%
+sort={RIS-Net},%
+type={acronym},%
+first={Regional Interactive Segmentation Network\glsspace (RIS-Net)},%
+firstplural={Regional Interactive Segmentation Networks\glsspace (RIS-Nets)},%
+text={RIS-Net},%
+plural={RIS-Nets},%
+description={Regional Interactive Segmentation Network},%
+descriptionplural={Regional Interactive Segmentation Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Regional Interactive Segmentation Network},%
+longplural={Regional Interactive Segmentation Networks},%
+short={RIS-Net},%
+shortplural={RIS-Nets},%
 counter={page},%
 parent={},%
 %

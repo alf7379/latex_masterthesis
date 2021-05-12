@@ -17,19 +17,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Machine Learning}{2}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Deep Learning}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Deep Learning}{2}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Convolutional Neural Networks}{3}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Convolutional Neural Networks}{2}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Image Segmentation}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Image Segmentation}{2}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}General}{3}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}General}{2}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Evaluation Metric}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Evaluation Metric}{3}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Architecture}{5}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Architecture}{4}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Encoder-Decoder-Architecture}{5}{subsubsection*.5}%
+\contentsline {subsubsection}{\nonumberline Encoder-Decoder-Architecture}{4}{subsubsection*.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Unpooling.}{5}{paragraph*.8}%
 \defcounter {refsection}{0}\relax 
@@ -37,11 +37,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Skip Connections}{6}{subsubsection*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Pyramid Scene Parsing Network}{10}{subsubsection*.18}%
+\contentsline {subsubsection}{\nonumberline Pyramid Scene Parsing Network}{9}{subsubsection*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline DeepLab}{10}{subsubsection*.21}%
+\contentsline {subsubsection}{\nonumberline DeepLab}{9}{subsubsection*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Data}{11}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Data}{10}{subsection.2.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.5}State-of-the-art}{12}{subsection.2.2.5}%
 \defcounter {refsection}{0}\relax 
@@ -51,62 +51,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Classical Concepts}{13}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}User Point Concepts}{14}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}\gls {dl} User Point Concepts}{14}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Polygon Concepts}{14}{subsection.2.3.3}%
+\contentsline {subsubsection}{\nonumberline Basic Concept}{14}{subsubsection*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Drawing Concepts}{14}{subsection.2.3.4}%
+\contentsline {subsubsection}{\nonumberline Representation of User Clicks and Model Input}{14}{subsubsection*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}%
+\contentsline {subsubsection}{\nonumberline Interactive Refinement}{15}{subsubsection*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Polygon Drawing}{15}{section.3.1}%
+\contentsline {subsubsection}{\nonumberline Characteristics}{15}{subsubsection*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Method Description}{15}{subsection.3.1.1}%
+\contentsline {subsubsection}{\nonumberline Variations}{16}{subsubsection*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Architecture}{15}{subsection.3.1.2}%
+\contentsline {subsubsection}{\nonumberline Evaluation and State-of-the-Art Networks}{16}{subsubsection*.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Refinement}{15}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {2.3.3}\gls {dl} Polygon Concepts}{17}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Results}{16}{subsection.3.1.4}%
+\contentsline {chapter}{\numberline {3}Benchmark Methods}{19}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Watershed}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Benchmark Description}{19}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Method Description}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.1.1}Polygon Drawing}{19}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Architecture}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.1.2}Structure}{19}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Refinement}{17}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.2}Watershed}{19}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Results}{17}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.1}Method Description}{19}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deep Extreme Cut}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.2}Architecture}{20}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Method Description}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2.3}Refinement}{20}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Architecture}{18}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.2.4}Results}{20}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Refinement}{18}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.3}Deep Extreme Cut}{21}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Results}{18}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.1}Method Description}{21}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}IOG}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.3.2}Architecture}{21}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Method Description}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.3.3}Refinement}{21}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Architecture}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.3.4}Results}{22}{subsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline CoarseNet}{20}{paragraph*.25}%
+\contentsline {section}{\numberline {3.4}IOG}{22}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline FineNet}{20}{paragraph*.27}%
+\contentsline {subsection}{\numberline {3.4.1}Method Description}{22}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Refinement}{21}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.2}Architecture}{23}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{23}{chapter*.29}%
+\contentsline {paragraph}{\nonumberline CoarseNet}{23}{paragraph*.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{24}{chapter*.30}%
+\contentsline {paragraph}{\nonumberline FineNet}{24}{paragraph*.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{25}{section*.31}%
+\contentsline {subsection}{\numberline {3.4.3}Refinement}{25}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{26}{chapter*.33}%
+\contentsline {chapter}{\nonumberline List of Figures}{26}{chapter*.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{27}{chapter*.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{28}{section*.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{29}{chapter*.47}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

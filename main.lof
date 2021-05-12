@@ -9,9 +9,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Intersection over Union}}{4}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Encoder-Decoder-Architecture}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Encoder-Decoder-Architecture}}{5}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Unpooling methods \textit {nearest neighbor} and \textit {bed of nails}}}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Unpooling methods \textit {nearest neighbor} and \textit {bed of nails}}}{6}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Transposed Convolution}}{7}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
@@ -21,11 +21,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Pyramid Scene Parsing Network}}{10}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Interactively Fully Convolutional Network}}{14}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces IOG Application}}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces IOG Application}}{23}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces IOG Architecture}}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces IOG Architecture}}{24}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
