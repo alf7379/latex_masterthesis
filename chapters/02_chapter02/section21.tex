@@ -2,7 +2,11 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \section{ML, DL and CNN}\label{ord:ch2:sec1}
-tbd
+
+In the last decade the development and research interest in the field of \gls{ml} have greatly increased and drawn much attention. 
+This section briefly recaptures the fundamental concepts of \gls{ml} and \gls{dl}.
+A detailed description of the introduced concepts and terms can be reviewed in \cite{Ger17-HandsOn} or \cite{Goodfellow-et-al-2016}.
+
 %The last decade was revolutionary for the sector of information technology.
 %Due to technical advancement, the computational power of processors, especially \gls{gpu} rise significantly.
 %Further, the wider creation and use of data introduced the domain of big data, that allows operators to gain more insights and benefits.
@@ -11,14 +15,96 @@ tbd
 %But there are several gradations, that hide behind the powerful bus word \gls{ai} and are illustrated in this section.
 
 \subsection{Machine Learning}\label{ord:ch2:sec1:subsec1}
-tbd
-%\gls{ml} is a subsection of \gls{ai} and is based on the ability of algorithms to analyze, detect and learn patterns in various kinds of data. 
-%Applying these learned pattern \gls{ml} algorithms may reach human level performance or even better, but they are limited specifically to their scope.
-%For other tasks mostly a new \gls{ml} algorithms needs to be defined 
-%\footnote{Henning Steiner, Hessischer Rundfunk: \textit{Selbstlernende Maschinen - wie Künstliche Intelligenz entsteht}: \url{https://www.hr-inforadio.de/podcast/wissen/selbstlernende-maschinen---wie-kuenstliche-intelligenz-entsteht,podcast-episode-53312.html}}.
-%In contrast \gls{ai} may be able to solve various tasks and learn independently by showing strong characteristics of human intelligence.
+
+\gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without explicitly programming them.
+These algorithms may achieve human level performance, but mostly they are limited to the task they are programmed for.
+\gls{ml} algorithms are referred to as models, that are represented by a function $f$. 
+In order to solve another task a model, has to learn this task's patterns from another dataset $\mathcal{D}$.
+
+% Dataset 
+The dataset $\mathcal{D}$ usually is split into a training set $\mathcal{S}$, a test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
+These three types of datasets are treated separately, while the algorithms uses the training set $\mathcal{S}$ to extract the patterns, the test and validation set are only used to evaluate the algorithm's performance.
+
+% Input x and label y
+A dataset $\mathcal{D}$ contains $N$ elements with each element having $M$ features.
+An element $\textbf{x}$ can be represented as feature-vector $\textbf{x} = [x_1, \dots ,x_M]$, which the model takes as input.
+In the scope of classification, this label $y$ is represented by one out of $K$ classes $y \in \lbrace c_1, \dots, c_K \rbrace$.
+The classification task is defined as  
+\begin{equation}
+	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textit{\textbf{x}} \mapsto y
+\end{equation}
+For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, \textbf{y}_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
+In order to create a functioning model the model is trained, by adapting its inner parameters referred to as the model's weights.
+While training a model, features are extracted iteratively from the given input $\textbf{x}$ and the model is adapted.
+
+% Model prediction
+The estimated output $\hat{y}$ of a model is computed by the function $f$ with the input $\textbf{x}$
+\begin{equation}
+	\hat y = f(\textit{\textbf{x}})
+\end{equation}
+with $\hat{y}$ being also referred to as prediction of the model.
+
+% Loss function and Backpropagation
+In order to perform training, a model requires a loss function $L(y,\hat{y})$.
+The loss function $L$ calculates the loss of the model from the difference of the prediction $\hat{y}$ and the true label $y$.
+There exist different loss functions to calculate various types of losses, which are also referred to as error of the model.
+Based on the loss the model's weights are adjusted, to make a better prediction and reduce the error.
+Usually the backpropagation algorithm is used to perform this adjustment.
+With the term \textit{learning} is referred to this process.
+
+% Generalization error of a model
+The goodness of a model can be defined by the performance on the training set $\mathcal{S}$ and validation set $\mathcal{S}_3$.
+The two main causes of failure are a underfitted or overfitted model.
+First, describes a model is not complex enough to understand the interrelations in the data.
+Common reasons for underfitted models are missing complexity in the model architecture or a too small or not representative dataset.
+Last, overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
+This happens, when the model does not generalize well enough and instead learns the features of the training set by heart.
+To successfully train a model, a tradeoff between overfitting and underfitting must be found.
+
+% Hyperparameter
+Further, there exist so-called \textit{hyperparameters}, that are used to adjust the training process.
+Important hyperparameters are the learning rate $\lambda$ , the number of training epochs $N_{Epochs}$ or the applied optimizer.
+
 
 \subsection{Deep Learning}\label{ord:ch2:sec1:subsec2}
-tbd.
-\subsection{Convolutional Neural Networks}\label{ord:ch2:sec1:subsec3}
-tbd.
+
+\gls{nn} are an advanced method to apply the concepts of \gls{ml}.
+They consist out of multiple neurons, that are strongly connected in a layer-wise architecture.
+Does the architecture has multiple layers, the network is also described as \textit{deep}, resulting in the terms \gls{dl} and \gls{dnn}.
+A \gls{nn} processes a given input $\textbf{x}$ and makes a prediction $\hat{y}$, similar as a \gls{ml} model.
+
+Nowadays, in order to solve various tasks, a variety of different network types exist \eg convolutional, graph or recurrent networks.
+For the popular task of image detection \glspl{cnn} have proven themselves to be most adequate.
+The main component of \glspl{cnn} are convolutional layers, that are used to process and extract features from a visual input.
+In these layers a convolution operation is performed on the input by applying $c$ convolution kernels.
+The output of a layer is defined as a feature map $F_c$, with $c$ representing the amount of channels.
+Further, pooling layers are commonly used, in order to reduce the size of feature maps.
+
+
+\subsection{Evaluation}\label{ord:ch2:sec1:subsec3}
+
+A model's performance may be evaluated using various metrics.
+For classification tasks exist the following basic metric.
+In this context, the \textit{true positives} are the number of predictions, that are correctly predicted to be positive.
+While the \textit{false positives} are the number of predictions, that are incorrectly predicted to be positive, but truly are negative.
+The corresponding definition applies for the equivalent terms \textit{true negatives} and \textit{false negatives}.
+
+% Accuracy
+The accuracy is one of the most simple metrics and defined by 
+\begin{equation}
+	Accuracy = \frac{\textnormal{\textit{true positives}} + \textnormal{\textit{true negatives}}}
+	{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}} + \textnormal{\textit{true negatives}} + \textnormal{\textit{false negatives}}}
+\end{equation}
+that represents the number of correct predictions over the number of all predictions.
+
+For a more detailed evaluation providing more insights, the model's precision and recall are calculated.
+% precision
+\begin{equation}
+	precision = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}}}
+\end{equation}
+
+
+% recall
+\begin{equation}
+	recall = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false negatives}}}
+\end{equation}

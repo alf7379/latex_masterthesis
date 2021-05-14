@@ -58,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{dl}{}%
+\ifglsentryexists{ai}{}%
 {%
-\gls@defglossaryentry{dl}%
+\gls@defglossaryentry{ai}%
 {%
-name={DL},%
-sort={DL},%
+name={AI},%
+sort={AI},%
 type={acronym},%
-first={Deep Learning\glsspace (DL)},%
-firstplural={Deep Learnings\glsspace (DLs)},%
-text={DL},%
-plural={DLs},%
-description={Deep Learning},%
-descriptionplural={Deep Learning\acrpluralsuffix },%
+first={Artificial Intellegence\glsspace (AI)},%
+firstplural={Artificial Intellegences\glsspace (AIs)},%
+text={AI},%
+plural={AIs},%
+description={Artificial Intellegence},%
+descriptionplural={Artificial Intellegence\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -79,10 +79,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Deep Learning},%
-longplural={Deep Learnings},%
-short={DL},%
-shortplural={DLs},%
+long={Artificial Intellegence},%
+longplural={Artificial Intellegences},%
+short={AI},%
+shortplural={AIs},%
 counter={page},%
 parent={},%
 %
@@ -118,19 +118,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{ai}{}%
+\ifglsentryexists{dl}{}%
 {%
-\gls@defglossaryentry{ai}%
+\gls@defglossaryentry{dl}%
 {%
-name={AI},%
-sort={AI},%
+name={DL},%
+sort={DL},%
 type={acronym},%
-first={Artificial Intellegence\glsspace (AI)},%
-firstplural={Artificial Intellegences\glsspace (AIs)},%
-text={AI},%
-plural={AIs},%
-description={Artificial Intellegence},%
-descriptionplural={Artificial Intellegence\acrpluralsuffix },%
+first={Deep Learning\glsspace (DL)},%
+firstplural={Deep Learnings\glsspace (DLs)},%
+text={DL},%
+plural={DLs},%
+description={Deep Learning},%
+descriptionplural={Deep Learning\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -139,10 +139,70 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Artificial Intellegence},%
-longplural={Artificial Intellegences},%
-short={AI},%
-shortplural={AIs},%
+long={Deep Learning},%
+longplural={Deep Learnings},%
+short={DL},%
+shortplural={DLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nn}{}%
+{%
+\gls@defglossaryentry{nn}%
+{%
+name={NN},%
+sort={NN},%
+type={acronym},%
+first={Neural Network\glsspace (NN)},%
+firstplural={Neural Networks\glsspace (NNs)},%
+text={NN},%
+plural={NNs},%
+description={Neural Network},%
+descriptionplural={Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Neural Network},%
+longplural={Neural Networks},%
+short={NN},%
+shortplural={NNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dnn}{}%
+{%
+\gls@defglossaryentry{dnn}%
+{%
+name={DNN},%
+sort={DNN},%
+type={acronym},%
+first={Deep Neural Network\glsspace (DNN)},%
+firstplural={Deep Neural Networks\glsspace (DNNs)},%
+text={DNN},%
+plural={DNNs},%
+description={Deep Neural Network},%
+descriptionplural={Deep Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deep Neural Network},%
+longplural={Deep Neural Networks},%
+short={DNN},%
+shortplural={DNNs},%
 counter={page},%
 parent={},%
 %

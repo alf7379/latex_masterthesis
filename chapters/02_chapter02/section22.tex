@@ -44,10 +44,7 @@ As this challenge is an classification task on pixel-level, a measure of evaluat
 % PC
 Further, the \gls{op} measurement can be refined by calculating the accuracy for each class.
 This results in the \gls{pc} accuracy, which represents the proportion of correctly labeled pixels of one class.
-%TODO define "true positives" etc. in Chapter2 Section1
-
 % AP
-% TODO https://kharshit.github.io/blog/2019/09/20/evaluation-metrics-for-object-detection-and-segmentation
 % Another metric is the \gls{ap} 
 %Another common metric is the \textit{Precision}, which the accuracy of the positive predictions and defined as
 %\begin{equation}
@@ -105,7 +102,6 @@ The elemental components of this reconstruction are the operations \textit{unpoo
 
 After the encoder network generally a softmax classifier is applied, that predicts the class for each pixel.
 The output is a probability map $\hat{y}$ with $K$ channels for $K$ number of classes \cite{Bad17-SegNet}.
-% TODO introduce K as number of classes.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap223_segnet_arch.png}
@@ -121,8 +117,6 @@ The output is a probability map $\hat{y}$ with $K$ channels for $K$ number of cl
 \paragraph{Unpooling.}
 The unpooling operation is the equivalent of the pooling operation.
 Instead of reducing the size of feature maps $F^{n}_{c}$, they are enlarged.
-%TODO define $F^{n}_{c}$ 
-%TODO define what is learning?
 As for pooling, no features are learned and there exist multiple methods to perform unpooling, two of them are illustrated in Figure \ref{fig:ch2:sec2:unpooling_1}.
 Nevertheless, unpooling is not capable to fully reconstruct the information lost during the process of downsampling.
 The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while for \textit{nearest neighbor} the feature maps $F^{n}_{c}$ contain redundant information.
@@ -156,7 +150,6 @@ The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while 
 As for pooling it is unpooling, the counterpart of convolution is transposed convolution
 \footnote{Vincent Dumoulin and Francesco Visin, 2018, "A guide to convolution arithmetic for deep learning": \url{https://arxiv.org/abs/1603.07285}}
 \footnote{F.-F. Li, J. Johnson and S. Yeung, 2018, "Stanford Lecture Detection and Segmentation": \url{http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf}\label{fn:LJY10_StanfordLecture}}.
-%TODO define term hyperparameter.
 Therefore, these operations also share common features and characteristics, like learnable filters or hyperparameters as \textit{kernel size}, \textit{padding} and \textit{stride}.
 Transposed convolution can be used to enlarge feature maps or dense sparse feature maps, as created by the unpooling method "bed of nails".
 % TODO clarify if Noh or Noh et al.
