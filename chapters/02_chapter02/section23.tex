@@ -85,7 +85,8 @@ The heatmaps have the same size as the image and are appended to the image as ad
 %This results in a five- or four-channel input for the interactive segmentation network, depending on the number of heatmaps.
 This results in a five-channel input using fore-and background heatmaps or in a four-channel input using just a foreground heatmap.
 So the processed points on the heatmaps and the user clicks on the image are located exactly at the same position on different channels.
-This matching is vital for the segmentation network, in order to locate and differentiate fore- and background.
+This matching is vital for the functionality of the segmentation method.
+Therefore, the user points provide high level guidance for the network to enhance the location and differentiation of fore- and background.
 The multidimensional input functions as model input $x$ for the semantic segmentation network.
 
 Interactive segmentation networks are often based on normal segmentation networks, \eg the \gls{fcn} in the \gls{ifcn} \cite{Xu16-InteractiveObjectSelection} or the DeepLabv3+ in the \gls{itis} network \cite{MVL18-ITIS}.

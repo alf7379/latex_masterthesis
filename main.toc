@@ -85,68 +85,70 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Method Description}{23}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Representation of User Clicks and Model Input}{23}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Model Input and Representation of User Clicks}{23}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Refinement}{23}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Architecture}{25}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Results}{24}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}Refinement}{26}{subsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Inside-Outside Guidance}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Performance}{26}{subsection.3.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Basis Concept}{24}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.4}Inside-Outside Guidance}{27}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Representation of User Clicks and Model Input}{25}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.1}Basis Concept}{27}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Architecture}{25}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.2}Model Input and Representation of User Clicks}{28}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline CoarseNet}{25}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {3.4.3}Architecture}{28}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline FineNet}{26}{subsubsection*.43}%
+\contentsline {subsubsection}{\nonumberline CoarseNet}{29}{subsubsection*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}Refinement}{28}{subsection.3.4.4}%
+\contentsline {subsubsection}{\nonumberline FineNet}{29}{subsubsection*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.5}Performance}{28}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.4}Refinement}{31}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Benchmark Setup}{30}{chapter.4}%
+\contentsline {subsection}{\numberline {3.4.5}Performance}{32}{subsection.3.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Benchmark Description}{30}{section.4.1}%
+\contentsline {chapter}{\numberline {4}Benchmark Setup}{33}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}tbd}{30}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.1}Benchmark Description}{33}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}tbd}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.1}tbd}{33}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Image Selection}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.2}tbd}{33}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}tbd}{30}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Image Selection}{33}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}tbd}{31}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}tbd}{33}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}tbd}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.2}tbd}{34}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}tbd}{31}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.3}tbd}{34}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Method Selection}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.4}tbd}{34}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}tbd}{32}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.3}Method Selection}{35}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}tbd}{32}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.1}tbd}{35}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}tbd}{32}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.2}tbd}{35}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}tbd}{32}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.3}tbd}{35}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Collection of statistics}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.4}tbd}{35}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}tbd}{33}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.4}Collection of statistics}{36}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}tbd}{33}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.1}tbd}{36}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{34}{chapter*.45}%
+\contentsline {subsection}{\numberline {4.4.2}tbd}{36}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{35}{chapter*.46}%
+\contentsline {chapter}{\nonumberline List of Figures}{37}{chapter*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{36}{section*.47}%
+\contentsline {chapter}{\nonumberline List of Tables}{38}{chapter*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{38}{chapter*.49}%
+\contentsline {chapter}{Acronyms}{39}{section*.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

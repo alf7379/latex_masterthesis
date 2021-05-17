@@ -4,7 +4,7 @@
 \section{Inside-Outside Guidance}\label{ord:ch3:sec4}
 
 Another approach for interactive segmentation is the \gls{iog} method, introduced in \cite{Zha20-IOG}.
-The concept of this state-of-the-art method relies on user points and \gls{dl} (see Section \ref{ord:ch2:sec3:subsec2}. 
+The concept of this state-of-the-art method us strongly based on the previously introduced \gls{dextr} method \cite{Man18-DEXTR}.
 
 \subsection{Basis Concept}\label{ord:ch3:sec4:subsec1}
 % User Clicks - Workflow
@@ -54,7 +54,7 @@ In contrast, the variable position of the foreground click in \gls{iog} enables 
 		\caption{Foreground click.}
 		\label{fig:ch3:sec4:iog_workflow_3}
 	\end{subfigure}
-	\caption[IOG Application]{
+	\caption[IOG User Interaction]{
 		Shown is the workflow to perform the user interaction required for the \gls{iog} method.
 		First, a bounding box is spanned by setting two background clicks.
 		Last, the foreground click is set.
@@ -63,20 +63,22 @@ In contrast, the variable position of the foreground click in \gls{iog} enables 
 	\label{fig:ch3:sec4:iog_user_clicks}
 \end{figure}
 
-\subsection{Representation of User Clicks and Model Input}\label{ord:ch3:sec4:subsec2}
+\subsection{Model Input and Representation of User Clicks}\label{ord:ch3:sec4:subsec2}
 
-The bounding box is set by the two diagonal corners points (top-left and bottom-right or bottom-left and top-right).
+Identical to the \gls{dextr} method, the background clicks form a bounding box, which is enlarged by  $p_{{box}}$ \Unit{px}.
+This processing is identical to the \gls{dextr} method.
+% TODO ??mention that the background points are move by ~10 pixel in order to avoid the enforced background points being on the foreground
+As in the \gls{dextr} processing, the image is cropped based on the enlarged bounding box and resized to the size of $512 \times 512$ \Unit{px}, if necessary zero padding is applied.
+
+The bounding box is formed by the two background points, that are diagonal corners points (top-left and bottom-right or bottom-left and top-right).
 Based on these two points, the other two corner points are derived, which provides four background points to the price of two.
-Further the bounding box is enlarged by $p_{{box}}$ pixels to include context from the surrounding region and ensure no background point is set on the edge of the object.
-%TODO use parameter later to describe my experimental setup.
+Identical to the \gls{dextr} processing, the fore- and background clicks are converted into points on two separate heatmaps.
+To highlight the user points a 2D Gaussian is centered around each click (see Equation \ref{equ:gauss}).
 
-In order to focus on the object of interest, the image is cropped based on the enlarged bounding box.
-The crop is resized to the size of $512 \times 512$ \Unit{px}. 
-The fore and background clicks are converted into points on two separate heatmaps.
-To highlight the user points a 2D Gaussian is centered around each click, as in the \gls{dextr} method.
 The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenated with the RGB image.
-For the model this results into a five-channel input, which is explanatory illustrated in Figure \ref{fig:ch3:sec4:model_input_channels}.
+For the model this results into a five-channel \gls{iog} model input, which is explanatory illustrated in Figure \ref{fig:ch3:sec4:model_input_channels}.
 
+%TODO add crosses to cropped RGB image
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{0.3\textwidth}
@@ -100,9 +102,9 @@ For the model this results into a five-channel input, which is explanatory illus
 		\label{fig:ch3:sec4:bg_channel}
 	\end{subfigure}
 	\caption[Five-channel IOG model input]{
-		Separate channel representation of the five-channel \gls{iog} model input.
+		Representation of the separate channels from the five-channel \gls{iog} model input.
 		All channels have the spacial dimension of $512 \times 512$ \Unit{px}.
-		The user points in the foreground and background are enforced with a 2D Gaussian.
+		The user points in the foreground and background heatmaps are enforced with a 2D Gaussian.
 	} \label{fig:ch3:sec4:model_input_channels}
 \end{figure}
 
@@ -117,15 +119,16 @@ An illustration of the complete architecture is given in Figure \ref{fig:ch3:sec
 The CoarseNet consists out of multiple components: encoder network, decoder network, \gls{psp}-module and skip connections. The CoarseNet is built upon the \gls{dextr} method, therefore they partially share the same architectural components. 
 % TODO write DEXTR Architecture -> are just the first components of the corase net the same in DEXTR?
 
-For the encoder network a ResNet-101 \cite{He16-ResNet} is used, also referred to as backbone.
+As in the \gls{dextr} architecture, the encoder network is represented by ResNet-101 \cite{He16-ResNet}, followed by a \gls{psp} module.
 %The ResNet is implemented without the head of fully connected layers. It contains four ResNet blocks and the fourth block outputs 2048 feature maps of the size $32 \times 32$ \Unit{px}.
-As in \gls{dextr} a \gls{psp}-module is applied after the backbone to gain more contextual information.
+% As in \gls{dextr} a \gls{psp}-module is applied after the backbone to gain more contextual information.
 The output of the \gls{psp}-module is a coarse prediction with the spatial dimension of  $32 \times 32$ \Unit{px} containing 512 feature maps. 
 
-From this onward the decoder network starts the upsampling process. 
-The spatial dimension of the feature maps are enlarged in four stages, in order to regain the original input size of  $512 \times 512$ \Unit{px}. 
-In the upsampling process skip connection are applied to each stage.
-The skip connections originate from corresponding residual part of the backbone.
+From this onward the decoder network starts the upsampling process.
+The decoder network is built upon a reversed simplification of the encoder architecture, that consists out of four residual blocks.
+Therefore, the decoder network is based on four blocks, in order to regain the original input size of  $512 \times 512$ \Unit{px}.
+Further, three skip connection are applied in between the four decoder blocks.
+The skip connections originate from corresponding residual blocks of the encoder, as visualized in Figure \ref{fig:ch3:sec4:arch}.
 % TODO this skip connection also does some processing
 % During the upsampling process activations from the residual blocks of the ResNet are transferred from the ResNet using so lateral connections and concatenated with the upsampled feature maps.
 % A benefit of this architecture is the fusion of information from different network stages.
@@ -134,7 +137,7 @@ The skip connections originate from corresponding residual part of the backbone.
 	\caption[IOG Architecture]{		
 		Architecture of the \gls{iog} model.
 		On the left the model input is visualized as in Figure \ref{fig:ch3:sec4:model_input_channels}.
-		The CoarseNet is marked by (a) and shows the encoder and decoder network with the lateral skip connections and the \gls{psp} module.
+		The CoarseNet is marked by (a) and shows the encoder and decoder network with the skip connections and the \gls{psp} module.
 		The FineNet is marked by (b) and represents the four stream fusion structure.
 		It can be seen, that the single streams origin from different levels of the decoder network.
 		Therefore, each stream applies different processing and upsampling, in order to obtain the same spatial dimension for concatenation.		
@@ -161,10 +164,8 @@ The author justifies the application of these different components by showing th
 
 \subsection{Refinement}\label{ord:ch3:sec4:subsec4}
 
-As introduced in Subsection \ref{ord:ch2:sec3:subsec2}, some methods provide the possibility to perform refinement, if a segmentation results does not meet the user's expectations.
 To perform refinement in the \gls{iog} method, the user sets an additional click on the fore- or background region with the greatest error.
-Each refinement clicks triggers a new model execution.
-The refinement process may be applied iteratively.
+Identically to the \gls{dextr} method, refinement may be performed iteratively and each refinement click triggers a model execution.
 
 The integration in the existing architecture is realized as the following.
 New heatmaps for fore- and background are created with the original clicks and the refinement clicks.
@@ -176,6 +177,7 @@ From the \gls{psp} module on the model is executed normally.
 Hence, the encoder network does not require a new execution, the model's execution time is decreased as well.
 Zhang states, that the usage of the lightweight-branch performs better, than directly adding the refinement click into the normal five-channel input.
 
+% TODO use an example where the initial prediction actually fails and the refinement succeeds.
 \begin{figure} 
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
@@ -200,16 +202,15 @@ Zhang states, that the usage of the lightweight-branch performs better, than dir
 
 \subsection{Performance}\label{ord:ch3:sec4:subsec5}
 
-An overview of interactive segmentation methods is shown in Table \ref{tab:ch2:interactive-stae-of-the-art}.
+An overview of interactive segmentation methods is presented in Table \ref{tab:ch2:interactive-stae-of-the-art}.
 It can be seen that the \gls{iog} outperforms other state-of-the-art methods the number of set points and the achieved \gls{iog} at four clicks.
 
-This method especially performs well due it's  architecture.
+This method especially performs well due it's highly connected architecture.
 The application of skip connections and the FineNet enable the model to recover local details and prevent the information loss during down- and upsampling process.
 
-In their experiments Zhang investigates the performance on unseen classes and the method's generalization capability \Cite{Zha20-IOG}.
-Thereby, the model was trained with the Pascal VOC or COCO dataset and evaluated on both datasets.
-Despite these results seem reliable, it must be taken into account that the Pascal VOC and COCO datasets are very similar and cover the same type of \textit{general} objects.
-Further, Zhang also evaluated the performance on dataset of other domains (\eg CityScapes, Rooftops or Agricultural-Vision).
-The \gls{iog} method trained on Pascal VOC outperformed the \gls{dextr} method or the \textit{Curve-\gls{gcn}}, both trained on the CityScapes dataset.
-A detailed evaluation of the \gls{iog} and \gls{dextr} method is presented in Chapter XXX. 
-%TODO ref -> evaluation chapter.
+Similar to the experiments performed in \cite{Man18-DEXTR}, Zhang \etal also investigate the performance on unseen classes and the method's generalization capability \Cite{Zha20-IOG}. 
+This topic will be continued and examined in detail in Chapter XXX.
+% TODO ref Chapter or Section.
+
+Zhang \etal also evaluated the performance on dataset of other domains (\eg CityScapes, Rooftops or Agricultural-Vision).
+Further, it is demonstated in various setups, that the \gls{iog} method trained on Pascal VOC outperformed the \gls{dextr} method or the \textit{Curve-\gls{gcn}}, both trained on the CityScapes dataset.

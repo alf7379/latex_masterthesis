@@ -2445,12 +2445,20 @@
     <bcf:citekey order="93">NS94-Watershed</bcf:citekey>
     <bcf:citekey order="94">Mey12-WatershedConcept</bcf:citekey>
     <bcf:citekey order="95">Man18-DEXTR</bcf:citekey>
-    <bcf:citekey order="96">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="96">Man18-DEXTR</bcf:citekey>
     <bcf:citekey order="97">He16-ResNet</bcf:citekey>
-    <bcf:citekey order="98">Zha20-IOG</bcf:citekey>
-    <bcf:citekey order="99">Zha20-IOG</bcf:citekey>
-    <bcf:citekey order="100">Zha20-IOG</bcf:citekey>
-    <bcf:citekey order="101">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="98">He16-ResNet</bcf:citekey>
+    <bcf:citekey order="99">Ger17-HandsOn</bcf:citekey>
+    <bcf:citekey order="100">Man18-DEXTR</bcf:citekey>
+    <bcf:citekey order="101">Man18-DEXTR</bcf:citekey>
+    <bcf:citekey order="102">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="103">Man18-DEXTR</bcf:citekey>
+    <bcf:citekey order="104">He16-ResNet</bcf:citekey>
+    <bcf:citekey order="105">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="106">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="107">Zha20-IOG</bcf:citekey>
+    <bcf:citekey order="108">Man18-DEXTR</bcf:citekey>
+    <bcf:citekey order="109">Zha20-IOG</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
