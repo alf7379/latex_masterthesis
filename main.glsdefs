@@ -58,6 +58,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{rgb}{}%
+{%
+\gls@defglossaryentry{rgb}%
+{%
+name={RGB},%
+sort={RGB},%
+type={acronym},%
+first={Red Green Blue\glsspace (RGB)},%
+firstplural={Red Green Blues\glsspace (RGBs)},%
+text={RGB},%
+plural={RGBs},%
+description={Red Green Blue},%
+descriptionplural={Red Green Blue\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Red Green Blue},%
+longplural={Red Green Blues},%
+short={RGB},%
+shortplural={RGBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{ai}{}%
 {%
 \gls@defglossaryentry{ai}%
@@ -605,12 +635,12 @@ parent={},%
 name={IOG},%
 sort={IOG},%
 type={acronym},%
-first={Inside Outside Guidance\glsspace (IOG)},%
-firstplural={Inside Outside Guidances\glsspace (IOGs)},%
+first={Inside-Outside Guidance\glsspace (IOG)},%
+firstplural={Inside-Outside Guidances\glsspace (IOGs)},%
 text={IOG},%
 plural={IOGs},%
-description={Inside Outside Guidance},%
-descriptionplural={Inside Outside Guidance\acrpluralsuffix },%
+description={Inside-Outside Guidance},%
+descriptionplural={Inside-Outside Guidance\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -619,8 +649,8 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Inside Outside Guidance},%
-longplural={Inside Outside Guidances},%
+long={Inside-Outside Guidance},%
+longplural={Inside-Outside Guidances},%
 short={IOG},%
 shortplural={IOGs},%
 counter={page},%

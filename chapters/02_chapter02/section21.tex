@@ -16,14 +16,14 @@ A detailed description of the introduced concepts and terms can be reviewed in \
 
 \subsection{Machine Learning}\label{ord:ch2:sec1:subsec1}
 
-\gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without explicitly programming them.
+\gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without explicitly being programming.
 These algorithms may achieve human level performance, but mostly they are limited to the task they are programmed for.
-\gls{ml} algorithms are referred to as models, that are represented by a function $f$. 
-In order to solve another task a model, has to learn this task's patterns from another dataset $\mathcal{D}$.
+\gls{ml} algorithms are referred to as models.
+In order to solve another task a \gls{ml} model, has to learn this task's patterns from another dataset $\mathcal{D}$.
 
 % Dataset 
 The dataset $\mathcal{D}$ usually is split into a training set $\mathcal{S}$, a test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
-These three types of datasets are treated separately, while the algorithms uses the training set $\mathcal{S}$ to extract the patterns, the test and validation set are only used to evaluate the algorithm's performance.
+These three types of datasets are treated separately, while the model uses the training set $\mathcal{S}$ to extract the patterns, the test and validation set are only used to evaluate the performance of the model.
 
 % Input x and label y
 A dataset $\mathcal{D}$ contains $N$ elements with each element having $M$ features.
@@ -33,31 +33,31 @@ The classification task is defined as
 \begin{equation}
 	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textit{\textbf{x}} \mapsto y
 \end{equation}
-For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, \textbf{y}_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
-In order to create a functioning model the model is trained, by adapting its inner parameters referred to as the model's weights.
-While training a model, features are extracted iteratively from the given input $\textbf{x}$ and the model is adapted.
+For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, y_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
+In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as the model's weights.
+While training a model, the model' weights are adjusted based on the features are extracted iteratively from the given input $\textbf{x}$.
 
 % Model prediction
-The estimated output $\hat{y}$ of a model is computed by the function $f$ with the input $\textbf{x}$
+The function $f$ describes the model, which computes the estimated output $\hat{y}$ based on the input $\textbf{x}$
 \begin{equation}
 	\hat y = f(\textit{\textbf{x}})
 \end{equation}
 with $\hat{y}$ being also referred to as prediction of the model.
 
 % Loss function and Backpropagation
-In order to perform training, a model requires a loss function $L(y,\hat{y})$.
-The loss function $L$ calculates the loss of the model from the difference of the prediction $\hat{y}$ and the true label $y$.
+In order to perform a training, the model requires a loss function $L(y,\hat{y})$.
+The loss function $L$ calculates the model's loss based on the difference of the prediction $\hat{y}$ and the true label $y$.
 There exist different loss functions to calculate various types of losses, which are also referred to as error of the model.
-Based on the loss the model's weights are adjusted, to make a better prediction and reduce the error.
+Depending on the loss the model's weights are adjusted, to make a better prediction and reduce the error.
 Usually the backpropagation algorithm is used to perform this adjustment.
 With the term \textit{learning} is referred to this process.
 
 % Generalization error of a model
 The goodness of a model can be defined by the performance on the training set $\mathcal{S}$ and validation set $\mathcal{S}_3$.
-The two main causes of failure are a underfitted or overfitted model.
-First, describes a model is not complex enough to understand the interrelations in the data.
+The two main causes of failure are underfitted or overfitted models.
+A underfitted model is not complex enough to understand the interrelations in the data and therefore does not perform well.
 Common reasons for underfitted models are missing complexity in the model architecture or a too small or not representative dataset.
-Last, overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
+Overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
 This happens, when the model does not generalize well enough and instead learns the features of the training set by heart.
 To successfully train a model, a tradeoff between overfitting and underfitting must be found.
 
@@ -83,28 +83,31 @@ Further, pooling layers are commonly used, in order to reduce the size of featur
 
 \subsection{Evaluation}\label{ord:ch2:sec1:subsec3}
 
-A model's performance may be evaluated using various metrics.
-For classification tasks exist the following basic metric.
-In this context, the \textit{true positives} are the number of predictions, that are correctly predicted to be positive.
-While the \textit{false positives} are the number of predictions, that are incorrectly predicted to be positive, but truly are negative.
-The corresponding definition applies for the equivalent terms \textit{true negatives} and \textit{false negatives}.
+The performance of a model may be evaluated using various metrics.
+In the context of classification, the \textit{true positives} are the number of instances, that are correctly predicted to be positive.
+While the \textit{false positives} are the number of instances, that are incorrectly predicted to be positive, but truly are negative.
+The contradictory definition applies for the equivalent terms \textit{true negatives} and \textit{false negatives}.
 
 % Accuracy
-The accuracy is one of the most simple metrics and defined by 
-\begin{equation}
-	Accuracy = \frac{\textnormal{\textit{true positives}} + \textnormal{\textit{true negatives}}}
-	{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}} + \textnormal{\textit{true negatives}} + \textnormal{\textit{false negatives}}}
-\end{equation}
-that represents the number of correct predictions over the number of all predictions.
-
-For a more detailed evaluation providing more insights, the model's precision and recall are calculated.
+%\begin{equation}
+%	Accuracy = \frac{\textnormal{\textit{true positives}} + \textnormal{\textit{true negatives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}} + \textnormal{\textit{true negatives}} + \textnormal{\textit{false negatives}}}
+% \end{equation}
+The accuracy is one of the most simple metrics and represents the number of correct predictions over the number of all predictions.
+An evaluation based only on the accuracy can be misleading.
+Therefore, there exist more evaluation metrics as precision and recall.
 % precision
+The precision is defined by
 \begin{equation}
 	precision = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}}}
 \end{equation}
-
+and represents the accuracy of the positive predictions.
 
 % recall
+The recall is defined by
 \begin{equation}
 	recall = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false negatives}}}
 \end{equation}
+and is also referred to as \textit{sensitivity} or \textit{true positve rate}.
+The recall describes the ratio of positive instances, that are predicted correctly.
+
+Further, there exist methods for the evaluation of model as the \textit{F1-Score} or the ROC curve, that are described in \cite{Ger17-HandsOn}.

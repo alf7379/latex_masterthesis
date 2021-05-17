@@ -64,7 +64,7 @@ This fundamental concept is used for various interactive segmentation models \ci
 Further, the methods \gls{dextr}  \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} also follow a user point centered concept. They are part of the benchmark and extensively described in Chapter \ref{ord:ch3}.
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap232_ifcn.png}
-	\caption[Interactively Fully Convolutional Network]{ Copyright \copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}}
+	\caption[Interactively Fully Convolutional Network]{Copyright \copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}}
 	\label{fig:ch2:sec3:ifcn}
 \end{figure}
 
@@ -215,14 +215,14 @@ The \gls{dl} model consists out of a combination of several subnetworks and arch
 First, a \gls{cnn} takes the cropped image as input and performs as encoder.
 This encoder provides the extracted features and a boundary prediction to the third component.
 Second, a fixed size polygon is initialized, to transform the task into a graph problem.
-Third, a multi-layer \gls{gcn} iteratively shifts the position of each polygon node towards the object boundary.
+Third, a multi-layer \gls{gcn} iteratively shifts the position of each polygon node towards the object boundary. 
 This method is named \textit{Curve-\gls{gcn}}, inspired by the \textit{curved} approximation of a closed polygon.
-
 % Good user interaction - refinement
 The user is able to perform refinement, by interactively moving single nodes of the polygon.
 % Performance
 % The performance of the \textit{Curve-\gls{gcn}} is only represented on the Cityscapes Dataset, but it claim to perform 
 Details of this method can be reviewed in \cite{Ling19-Curve-GCN}.
+In experiments on datasets as CityScapes or Rooftop the \textit{Curve-\gls{gcn}} is outperformed by the \gls{iog} methods, which is presented in \ref{ord:ch3:sec4}.
 
 % Vorreiter von Curve GCN \cite{Acu18-Polygon-RNN++}
 The predecessor of the \textit{Curve-\gls{gcn}} is based on \glspl{rnn} and introduced in \cite{Acu18-Polygon-RNN++}.
