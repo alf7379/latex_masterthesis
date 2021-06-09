@@ -1,14 +1,66 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Collection of statistics}\label{ord:ch4:sec4}
+\section{Image Selection}\label{ord:ch4:sec4}
 
-What is measure for each Method
+As the importance of a suitable dataset is already highlighted, this Section focuses on the composition of the benchmark dataset.
+It was a conscious decision to select images from different domains and with different attributes.
+Both, diverse domains and attributes, are fundamental to evaluate the generalization capability of the methods.
+The selection of images for the dataset was done manually.
+Thereby, images from various datasets are included as PASCAL \gls{voc} \cite{Eve20-PascalVOC}, COCO \cite{Lin14-Coco}, DAVIS \cite{Per16-DAVIS}, CityScapes \cite{Cor16-Cityscapes}, \gls{d2s} \cite{Paddo19-D2S}, \gls{mad} \cite{Bergmann19-MAD}, MVTec Screws \cite{UFN19-Screws}, and other unpublished datasets from the MVTec Software GmbH.
+% Other unpublsished MVTec Datasets
+%--- pill_bags
+%--- MVTec segmentation and counting dataset
+%--- Single images: Cans, Cigarettes, Cereals
+%--- MVTec closed packed & occluded object detection dataset (CPOD)
+% Nachlabeln von Bildern
+For some images from open source datasets the \gls{gt} was improved, in order to achieve a consistent goodness of the \gls{gt} for the benchmark dataset.
+% TODO appendix with various examples of the image selection?
 
-IOG one stroke and one click, instead of three clicks.
+% Amount of images
+The benchmark dataset contains 87 images with 225 annotations.
+% Vergleichsweise klein
+In the context of \gls{dl}, this evaluation datasets is comparatively small.
+It was kept small on purpose, to enable users to label the majority of the images in a reasonable expenditure of time.
+ 
+% es gibt kein 'perfektes' Dataset -> always depends on the porpuse of the model
+It should be highlighted, that there is no \textit{ultimate} evaluation dataset, because the suitability of a dataset depends on the objective of the task.
+Within the scope of this thesis, the main objective is to evaluate the generalization capabilities of interactive segmentation methods by real users.
+The established dataset fulfills this evaluation purpose, as recorded in Chapter \ref{ord:ch5}.
 
-\subsection{tbd}\label{ord:ch4:sec4:subsec1}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-\subsection{tbd}\label{ord:ch4:sec4:subsec2}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\subsection{Domains}\label{ord:ch4:sec2:subsec1}
+
+In order to ensure the variety of the benchmark dataset, each image was categorized into one of four domains:
+%
+\begin{itemize}
+	\item \textbf{Standard}, contains casual objects and scenes, that are common in daily life.
+	The images mostly origin from \textit{general-use} datasets as PASCAL \gls{voc}, COCO, and DAVIS.
+	\item \textbf{Industrial}, focuses on images from an industrial context, that are usually underrepresented in  \textit{general-use} datasets.
+	Images from \gls{d2s}, MVTec Screws and other unpublished dataset are included.
+	\item \textbf{Urban}, represents images of urban road scenes as in CityScapes.
+	\item \textbf{Anomaly}, contains images from the \gls{mad} dataset, which originally was used for anomaly detection.
+	These images contain objects with defects as \eg cracks, contamination, or holes.
+\end{itemize}
+
+
+
+\subsection{Attributes}\label{ord:ch4:sec2:subsec2}
+
+The attributes of the benchmark images and objects also have a great impact on the segmentation and evaluation.
+To further evaluate their effect and how well the methods generalize, the following attribute categories have been established and assigned for each image.
+
+\begin{itemize}
+	\item \textbf{Illumination}, states if an image is underexposed, overexposed, or normal.
+	\item \textbf{Color channel}, differentiates between \gls{rgb} and gray scale images.
+	\item \textbf{Contrast}, states if the contrast in the image is high or low.
+	\item \textbf{Shapes}, describes the shape of the object as convex, uneven, or if it contains holes.
+	\item \textbf{Overlap}, states if multiple objects are touching, overlapping, or there is no contact at all.
+	\item \textbf{Number of objects}, gives a simplified idea about the amount of objects in the image (single, few, or many).
+	\item \textbf{Error type}, describes the type of error for images of the domain \textit{anomaly}.
+	The error types categories are \textit{holes}, \textit{cracks}, \textit{contamination} or \textit{none} as default. 
+	\item \textbf{Reflection}, binary describes if the objects are reflecting.
+	\item \textbf{Background texture}, describes the background of the image as plain, textured or cluttered.
+	\item \textbf{Foreground texture}, describes the foreground of the image as plain, textured or cluttered.
+	% TODO decide if to remove some attributes if they are not used in the evaluation anyway.
+\end{itemize}

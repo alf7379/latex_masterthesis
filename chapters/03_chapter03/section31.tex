@@ -3,9 +3,9 @@
 
 \section{Polygon Drawing}\label{ord:ch3:sec1}
 
-In contrast to previously introduced methods, this polygon drawing proceeds manual.
+In contrast to the previously introduced interactive segmentation approaches, this polygon drawing proceeds manual.
 By manually setting points on the object in the image a polygon is created.
-From three points a polygon is spanned, where each point functions as a node.
+From three points on a polygon is spanned, where each point functions as a node.
 % Each point has two edges.
 The area inside the polygon represents the object mask.
 In order to create a suitable mask the points should be set on the boundary of the desired object.
@@ -13,11 +13,13 @@ In order to create a suitable mask the points should be set on the boundary of t
 There are two ways to set points.
 First, to set one point after another by one mouse click for each point.
 Second, to draw multiple points by moving the mouse, this also referred to as \textit{stroking}.
-In detail this is done, pressing the left mouse button, moving the mouse and releasing the left mouse button.
+This is done by pressing the left mouse button, moving the mouse and releasing the left mouse button.
 On the drawn way multiple points with a certain spacing are set.
 
 Further, there are additional features implemented, in order to facilitate the drawing process.
-Each new set point is automatically included into the polygon's nearest edge.
+Each new set point is automatically included into the nearest edge of the polygon.
 Set points can be relocated by a functionality similar to \textit{drag and drop}.
 A set point can be removed by uniting it with another point and thereby only one point remains.
+There exists the possibility to draw a hole into an existing polygon.
 
+Besides this method may rather be categorized as drawing method, further on polygon drawing is also referred to as an interactive segmentation method.

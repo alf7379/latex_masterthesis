@@ -17,9 +17,10 @@
 \usepackage{caption}
 \usepackage{subcaption}
 % \usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
-\usepackage{hyperref}
-\usepackage{xspace} 
-
+\usepackage{hyperref} % linkes with colored boxes
+\usepackage{xspace}
+\usepackage{booktabs,siunitx,rotating}
+\usepackage{pifont}
 % \usepackage{footmisc}
 
 \usepackage[printonlyused]{acronym}
@@ -95,4 +96,8 @@ uniquename=init]{biblatex}
 \def\etc{\emph{etc}\onedot} \def\vs{vs\onedot}
 \def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
 \def\etal{\emph{et~al}\onedot}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
 \makeatother

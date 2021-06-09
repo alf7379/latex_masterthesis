@@ -1,7 +1,7 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{ML, DL and CNN}\label{ord:ch2:sec1}
+\section{Basics}\label{ord:ch2:sec1}
 
 In the last decade the development and research interest in the field of \gls{ml} have greatly increased and drawn much attention. 
 This section briefly recaptures the fundamental concepts of \gls{ml} and \gls{dl}.
@@ -17,25 +17,25 @@ A detailed description of the introduced concepts and terms can be reviewed in \
 \subsection{Machine Learning}\label{ord:ch2:sec1:subsec1}
 
 \gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without explicitly being programming.
-These algorithms may achieve human level performance, but mostly they are limited to the task they are programmed for.
+These algorithms may achieve human level performance, but mostly they are limited to a single task.
+In order to solve another task a \gls{ml} algorithm, has to learn the patterns of the new task from a corresponding dataset $\mathcal{D}$.
 \gls{ml} algorithms are referred to as models.
-In order to solve another task a \gls{ml} model, has to learn this task's patterns from another dataset $\mathcal{D}$.
 
 % Dataset 
 The dataset $\mathcal{D}$ usually is split into a training set $\mathcal{S}$, a test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
-These three types of datasets are treated separately, while the model uses the training set $\mathcal{S}$ to extract the patterns, the test and validation set are only used to evaluate the performance of the model.
+These three types of datasets are treated separately, while the model uses the training set $\mathcal{S}$ to extract the patterns, the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$ are only used to evaluate the performance of the model.
 
 % Input x and label y
 A dataset $\mathcal{D}$ contains $N$ elements with each element having $M$ features.
 An element $\textbf{x}$ can be represented as feature-vector $\textbf{x} = [x_1, \dots ,x_M]$, which the model takes as input.
+For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, y_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
 In the scope of classification, this label $y$ is represented by one out of $K$ classes $y \in \lbrace c_1, \dots, c_K \rbrace$.
 The classification task is defined as  
 \begin{equation}
 	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textit{\textbf{x}} \mapsto y
 \end{equation}
-For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, y_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
-In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as the model's weights.
-While training a model, the model' weights are adjusted based on the features are extracted iteratively from the given input $\textbf{x}$.
+In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as the weights of the model.
+While training a model, the weights are adjusted based on the features are extracted iteratively from the given input $\textbf{x}$.
 
 % Model prediction
 The function $f$ describes the model, which computes the estimated output $\hat{y}$ based on the input $\textbf{x}$
@@ -46,38 +46,38 @@ with $\hat{y}$ being also referred to as prediction of the model.
 
 % Loss function and Backpropagation
 In order to perform a training, the model requires a loss function $L(y,\hat{y})$.
-The loss function $L$ calculates the model's loss based on the difference of the prediction $\hat{y}$ and the true label $y$.
+The loss function $L$ calculates the loss of the model based on the difference of the prediction $\hat{y}$ and the true label $y$.
 There exist different loss functions to calculate various types of losses, which are also referred to as error of the model.
-Depending on the loss the model's weights are adjusted, to make a better prediction and reduce the error.
-Usually the backpropagation algorithm is used to perform this adjustment.
-With the term \textit{learning} is referred to this process.
+Depending on the loss the weights of the model are adjusted, to make a better prediction and reduce the error.
+An algorithm called backpropagation is used to perform this adjustment.
+The term \textit{learning} refers to this process.
 
 % Generalization error of a model
-The goodness of a model can be defined by the performance on the training set $\mathcal{S}$ and validation set $\mathcal{S}_3$.
+The goodness of a model can be defined by the performance on the training set $\mathcal{S}$, test set $\mathcal{S}_2$, and validation set $\mathcal{S}_3$.
 The two main causes of failure are underfitted or overfitted models.
 A underfitted model is not complex enough to understand the interrelations in the data and therefore does not perform well.
-Common reasons for underfitted models are missing complexity in the model architecture or a too small or not representative dataset.
+Common reasons for underfitted models are missing complexity in the model architecture or too small and not representative datasets.
 Overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
 This happens, when the model does not generalize well enough and instead learns the features of the training set by heart.
 To successfully train a model, a tradeoff between overfitting and underfitting must be found.
 
 % Hyperparameter
 Further, there exist so-called \textit{hyperparameters}, that are used to adjust the training process.
-Important hyperparameters are the learning rate $\lambda$ , the number of training epochs $N_{Epochs}$ or the applied optimizer.
+Important hyperparameters are the learning rate $\lambda$ , the number of training epochs $N_{Epochs}$, and the applied optimizer.
 
 
 \subsection{Deep Learning}\label{ord:ch2:sec1:subsec2}
 
-\gls{nn} are an advanced method to apply the concepts of \gls{ml}.
+A \gls{nn} is an advanced method to apply the concepts of \gls{ml}.
 They consist out of multiple neurons, that are strongly connected in a layer-wise architecture.
-Does the architecture has multiple layers, the network is also described as \textit{deep}, resulting in the terms \gls{dl} and \gls{dnn}.
+If an architecture consists out of multiple layers, the network is also described as \textit{deep}, resulting in the terms \gls{dl} and \gls{dnn}.
 A \gls{nn} processes a given input $\textbf{x}$ and makes a prediction $\hat{y}$, similar as a \gls{ml} model.
 
 Nowadays, in order to solve various tasks, a variety of different network types exist \eg convolutional, graph or recurrent networks.
 For the popular task of image detection \glspl{cnn} have proven themselves to be most adequate.
-The main component of \glspl{cnn} are convolutional layers, that are used to process and extract features from a visual input.
+The main component of \glspl{cnn} are convolutional layers, that are used to process and extract features from visual input.
 In these layers a convolution operation is performed on the input by applying $c$ convolution kernels.
-The output of a layer is defined as a feature map $F_c$, with $c$ representing the amount of channels.
+The output of a layer is defined as a feature map $F_c$, with also $c$ representing the amount of channels in the feature map.
 Further, pooling layers are commonly used, in order to reduce the size of feature maps.
 
 
@@ -101,7 +101,6 @@ The precision is defined by
 	precision = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}}}
 \end{equation}
 and represents the accuracy of the positive predictions.
-
 % recall
 The recall is defined by
 \begin{equation}

@@ -4,13 +4,13 @@
 \section{Inside-Outside Guidance}\label{ord:ch3:sec4}
 
 Another approach for interactive segmentation is the \gls{iog} method, introduced in \cite{Zha20-IOG}.
-The concept of this state-of-the-art method us strongly based on the previously introduced \gls{dextr} method \cite{Man18-DEXTR}.
+The concept of this state-of-the-art method is strongly based on the previously introduced \gls{dextr} method \cite{Man18-DEXTR}.
 
 \subsection{Basis Concept}\label{ord:ch3:sec4:subsec1}
 % User Clicks - Workflow
 The user interaction of the \gls{iog} method requires three user clicks executed in two steps.
 First, the user has to draw a tight bounding box around the object of interest. 
-The drawing of the bounding box is normally counted as two user clicks on the background.
+The drawing of the bounding box may be counted as two user clicks on the background or one stroke.
 % TODO refine the stroke possibility
 %The creation of the bounding box is implemented using a stroke instead of setting two clicks.
 Second, the user has to click once on the center of the object, which is represented as foreground click. 
@@ -27,10 +27,10 @@ This is referred to as \textit{inside} guidance.
 These two types of guidance are the namesake of the method \glsentryfull{iog}.
 
 % Advantage over DEXTR
-Zhang claims that her way to set user clicks has two advantges over the way to set user clicks in other interactive methods as \gls{dextr}.
-First, the setting of extreme points may be confusig and misleading, as they may be located very close to each other, depending on the object's orientation.
+Zhang \etal claim, that their way to set user clicks has two advantges over the way to set user clicks in other interactive methods as \gls{dextr}.
+First, the setting of extreme points may be confusig and misleading, as they may be located very close to each other, depending on the orientation of the object.
 Second, if the obejct of interst contains a hole (\ie a donut) or is in the background of another object, \gls{dextr} cannot provide a robust guidance.
-In contrast, the variable position of the foreground click in \gls{iog} enables a more robust guidance even for special object scenarios.
+In contrast, the variable position of the foreground click in \gls{iog} enables a more robust guidance even for special object scenarios \cite{Zha20-IOG}.
 
 \begin{figure}
 	\centering
@@ -68,15 +68,15 @@ In contrast, the variable position of the foreground click in \gls{iog} enables 
 Identical to the \gls{dextr} method, the background clicks form a bounding box, which is enlarged by  $p_{{box}}$ \Unit{px}.
 This processing is identical to the \gls{dextr} method.
 % TODO ??mention that the background points are move by ~10 pixel in order to avoid the enforced background points being on the foreground
-As in the \gls{dextr} processing, the image is cropped based on the enlarged bounding box and resized to the size of $512 \times 512$ \Unit{px}, if necessary zero padding is applied.
+The image is cropped based on the enlarged bounding box and resized to the size of $512 \times 512$ \Unit{px}, if necessary zero padding is applied.
 
 The bounding box is formed by the two background points, that are diagonal corners points (top-left and bottom-right or bottom-left and top-right).
 Based on these two points, the other two corner points are derived, which provides four background points to the price of two.
-Identical to the \gls{dextr} processing, the fore- and background clicks are converted into points on two separate heatmaps.
+As in the \gls{dextr} processing, the fore- and background clicks are converted into points on two separate heatmaps.
 To highlight the user points a 2D Gaussian is centered around each click (see Equation \ref{equ:gauss}).
 
-The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenated with the RGB image.
-For the model this results into a five-channel \gls{iog} model input, which is explanatory illustrated in Figure \ref{fig:ch3:sec4:model_input_channels}.
+The two heatmaps have the size of $512 \times 512$ \Unit{px} and are concatenated with the \Gls{rgb} image.
+This results in the five-channel \gls{iog} model input, which is explanatory illustrated in Figure \ref{fig:ch3:sec4:model_input_channels}.
 
 %TODO add crosses to cropped RGB image
 \begin{figure}
@@ -116,8 +116,7 @@ An illustration of the complete architecture is given in Figure \ref{fig:ch3:sec
 
 
 \subsubsection{CoarseNet}
-The CoarseNet consists out of multiple components: encoder network, decoder network, \gls{psp}-module and skip connections. The CoarseNet is built upon the \gls{dextr} method, therefore they partially share the same architectural components. 
-% TODO write DEXTR Architecture -> are just the first components of the corase net the same in DEXTR?
+The CoarseNet consists out of multiple components: encoder network, decoder network, \gls{psp}-module and skip connections. The CoarseNet is built upon the \gls{dextr} method, therefore they partially share the same architectural components.
 
 As in the \gls{dextr} architecture, the encoder network is represented by ResNet-101 \cite{He16-ResNet}, followed by a \gls{psp} module.
 %The ResNet is implemented without the head of fully connected layers. It contains four ResNet blocks and the fourth block outputs 2048 feature maps of the size $32 \times 32$ \Unit{px}.
@@ -125,10 +124,10 @@ As in the \gls{dextr} architecture, the encoder network is represented by ResNet
 The output of the \gls{psp}-module is a coarse prediction with the spatial dimension of  $32 \times 32$ \Unit{px} containing 512 feature maps. 
 
 From this onward the decoder network starts the upsampling process.
-The decoder network is built upon a reversed simplification of the encoder architecture, that consists out of four residual blocks.
+% TODO declare what kind of operations are used for the upsampling.
+The decoder network is built upon a reversed simplification of the encoder architecture. % , that consists out of four residual blocks.
 Therefore, the decoder network is based on four blocks, in order to regain the original input size of  $512 \times 512$ \Unit{px}.
-Further, three skip connection are applied in between the four decoder blocks.
-The skip connections originate from corresponding residual blocks of the encoder, as visualized in Figure \ref{fig:ch3:sec4:arch}.
+Further, three skip connection are applied and establish a connection in between the four resiudual blocks of the encoder and decoder network, as visualized in Figure \ref{fig:ch3:sec4:arch}.
 % TODO this skip connection also does some processing
 % During the upsampling process activations from the residual blocks of the ResNet are transferred from the ResNet using so lateral connections and concatenated with the upsampled feature maps.
 % A benefit of this architecture is the fusion of information from different network stages.
@@ -140,7 +139,7 @@ The skip connections originate from corresponding residual blocks of the encoder
 		The CoarseNet is marked by (a) and shows the encoder and decoder network with the skip connections and the \gls{psp} module.
 		The FineNet is marked by (b) and represents the four stream fusion structure.
 		It can be seen, that the single streams origin from different levels of the decoder network.
-		Therefore, each stream applies different processing and upsampling, in order to obtain the same spatial dimension for concatenation.		
+		Therefore, each stream applies different processing and upsampling, in order to obtain the same spatial dimension for concatenation $\oplus$.		
 		As final prediction a binary object mask is shown.
 		The \textit{lightweight-branch} for refinement is marked with (c).
 		Copyright \copyright 2020 IEEE. Reprinted by permission from \cite{Zha20-IOG}.
@@ -171,11 +170,11 @@ The integration in the existing architecture is realized as the following.
 New heatmaps for fore- and background are created with the original clicks and the refinement clicks.
 These two heatmaps are combined into a two-channel input, which is processed in a so called \textit{lightweight-branch}.
 This lightweight-branch consists out of five convolutional layers, that perform the downsampling.
-The output of this branch is combined with the output of the encoder network's initial iteration and forwarded to the \gls{psp} module as shown in Figure \ref{fig:ch3:sec4:arch}.
+The output of this branch is combined with the output of the initial iteration from the encoder network and forwarded to the \gls{psp} module as shown in Figure \ref{fig:ch3:sec4:arch}.
 From the \gls{psp} module on the model is executed normally.
 
-Hence, the encoder network does not require a new execution, the model's execution time is decreased as well.
-Zhang states, that the usage of the lightweight-branch performs better, than directly adding the refinement click into the normal five-channel input.
+Hence, the encoder network does not require a new execution, the execution of the model time is decreased as well.
+Zhang \etal state, that the usage of the lightweight-branch performs better, than directly adding the refinement click into the normal five-channel input.
 
 % TODO use an example where the initial prediction actually fails and the refinement succeeds.
 \begin{figure} 
@@ -205,12 +204,14 @@ Zhang states, that the usage of the lightweight-branch performs better, than dir
 An overview of interactive segmentation methods is presented in Table \ref{tab:ch2:interactive-stae-of-the-art}.
 It can be seen that the \gls{iog} outperforms other state-of-the-art methods the number of set points and the achieved \gls{iog} at four clicks.
 
-This method especially performs well due it's highly connected architecture.
+This method especially performs well due the highly connected architecture.
 The application of skip connections and the FineNet enable the model to recover local details and prevent the information loss during down- and upsampling process.
 
-Similar to the experiments performed in \cite{Man18-DEXTR}, Zhang \etal also investigate the performance on unseen classes and the method's generalization capability \Cite{Zha20-IOG}. 
+Similar to the experiments performed in \cite{Man18-DEXTR}, Zhang \etal also investigate the performance on unseen classes and the generalization capability of the method \Cite{Zha20-IOG}. 
 This topic will be continued and examined in detail in Chapter XXX.
 % TODO ref Chapter or Section.
 
-Zhang \etal also evaluated the performance on dataset of other domains (\eg CityScapes, Rooftops or Agricultural-Vision).
-Further, it is demonstated in various setups, that the \gls{iog} method trained on Pascal VOC outperformed the \gls{dextr} method or the \textit{Curve-\gls{gcn}}, both trained on the CityScapes dataset.
+Zhang \etal also evaluate the performance on dataset of other domains (\eg CityScapes, Rooftops or Agricultural-Vision).
+Further, it is demonstated in various setups, that the \gls{iog} method trained on PASCAL \gls{voc} outperformed the \gls{dextr} method or the \textit{Curve-\gls{gcn}}, both trained on the CityScapes dataset.
+
+% TODO appendix with various examples of IOG segmentation results?

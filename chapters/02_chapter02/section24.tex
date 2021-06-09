@@ -1,0 +1,80 @@
+% !TeX root = ../../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\section{Statistics}\label{ord:ch2:sec4}
+
+This Section provides the theoretical foundation for the statistical evaluation, which is performed in Chapter \ref{ord:ch5}.
+Only the principles and methods are briefly introduced, which are also relevant in the later evaluation, a general introduction into the field of statistics is given in \cite{PS16-Statistics} or \cite{Dodge08-Statistics}.
+In statistics the data, which is analyzed, is also referred to as sample.
+
+
+\subsection{Normality Assumption in Statistics} \label{ord:ch2:sec4:subsec1}
+%TODO ref normal distribution
+A common assumption for statistical analysis is, that the data points of a sample follow a normal distribution.
+This is often a requirement for the application of statistical methods, this group of methods is also referred to as parametric methods.
+In contrast, non-parametric methods do not require normally distributed samples.
+In order to determine if a sample is normally distributed, two types of methods exist: normality tests or visual plots.
+Normality tests control if a sample is drawn from a normal population.
+When using large real world data sets, these tests may not be suitable, because even small deviations may be detected and interpreted as evidence of non-normality.
+As a result, visual plots are frequently used to confirm the distribution of a sample.
+To visualize the distribution and compare it to the normal distribution, the data points of the sample may be plotted in a histogram.
+Further, normal characteristics can be illustrated by a normal probability plot.
+In a normal probability plot the data points are aligned at the diagonal line, if they are is distributed normally. \footnote{Wolfram Research (2010), ProbabilityPlot \url{https://reference.wolfram.com/language/ref/ProbabilityPlot.html}}
+
+If a sample is not distributed normally, \cite{PS16-Statistics} suggests to transform the sample, in order to achieve normality.
+This transformation is realized by the application of a mathematical function to every data point in the sample.
+Thereby, the application of a function tries to shift the data into a normal distribution.
+The effect of the transformation can be controlled by a histogram or probability plot.
+
+
+\subsection{Student's t-test}\label{ord:ch2:sec4:subsec2}
+
+The Student's t-test is a hypothesis test, that belongs to the group of parametric tests and therefore expects normal distributed samples.
+The details of hypothesis test in the form of ttests are illustrated in \cite{Dodge08-Statistics} \cite{FisherBox81-StudentT} \cite{RK06-HypothesisTesting}.
+
+In general, a hypothesis test is a statistical method to investigate an assumption on a specific variable in a sample.
+The variable is divided in $N$ groups, which are also referred to as factors.
+An assumption is made whether the different groups differ or not.
+The assumption is represented by a so-called null hypothesis $H_{0}$
+\begin{equation}
+	H_{0}: \theta_{1} = \theta_{2}
+\end{equation}
+with $N=2$ factors and $\theta$ representing the factor as \eg mean or median value.
+$H_{0}$ mostly states, that there is not difference between the factors of the sample.
+The counterpart of $H_{0}$ is the alternative hypothesis $H_{A}$,
+%\begin{equation}
+%	H_{A}: \theta_{1} > \theta_{2} or \theta_{1} \not= \theta_{2} or \theta_{1} < \theta_{2}
+%\end{equation} 
+which contrasts with $H_{0}$ and usually assumes a difference between the factors.
+The evaluation of $H_{0}$ takes place in the measure of the significance level $\alpha$, which represents the probability of a $H_{0}$ being wrongly rejected ($\textnormal{\textit{false negative}}$) or wrongly accepted ($\textnormal{\textit{false positive}}$).
+Based on the properties of the sample (\eg mean, variance, standard deviation) a statistic is used to calculate the $\textnormal{\textit{p-value}}$.
+If the $\textnormal{\textit{p-value}}$ is smaller than the chosen $\alpha$, $H_{0}$ is rejected, while $H_{A}$ is accepted and vice versa.
+In evaluations hypothesis tests are applied to identify statistical relevant differences between factors and prevent the misinterpretation of differences caused by accident.
+
+The Student's t-test is a widely used hypothesis test, that is used to compare two factors of one variable.
+The evaluation is based on the mean value $\overline{x}$ of each factor.
+% Hartmann, K., Krois, J., Waske, B. (2018): E-Learning Project SOGA: Statistics and Geospatial Data Analysis. Department of Earth Sciences, Freie Universitaet Berlin.
+
+
+\subsection{Mann-Whitney U-Test}\label{ord:ch2:sec4:subsec3}
+
+The Mann-Whitney U-Test \cite{MW47-MannWhitneyTest} is a non-parametric hypothesis test.
+This test is also referred to as non-parametric counterpart to the Student's t-test.
+Mann-Whitney compares independent random samples of two factors.
+These random samples are ranked based on their value.
+Therefore the tendency $ten \left( x \right) $ in the sample is determined.
+$H_{0}$ assumes that both samples have the same tendency $ten \left( x \right) $, while $H_{A}$ states the opposite.
+
+
+\subsection{Kruskal-Wallis Test}\label{ord:ch2:sec4:subsec4}
+The Kruskal-Wallis test \cite{KW53-KruskalWallisTest} is a non-parametric hypothesis test.
+Therefore, samples are not required to be distributed normally.
+Kruskal-Wallis enables the comparison of two or more factors from a variable.
+Kruskal-Wallis is also known as the non-parametric alternative to \gls{anova}, which is a popular parametric test to evaluate multiple factors.
+The Kruskal-Wallis test compares the median values $med \left( x \right) $ of each factor.
+As usual for hypothesis tests, in $H_{0}$ it is assumed, that the median values of all factors are equal.
+$H_{A}$ states, that there is a significant difference between at least one median value.
+The number of samples in each factor must be equal in order to perform this test.
+However, the Kruskal-Wallis test does not state which of the factors differs significantly.
+To identify the deviating factor a post analysis is performed by \eg Connover test \cite{CI79-ConnocerTest}, Dunn test \cite{Dunn64-DunnTest}, or DSCF test \cite{CF91-dscf}. \footnote{Scikit-Posthocs (2021), posthocs API \url{https://scikit-posthocs.readthedocs.io/en/latest/posthocs_api/}} 
+

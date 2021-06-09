@@ -3,21 +3,19 @@
 
 \section{Interactive Segmentation}\label{ord:ch2:sec3}
 
-Image segmentation takes as input $x$ only the image itself, in contrast interactive segmentation takes beside the image some additional information interactively provided by an user as input.
+Image segmentation takes as input $\textbf{x}$ only the image itself.
+In contrast interactive segmentation takes beside the image some additional information interactively provided by an user.
 % Interactive segmentation segmentation takes advantage of additional information interactively provided by an user.
-This additional information is especially beneficial, because it is manually picked by the valuable image processing capabilities of human users.
-Due to this, interactive segmentation networks are provided with high level guidance regarding the objects location.
+This additional information is especially beneficial, because it is manually picked by the valuable image processing capabilities of a human users.
+Due to this, interactive segmentation networks are provided with high level guidance on the object of interest.
 Depending on the type of interaction, the receipt of the user input may be more or less elaborately, which leads to a fundamental difficulty of interactive methods in general.
-User interaction may be considered expensive and elaborate.
+User interaction is considered to be expensive and elaborate.
 % Especially, for deep learning tasks a great quantity of images is required.
 
-% TODO interactive segmentation methods on semantic segmentaiton?
-Instance segmentation is a common task for the application of interactive methods.
-%, but may also be used for semantic segmentation is applicable in the given context.
-They focus on extracting one object from an image, so the prediction basically distinguish between two classes: the foreground object to segment and the background.
-In order to segment multiple objects in an image or the whole image, usually multiple iterations are necessary.
+The interactive segmentation of an instance may be interpreted as semantic segmentation with two classes: the foreground object to segment and the background.
+In order to segment multiple objects in an image, multiple applications of these interactive methods are required.
 % TODO scope of interactive segmentation here, the class is assigned manually?
-In the following the principles of several concepts for interactive segmentation methods are introduced.
+In the following the principles of interactive segmentation concepts are introduced, on which the methods used in the benchmark study are built on.
 
 \subsection{Classical Concepts}\label{ord:ch2:sec3:subsec1}
 Before the upcomming of \gls{dl} and \glspl{cnn}, segmentation was already performed with classical image processing.
@@ -25,14 +23,14 @@ These methods also focus on the extraction of a foreground object from the backg
 
 % GraphCut and GrabCut
 Prominent algorithms are Graph Cut \cite{BJ01-GraphCut} and GrabCut \cite{RKB04-GrabCut}.
-As user interaction GrabCut requires a loose bounding box.
-Everything outside the bounding box and the borders itself are defined as background, while the inside of the box is segmented based on contrast and color information.
-Further, the goodness of the result may be enhanced by iteratively defining explicit image parts as fore- or background.
+As user interaction GrabCut requires a loose bounding box and optionally defining explicit image parts as fore- or background.
+%Everything outside the bounding box and the borders itself are defined as background, while the inside of the box is segmented based on contrast and color information.
+%Further, the goodness of the result may be enhanced by iteratively defining explicit image parts as fore- or background.
 
 % Watershed
-Another still relevant method to perform instance segmentation is the Watershed algorithm \cite{NS94-Watershed}.
-This method interactively collects fore- and background regions from an user in order to perform segmentation.
-The Watershed algorithm is part of the benchmark study and elaborately examined in Chapter \ref{ord:ch3}.
+Another still relevant method to perform instance segmentation is the watershed transformation \cite{VS91-Watershed}.
+This method interactively collects fore- and background markers from an user in order to perform segmentation.
+The watershed method is part of the benchmark study and elaborately examined in Section \ref{ord:ch3:sec2}.
 
 % Superpixels
 Last, an algorithm using so-called \textit{Superpixel} was introduced in 2003 \cite{RM03-Superpixel}.
@@ -41,8 +39,9 @@ Further, these Superpixels are used to perform segmentation.
 This algorithms is still a current research topic, an overview of several state-of-the-ar approaches is given in \cite{SHL16-SuperpixelEvaluation}.
  
 % Final tought
-These classical methods may perform very well on certain images, but tend to reach their limitations as they deal with more complex structures.
-They are often outperformed on current benchmark datasets by more recent \gls{dl} methods.
+Although, these algorithms are based on classical image processing, they remain relevant in modern problem and research topics.
+%These classical methods may perform very well on certain images, but tend to reach their limitations as they deal with more complex structures.
+%They are often outperformed on current benchmark datasets by more recent \gls{dl} methods.
 % This is due to their rather simple processing of superficial characteristics \eg edges, textures, contrast and color.
 % On the contrary \gls{dl} based methods are capable to examine images on a deeper level and so understand more complicated structures.
 
@@ -56,16 +55,21 @@ As \gls{dl} models usually \glspl{cnn} for image segmentation are applied.
 % Obtaining points on fore- and background
 User point centered concepts obtain the user input in the form of clicks on the image.
 The user clicks are often differentiated between clicks on the foreground object and clicks on the background.
-The input $x$ of an interactive segmentation network is a combination of the image and the user clicks.
+The input $\textbf{x}$ of an interactive segmentation network is a combination of the image and the user clicks.
 
 % TODO probability map
 This fundamental concept is used for various interactive segmentation models \cite{Xu16-InteractiveObjectSelection} \cite{MVL18-ITIS} and exemplary shown in Figure \ref{fig:ch2:sec3:ifcn}
 % IOG and DEXTR explained in detail in following chapter.
-Further, the methods \gls{dextr}  \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} also follow a user point centered concept. They are part of the benchmark and extensively described in Chapter \ref{ord:ch3}.
+Further, the methods \gls{dextr}  \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} also follow a user point centered concept. They are part of the benchmark study and extensively described in Section \ref{ord:ch3:sec3} and \ref{ord:ch3:sec4}.
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap232_ifcn.png}
-	\caption[Interactively Fully Convolutional Network]{Copyright \copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}}
-	\label{fig:ch2:sec3:ifcn}
+	\caption[Interactively Fully Convolutional Network]{
+		Illustration of the pipeline from the \gls{ifcn}.
+		The input is a \gls{rgb} image with user clicks.
+		This input is displayed in its individual parts as \gls{rgb}, map of the fore- and background points.
+		The network in use is based on the \gls{fcn} and outputs a binary segmentation result.
+		Copyright \copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}
+	}\label{fig:ch2:sec3:ifcn}
 \end{figure}
 
 \subsubsection{Representation of User Clicks and Model Input}
@@ -76,18 +80,19 @@ If there is are only one type of points, there also exist only one heatmap.
 
 % Modification of points -> gauss or euclidean
 The heatmaps are further processed, in order to highlight the set user points.
-This may be achieved by the conversion into an Euclidean distance map \cite{Dan80-EuclideanDistanceMapping} or the application of a Gauss filter.
+This may be achieved by the conversion into an Euclidean distance map \cite{Dan80-EuclideanDistanceMapping} (see Figure \ref{fig:ch2:sec3:ifcn}) or the application of a Gauss filter.
 % TODO source or footnote for Gauss filter
 
 % 3 RGB Channels + 2 Heatmaps = 5-Channel input
-The image usually is a colored RGB image of three channels.
+The image is usually colored with the three \gls{rgb} channels.
 The heatmaps have the same size as the image and are appended to the image as additional channels.
 %This results in a five- or four-channel input for the interactive segmentation network, depending on the number of heatmaps.
 This results in a five-channel input using fore-and background heatmaps or in a four-channel input using just a foreground heatmap.
-So the processed points on the heatmaps and the user clicks on the image are located exactly at the same position on different channels.
+
+The processed points on the heatmaps and the user clicks on the image are located exactly at the same position on different channels.
 This matching is vital for the functionality of the segmentation method.
-Therefore, the user points provide high level guidance for the network to enhance the location and differentiation of fore- and background.
-The multidimensional input functions as model input $x$ for the semantic segmentation network.
+The user points provide high level guidance for the network to enhance the location and differentiation of fore- and background.
+The multidimensional input functions as model input $\textbf{x}$ for the semantic segmentation network.
 
 Interactive segmentation networks are often based on normal segmentation networks, \eg the \gls{fcn} in the \gls{ifcn} \cite{Xu16-InteractiveObjectSelection} or the DeepLabv3+ in the \gls{itis} network \cite{MVL18-ITIS}.
 As for segmentation networks, the prediction $\hat{y}$ of interactive networks is a probability map.
@@ -96,28 +101,29 @@ As for segmentation networks, the prediction $\hat{y}$ of interactive networks i
 A fundamental advantage of interactive methods is the presence of a human user.
 The interactive segmentation network may not always deliver a satisfactory result in the initial execution.
 For this case, interactive methods often provide the option to refine the initial result.
-In order to apply refinement, the user often sets an additional click on the fore- or background region, where the segmentation fails.
-This refinement click is added to the corresponding heatmap and therefore included in the multidimensional input.
-After obtaining the updated input, the network requires another execution.
+In order to apply refinement, the user sets an additional click on the fore- or background region, where the segmentation fails.
+This refinement click is added to the corresponding heatmap and the network is executed again based on the updated input.
 This refinement process may be applied iteratively by the user.
 
-With refinement the guidance provided by the user is additionally reinforced.
+With refinement the user provided guidance is additionally reinforced.
 Further, interactive refinement specifically focuses on regions of failure, while other models without user interaction must rely on their initial predictions.
-
 
 
 \subsubsection{Characteristics}
 % Similar to normal segmentation networks.
 Interactive segmentation networks almost have the same characteristics as normal segmentation networks.
-For training they require the multidimensional input $x$, while the label $y$ remains the same.
+For training they require the multidimensional input $\textbf{x}$, while the label $y$ remains the same.
 % Simulation of user clicks.
-In order to simplify training and evaluation, user clicks are regularly simulated.
+To create suitable input $\textbf{x}$, user clicks are regularly simulated.
 The simulation of the user clicks is based on the corresponding \gls{gt}.
-To apply a simulation has certain advantages compared to manually acquiring user clicks.
-First, simulations are easily scalable, faster and cheaper than the acquisition of manual clicks from real users.
-Second, in a simulation no variance occurs between the set clicks of various users, if the .
+On the one hand, the application of simulation has certain advantages, compared to manually acquiring user clicks.
+Simulations are easily scalable, faster and cheaper than the acquisition of manual clicks from real users.
+% Second, in a simulation no variance occurs between the set clicks of various users, if the .
 % TODO is this necesarrily an advantag?
-Third, simulations have the possibility to effortless create various click patterns, that \eg vary the set click by a random offset, in order to simulate a various types of user behavior.
+% Third, simulations have the possibility to effortless create various click patterns, that \eg vary the set click by a random offset, in order to simulate a various types of user behavior.
+On the other hand, simulations are only capable to replicate the user's behavior to a certain extent.
+Further, the involvement of human users is especially important for methods, which performance depends on user interactions.
+
 
 % Refinement Training
 The training setup for iterative refinement is more elaborate.
@@ -151,7 +157,7 @@ While the presented concepts is the most common approach and achieves state-of-t
 \end{itemize}
 
 
-\subsubsection{Evaluation and State-of-the-Art Networks}
+\subsubsection{Evaluation and State-of-the-Art Networks} \label{ch2:sec3:eval_interactive_methods}
 % Describe Evaluation metrics: clicks requried for certain iou and iou at certain amount of clicks
 For a reliable evaluation of interactive methods the user interaction has to be taken into account.
 For user interactions based on clicks, two metrics are widely used together, represented in Table \ref{tab:ch2:interactive-stae-of-the-art}. 
@@ -182,7 +188,7 @@ A comparison of several mentioned methods and the current state-of-the-art metho
 	\centering
 	\begin{tabular}{l|c|c}
 		\textbf{Model} & \textbf{Number of clicks} & \textbf{\gls{iou} (\%) @ 4 clicks} \\
-		& Pascal VOC @85\% & Pascal VOC \\
+		& PASCAL \gls{voc} @85\% & PASCAL \gls{voc} \\
 		\hline
 		% TODO add watersheds if available for PASCAL VOC
 		Graph Cut \cite{BJ01-GraphCut}									  & > 20 & 41.1\\
@@ -194,10 +200,10 @@ A comparison of several mentioned methods and the current state-of-the-art metho
 		\glsentryshort{iog} \cite{Zha20-IOG}	 	    				  & 3    & 94.4\\
 	\end{tabular}
 	\caption[Comparison of interactive segmentation models.]{
-		Comparison of interactive segmentation models on the Pascal VOC 2012 test set.
+		Comparison of interactive segmentation models on the PASCAL \gls{voc} 2012 test set.
 		It can be seen, that interactive segmentation methods have developed quickly. 
 		They strongly improved in terms of required clicks and \gls{iou}.
-		% TODO ?? Pascal VOC is at its limit to be suitable to evaluate semantic segmentation.
+		% TODO ?? PASCAL \gls{voc} is at its limit to be suitable to evaluate semantic segmentation.
 	}
 	\label{tab:ch2:interactive-stae-of-the-art}
 \end{table}

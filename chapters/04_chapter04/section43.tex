@@ -1,16 +1,60 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Method Selection}\label{ord:ch4:sec3}
+\section{Benchmark Statistics}\label{ord:ch4:sec3}
 
-\subsection{tbd}\label{ord:ch4:sec3:subsec1}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+In the scope of the benchmark study several statistics were recorded and measured, that may be grouped in three parts: segmentation result, user interactions and, user survey.
 
-\subsection{tbd}\label{ord:ch4:sec3:subsec2}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+% #1 Performance IoU
+First, the saved segmentation results are used to calculate the \gls{iou} as measure of performance for each user created annotation.
 
-\subsection{tbd}\label{ord:ch4:sec3:subsec3}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+% #2 User interactions.
+Second, the user interactions were recorded, that are required to perform the interactive methods.
+% TODO what about usability??
+% Based on these statistics the usability of the labeling process is evaluated.
+These statistics on the user interactions exist for every annotation, the most important are presented in the following:
+\begin{itemize}
+	\item \textbf{Used method}, the interactive method used to create the annotation.
+	\item \textbf{Annotation time}, the time spent to create the annotation.
+	\item \textbf{Number of clicks}, the number of clicks used.
+	\item \textbf{Number of strokes}, the amount of strokes drawn for the annotation.
+	\item \textbf{Stroke time}, the time spent on each stroke, in order to differentiate between short and long strokes.
+	\item \textbf{Number foreground clicks}, the amount of clicks on the foreground.
+	\item \textbf{Number background clicks}, the amount of clicks on the background.
+	% image_time
+	% image_id
+	% single_methods
+	% single_box_times
+	% single_mask_times
+	% single_hole_time
+	% single_clicks
+	% single_strokes
+	% single_stroke_times
+	% single_change_box_time
+	% single_change_mask_time
+	% single_change_clicks
+	% single_change_strokes
+	% single_change_strokes_times
+	% fg_click_row
+	% fg_click_col
+	% num_fg_clicks
+	% idx_fg_clicks
+	% bg_click_row
+	% bg_click_col
+	% num_bg_clicks
+	% idx_bg_clicks
+	% bbox_click_row1
+	% bbox_click_col1
+	% bbox_click_row2
+	% bbox_click_col2
+	% idx_bbox_clicks
+	% fg_click_region
+	% bg_click_region
+	
+\end{itemize}
 
-\subsection{tbd}\label{ord:ch4:sec3:subsec4}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+% #3 Survey to get an idea about the soft factors.
+Third, the participants filled out a survey, after completing the benchmark study.
+This survey enables an insight on the soft factors, that are not measurable.
+
+% TODO table taht provides insights on the pandas datarfame
