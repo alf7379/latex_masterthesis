@@ -259,6 +259,84 @@
       \verb 10.1109/TPAMI.2016.2644615
       \endverb
     \endentry
+    \entry{FisherBox81-StudentT}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7391669c33412ba628c0c6a3dacdc04d}{%
+           family={Box},
+           familyi={B\bibinitperiod},
+           given={Joan\bibnamedelima Fisher},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{7391669c33412ba628c0c6a3dacdc04d}
+      \strng{fullhash}{7391669c33412ba628c0c6a3dacdc04d}
+      \strng{bibnamehash}{7391669c33412ba628c0c6a3dacdc04d}
+      \strng{authorbibnamehash}{7391669c33412ba628c0c6a3dacdc04d}
+      \strng{authornamehash}{7391669c33412ba628c0c6a3dacdc04d}
+      \strng{authorfullhash}{7391669c33412ba628c0c6a3dacdc04d}
+      \field{labelalpha}{Box81}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00031305}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{2}
+      \field{title}{Gosset, Fisher, and the t Distribution}
+      \field{volume}{35}
+      \field{year}{1981}
+      \field{pages}{61\bibrangedash 66}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2683142
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2683142
+      \endverb
+    \endentry
+    \entry{CF91-dscf}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=359174e3153bd3ad20696be214c1738d}{%
+           family={Critchlow},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7097b66075a9f88e6eaf5820eb400927}{%
+           family={Fligner},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{d63532b2aea36c71cf158bc14c9d8925}
+      \strng{fullhash}{d63532b2aea36c71cf158bc14c9d8925}
+      \strng{bibnamehash}{d63532b2aea36c71cf158bc14c9d8925}
+      \strng{authorbibnamehash}{d63532b2aea36c71cf158bc14c9d8925}
+      \strng{authornamehash}{d63532b2aea36c71cf158bc14c9d8925}
+      \strng{authorfullhash}{d63532b2aea36c71cf158bc14c9d8925}
+      \field{labelalpha}{CF91}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Statistics - Theory and Methods}
+      \field{number}{1}
+      \field{title}{On distribution-free multiple comparisons in the one-way analysis of variance}
+      \field{volume}{20}
+      \field{year}{1991}
+      \field{pages}{127\bibrangedash 139}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/03610929108830487
+      \endverb
+    \endentry
     \entry{Chen16-DeepLab}{article}{}
       \name{author}{5}{}{%
         {{un=1,uniquepart=given,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
@@ -414,6 +492,42 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/CVPR.2019.00194
+      \endverb
+    \endentry
+    \entry{CI79-ConnocerTest}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f9f4256bee518e284db8e54994e5dd48}{%
+           family={Conover},
+           familyi={C\bibinitperiod},
+           given={W\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85ac9b0639711a31812531ea29df2e4f}{%
+           family={Iman},
+           familyi={I\bibinitperiod},
+           given={R\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{be7d80ba1907ebe97bed8b42157ac560}
+      \strng{fullhash}{be7d80ba1907ebe97bed8b42157ac560}
+      \strng{bibnamehash}{be7d80ba1907ebe97bed8b42157ac560}
+      \strng{authorbibnamehash}{be7d80ba1907ebe97bed8b42157ac560}
+      \strng{authornamehash}{be7d80ba1907ebe97bed8b42157ac560}
+      \strng{authorfullhash}{be7d80ba1907ebe97bed8b42157ac560}
+      \field{labelalpha}{CI79}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Multiple-comparisons procedures. Informal report}
+      \field{year}{1979}
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/6057803
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/6057803
       \endverb
     \endentry
     \entry{Cor16-Cityscapes}{inproceedings}{}
@@ -727,6 +841,82 @@
       \verb 10.1109/CVPR.2016.343
       \endverb
     \endentry
+    \entry{Dodge08-Statistics}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=733d56666b5bd8c1281144e1a187eec4}{%
+           family={Dodge},
+           familyi={D\bibinitperiod},
+           given={Yadolah},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{fullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{bibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorbibnamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authornamehash}{733d56666b5bd8c1281144e1a187eec4}
+      \strng{authorfullhash}{733d56666b5bd8c1281144e1a187eec4}
+      \field{labelalpha}{Dod08}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Concise Encyclopedia of Statistics}
+      \field{isbn}{978-0-387-32833-1}
+      \field{title}{Kruskal-Wallis Test}
+      \field{year}{2008}
+      \field{pages}{288\bibrangedash 290}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1007/978-0-387-32833-1_216
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-0-387-32833-1_216
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-0-387-32833-1_216
+      \endverb
+    \endentry
+    \entry{Dunn64-DunnTest}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0b0af97d4f9c67ace0f8c55bd08f9072}{%
+           family={Dunn},
+           familyi={D\bibinitperiod},
+           given={Olive\bibnamedelima Jean},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \strng{fullhash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \strng{bibnamehash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \strng{authorbibnamehash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \strng{authornamehash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \strng{authorfullhash}{0b0af97d4f9c67ace0f8c55bd08f9072}
+      \field{labelalpha}{Dun64}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{number}{3}
+      \field{title}{Multiple Comparisons Using Rank Sums}
+      \field{volume}{6}
+      \field{year}{1964}
+      \field{pages}{241\bibrangedash 252}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1080/00401706.1964.10490181
+      \endverb
+    \endentry
     \entry{DV19-ConvolutionGuide}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=1328d3ceef6add8461994fc364c664df}{%
@@ -813,12 +1003,24 @@
       \field{pages}{303\bibrangedash 338}
       \range{pages}{36}
     \endentry
-    \entry{Paddo19-D2S}{inproceedings}{}
+    \entry{Paddo18-D2S}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=364e8db59a142c38b102488d1e661362}{%
            family={Follmann},
            familyi={F\bibinitperiod},
            given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc2adc36e4b6dfc02452009a6782b3e2}{%
+           family={Böttger},
+           familyi={B\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8549f4513730508f35e0dff098e77692}{%
+           family={Härtinger},
+           familyi={H\bibinitperiod},
+           given={Philipp},
            giveni={P\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=d382426eb0c5a5be2ef8aa9551dc54cd}{%
@@ -827,43 +1029,52 @@
            given={Rebecca},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=8549f4513730508f35e0dff098e77692}{%
-           family={Härtinger},
-           familyi={H\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b287f4ac3702ac247b9696f67873e201}{%
-           family={Klostermann},
-           familyi={K\bibinitperiod},
-           given={Michael},
+        {{un=0,uniquepart=base,hash=120a22b0710da6e1ec88197c9141b093}{%
+           family={Ulrich},
+           familyi={U\bibinitperiod},
+           given={Markus},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=dc2adc36e4b6dfc02452009a6782b3e2}{%
-           family={Böttger},
-           familyi={B\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
       }
-      \strng{namehash}{4b36fb0e6f11ec625e5d31d581ea645d}
-      \strng{fullhash}{4b422e302c1fe650e2dca36e4708dbff}
-      \strng{bibnamehash}{4b422e302c1fe650e2dca36e4708dbff}
-      \strng{authorbibnamehash}{4b422e302c1fe650e2dca36e4708dbff}
-      \strng{authornamehash}{4b36fb0e6f11ec625e5d31d581ea645d}
-      \strng{authorfullhash}{4b422e302c1fe650e2dca36e4708dbff}
-      \field{labelalpha}{Fol+19}
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ceac40aa4bc5bb2447ff1108462e4911}
+      \strng{fullhash}{ea52e4a3ecc2d9a137743a50403b1e21}
+      \strng{bibnamehash}{ea52e4a3ecc2d9a137743a50403b1e21}
+      \strng{authorbibnamehash}{ea52e4a3ecc2d9a137743a50403b1e21}
+      \strng{authornamehash}{ceac40aa4bc5bb2447ff1108462e4911}
+      \strng{authorfullhash}{ea52e4a3ecc2d9a137743a50403b1e21}
+      \field{labelalpha}{Fol+18}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2019 IEEE Winter Conference on Applications of Computer Vision (WACV)}
-      \field{title}{Learning to See the Invisible: End-to-End Trainable Amodal Instance Segmentation}
-      \field{year}{2019}
-      \field{pages}{1328\bibrangedash 1336}
-      \range{pages}{9}
+      \field{booktitle}{Computer Vision – ECCV 2018. Ed.: V. Ferrari}
+      \field{eventday}{8}
+      \field{eventendday}{14}
+      \field{eventendmonth}{9}
+      \field{eventendyear}{2018}
+      \field{eventmonth}{9}
+      \field{eventtitle}{European Conference on Computer Vision}
+      \field{eventtitleaddon}{ECCV 2018}
+      \field{eventyear}{2018}
+      \field{isbn}{978-3-030-01248-9}
+      \field{issn}{1611-3349}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{MVTec D2S: Densely Segmented Supermarket Dataset}
+      \field{venue}{München, Deutschland}
+      \field{volume}{11214}
+      \field{year}{2018}
+      \field{eventenddateera}{ce}
+      \field{eventdateera}{ce}
+      \field{pages}{581\bibrangedash 597}
+      \range{pages}{17}
       \verb{doi}
-      \verb 10.1109/WACV.2019.00146
+      \verb 10.1007/978-3-030-01249-6_35
       \endverb
     \endentry
     \entry{Gudivada2017-DataQuality}{article}{}
@@ -1246,6 +1457,42 @@
       \verb 10.1109/CIBCB48159.2020.9277638
       \endverb
     \endentry
+    \entry{Kirch08-CorrPearson}{inbook}{}
+      \name{editor}{1}{}{%
+        {{un=0,uniquepart=base,hash=20cc1db200372cc43722b25bd0232cfa}{%
+           family={Kirch},
+           familyi={K\bibinitperiod},
+           given={Wilhelm},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{fullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{bibnamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{editorbibnamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{editornamehash}{20cc1db200372cc43722b25bd0232cfa}
+      \strng{editorfullhash}{20cc1db200372cc43722b25bd0232cfa}
+      \field{labelalpha}{Kir08}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Public Health}
+      \field{isbn}{978-1-4020-5614-7}
+      \field{title}{Pearson's Correlation Coefficient}
+      \field{year}{2008}
+      \field{pages}{1090\bibrangedash 1091}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1007/978-1-4020-5614-7_2569
+      \endverb
+    \endentry
     \entry{KK12-CRF}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f7c378608b911bbcd2f03a441af99088}{%
@@ -1286,6 +1533,55 @@
       \endverb
       \verb{url}
       \verb https://proceedings.neurips.cc/paper/2011/file/beda24c1e1b46055dff2c39c98fd6fc1-Paper.pdf
+      \endverb
+    \endentry
+    \entry{KW53-KruskalWallisTest}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b7e66cd3f33c5fb4b87a979369f92f87}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e97ca3571d2ff7348b3d39db6ea48479}{%
+           family={Wallis},
+           familyi={W\bibinitperiod},
+           given={Allen},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{be4362717b5f0efecafcf2851789a909}
+      \strng{fullhash}{be4362717b5f0efecafcf2851789a909}
+      \strng{bibnamehash}{be4362717b5f0efecafcf2851789a909}
+      \strng{authorbibnamehash}{be4362717b5f0efecafcf2851789a909}
+      \strng{authornamehash}{be4362717b5f0efecafcf2851789a909}
+      \strng{authorfullhash}{be4362717b5f0efecafcf2851789a909}
+      \field{labelalpha}{KW52}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{260}
+      \field{title}{Use of Ranks in One-Criterion Variance Analysis}
+      \field{volume}{47}
+      \field{year}{1952}
+      \field{pages}{583\bibrangedash 621}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1080/01621459.1952.10483441
+      \endverb
+      \verb{eprint}
+      \verb https://www.tandfonline.com/doi/pdf/10.1080/01621459.1952.10483441
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/01621459.1952.10483441
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/01621459.1952.10483441
       \endverb
     \endentry
     \entry{Li18-SateliteImagery}{inproceedings}{}
@@ -1676,41 +1972,6 @@
       \verb 10.1016/1047-3203(90)90014-M
       \endverb
     \endentry
-    \entry{Mey12-WatershedConcept}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=6806b25b3cb3dab0e92c2fe7c2e25565}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Fernand},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \strng{fullhash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \strng{bibnamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \strng{authorbibnamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \strng{authornamehash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \strng{authorfullhash}{6806b25b3cb3dab0e92c2fe7c2e25565}
-      \field{labelalpha}{Mey12}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{The watershed concept and its use in segmentation : a brief history}
-      \field{volume}{abs/1202.0216}
-      \field{year}{2012}
-      \verb{eprint}
-      \verb 1202.0216
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1202.0216
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1202.0216
-      \endverb
-    \endentry
     \entry{Men15-AutonVehicles}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=da7f0e06c0e9a8e9474f0e27852d427c}{%
@@ -1836,6 +2097,52 @@
       \verb http://bmvc2018.org/contents/papers/0652.pdf
       \endverb
     \endentry
+    \entry{MW47-MannWhitneyTest}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4efdbd72196b3e883f475316cd727122}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={H.\bibnamedelimi B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a94d84acab1d01bee076d4756cb0b3a3}{%
+           family={Whitney},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{e5b8540cce8dd6157d9f313cb0071882}
+      \strng{fullhash}{e5b8540cce8dd6157d9f313cb0071882}
+      \strng{bibnamehash}{e5b8540cce8dd6157d9f313cb0071882}
+      \strng{authorbibnamehash}{e5b8540cce8dd6157d9f313cb0071882}
+      \strng{authornamehash}{e5b8540cce8dd6157d9f313cb0071882}
+      \strng{authorfullhash}{e5b8540cce8dd6157d9f313cb0071882}
+      \field{labelalpha}{MW47}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{number}{1}
+      \field{title}{{On a Test of Whether one of Two Random Variables is Stochastically Larger than the Other}}
+      \field{volume}{18}
+      \field{year}{1947}
+      \field{pages}{50\bibrangedash 60}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1214/aoms/1177730491
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1214/aoms/1177730491
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1214/aoms/1177730491
+      \endverb
+    \endentry
     \entry{Neu17-MapillaryDataset}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=f781627ea0cea989087738d6e799b337}{%
@@ -1922,46 +2229,6 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.1109/ICCV.2015.178
-      \endverb
-    \endentry
-    \entry{NS94-Watershed}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b58b782806ec15222ca08732b16dd6e4}{%
-           family={Najman},
-           familyi={N\bibinitperiod},
-           given={Laurent},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=26bc99340c0aa3f557ea8527e9c71abd}{%
-           family={Schmitt},
-           familyi={S\bibinitperiod},
-           given={Michel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{5289c1278b03fcb49b65e320c42262e5}
-      \strng{fullhash}{5289c1278b03fcb49b65e320c42262e5}
-      \strng{bibnamehash}{5289c1278b03fcb49b65e320c42262e5}
-      \strng{authorbibnamehash}{5289c1278b03fcb49b65e320c42262e5}
-      \strng{authornamehash}{5289c1278b03fcb49b65e320c42262e5}
-      \strng{authorfullhash}{5289c1278b03fcb49b65e320c42262e5}
-      \field{labelalpha}{NS94}
-      \field{sortinit}{N}
-      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Signal Processing}
-      \field{number}{1}
-      \field{title}{Watershed of a Continuous Function}
-      \field{volume}{38}
-      \field{year}{1994}
-      \field{pages}{99\bibrangedash 112}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1016/0165-1684(94)90059-0
       \endverb
     \endentry
     \entry{PB14-ImageAnalysis}{incollection}{}
@@ -2072,6 +2339,42 @@
       \verb 10.1109/CVPR.2016.85
       \endverb
     \endentry
+    \entry{PS16-Statistics}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d1e6d95ce2a3fd308a8bef24f369a765}{%
+           family={Pituch},
+           familyi={P\bibinitperiod},
+           given={Keenan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67a4866345906395d619c22aeaca5dcb}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, USA}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \strng{fullhash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \strng{bibnamehash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \strng{authorbibnamehash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \strng{authornamehash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \strng{authorfullhash}{fb28c4251d25e82b7d3909dd97ec1b19}
+      \field{labelalpha}{PS16}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780415836661}
+      \field{title}{Applied Multivariate Statistics for the Social Sciences}
+      \field{year}{2016}
+    \endentry
     \entry{RF15-U-Net}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
@@ -2111,6 +2414,49 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.1007/978-3-319-24574-4_28
+      \endverb
+    \endentry
+    \entry{RK06-HypothesisTesting}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a2997d15af81410d70c3b0b137b8426}{%
+           family={Roger},
+           familyi={R\bibinitperiod},
+           given={Davis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c5102818a3ecc6f77f07e66381ccbc1}{%
+           family={Kenneth},
+           familyi={K\bibinitperiod},
+           given={Mukamal},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6a25c3deb1f12031a31b756da1fe6782}
+      \strng{fullhash}{6a25c3deb1f12031a31b756da1fe6782}
+      \strng{bibnamehash}{6a25c3deb1f12031a31b756da1fe6782}
+      \strng{authorbibnamehash}{6a25c3deb1f12031a31b756da1fe6782}
+      \strng{authornamehash}{6a25c3deb1f12031a31b756da1fe6782}
+      \strng{authorfullhash}{6a25c3deb1f12031a31b756da1fe6782}
+      \field{labelalpha}{RK06}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Circulation}
+      \field{number}{10}
+      \field{title}{Hypothesis Testing}
+      \field{volume}{114}
+      \field{year}{2006}
+      \field{pages}{1078\bibrangedash 1082}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1161/CIRCULATIONAHA.105.586461
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ahajournals.org/doi/abs/10.1161/CIRCULATIONAHA.105.586461
+      \endverb
+      \verb{url}
+      \verb https://www.ahajournals.org/doi/abs/10.1161/CIRCULATIONAHA.105.586461
       \endverb
     \endentry
     \entry{RKB04-GrabCut}{inproceedings}{}
@@ -2181,6 +2527,35 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1109/ICCV.2003.1238308
+      \endverb
+    \endentry
+    \entry{Ruder16-SGD}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \field{labelalpha}{Rud16}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1609.04747
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1609.04747
       \endverb
     \endentry
     \entry{SHL16-SuperpixelEvaluation}{article}{}

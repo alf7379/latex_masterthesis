@@ -1,0 +1,43 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\appendix
+\chapter{Refinement Of The DEXTR And IOG Method}
+
+\begin{table}[h!]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{c |c c c c}
+			\toprule
+			&	\multicolumn{2}{c}{mIoU for DEXTR} & \multicolumn{2}{c}{mIoU for IOG} \\
+			$ n_{\textnormal{\textit{refine clicks}}} $ 	& PASCAL (VP \xmark)	& PASCAL (VP \cmark)	& PASCAL (VP \xmark)	& PASCAL (VP \cmark) \\
+			\midrule
+			0 	& 0.7805 	& 0.9103 	& 0.8086	& 0.9251	\\
+			1 	& 0.7894 	& 0.9119 	& 0.8184	& 0.9359	\\
+			2	& 0.7893	& 0.9054 	& 0.8259	& 0.9402	\\
+			3 	& 0.7871 	& 0.8986  	& 0.8313 	& 0.9436 	\\
+			4 	& 0.7833 	& 0.8916 	& 0.8351	& 0.9449 	\\
+			5 	& 0.7807	& 0.8863 	& 0.8381	& 0.9459	\\
+			6 	& 0.7769	& 0.8809	& 0.8403 	& 0.9465 	\\
+			7	& 0.7737	& 0.8768	& 0.8423 	& 0.9469 	\\
+			8	& 0.7703	& 0.8722	& 0.8438 	& 0.9474	\\
+			9	& 0.7674	& 0.8686	& 0.8453	& 0.9476	\\
+			10	& 0.7644	& 0.8650	& 0.8464	& 0.9473	\\
+			11	& 0.7615	& 0.8617	& 0.8472	& 0.9474	\\
+			12	& 0.7591	& 0.8587	& 0.8481	& 0.9473	\\
+			13	& 0.7568	& 0.8559	& 0.8487	& 0.9471	\\
+			14	& 0.7545	& 0.8535	& 0.8497	& 0.9469	\\
+			15	& 0.7528	& 0.8515	& 0.8496	& 0.9466	\\
+			16	& 0.7508	& 0.8491	& 0.8499	& 0.9463	\\
+			17	& 0.7489	& 0.8468	& 0.8502	& 0.9461	\\
+			18	& 0.7473	& 0.8449	& 0.8505	& 0.9459	\\
+			19	& 0.7464	& 0.8437	& 0.8507	& 0.9459	\\
+			20	& 0.7451	& 0.8422	& 0.8509	& 0.9457	\\
+			\bottomrule
+	\end{tabular}}
+	\caption[Performance of DEXTR and IOG on 20 refinement clicks.]{
+		Performance of the \gls{dextr} and \gls{iog} method 20 refinement clicks.
+		The initial prediction is represented by $ n_{\textnormal{\textit{refine clicks}}} = 0 $.
+		The \gls{miou} is calculated on the test set of the PASCAL \gls{voc} Dataset \cite{Eve20-PascalVOC} without void pixel (VP \xmark) and with void pixel (VP \cmark).
+	}\label{tab:appendix_refinementclicks}
+\end{table}

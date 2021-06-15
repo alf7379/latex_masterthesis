@@ -3,8 +3,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Acknowledgments}{iii}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Section}{1}{section.1.1}%
@@ -25,148 +23,164 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Motivation}{4}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}General}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}General}{4}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Pascal VOC Dataset}{6}{figure.caption.5}%
+\contentsline {paragraph}{\nonumberline PASCAL VOC Dataset}{6}{paragraph*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Evaluation Metric}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Evaluation Metric}{7}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Semantic Segmentation Architectures}{7}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Semantic Segmentation Architectures}{8}{subsection.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Encoder-Decoder-Architecture}{7}{subsubsection*.8}%
+\contentsline {subsubsection}{\nonumberline Encoder-Decoder-Architecture}{8}{subsubsection*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Unpooling.}{8}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Unpooling.}{8}{paragraph*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Transposed Convolution.}{9}{paragraph*.14}%
+\contentsline {paragraph}{\nonumberline Transposed Convolution.}{9}{paragraph*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Skip Connections}{9}{subsubsection*.17}%
+\contentsline {subsubsection}{\nonumberline Skip Connections}{9}{subsubsection*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Pyramid Scene Parsing Network}{10}{subsubsection*.21}%
+\contentsline {subsubsection}{\nonumberline Pyramid Scene Parsing Network}{12}{subsubsection*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline DeepLab}{12}{subsubsection*.24}%
+\contentsline {subsubsection}{\nonumberline DeepLab}{13}{subsubsection*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Data}{13}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.5}Data}{14}{subsection.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.6}State-of-the-art}{14}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.6}State-of-the-art}{15}{subsection.2.2.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Interactive Segmentation}{15}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Classical Concepts}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Classical Concepts}{16}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}\gls {dl} User Point Concepts}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}\gls {dl} User Point Concepts}{17}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Basic Concept}{16}{subsubsection*.27}%
+\contentsline {subsubsection}{\nonumberline Basic Concept}{17}{subsubsection*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Representation of User Clicks and Model Input}{17}{subsubsection*.30}%
+\contentsline {subsubsection}{\nonumberline Representation of User Clicks and Model Input}{17}{subsubsection*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Interactive Refinement}{17}{subsubsection*.32}%
+\contentsline {subsubsection}{\nonumberline Interactive Refinement}{18}{subsubsection*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Characteristics}{18}{subsubsection*.34}%
+\contentsline {subsubsection}{\nonumberline Characteristics}{18}{subsubsection*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Variations}{18}{subsubsection*.36}%
+\contentsline {subsubsection}{\nonumberline Variations}{19}{subsubsection*.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Evaluation and State-of-the-Art Networks}{19}{subsubsection*.38}%
+\contentsline {subsubsection}{\nonumberline Evaluation and State-of-the-Art Networks}{19}{subsubsection*.37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}\gls {dl} Polygon Concepts}{20}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Benchmark Methods}{21}{chapter.3}%
+\contentsline {section}{\numberline {2.4}Statistics}{21}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Polygon Drawing}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {2.4.1}Normality Assumption in Statistics}{21}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Watershed Transformation}{22}{section.3.2}%
+\contentsline {subsection}{\numberline {2.4.2}Student's t-test}{22}{subsection.2.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Method Description}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.4.3}Mann-Whitney U-Test}{22}{subsection.2.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Application}{22}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.4.4}Kruskal-Wallis Test}{23}{subsection.2.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deep Extreme Cut}{22}{section.3.3}%
+\contentsline {chapter}{\numberline {3}Benchmark Methods}{24}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Method Description}{24}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.1}Polygon Drawing}{24}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Model Input and Representation of User Clicks}{24}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.2}Watershed Transformation}{25}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Architecture}{26}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}Method Description}{25}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Refinement}{26}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.2.2}Application}{25}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}Performance}{27}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.3}Deep Extreme Cut}{25}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Inside-Outside Guidance}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3.3.1}Method Description}{27}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Basis Concept}{28}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.3.2}Model Input and Representation of User Clicks}{27}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Model Input and Representation of User Clicks}{29}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.3.3}Architecture}{29}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Architecture}{29}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.3.4}Refinement}{29}{subsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline CoarseNet}{30}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {3.3.5}Performance}{30}{subsection.3.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline FineNet}{30}{subsubsection*.50}%
+\contentsline {section}{\numberline {3.4}Inside-Outside Guidance}{30}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}Refinement}{30}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.1}Basis Concept}{31}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.5}Performance}{32}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.2}Model Input and Representation of User Clicks}{32}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Benchmark Setup}{33}{chapter.4}%
+\contentsline {subsection}{\numberline {3.4.3}Architecture}{32}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Benchmark Motivation}{33}{section.4.1}%
+\contentsline {subsubsection}{\nonumberline CoarseNet}{33}{subsubsection*.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Method Selection}{34}{section.4.2}%
+\contentsline {subsubsection}{\nonumberline FineNet}{33}{subsubsection*.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Benchmark Statistics}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Refinement}{33}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Image Selection}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Performance}{35}{subsection.3.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Domains}{35}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {4}Benchmark Setup}{36}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Attributes}{36}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.1}Benchmark Motivation}{36}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Benchmark Procedure}{36}{section.4.5}%
+\contentsline {section}{\numberline {4.2}Method Selection}{37}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Benchmark Evaluation}{38}{chapter.5}%
+\contentsline {section}{\numberline {4.3}Benchmark Statistics}{37}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}tbd}{38}{section.5.1}%
+\contentsline {section}{\numberline {4.4}Image Selection}{38}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}tbd}{38}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {4.4.1}Domains}{38}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}tbd}{38}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {4.4.2}Attributes}{39}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}tbd}{38}{section.5.2}%
+\contentsline {section}{\numberline {4.5}Benchmark Procedure}{39}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}tbd}{38}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {5}Benchmark Evaluation}{42}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}tbd}{39}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.1}Improvement In Time And IoU}{42}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}tbd}{39}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.1.1}Correlation Between Time And Clicks}{42}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}tbd}{39}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.1.2}Analysis Of IoU}{44}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}tbd}{40}{section.5.3}%
+\contentsline {subsubsection}{\nonumberline Data Transformation}{44}{subsubsection*.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}tbd}{40}{subsection.5.3.1}%
+\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{44}{subsubsection*.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}tbd}{40}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.1.3}Analysis Of Time}{46}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}tbd}{40}{subsection.5.3.3}%
+\contentsline {subsubsection}{\nonumberline Data Transformation}{46}{subsubsection*.61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}tbd}{40}{subsection.5.3.4}%
+\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{46}{subsubsection*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}tbd}{41}{section.5.4}%
+\contentsline {section}{\numberline {5.2}Generalization Over Domains}{49}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}tbd}{41}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.2.1}Generalization Of Methods Over Domains}{51}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}tbd}{41}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.2.2}Generalization Of Domains Over Methods}{51}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}tbd}{41}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.2.3}Generalization Over Datasets}{53}{subsection.5.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}tbd}{42}{subsection.5.4.4}%
+\contentsline {subsubsection}{\nonumberline Initial Prediction}{53}{subsubsection*.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{43}{chapter*.53}%
+\contentsline {subsubsection}{\nonumberline Refinement Prediction}{55}{subsubsection*.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{44}{chapter*.54}%
+\contentsline {section}{\numberline {5.3}Generalization over users}{55}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{45}{section*.55}%
+\contentsline {subsection}{\numberline {5.3.1}Benchmark Participants Evaluation}{55}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.57}%
+\contentsline {subsection}{\numberline {5.3.2}Simulations With Different Click Patterns / Noise}{55}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Two Experienced User}{56}{subsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Survey Evaluation}{56}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Suitability Of DEXTR and IOG Annotations For Training}{58}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{61}{chapter*.79}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{62}{chapter*.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{63}{section*.81}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{65}{chapter*.83}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Refinement Of The DEXTR And IOG Method}{72}{appendix.A}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

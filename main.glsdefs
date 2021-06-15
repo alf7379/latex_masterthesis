@@ -508,6 +508,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{map}{}%
+{%
+\gls@defglossaryentry{map}%
+{%
+name={mAP},%
+sort={mAP},%
+type={acronym},%
+first={mean average precision\glsspace (mAP)},%
+firstplural={mean average precisions\glsspace (mAPs)},%
+text={mAP},%
+plural={mAPs},%
+description={mean average precision},%
+descriptionplural={mean average precision\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mean average precision},%
+longplural={mean average precisions},%
+short={mAP},%
+shortplural={mAPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sgd}{}%
+{%
+\gls@defglossaryentry{sgd}%
+{%
+name={SGD},%
+sort={SGD},%
+type={acronym},%
+first={stochastic gradient descent\glsspace (SGD)},%
+firstplural={stochastic gradient descents\glsspace (SGDs)},%
+text={SGD},%
+plural={SGDs},%
+description={stochastic gradient descent},%
+descriptionplural={stochastic gradient descent\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={stochastic gradient descent},%
+longplural={stochastic gradient descents},%
+short={SGD},%
+shortplural={SGDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{ifcn}{}%
 {%
 \gls@defglossaryentry{ifcn}%

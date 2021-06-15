@@ -1,7 +1,7 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Generalization over domains}\label{ord:ch5:sec2}
+\section{Generalization Over Domains} \label{ord:ch5:sec2}
 % RE-1467
 
 % Motivation - get insights of the performance on other domains (anomaly and industrial)
@@ -13,12 +13,39 @@ Therefore, the methods are evaluated on several image domains.
 First, the generalization capabilities of the four benchmark methods are evaluated over image domains from the benchmark study.
 Second, simulations are used to apply the \gls{iog} and \gls{dextr} methods on various datasets.
 
-\subsection{Generalization over the Benchmark Domains}
+% Groupes by method with dataset as factor
+\subsection{Generalization Of Methods Over Domains}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		\toprule 		
+		& \centering $ Polygon $	& \centering $ Watersheds $  	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $} \\
+		\midrule
+		$ n_{annots} $			& \centering 81				& \centering 328				& \centering 82 			& \multicolumn{1}{c}{69}  \\
+		$ H_{0} $				& \multicolumn{4}{c}{$ med \left( IoU_{Standard} \right) = med \left( IoU_{Urban} \right) = med \left( IoU_{Industrial} \right)$}  \\  
+		$ H_{A} $		 		& \multicolumn{4}{c}{$ H_{0} = false $}  \\ 	
+		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
+		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
+		$ \textnormal{\textit{p-value}} $
+		& \centering 0.3948			& \centering $ 1.3 * 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
+		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
+		\bottomrule
+	\end{tabular}
+	\caption[Kruskal-Wallis tests over domains]{
+		Four Kruskal-Wallis tests are applied for the domain scopes $ Standard $, $ Industrial $, $ Anomaly $, and $ Urban $.
+		The four benchmark methods are used as factors for each test.
+		All tests are performed on the same $ H_{0} $, $ H_{A} $ and the same sample $X_{raw}$.
+	}\label{tab:ch5:tests_on_methods}
+\end{table}
+
+% Grouped by dataset with methods as factors
+\subsection{Generalization Of Domains Over Methods} \label{ord:ch5:sec2:subsec1}
 % For all methods - Kruskal-Wallis test (or even ANOVA) for the domains as factors
 The sample is split up by the benchmark domains, introduced in Section \ref{ord:ch4:sec4}, and evaluated for each domain.
 For this the Kruskal-Wallis test is applied to each split with the four benchmark methods as factors.
 Due to the split by the four domains and the requirement of the same factor size by the Kruskal-Wallis test, the number of samples per factor is reduced to $n_{annots}$ in this test setup.
-The details and results of the tests is shown in Table \ref{tab:ch5:tests_on_domains} and the corresponding box plot of illustrated in Figure \ref{fig:ch5:sec2:domains_boxp_lot}.
+The details and results of the tests is shown in Table \ref{tab:ch5:tests_on_domains} and the corresponding box plot of illustrated in Figure \ref{fig:ch5:sec2:domains_box_plot}.
 
 For the domains $ Standard $ and $ Urban $, which are similar to PASCAL \gls{voc} and COCO, $ H_{0} $ is accepted and the benchmark methods do not differ significantly.
 In contrast, for the domains $ Industrial $ and $ Anomaly $ $ H_{0} $ is rejected and $ H_{A} $ accepted. Therefore, there is some significant difference between the benchmark methods.
@@ -26,23 +53,22 @@ In contrast, for the domains $ Industrial $ and $ Anomaly $ $ H_{0} $ is rejecte
 	\centering
 	\begin{tabular}{l|p{25mm} p{25mm} p{25mm} p{25mm}}
 		\toprule 		
-							& \centering $ Standard $	& $ Industrial $  & $ Anomaly $ & $ Urban $ \\
+								& \centering $ Standard $	& \centering $ Industrial $  	& \centering $ Anomaly $ 	& \multicolumn{1}{c}{$ Urban $} \\
 		\midrule
-		$n_{annots}$		& 81			& 328 			  & 82			& 69 		\\
-		$H_{0}$				& \multicolumn{4}{c}{$med \left( IoU_{polygon} \right) = med \left( IoU_{watershed} \right) = med \left( IoU_{IOG} \right) = med \left( IoU_{DEXTR} \right)$}  \\  
-	%	$H_{0}$				& $med \left( IoU_{polygon} \right) =$ & $ med \left( IoU_{watershed} \right) =$ & $ med \left( IoU_{IOG} \right) =$ & $ med \left( IoU_{DEXTR} \right)$  \\		
-		$H_{A}$		 		&  \multicolumn{4}{c}{$H_{0} = false$}  \\ 	
-		$\alpha$		 	& $1\%$ 		& $1\%$ 		  & $1\%$ 		& $1\%$ 	\\ 	
-		Statistic		 	& 2.9793		& 30.071	      & 15.4029		& 8.4354   	\\ 
-		$\textnormal{\textit{p-value}}$
-							& 0.3948		& $1.3 * 10^{-6}$ & 0.0015		& 0.0378	\\
-		$H_{0}$		  		& accepted 		& rejected		  & rejected 	& accepted  \\ 										
+		$ n_{annots} $			& \centering 81				& \centering 328				& \centering 82 			& \multicolumn{1}{c}{69}  \\
+		$ H_{0} $				& \multicolumn{4}{c}{$ med \left( IoU_{polygon} \right) = med \left( IoU_{watershed} \right) = med \left( IoU_{IOG} \right) = med \left( IoU_{DEXTR} \right) $}  \\  
+		$ H_{A} $		 		& \multicolumn{4}{c}{$ H_{0} = false $}  \\ 	
+		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
+		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
+		$ \textnormal{\textit{p-value}} $
+								& \centering 0.3948			& \centering $ 1.3 * 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
+		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
 		\bottomrule
 	\end{tabular}
 	\caption[Kruskal-Wallis tests over domains]{
 		Four Kruskal-Wallis tests are applied for the domain scopes $ Standard $, $ Industrial $, $ Anomaly $, and $ Urban $.
 		The four benchmark methods are used as factors for each test.
-		For all tests the underlying sample is $X_{raw}$.
+		All tests are performed on the same $ H_{0} $, $ H_{A} $ and the same sample $X_{raw}$.
 	}\label{tab:ch5:tests_on_domains}
 \end{table}
 %TODO allgin table properly
@@ -56,11 +82,14 @@ Inside these two groups no significant difference occurs.
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/chap52_boxplot.png}
 	\caption[Box plot IoU per domain and method]{
-		Box plot of the $IoU$ per image domain and benchmark method.
+		Box plot of the $ IoU $ per image domain and benchmark method.
+		In the domain $ Anomaly $ all methods perform worse compared to the other domain, due to the special characteristics of this domain.
+		For the domain $ Industrial $, $med \left( IoU_{IOG} \right) $ is significantly lower, than for the other methods.
+		The domains $ Standard $ and $ Urban $ do not evidence a statistically significant difference between the methods.
 	} \label{fig:ch5:sec2:domains_box_plot}
 \end{figure}
 
-Further, it was detected, that the domains $ Standard $, $ Industrial $, and $ Anomaly $ do not differ significantly in their median value of the $IoU$.
+Further, it was detected, that the domains $ Standard $, $ Industrial $, and $ Anomaly $ do not differ significantly in their median value of the $ IoU $.
 Only the domain scope $ Anomaly $ differs greatly, which is reasonable due to the clearly different types of images.
 It was experienced in the review of the user annotations, that the users often have a varying understanding what belongs to the anomaly, which should be labeled.
 This ranges from different to misinterpretations, which also in an explanation for the general lower $ IoU $ in this domain.
@@ -70,11 +99,11 @@ In conclusion it may be stated, that the examined benchmark methods mostly do no
 Only for the \gls{iog} method did not generalize as well as the other methods on the domain $ Industrial $.
 
 
-\subsection{Generalization over different Datasets}
+\subsection{Generalization Over Datasets} \label{ord:ch5:sec2:subsec2}
 
-In order to further evaluate the \gls{dextr} and \gls{iog} method, simulations are applied on various datasets.
+In order to further evaluate the \gls{dextr} and \gls{iog} method, simulations are applied on various datasets from various domains.
 To continue the evaluation of the generalization capabilities datasets from different domains are used.
-First, the performance of the initial prediction is presented, while later the refinement results are examined. 
+First, the performance of the initial prediction over multiple datasets is presented, while later the refinement results are examined. 
 
 \subsubsection{Initial Prediction}
 
@@ -83,9 +112,10 @@ The different simulation setups from the original \gls{dextr} \cite{Man18-DEXTR}
 Thereby, the \gls{gt} is used to simulate the user clicks on fore- and background to create the required model input.
 It has to be highlighted, that this simulation setup only contains little deviation or randomness, similar to the original simulation setup from \gls{dextr} and \gls{iog}.
 As a result, the simulated user clicks are almost perfect.
-More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Section \ref{ord:ch5:sec3}.
+More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec2}.
 
-The performance of the \gls{dextr} and \gls{iog} method on various datasets is shwon in Table \ref{tab:ch5:tests_on_datasets}.
+The performance of the \gls{dextr} and \gls{iog} method on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
+% TODO decide abou this part with the threshold?
 As the output of the segmentation model is a probability map with, which predicts if a pixel either belongs to the foreground or background, a threshold needs to be applied.
 The \gls{dextr} method performs best at a threshold of $ 0.5 $, while the best threshold value for \gls{iog} is $ 0.8 $.
 The \gls{miou} values presented are achieved by the most suitable threshold value for each method.
@@ -99,23 +129,15 @@ This is interesting, because the \gls{dextr} method gave the impression to be ad
 	\centering
 	\begin{tabular}{l|c c}
 		\toprule 		
-									& \gls{miou} by \gls{dextr} &\gls{miou} by \gls{iog}	\\
-		% Threshold					& 0.5 	& 0.8 		& 0.5  		& 0.8 		\\
+										& mIoU by DEXTR & mIoU by IOG	\\
 		\midrule
-		PASCAL VOC (VP \cmark)	& 0.9103 	& 0.9251	\\
-		PASCAL VOC (VP \xmark)	& 0.7805	& 0.8086	\\
-		Benchmark Dataset			& 0.8394 	& 0.8201	\\
-		D2S							& 0.9297	& 0.9342	\\
-		MAD	??						& - 	& -		\\
-		Segmentation and Counting??	& -		& - 	\\
-		tbd	??						& -		& - 	\\
-		% PASCAL VOC 2012	VP \cmark	& -		& 0.9103 	& 0.9251	& 0.8945	\\
-		% PASCAL VOC 2012 VP \xmark	& -		& 0.7805	& 0.8086	& 0.8195	\\
-	    % Benchmark Dataset			& 0.8380	& 0.8394 	& 0.8201	& 0.7787	\\
-		% D2S							& -		& 0.9297	& 0.9342	& 0.9158	\\
-		% MAD	??						& -		& - 	& -		& -		\\
-		% Segmentation and Counting ??	& -		& - 	& -		& -		\\
-		% tbd	??						& -		& - 	& -		& -		\\											
+		PASCAL (VP \cmark)				& 0.9103 	& 0.9251	\\
+		PASCAL (VP \xmark)				& 0.7805	& 0.8086	\\
+		Benchmark 						& 0.8394 	& 0.8201	\\
+		MVTec D2S \cite{Paddo18-D2S}	& 0.9297	& 0.9342	\\
+		Segmentation and Counting		& 0.8280	& 0.8797 	\\
+		MAD	??							& - 		& -		\\
+		tbd	??							& -			& - 	\\									
 		\bottomrule
 	\end{tabular}
 	\caption[Generalization of IOG and DEXTR]{
@@ -139,34 +161,34 @@ For the \gls{iog} method, the refinement clicks can be on the fore-and backgroun
 The refinement clicks are simulated using the \gls{gt}.
 A click is set on the greatest error region from the previous prediction.
 
-In Table \ref{tab:ch5:tests_on_refinement datasets} the performance of the methods is presented for various refinement clicks.
-For \gls{dextr} mostly only the first refinement clicks leads to a improvement, while the further clicks keep or decrease the \gls{miou}.
-In contrast, the \gls{iog} method is able to profit from each refinement click and increase the \gls{miou}. 
-From the ninth click, the improvement stagnates or worsens slightly as shown in Appendix XXX. 
-% TODO ref appendix and add simulation with 20 refinement clicks.  
-It can be stated, that refinement process generalizes well and performs expected over several domains.
-
 \begin{table}[h!]
 	\centering
+	\resizebox{\textwidth}{!}{
 	\begin{tabular}{l l|c c c c c c}
 		\toprule
-				&						& \multicolumn{6}{c}{\gls{miou} for $ n_{\textnormal{\textit{refine clicks}}} $ refinement clicks } \\
+				&						& \multicolumn{6}{c}{mIoU for $ n_{\textnormal{\textit{refine clicks}}} $ refinement clicks } \\
 				& {$ n_{\textnormal{\textit{refine clicks}}} $} 
 										& 0			& 1			& 2			& 3 		& 4 		& 5			\\
 		\midrule
-		DEXTR 	& PASCAL VOC (VP \cmark)	& 0.9103	& 0.9119	& 0.9054	& 0.8986 	& 0.8916	& 0.8863	\\
-			 	& PASCAL VOC (VP \xmark)	& 0.7805	& 0.7894 	& 0.7893	& 0.7871 	& 0.7833	& 0.7807	\\
-				& Benchmark Dataset		& 0.8394	& 0.8522 	& 0.8513	& 0.8504 	& 0.8512	& 0.8492	\\
-				& D2S					& 0.9297	& 0.9416 	& 0.9436	& 0.9437 	& 0.9419	& 0.9397	\\
+		DEXTR 	& PASCAL (VP \cmark)	& 0.9103	& 0.9119	& 0.9054	& 0.8986 	& 0.8916	& 0.8863	\\
+			 	& PASCAL (VP \xmark)	& 0.7805	& 0.7894 	& 0.7893	& 0.7871 	& 0.7833	& 0.7807	\\
+				& Benchmark				& 0.8394	& 0.8522 	& 0.8513	& 0.8504 	& 0.8512	& 0.8492	\\
+				& MVTec D2S				& 0.9297	& 0.9416 	& 0.9436	& 0.9437 	& 0.9419	& 0.9397	\\
 		\midrule
-		IOG 	& PASCAL VOC (VP \cmark)	& 0.9251	& 0.9359	& 0.9402	& 0.9436 	& 0.9449	& 0.9459	\\
-				& PASCAL VOC (VP \xmark)	& 0.8086	& 0.8184	& 0.8259	& 0.8313 	& 0.8351	& 0.8381	\\
-				& Benchmark Dataset		& 0.7843	& 0.7992 	& 0.8075	& 0.8146 	& 0.8191	& 0.8219	\\
-				& D2S					& -		& - 	& -		& - 	& -		& -		\\
+		IOG 	& PASCAL (VP \cmark)	& 0.9251	& 0.9359	& 0.9402	& 0.9436 	& 0.9449	& 0.9459	\\
+				& PASCAL (VP \xmark)	& 0.8086	& 0.8184	& 0.8259	& 0.8313 	& 0.8351	& 0.8381	\\
+				& Benchmark				& 0.8219	& 0.8396 	& 0.8508	& 0.8601	& 0.8669	& 0.8715	\\
+				& MVTec D2S				& 0.9343	& 0.9358 	& 0.9424	& 0.9468 	& 0.9499	& 0.9523	\\
 		\bottomrule
-	\end{tabular}
+	\end{tabular}}
 	\caption[Generalization of IOG and DEXTR Refinement]{
-		Performance of the \gls{dextr} and \gls{iog} method for various refinement clicks.
+		Performance of the \gls{dextr} and \gls{iog} method for different number of refinement clicks.
 		At $ n_{\textnormal{\textit{refine clicks}}} = 0 $, no refinement click is set, which is equivalent to the initial prediction.
-	}\label{tab:ch5:tests_on_refinement datasets}
+	}\label{tab:ch5:tests_on_refinement_datasets}
 \end{table}
+
+In Table \ref{tab:ch5:tests_on_refinement_datasets} the performance of the methods is presented for various refinement clicks.
+For \gls{dextr} mostly only the first refinement clicks leads to a improvement, while the further clicks keep or decrease the \gls{miou}.
+In contrast, the \gls{iog} method is able to profit from each refinement click and increase the \gls{miou}. 
+From the ninth click, the improvement stagnates or worsens slightly as shown in Appendix \ref{tab:appendix_refinementclicks}.
+It can be stated, that refinement process generalizes well and performs expected over several domains.

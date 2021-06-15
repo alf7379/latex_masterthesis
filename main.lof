@@ -5,47 +5,59 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Semantic and instance segmentation}}{5}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Semantic and instance segmentation}}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Intersection over Union}}{7}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Intersection over Union}}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Encoder-Decoder-Architecture}}{9}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Encoder-Decoder-Architecture}}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Unpooling methods \textit {nearest neighbor} and \textit {bed of nails}}}{10}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Unpooling methods \textit {nearest neighbor} and \textit {bed of nails}}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Transposed Convolution}}{10}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Transposed Convolution}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces U-Net}}{11}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces U-Net}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces FCN Predictions}}{12}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces FCN Predictions}}{12}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Pyramid Scene Parsing Network}}{13}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Pyramid Scene Parsing Network}}{13}{figure.caption.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Interactively Fully Convolutional Network}}{16}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Interactively Fully Convolutional Network}}{17}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Watershed User Interaction}}{23}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Watershed User Interaction}}{26}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces DEXTR User Interaction}}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces DEXTR User Interaction}}{28}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Four-channel DEXTR model input}}{26}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Four-channel DEXTR model input}}{29}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces DEXTR Refinement}}{27}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces DEXTR Refinement}}{30}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces IOG User Interaction}}{28}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces IOG User Interaction}}{31}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Five-channel IOG model input}}{29}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Five-channel IOG model input}}{32}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces IOG Architecture}}{31}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces IOG Architecture}}{34}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces IOG Refinement}}{32}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces IOG Refinement}}{35}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Screenshot of the user interface from the labeltool}}{37}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Screenshot of the user interface from the labeltool}}{41}{figure.caption.51}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces IoU Sample Transformation}}{45}{figure.caption.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Box plot IoU per method}}{47}{figure.caption.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Time Sample Transformation}}{48}{figure.caption.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Box plot IoU per method}}{50}{figure.caption.66}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Box plot IoU per domain and method}}{52}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Watershed User Interaction}}{57}{figure.caption.77}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
