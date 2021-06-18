@@ -5,9 +5,39 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of image segmentation models}}{16}{table.caption.24}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison of interactive segmentation models.}}{20}{table.caption.38}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of image segmentation models}}{15}{table.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison of interactive segmentation models.}}{20}{table.caption.39}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces tbd.}}{40}{table.caption.52}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Correlation table}}{44}{table.caption.54}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Hypothesis Tests on $ IoU $}}{46}{table.caption.60}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Hypothesis Tests on $time$}}{50}{table.caption.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Kruskal-Wallis tests over domains}}{52}{table.caption.69}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Kruskal-Wallis tests over domains}}{54}{table.caption.70}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Generalization of IOG and DEXTR}}{55}{table.caption.74}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.7}{\ignorespaces Generalization of IOG and DEXTR Refinement}}{56}{table.caption.77}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.8}{\ignorespaces Hypothesis Tests on $ IoU $ for the Watersheds method}}{58}{table.caption.78}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.9}{\ignorespaces Simulations with different click patterns}}{60}{table.caption.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.10}{\ignorespaces Performance of models trained with DEXTR and IOG annotations}}{62}{table.caption.82}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -15,28 +45,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Correlation table}}{43}{table.caption.52}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Hypothesis Tests on $ IoU $}}{45}{table.caption.58}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Hypothesis Tests on $time$}}{49}{table.caption.65}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Kruskal-Wallis tests over domains}}{51}{table.caption.67}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Kruskal-Wallis tests over domains}}{53}{table.caption.68}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.6}{\ignorespaces Generalization of IOG and DEXTR}}{54}{table.caption.72}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.7}{\ignorespaces Generalization of IOG and DEXTR Refinement}}{55}{table.caption.75}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.8}{\ignorespaces Simulations with different click patterns}}{56}{table.caption.76}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.9}{\ignorespaces Performance of models trained with \gls {dextr} and \gls {iog} annotations}}{59}{table.caption.78}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Performance of DEXTR and IOG on 20 refinement clicks.}}{72}{table.caption.84}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Performance of DEXTR and IOG on 20 refinement clicks.}}{76}{table.caption.88}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

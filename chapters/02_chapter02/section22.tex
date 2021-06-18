@@ -17,7 +17,7 @@ Image segmentation is an advanced task of computer vision.
 The goal of segmentation algorithms is to obtain regions of interest from an image.
 In order to partition the image into regions, a high level of understanding is required.
 Modern techniques of \gls{dl} have proven themselves to be most adequate for this task.
-For image segmentation nowadays deep \glspl{cnn} are applied.
+Today, for image segmentation deep \glspl{cnn} are applied.
 There two main variants to perform segmentation on images:
 \begin{itemize}
 	% Semantic segmentation
@@ -61,12 +61,12 @@ This is why, the labeling process of an instance may also be seen as semantic se
 	\caption[Semantic and instance segmentation]{
 		Sample images of the PASCAL \glsentryshort{voc} Dataset \cite{Eve20-PascalVOC}, that distinguish between semantic and instance segmentation.
 		The background class is colored back.
-		The white class are the void pixel, that are around boundary of the object.
+		The white class are the \glsentryshort{vp}, that are around boundary of the object.
 	}\label{fig:ch2:sec2:segmentation_image}
 \end{figure}
 
 % Supervised-learning, data with labels on pixel-level.
-This thesis concentrates on methods of supervised learning.
+For this thesis methods that are trained in a supervised manner are of interest.
 Therefore, a dataset with labels for each image on pixel-level is required.
 A label $y$ is represented by a map, which is an image of the same size as the input image $\textbf{x}$ and where each pixel has class label $y_{rc}$ with $r$ and $c$ referring to the corresponding row and column of the map. 
 In this context the label $y$ is also referred to as mask or \gls{gt}.
@@ -105,14 +105,14 @@ Despite the PASCAL \gls{voc} 2012 dataset is fairly popular, it features certain
 First, the quality of some single annotations is questionable.
 It was experienced, that especially for thin, long objects (\eg plants or the spite of bicycle wheels) the \gls{gt} partly seems inaccurate.
 % often used for evaluation -> careful because general use datatset
-Second, the PASCAL \gls{voc} datasets have so-called \textit{void pixel}, that are located around each object as a boundary, as illustrated in Figure \ref{fig:ch2:sec2:segmentation_image}.
+Second, the PASCAL \gls{voc} datasets have so-called \glsentryfull{vp}, that are located around each object as a boundary, as illustrated in Figure \ref{fig:ch2:sec2:segmentation_image}.
 They were established to prevent the inclusion of wrongly labeled \gls{gt} pixels, as label inaccuracies especially take place around the boundary of the object.  
-Void pixel are excluded from the training and evaluation, which leads to a distorted evaluation result.
-In most comparisons the presented results on PASCAL \gls{voc} datasets are created with the application of void pixel.
+\gls{vp} are excluded from the training and evaluation, which leads to a distorted evaluation result.
+In most comparisons the presented results on PASCAL \gls{voc} datasets are created with the application of \gls{vp}.
 This does not lead to a realistic evaluation, since the boundary, which is particularly difficult to segment, is ignored.
-Evaluating the performance, this must be taken into account, because real world data do have void pixel. 
-In Section \ref{ord:ch5:sec2}, experiments demonstrate, that the performance significantly drops without the use of void pixel.
-
+Evaluating the performance, this must be taken into account, because real world data do have \gls{vp}. 
+In Section \ref{ord:ch5:sec2_generalization_domains}, experiments demonstrate, that the performance significantly drops without the use of \gls{vp}.
+% TODO ref appendix for examples
 
 \subsection{Evaluation Metric}\label{ord:ch2:sec2:subsec_metric}
 To ensure an objective comparison of several methods a evaluation metric is required, which measures the quality of obtained segmentation.
@@ -379,7 +379,7 @@ For example, the manufacturing process in a closed industrial environment may co
 
 % New ways to obtain GT -> Labeltool, Interactive methods, AI-Simulation 
 New approaches have been created, to facilitate the process of creating new dataset and label images with pixel-level accuracy.
-An efficient and common way is a program, that simplifies labeling process by providing an user interface and multiple methods to create and save label.
+An efficient and common way is a program, that simplifies labeling process by providing a user interface and multiple methods to create and save label.
 
 Specific \textit{label} or \textit{annotation tools} provide a user interface and easy-to-use methods to create and edit labels. 
 Due to the hight demand for labeled training data there are various labeltools available.\footnote{E. Cerna, \textit{Image Annotation Tools: Which One to Pick in 2020?} \url{https://bohemian.ai/blog/image-annotation-tools-which-one-pick-2020/}}
@@ -395,8 +395,8 @@ Notable is the rapid increase of performance over the last years, which emphasiz
 The model delivering the best performance is currently the EfficientNet introduced in \cite{Zoph20-EfficientNet}, which is superior due to the application of so-called \textit{self-training}.
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{l|r|r}
-		\textbf{Model} 								&  \textbf{\gls{miou}}\\
+	\begin{tabular}{l|r}
+		\textbf{Model} 								& \textbf{mIoU}\\
 		\hline
 		\gls{fcn}-8s \cite{LSD15-FCN} 				& 62.2\\
 		DeconvNet \cite{NHH15-DeConvNet}			& 72.5\\
@@ -406,7 +406,8 @@ The model delivering the best performance is currently the EfficientNet introduc
 		EfficientNet \cite{Zoph20-EfficientNet} 	& 90.5\\
 	\end{tabular}
 	\caption[Comparison of image segmentation models]{
-		Comparison of image segmentation models on the PASCAL \gls{voc} 2012 test set. 
+		Comparison of image segmentation models on the PASCAL \gls{voc} 2012 test set.
+		It has to be noted, that the \gls{miou} is calculated with application of \gls{vp} from PASCAL \gls{voc}.
 		An more detailed overview with all officially submitted models can be reviewed PASCAL \gls{voc} 2012 leaderboard.\footnotemark 
 	}
 	\label{tab:ch2:stae-of-the-art}

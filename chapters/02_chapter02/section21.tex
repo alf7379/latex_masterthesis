@@ -28,11 +28,11 @@ These three types of datasets are treated separately, while the model uses the t
 % Input x and label y
 A dataset $\mathcal{D}$ contains $N$ elements with each element having $M$ features.
 An element $\textbf{x}$ can be represented as feature-vector $\textbf{x} = [x_1, \dots ,x_M]$, which the model takes as input.
-For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, y_n)$, each input $\textbf{x}$ contains a corresponding label $y$.
+For the task of supervised learning, the dataset $\mathcal{D}$ consists out of pairs $(\textbf{x}_n, y_n)$. Each input $\textbf{x}_i$ contains a corresponding label $y_i$.
 In the scope of classification, this label $y$ is represented by one out of $K$ classes $y \in \lbrace c_1, \dots, c_K \rbrace$.
 The classification task is defined as  
 \begin{equation}
-	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textit{\textbf{x}} \mapsto y
+	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textbf{x} \mapsto y
 \end{equation}
 In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as the weights of the model.
 While training a model, the weights are adjusted based on the features are extracted iteratively from the given input $\textbf{x}$.
@@ -40,7 +40,7 @@ While training a model, the weights are adjusted based on the features are extra
 % Model prediction
 The function $f$ describes the model, which computes the estimated output $\hat{y}$ based on the input $\textbf{x}$
 \begin{equation}
-	\hat y = f(\textit{\textbf{x}})
+	\hat y = f(\textbf{x}, \theta)
 \end{equation}
 with $\hat{y}$ being also referred to as prediction of the model.
 
@@ -55,26 +55,26 @@ The term \textit{learning} refers to this process.
 % Generalization error of a model
 The goodness of a model can be defined by the performance on the training set $\mathcal{S}$, test set $\mathcal{S}_2$, and validation set $\mathcal{S}_3$.
 The two main causes of failure are underfitted or overfitted models.
-A underfitted model is not complex enough to understand the interrelations in the data and therefore does not perform well.
+An underfitted model is not complex enough to understand the interrelations in the data and therefore does not perform well.
 Common reasons for underfitted models are missing complexity in the model architecture or too small and not representative datasets.
 Overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
 This happens, when the model does not generalize well enough and instead learns the features of the training set by heart.
 To successfully train a model, a tradeoff between overfitting and underfitting must be found.
 
 % Hyperparameter
-Further, there exist so-called \textit{hyperparameters}, that are used to adjust the training process.
+Further, there exist so-called \textit{hyperparameters}, that are used to adjust the training process or the model architecture.
 Important hyperparameters are the learning rate $\lambda$ , the number of training epochs $N_{Epochs}$, and the applied optimizer.
 
 
 \subsection{Deep Learning}\label{ord:ch2:sec1:subsec2}
 
-A \gls{nn} is an advanced method to apply the concepts of \gls{ml}.
-They consist out of multiple neurons, that are strongly connected in a layer-wise architecture.
+A \gls{nn} is one of the standard \gls{ml} methods.
+It consists out of multiple neurons, that are connected in a layer-wise architecture.
 If an architecture consists out of multiple layers, the network is also described as \textit{deep}, resulting in the terms \gls{dl} and \gls{dnn}.
-A \gls{nn} processes a given input $\textbf{x}$ and makes a prediction $\hat{y}$, similar as a \gls{ml} model.
+% A \gls{nn} processes a given input $\textbf{x}$ and makes a prediction $\hat{y}$, similar as a \gls{ml} model.
 
-Nowadays, in order to solve various tasks, a variety of different network types exist \eg convolutional, graph or recurrent networks.
-For the popular task of image detection \glspl{cnn} have proven themselves to be most adequate.
+Nowadays, in order to solve various tasks, a variety of different network types exist \eg convolutional, graph or recurrent neural networks.
+For the popular task of image processing \glspl{cnn} have proven themselves to be most adequate to classify, localize, or segment objects in images.
 The main component of \glspl{cnn} are convolutional layers, that are used to process and extract features from visual input.
 In these layers a convolution operation is performed on the input by applying $c$ convolution kernels.
 The output of a layer is defined as a feature map $F_c$, with also $c$ representing the amount of channels in the feature map.
@@ -84,7 +84,7 @@ Further, pooling layers are commonly used, in order to reduce the size of featur
 \subsection{Evaluation}\label{ord:ch2:sec1:subsec3}
 
 The performance of a model may be evaluated using various metrics.
-In the context of classification, the \textit{true positives} are the number of instances, that are correctly predicted to be positive.
+In the context of classification, the \textit{true positives} are the number of instances, that are correctly predicted to belong to a certain class $c_i$.
 While the \textit{false positives} are the number of instances, that are incorrectly predicted to be positive, but truly are negative.
 The contradictory definition applies for the equivalent terms \textit{true negatives} and \textit{false negatives}.
 
@@ -93,20 +93,19 @@ The contradictory definition applies for the equivalent terms \textit{true negat
 %	Accuracy = \frac{\textnormal{\textit{true positives}} + \textnormal{\textit{true negatives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}} + \textnormal{\textit{true negatives}} + \textnormal{\textit{false negatives}}}
 % \end{equation}
 The accuracy is one of the most simple metrics and represents the number of correct predictions over the number of all predictions.
-An evaluation based only on the accuracy can be misleading.
-Therefore, there exist more evaluation metrics as precision and recall.
+To further gain deeper insights on the behavior of models there exist more evaluation metrics as precision and recall \cite{Ger17-HandsOn}.
 % precision
-The precision is defined by
-\begin{equation}
-	precision = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}}}
-\end{equation}
-and represents the accuracy of the positive predictions.
+%The precision is defined by
+%\begin{equation}
+%	precision = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false positives}}}
+%\end{equation}
+%and represents the accuracy of the positive predictions.
 % recall
-The recall is defined by
-\begin{equation}
-	recall = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false negatives}}}
-\end{equation}
-and is also referred to as \textit{sensitivity} or \textit{true positve rate}.
-The recall describes the ratio of positive instances, that are predicted correctly.
+%The recall is defined by
+%\begin{equation}
+%	recall = \frac{\textnormal{\textit{true positives}}}{\textnormal{\textit{true positives}} + \textnormal{\textit{false negatives}}}
+%\end{equation}
+%and is also referred to as \textit{sensitivity} or \textit{true positve rate}.
+%The recall describes the ratio of positive instances, that are predicted correctly \cite{Ger17-HandsOn}.
 
-Further, there exist methods for the evaluation of model as the \textit{F1-Score} or the ROC curve, that are described in \cite{Ger17-HandsOn}.
+% Further, there exist methods for the evaluation of model as the \textit{F1-Score} or the ROC curve, that are described in \cite{Ger17-HandsOn}.

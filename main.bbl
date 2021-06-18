@@ -447,6 +447,54 @@
       \verb 10.1007/978-3-030-01234-2_49
       \endverb
     \endentry
+    \entry{Chen19-AnomalyDetectionManufacturing}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=30ab7e558ef9e6ffd63f828483167fa5}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei\bibnamedelima Jie},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=65833a07c37237494098b72608110b84}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jee-Hou},
+           giveni={J\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2935a752d21bdbdc443482daf897e67}{%
+           family={Mustapha},
+           familyi={M\bibinitperiod},
+           given={Khameel\bibnamedelima Bayo},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea47a8d4ca4b33c1589e78edfb828d1e}{%
+           family={Chai},
+           familyi={C\bibinitperiod},
+           given={Tong-Yuen},
+           giveni={T\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \strng{fullhash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \strng{bibnamehash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \strng{authorbibnamehash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \strng{authornamehash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \strng{authorfullhash}{e546de8dff7b6a58c3ecac975e208a7a}
+      \field{labelalpha}{Che+19}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Conference on Sustainable Utilization and Development in Engineering and Technologies (CSUDET)}
+      \field{title}{A Vision Based System for Anomaly Detection and Classification in Additive Manufacturing}
+      \field{year}{2019}
+      \field{pages}{87\bibrangedash 92}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/CSUDET47057.2019.9214635
+      \endverb
+    \endentry
     \entry{Chen18-SyntheticData}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=1,uniquepart=given,hash=811ceb0cea7550f0abce68827e166ba5}{%
@@ -483,6 +531,7 @@
       \field{labelalpha}{Che+19}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
@@ -1203,12 +1252,12 @@
            given={Xiangyu},
            giveni={X\bibinitperiod},
            givenun=1}}%
-        {{un=1,uniquepart=given,hash=bb295293acacd54387339079ebbe4ead}{%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
            familyi={R\bibinitperiod},
            given={Shaoqing},
            giveni={S\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
            familyi={S\bibinitperiod},
@@ -1253,12 +1302,12 @@
            given={Xiangyu},
            giveni={X\bibinitperiod},
            givenun=1}}%
-        {{un=1,uniquepart=given,hash=bb295293acacd54387339079ebbe4ead}{%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
            family={Ren},
            familyi={R\bibinitperiod},
            given={Shaoqing},
            giveni={S\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
            familyi={S\bibinitperiod},
@@ -1455,6 +1504,44 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.1109/CIBCB48159.2020.9277638
+      \endverb
+    \endentry
+    \entry{JG18-ClickCarving}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a6a96378ffc051702bd86b4931d86ded}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Suyog},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f67e08fa64fd602c4ec562da14d65216}{%
+           family={Grauman},
+           familyi={G\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{fullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{bibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authorbibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authornamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \strng{authorfullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
+      \field{labelalpha}{JG16}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AAAI Conference on Human Computation and Crowdsourcing}
+      \field{number}{1}
+      \field{title}{Click Carving: Segmenting Objects in Video with Point Clicks}
+      \field{volume}{4}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
+      \endverb
+      \verb{url}
+      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
       \endverb
     \endentry
     \entry{Kirch08-CorrPearson}{inbook}{}
@@ -2375,6 +2462,67 @@
       \field{title}{Applied Multivariate Statistics for the Social Sciences}
       \field{year}{2016}
     \endentry
+    \entry{Rah19-IoT}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=13cd9bec3ea3f1cf6f69603fd97d47ab}{%
+           family={Rahmatov},
+           familyi={R\bibinitperiod},
+           given={Nematullo},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ceef3925d1f1c212e8b5c828bbabe53a}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1d362bad3a3463c10ec3c374c9fe1a7}{%
+           family={Saeed},
+           familyi={S\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25293504a06bcb82a0d79fe327d2576f}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Won-Hwa},
+           giveni={W\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f39c703e49756a82f607c90e3da608b}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={HyunCheol},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4058669eadae5c644a5e3350f945db70}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jeonghong},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b2cc740787dbba8ac2bc06cf8fe89e8}
+      \strng{fullhash}{4fb27e56cf9f5f508b7313a7297a4892}
+      \strng{bibnamehash}{4fb27e56cf9f5f508b7313a7297a4892}
+      \strng{authorbibnamehash}{4fb27e56cf9f5f508b7313a7297a4892}
+      \strng{authornamehash}{2b2cc740787dbba8ac2bc06cf8fe89e8}
+      \strng{authorfullhash}{4fb27e56cf9f5f508b7313a7297a4892}
+      \field{labelalpha}{Rah+19}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Distributed Sensor Networks}
+      \field{number}{10}
+      \field{title}{Machine learning–based automated image processing for quality management in industrial Internet of Things}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{pages}{1550147719883551}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/1550147719883551
+      \endverb
+    \endentry
     \entry{RF15-U-Net}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
@@ -2500,35 +2648,6 @@
       \verb 10.1145/1186562.1015720
       \endverb
     \endentry
-    \entry{RM03-Superpixel}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c960163b90d3348c2d10aa3dc204093d}{%
-           family={Ren},
-           familyi={R\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=5ac09104603448a6f905bd494b6d549b}{%
-           family={Malik},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{c40f38ade212aed024a373ed45d79069}
-      \strng{fullhash}{c40f38ade212aed024a373ed45d79069}
-      \strng{bibnamehash}{c40f38ade212aed024a373ed45d79069}
-      \strng{authorbibnamehash}{c40f38ade212aed024a373ed45d79069}
-      \strng{authornamehash}{c40f38ade212aed024a373ed45d79069}
-      \strng{authorfullhash}{c40f38ade212aed024a373ed45d79069}
-      \field{labelalpha}{RM03}
-      \field{sortinit}{R}
-      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings Ninth IEEE International Conference on Computer Vision}
-      \field{title}{Learning a classification model for segmentation}
-      \field{year}{2003}
-      \field{pages}{10\bibrangedash 17 vol.1}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1109/ICCV.2003.1238308
-      \endverb
-    \endentry
     \entry{Ruder16-SGD}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b468248a20d75c52ee742f4592c2569f}{%
@@ -2556,48 +2675,6 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1609.04747
-      \endverb
-    \endentry
-    \entry{SHL16-SuperpixelEvaluation}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=38d78a7ede21a7daa1bc6ab12af5b209}{%
-           family={Stutz},
-           familyi={S\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9709daf6a30bbc4fa10021197e7c88eb}{%
-           family={Hermans},
-           familyi={H\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=89e3f1ee83923a2c7a44b7597b35fccd}{%
-           family={Leibe},
-           familyi={L\bibinitperiod},
-           given={Bastian},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a47b619686ad9c2e305c5fff43b79834}
-      \strng{fullhash}{a47b619686ad9c2e305c5fff43b79834}
-      \strng{bibnamehash}{a47b619686ad9c2e305c5fff43b79834}
-      \strng{authorbibnamehash}{a47b619686ad9c2e305c5fff43b79834}
-      \strng{authornamehash}{a47b619686ad9c2e305c5fff43b79834}
-      \strng{authorfullhash}{a47b619686ad9c2e305c5fff43b79834}
-      \field{labelalpha}{SHL16}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1612.01601}
-      \field{title}{Superpixels: An Evaluation of the State-of-the-Art}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1612.01601
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1612.01601
       \endverb
     \endentry
     \entry{Sha18-DLCV}{book}{}

@@ -33,7 +33,7 @@ However, differences between the models can be observed when considering the IoU
 The \gls{ap} for annotations at $ IoU < 0.75 $ are at an equal level for all methods.
 From there on, the \gls{ap} tends to decrease for a higher \gls{iou}.
 This observation is extreme for $ IoU > 0.95 $. 
-Exemplary for the models trained on the normal data set, the original \gls{gt} enables a performance of $ AP = 0.2198 $, while the performance of the \gls{dextr} and \gls{iog} model dropped to $ AP = 0.1549 $ respectively $ AP = 0.0384 $.
+Exemplary for the models trained on the normal dataset, the original \gls{gt} enables a performance of $ AP = 0.2198 $, while the performance of the \gls{dextr} and \gls{iog} model dropped to $ AP = 0.1549 $ respectively $ AP = 0.0384 $.
 This effect also occurs for the augmented \gls{d2s} dataset.
 From this follows that, the models trained on the \gls{dextr} and \gls{iog} annotations are not able to make prediction with a high level of detail.
 The missing details in the model predictions, is probably caused by the \gls{dextr} and \gls{iog} annotations, which are also not perfect at the detail level.
@@ -74,8 +74,7 @@ So, in order to make create predictions with very high \gls{iou} and rich detail
 \end{table}
 %TODO determine if $ IoU >= 0.5 $ ot $ IoU = 0.5 $
 
-In conclusion, the statement from Manisis \etal, that 
-Finally, the statement of Manisis \etal is reviewed again, which claims that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}.
+In conclusion, the statement from Manisis \etal is reviewed again, which claim that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}.
 It can be said, that the \gls{dextr} and \gls{iog} annotations are suitable to train a new model, which performs equivalent on a lower $ IoU$ level and the \gls{map}.
 However, for a high \gls{iou} the model trained on the \gls{dextr} annotations performs a bit worse, while the one from \gls{iog} annotations performs significantly worse.
 Depending on the required level of precision of the model, the \gls{dextr} and \gls{iog} annotations are suitable for training.

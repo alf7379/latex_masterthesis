@@ -1,7 +1,7 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Generalization over users}\label{ord:ch5:sec3_generalization_domains}
+\section{Generalization over users}\label{ord:ch5:sec_3_generalization_user}
 
 % RE-1468
 
@@ -17,9 +17,57 @@
 % Compare the variance of single users per method
 % Test how stable the variance is
 
+\subsection{Two Experienced User} \label{ord:ch5:sec3:subsec2_cmo_afe}
 
-\subsection{Simulations With Different Click Patterns / Noise}\label{ord:ch5:sec3:subsec2}
+% No significant difference in the IoU between the two user could be detected -> generalize well over various users (few user, large data)
+
+\begin{table}[h!]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{l|c c}
+			\toprule 		
+							& Kruskal-Wallis test 	& Mann-Whitney U-test \\
+			\midrule
+			$ H_{0} $			& $ med \left( IoU_{\textnormal{\textit{User 1}}} \right)  = med \left( IoU_{\textnormal{\textit{User 2}}} \right) $ & $ t_{{\textnormal{\textit{User 1}}}} = t_{\textnormal{\textit{User 1}}} $ 		\\
+			$ H_{A} $		& $ med \left( IoU_{classical} \right) \not= med \left( IoU_{dl} \right) $ &  $ t_{{\textnormal{\textit{User 1}}}} \not= t_{\textnormal{\textit{User 1}}} $ 	\\
+			$ \alpha $		& $ 5\% $ 		 		& $ 5\% $ 		\\ 	
+			Statistics		& 1.9246	     		& 5294.5    	\\ 
+			$ \textnormal{\textit{p-value}} $ 
+							& 0.1654	 		 	& 0.0828		\\ 
+			$ H_{0} $		& accepted		 		& accepted 		\\
+			\bottomrule
+	\end{tabular}}
+	\caption[Hypothesis Tests on $ IoU $ for the Watersheds method]{
+		For the method $ Watersheds $ this is an exemplary overview of the two statistical tests performed on the variable $ IoU $.
+		The variable $ IoU $ is evaluated by the median and tendency of the sample.
+		Each factor contains 109 annotations.
+		If the $ \textnormal{\textit{p-value}} $ is greater than the significance level $ \alpha = 5\% $, $ H_{0} $ is accepted.
+		Both, the Kruskal-Wallis test and the Mann-Whitney U-test accept the null hypothesis, that there are no statistical significant differences between the methods.
+		For the \gls{dextr} and \gls{iog} method equivalent tests were performed on the same setup, which all accepted $ H_{0} $.
+	}\label{tab:ch5:tests_afe_cmo}	
+\end{table}
+% TODO include polygon run
+% TODO Include number of annotations?
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{figures/chap53_afe_cmo.png}
+	\caption[tbd]{
+		tbd.
+	} \label{fig:ch5:sec3:cmo_afe}
+\end{figure}
+% TODO add Polygon (and keep the methods soerted)
+
+
+\subsection{Simulations With Different Click Patterns / Noise}\label{ord:ch5:sec3:subsec3}
 % RE-1468
+
+% Simulations are easily scalable, faster and cheaper than the acquisition of manual clicks from real users.
+% Second, in a simulation no variance occurs between the set clicks of various users, if the .
+% Third, simulations have the possibility to effortless create various click patterns, that \eg vary the set click by a random offset, in order to simulate a various types of user behavior.
+%On the other hand, simulations are only capable to replicate the user's behavior to a certain extent.
+% Further, the involvement of human users is especially important for methods, which performance depends on user interactions.
+
 
 In order to gain deeper insights on the functionality of the \gls{dextr} and \gls{iog} method the simulation setup is modified.
 % Motivation - Nachahmung von unterschiedlichen Usertypen durch unterschiedliche Genauigkeit bei der Klick-Simulation.
@@ -62,6 +110,5 @@ Even a comparable small deviation of maximal 5 \Unit{px} leads a notable drop in
 This factor needs to be taken into account, if these methods are applied by real users.
 
 
-\subsection{Two Experienced User}\label{ord:ch5:sec3:subsec3}
 
-% Eval of differences between the runs from Colin and me?
+

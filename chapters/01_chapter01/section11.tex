@@ -1,8 +1,42 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Section}\label{ord:ch1:sec1}
 
-\subsection{Subsection}\label{ord:ch1:sec1:subsec1}
+%%% Motivation
+% Fast development in computer science -> ML and automation of processes in the industry.
+The development in computer science has continued to make great strides in recent years. 
+Here two areas are emphasized in particular for this thesis: \gls{ml} and the automation of industrial processes.
+The former is driven by an energetic research community, resulting in novel methods and application areas.
+% Increasing automation == increasing application of image processing (-> application of DL).
+The latter enjoys the benefits of increasing digitization and the developments in digital image processing \cite{Rah19-IoT}.
+Especially for the automation of visual applications, image processing is the main component.
+% Semantic Segmentation of Images as valueable method with increasing application.
+In this field the segmentation of an image is a valuable instrument, in order to identify and localize objects in images.
+Recently, segmentation methods based on \gls{ml} emerged, resulting in advanced performance in the form of higher accuracy and richer detail.
 
+% -> Interactive Semantic Segmentation 
+Further, it is possible to apply segmentation methods interactively, whereby the object to be segmented can be determined more precisely by a user.
+% Use cases for interactive methods
+Possible use cases for interactive segmentation methods are segmentation itself and the creation of new annotations \cite{Man18-DEXTR}.
+
+% Importance of strong generalization capabilities. 
+In industrial contexts interactive methods may be used for various applications.
+Thereby the interactive method can be operated differently by various users.
+Also, a wide range of images from unknown domains may be applied. 
+To overcome these challenges, interactive methods must have good generalization capabilities over several image domains and user behaviors.
+
+A popular application for such advanced image processing methods is the automation of repetitive processes in industrial manufacturing.
+This includes, for example, the detection of errors, the counting of instances or the control of quality \cite{Chen19-AnomalyDetectionManufacturing}.
+\\
+\newline
+%%% Scope of this thesis
+This thesis attempts to give an overview of interactive methods for semantic segmentation and their abilities.
+First, basic types of interactive segmentation methods are presented.
+Next, four methods are explained in detail, two of which represent the state-of-the-art and are based on \gls{ml}.
+The core of this work is a benchmark study, where real users apply the presented methods on a custom dataset.
+The results from the benchmark are used to examine if interactive segmentation methods based on \gls{ml} improve the process of labeling based on the annotation time and accuracy.
+A focus is placed on the generalization capabilities of the methods, which are fundamental for a successful application.
+Last, Chapter \ref{ord:ch6} summarizes the results in a conclusion.
+
+% TODO inlcude research question here??
 

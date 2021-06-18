@@ -1,7 +1,7 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Generalization Over Domains} \label{ord:ch5:sec2}
+\section{Generalization Over Domains} \label{ord:ch5:sec2_generalization_domains}
 % RE-1467
 
 % Motivation - get insights of the performance on other domains (anomaly and industrial)
@@ -112,7 +112,7 @@ The different simulation setups from the original \gls{dextr} \cite{Man18-DEXTR}
 Thereby, the \gls{gt} is used to simulate the user clicks on fore- and background to create the required model input.
 It has to be highlighted, that this simulation setup only contains little deviation or randomness, similar to the original simulation setup from \gls{dextr} and \gls{iog}.
 As a result, the simulated user clicks are almost perfect.
-More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec2}.
+More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec3}.
 
 The performance of the \gls{dextr} and \gls{iog} method on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
 % TODO decide abou this part with the threshold?
@@ -142,14 +142,14 @@ This is interesting, because the \gls{dextr} method gave the impression to be ad
 	\end{tabular}
 	\caption[Generalization of IOG and DEXTR]{
 		The \gls{dextr} and \gls{iog} method are applied on multiple datasets to evaluate their performance over several domains.
-		The performance is measured by the \gls{miou}.
-		VP \cmark and VP \xmark \space represent the evaluation with and without the use of the void pixel.
+		The performance is measured by the \gls{miou} with (\gls{vp} \cmark) and without (\gls{vp} \xmark) the application of the \gls{vp}.
 	}\label{tab:ch5:tests_on_datasets}
 \end{table}
 
-% point out weakness of void pixel
-The dubious use of void pixel already is pointed out in the introduction of the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} from Subsection \ref{ord:ch2:sec2}.
-The effect of void pixel on the \gls{miou} can be seen clearly, the difference is up to almost 13\%.
+% point out weakness of VP
+% TODO enforce this part
+The dubious use of \gls{vp} already is pointed out in the introduction of the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} from Subsection \ref{ord:ch2:sec2}.
+The effect of \gls{vp} on the \gls{miou} can be seen clearly, the difference is up to almost 13\%.
 By the presentation of such results, unrealistic expectations are raised on the method's performance, which are mostly not achievable in real world application.
 
 \subsubsection{Refinement Prediction}

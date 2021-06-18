@@ -1,0 +1,76 @@
+% !TeX root = ../../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\section{Summary}
+
+%%% Review of contests covered in the thesis.
+
+% Kreis schließen zur Einleitung
+
+% Description of the single chapters (middle detail with focus on the outcome -> repeat the dicovered results)
+% Chapter 1
+Chapter \ref{ord:ch1} presents an exemplary use case for interactive segmentation methods to highlighted their relevance.
+
+%%% Chapter 2 
+In Chapter \ref{ord:ch2} the theoretical basics for the presented methods are explained.
+Here \gls{ml} is introduced quickly, while the task of semantic segmentation is examined in detail.
+Further, interactive segmentation and different approaches how to realize it are presented .
+Of particular focus are the methods based on \gls{dl}, where the user sets clicks as a form of interaction.
+Here is especially interesting how the user clicks are transformed into heatmaps and concatenated with the \gls{rgb} image to form a multidimensional model input as in the \gls{dextr} and \gls{iog} method.
+Last, methods for statistical analysis are introduced to provide the basis for the evaluation.
+
+%%% Chapter 3
+Since in this thesis a benchmark study with users is performed, in Chapter \ref{ord:ch3} the individual methods of the benchmark study are presented.
+As non-interactive baseline method polygon drawing is introduced, while as classical interactive segmentation method the watershed transformation is presented.
+Furthermore, the \gls{dextr} \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} method are introduced as representatives of state-of-the-art interactive segmentation methods based on \gls{dl}.
+
+%%% Chapter 4
+In Chapter \ref{ord:ch4} the setup of the benchmark study is explained, which is the core component of this thesis.
+The compilation of the image dataset for the benchmark study is described and which image attributes and domains were considered.
+Further, is described what user statistics are recorded in the benchmark study and what the process of participating in the benchmark study was like.
+
+%%% Chapter 5
+Last, in Chapter \ref{ord:ch5} the results of the benchmark study and further experiments are evaluated.
+To begin the research question posed in Chapter \ref{ord:ch1} is examined, if interactive segmentation methods based on \gls{dl} improve the labeling process compared to methods without \gls{dl}.
+The comparison is based on the benchmark results and takes the accuracy and the annotation time into account as presented in Section \ref{ord:ch5:sec1}.
+The accuracy of the \gls{dextr} method performed best, while the the \gls{iog} method performs worst, as presented.
+Therefore, in this regard neither classical or \gls{dl} based methods are advantageous, but as single method \gls{dextr} is superior.
+With respect to annotation time, \gls{dl} based methods are significantly faster than classical methods.
+
+Further, the generalization capabilities over several domains are evaluated for the \gls{dextr} and \gls{iog} method in Section \ref{ord:ch5:sec2_generalization_domains}.
+% TODO describe this.
+
+In Section \ref{ord:ch5:sec_3_generalization_user}, the generalization over several users is evaluated.
+% TODO describe this.
+
+Further on, in Section \ref{ord:ch5:sec4_survey} the survey filled out by the benchmark participants and their results is presented.
+The outcome of this small survey indicates, that a pleasant user experience requires a good performing method and vice versa.
+
+Last, in Section \ref{ord:ch5:sec5_retrain} the statement from Manisis \etal is examined, that \gls{dl} models trained on \gls{dextr} annotations perform equally as models trained with the original \gls{gt} \cite{Man18-DEXTR}.
+The experiments of this thesis show, that this statement can be confirmed in a limited way.
+The different models perform similar based on the \gls{map}, but the models trained on the \gls{dextr} annotations perform significantly worse for high \gls{iou} values. 
+
+
+% Void Pixel 
+Since the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} is an important and much used dataset in this field of study, it was also used in this thesis.
+However, the characteristics of this dataset with special reference to the use of \gls{vp} should be presented more transparently.
+As presented in Table \ref{tab:ch5:tests_on_datasets} the \gls{miou} differs significantly with and without the use of \gls{vp}.
+By presenting the results with \gls{vp}, unrealistically high expectations are created that cannot be met on real world data or datasets without \gls{vp}.
+
+% - Eval output
+
+%%%
+% Antwort auf Research Frage -> if interactive segmentation methods based on \gls{dl} improve the process of labeling based on the annotation time and accuracy.
+%These classical methods may perform very well on certain images, but tend to reach their limitations as they deal with more complex structures. % -> this should be part of the evaluation.
+% This is due to their rather simple processing of superficial characteristics \eg edges, textures, contrast and color.
+% On the contrary \gls{dl} based methods are capable to examine images on a deeper level and so understand more complicated structures.
+
+%%%
+% Generalization over domains
+
+% Generalization over domains
+
+% Importance of 
+
+%%% Future Work
+ 

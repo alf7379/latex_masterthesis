@@ -2,67 +2,28 @@
 
 %TODO: Abstract
 
+% Importance of interactive semantic segmentation
+Due to the rapid development of ML, semantic segmentation has become an important instrument in image processing.
+Recently published methods also propose interactive approaches for the task of semantic segmentation \cite{Xu16-InteractiveObjectSelection} \cite{JG18-ClickCarving} \cite{Liew17-RegionalInteractiveImageSeg}.
+Interactive methods require a form of user interaction, that provide additional information on the object of interest.
+The user interaction is often realized by mouse clicks on the image and are further processed by a \gls{ml} based segmentation model \cite{Man18-DEXTR} \cite{Zha20-IOG}. 
+Thereby, the task is transformed into a class-agnostic segmentation of a foreground object from the background.
+Interactive methods can be used to support the label process in order to create new annotations for images.
+These annotations may further be used as \gls{gt}, which opens the possibility to use these images with the new annotations for \gls{ml} methods \cite{Man18-DEXTR}.
+This use case is of particular interest for the industrial environment due to two major factors.
+First, due to increasing automation, modern image processing methods based on DL are increasingly applied.
+Second, suitable data is very rare, which has the characteristics of individual industrial environments.
+Interactive methods simplify the label process and therefore lower the inhibition threshold for creating new labels.
+
+% Quick summary of the Chapters.
+This thesis examines the abilities of multiple interactive segmentation methods by the performance of a benchmark study on real users..
+In Chapter \ref{ord:ch2} the fields of semantic segmentation and interactive segmentation is introduced.
+In the benchmark study four methods (polygon drawing, watershed transformation, \gls{dextr}\cite{Man18-DEXTR}, and \gls{iog}\cite{Zha20-IOG}) are used, described in Chapter \ref{ord:ch3}.
+The setup of the benchmark study is presented in Chapter \ref{ord:ch4}.
+In Chapter \ref{ord:ch5} the results of the benchmark study are evaluated and the methods are further examined by the use of statistical analysis.
+% Research question(s)
+In general it is examined if interactive segmentation methods based on \gls{ml} improve the labeling process.
+Thereby, special attention is paid to the generalization capabilities over various domains and users.
+Last, a conclusion summarizes the outcomes and gives an outlook on future work in Chapter \ref{ord:ch6}.
 
 
-\begin{enumerate}
-	
-	\item Introductions
-	\begin{enumerate}
-		\item DL in Industry
-		\item Application of DL and gathering Labels
-	\end{enumerate}
-	
-	\item Theory
-	\begin{enumerate}
-		\item ML, Dl, CNN
-		\item segmentation segmentation (and IoU)
-		\begin{enumerate}
-			\item General
-			\item IoU
-			\item Architecture
-			\item Data
-			\item State-of-the-art
-			\item Application
-		\end{enumerate}
-		\item Interactive segmentation
-		\begin{enumerate}
-			\item Classical Concepts
-			\item User Point Concepts (Basic, Heatmaps and Input, Refinement, Characteristics, Comparison and state of the art)
-			\item Polygon Concepts
-			\item Drawing Concepts
-		\end{enumerate}
-	\end{enumerate}
-	
-	\item Benchmark Methods
-	\begin{enumerate}
-		\item Polygon
-		\item Watersheds
-		\item DEXTR
-		\item IOG
-	\end{enumerate}
-	
-	\item Benchmark Setups
-	\begin{enumerate}
-		\item Motivation
-		\item Method Selection
-		\item Benchmark Statistics
-		\item Image Selection
-		\item Benchmark Procedure
-	\end{enumerate}
-	
-	
-	\item Benchmark Evaluation
-	\begin{enumerate}
-		\item ...
-		\item ...
-		\item ...
-	\end{enumerate}
-	
-	
-	\item Conclusion
-	\begin{enumerate}
-		\item Summary / Conclusion
-		\item Future Work
-	\end{enumerate}
-	
-\end{enumerate}

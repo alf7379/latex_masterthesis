@@ -4,29 +4,25 @@
 \section{Benchmark Motivation}\label{ord:ch4:sec1}
 
 % Motivation - title and research question
-This benchmark study is motivated by the two main causes to evaluate real users and to use a diverse data set.
-Both target to enable the evaluation on generalization capabilities of interactive segmentation methods.
+This benchmark study is motivated by the two main causes: to evaluate real users and to use a diverse dataset.
+Both target the evaluation of the generalization capabilities of interactive segmentation methods.
 
 First, the current evaluations of interactive methods feature the major drawback of using simulations.
 The user input is created by simulations, instead of real users, as discussed in Section \ref{ord:ch2:sec3:subsec2}.
 This measure seems reasonable with the amount of samples in test or validations sets used in the context of \gls{dl}.
 However, these evaluations based on simulations are only meaningful to a limited extent, since a fundamental element, the user interaction, is not taken into account realistically.
-% TODO Ref where an unrealistic user is simulated e.g., IOG
 In simulations often an almost perfect user is simulated, that makes only few or none mistakes without any inaccuracies, which does not reflect reality.
-In contrast, this benchmark study analyses the result of real participants, in order to obtain realistic insights on the models performance.
-Thereby, the interaction of the users are recorded as described in Section \ref{ord:ch4:sec3}.
+In contrast, this benchmark study analyses the result of real participants, in order to obtain realistic insights on the model's performance.
+Thereby, the interactions of the users are recorded as described in Section \ref{ord:ch4:sec3}.
 % TODO sure about this statement?
 % An evaluation of the usability is especially valuable, because it is mostly not included in comparisons.
 %TODO introduce the variance of different users here?
 
-
 % Motivation Dataset
 Second, the information value of an evaluation strongly depends on the used dataset.
-The use of an unsuitable data set may lead to misrepresenting evaluation results.
-% TODO ref PASCAL VOC section
-To objectively evaluate the generalization capability of the interactive methods, a suitable dataset must be used.
-For a data set to be suitable it must have a high variance in its samples.
-In the context of image dataset this may be achieved by images with diverse domains and attributes.
+The use of an inappropriate dataset may reduce the validity of the evaluation results.
+To objectively evaluate the generalization capability of the interactive methods, a suitable dataset must be used, which should have a high variance in its samples.
+In the context of an image dataset this may be achieved by images with diverse domains and attributes.
 Therefore, for the scope of this benchmark study a hand chosen dataset was created, which is further described in Section \ref{ord:ch4:sec2}.
 
 % Reread confluence pages

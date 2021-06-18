@@ -988,6 +988,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{vp}{}%
+{%
+\gls@defglossaryentry{vp}%
+{%
+name={VP},%
+sort={VP},%
+type={acronym},%
+first={void pixel\glsspace (VP)},%
+firstplural={void pixels\glsspace (VPs)},%
+text={VP},%
+plural={VPs},%
+description={void pixel},%
+descriptionplural={void pixel\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={void pixel},%
+longplural={void pixels},%
+short={VP},%
+shortplural={VPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{anova}{}%
 {%
 \gls@defglossaryentry{anova}%

@@ -46,7 +46,7 @@ This supports the thesis that $cws$ does not constitute a flawless representatio
 However, $cws$ is still sufficient for the comparison of interactive methods, but the limitations have to be noted.
 For the further evaluation mostly $time_{annot}$ will be used to represent the user interaction.
 
-Last, attention should be drawn to the correlation between \gls{iou} and time $ corr \left(time_{annot}, IoU \right) = 0.03808 $.
+Last, attention should be drawn to the correlation between \gls{iou} and time \linebreak $ corr \left(time_{annot}, IoU \right) = 0.03808 $.
 The low correlation indicates, that the a long annotation time not necessarily corresponds to a high \gls{iou}.
 This may be caused by elaborate annotations of complicated objects, which require much time, but result in a comparable low $ IoU $.
 Another reason is, that especially \gls{dl} methods can achieve a good IoU in little time, as discussed in Subsection \ref{ord:ch5:sec1:subsec3}.
@@ -173,8 +173,7 @@ The information value of this conclusion is especially strong, due to the applic
 		Each factor contains 629 annotations.
 		If the $ \textnormal{\textit{p-value}} $ is greater than the significance level $ \alpha $, $ H_{0} $ is accepted.
 		The same result is achieved by all three different statistical tests, which supports its reliability.
-	}\label{tab:ch5:tests_on_iou}
-	
+	}\label{tab:ch5:tests_on_iou}	
 \end{table}
 
 % Kruskal-Wallis Test for four factors rejects H0.
@@ -319,8 +318,8 @@ This is perhaps caused, due to the possibility for editing is designed more open
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/chap51_time_boxplot.png}
 	\caption[Box plot IoU per method]{
-		Box plot of the variable $time$ for the four benchmark methods.
-		It can be seen clearly, that $med \left( time_{DEXTR} \right)$ and $med \left( time_{IOG} \right)$ are lower than $med \left( time_{Polygon} \right)$ and $med \left( time_{Polygon} \right)$.
+		Box plot of the variable $ time $ for the four benchmark methods.
+		It can be seen clearly, that $ med \left( time_{DEXTR} \right) $ and $ med \left( time_{IOG} \right) $ are lower than $ med \left( time_{Polygon} \right) $ and $ med \left( time_{Polygon} \right) $.
 		In general, the polygon and Watersheds method require a longer annotation time, where the last quarter of the box plot covers a relatively wide range with many outliers. 
 		%Despite the difference
 	} \label{fig:ch5:sec1:time_box_plot}

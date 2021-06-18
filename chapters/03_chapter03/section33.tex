@@ -12,13 +12,13 @@ This method follows a user point centered approach based on \gls{dl}, as introdu
 
 % Workflow
 The required user interaction are four clicks in the form of extreme points.
-These points are the right-most, left-most, bottom and top pixels of an object,  illustrated in Figure \ref{fig:ch3:sec3:user_interaction}.
-They reflect the most extreme pixels and therefore referred to as extreme points.
+These points are the right-most, left-most, bottom and top pixels of an object, illustrated in Figure \ref{fig:ch3:sec3:user_interaction}.
+They represent the most extreme pixels and therefore, are referred to as extreme points.
 The obtained user clicks are further processed and the \gls{dl} model predicts an object mask.
 
 % Advantage over other methods
 Extreme points provide a valuable guidance for the segmentation network.
-First, a bounding box can easily be derived from the them.
+First, a bounding box can easily be derived from them.
 Second, extreme points are naturally located at the boundary of the object.
 This provides the network with high level guidance on the localization of the boundary.
 % In the upsampling process this becomes especially useful, in order to reconstruct sharper borders.
@@ -29,14 +29,15 @@ With reference to the information content, extreme points are more valuable than
 The creation of the model input $\textbf{x}$ may be separated into three processing steps.
 
 % Crop image based on bbox
-First, the image is processed. 
+First, the image is preprocessed. 
 A bounding box is derived from the extreme points. 
 This bounding box is enlarged by $p_{{box}}$ \Unit{px}, to include context from the surrounding region.
 % Zero Padding
-If the enlarged bounding box extends the original image boundary, the overhanging pixels contain the value zero.
+If the enlarged bounding box extends over the original image boundary, the grayvalues of the pixels outside the image domain are set to zero.
+%TODO grayvalues in RGB images?
 Manisis \etal refers to this treatment as \textit{zero padding} \cite{Man18-DEXTR}, which is illustrated at the bottom of Figure \ref{fig:ch3:sec3:user_interaction} and \ref{fig:ch3:sec3:rgb_channel}.
 In order to focus on the object of interest, the image is cropped based on the enlarged bounding box.
-The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create a input of constant size for the segmentation network.
+The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create inputs of constant size for the segmentation network.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap33_bear_bbox.png}
@@ -53,7 +54,7 @@ The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create a
 
 % One feature map with extreme points
 Second, the four extreme points are converted into one heatmap.
-This heatmap may be referred as foreground heatmap, where the extreme points are located on the boundary of the object.
+This heatmap is referred to as foreground heatmap, where the extreme points are located on the boundary of the object.
 
 To highlight the extreme points a 2D Gaussian is centered around each point by
 % Impelemtation in HDevelop:
@@ -68,7 +69,7 @@ This heatmap is vital for the method, because of the high level guidance for the
 A closeup of a point centered by the 2D Gaussian is visualized in Figure \ref{fig:ch3:sec3:gauss_centered_point}.
 
 Third, the heatmap has the size of $512 \times 512$ \Unit{px} and is concatenated with the RGB image.
-This results in the four-channel \gls{dextr} model input, which is explanatory illustrated in Figure \ref{fig:ch3:sec3:model_input_channels}.
+This results in the four-channel \gls{dextr} model input, which is illustrated in Figure \ref{fig:ch3:sec3:model_input_channels}.
 
 \begin{figure}
 	\centering
@@ -95,24 +96,22 @@ This results in the four-channel \gls{dextr} model input, which is explanatory i
 	\caption[Four-channel DEXTR model input]{
 		Representation of the separate channels from the four-channel \gls{dextr} model input.
 		All channels have the spacial dimension of $512 \times 512$ \Unit{px}.
-		The user points in the foreground and background are enforced with a 2D Gaussian.
+		The user points on the object's boundary are processed by the 2D Gaussian.
 	} \label{fig:ch3:sec3:model_input_channels}
 \end{figure}
 
 
 \subsection{Architecture}\label{ord:ch3:sec3:subsec3}
 
-As encoder for the segmentation network \textit{ResNet-101} \cite{He16-ResNet} is selected, which if also referred to as \textit{backbone}.
+As encoder for the segmentation network \textit{ResNet-101} \cite{He16-ResNet} is selected, which also referred to as \textit{backbone}.
 The ResNet-101 is a deep \gls{cnn} containing 101 layers.
-The core component of any ResNet are \textit{residual units}, that are also referred to as \textit{bottleneck block}.
-Residual units contain skip connections, that are beneficial in various ways as explained in \cite{He16-ResNet} and \cite{Ger17-HandsOn}.
-The ResNet-101 is structured in four blocks, that contain 3, 4, 23 and 3 residual units.
+The core components of any ResNets are \textit{residual units}, that are also referred to as \textit{bottleneck block}.
+The ResNet-101 is structured in four blocks, that contain 3, 4, 23 and 3 bottleneck blocks.
 
 The ResNet-101 used for \gls{dextr} is modified by including atrous convolution in the last two blocks and removing the fully connected layers.
-
 After the backbone a four staged \gls{psp} module is applied to preserve global context.
-This network does not use a \textit{real} decoder, instead bilinear interpolation is used to retrieve original spatial dimension of $512 \times 512$ \Unit{px}.
-In the end a sigmoid function is applied to obtain the final prediction $\textbf{y}$ as a  probability map.
+The decoder of this architecture does not consist of several convolution layers, instead bilinear interpolation is used to retrieve original spatial dimension of $512 \times 512$ \Unit{px}.
+Finally, a sigmoid function is applied to obtain the final prediction $\textbf{y}$ as a  probability map.
 % TODO footnote for sigmoid fucntion.
 % Special thing about this network is the basically missing decoder and skip connections over the network -> that shows how valuable the border-click information is?
 
@@ -123,7 +122,7 @@ For the \gls{dextr} method the user may perform refinement by setting an additio
 The refinement click should be located on the boundary of the region where the segmentation fails.
 This new refinement click is added to the foreground heatmap with the extreme points.
 In Figure \ref{fig:ch3:sec3:refinement} the effect of an additional refinement click is exemplary presented.
-Each refinement clicks triggers a new model execution.
+Each refinement click triggers a new model execution.
 The refinement process may be applied iteratively.
 
 % TODO use an example where the initial prediction actually fails and the refinement succeeds.
@@ -158,8 +157,7 @@ The experiments and evaluations presented in \cite{Man18-DEXTR} contain various 
 Among them is also an examination of the performance on unseen classes and the generalization capability of the method.
 Thereby, the model was trained with the PASCAL \gls{voc} or COCO dataset and evaluated on both datasets.
 Despite these results seem reliable, it must be taken into account that the PASCAL \gls{voc} and COCO datasets are very similar and cover the same type of \textit{general} objects.
-The evaluation of the generalization capabilities of the method continues in detail in Section \ref{ord:ch5:sec3_generalization_domains}.
-% TODO ref chapter  section.
+The evaluation of the generalization capabilities of the method continues in detail in Section \ref{ord:ch5:sec2_generalization_domains}.
 
 An introduced application for the \gls{dextr} method is to create annotations and use them as new \gls{gt} to train \gls{dl} models.
 Manisis \etal claim, that models trained on \gls{dextr} annotations perform equally well as models trained on the original \gls{gt}\cite{Man18-DEXTR}.
