@@ -16,14 +16,14 @@ A detailed description of the introduced concepts and terms can be reviewed in \
 
 \subsection{Machine Learning}\label{ord:ch2:sec1:subsec1}
 
-\gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without explicitly being programming.
+\gls{ml} is the science of creating algorithms, to analyze, detect and learn patterns in various kinds of data without defining explicit decision rules.
 These algorithms may achieve human level performance, but mostly they are limited to a single task.
 In order to solve another task a \gls{ml} algorithm, has to learn the patterns of the new task from a corresponding dataset $\mathcal{D}$.
-\gls{ml} algorithms are referred to as models.
+As \gls{ml} algorithms aim to model reality, they are also referred to as \gls{ml} model.
 
 % Dataset 
 The dataset $\mathcal{D}$ usually is split into a training set $\mathcal{S}$, a test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
-These three types of datasets are treated separately, while the model uses the training set $\mathcal{S}$ to extract the patterns, the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$ are only used to evaluate the performance of the model.
+These three types of datasets are treated separately, while the \gls{ml} model uses the training set $\mathcal{S}$ to extract the patterns, the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$ are only used to evaluate the performance of the model.
 
 % Input x and label y
 A dataset $\mathcal{D}$ contains $N$ elements with each element having $M$ features.
@@ -34,7 +34,7 @@ The classification task is defined as
 \begin{equation}
 	f: \mathbb{R}^M \rightarrow \lbrace c_1,\ldots,c_K \rbrace, \quad \textbf{x} \mapsto y
 \end{equation}
-In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as the weights of the model.
+In order to create a functioning model, the model is trained by adjusting it's inner parameters, referred to as $ \theta $ the weights of the model.
 While training a model, the weights are adjusted based on the features are extracted iteratively from the given input $\textbf{x}$.
 
 % Model prediction
@@ -42,20 +42,21 @@ The function $f$ describes the model, which computes the estimated output $\hat{
 \begin{equation}
 	\hat y = f(\textbf{x}, \theta)
 \end{equation}
-with $\hat{y}$ being also referred to as prediction of the model.
+with $\hat{y}$ being also referred to as prediction of the model and $ \theta $ as the weights of the model.
 
 % Loss function and Backpropagation
 In order to perform a training, the model requires a loss function $L(y,\hat{y})$.
 The loss function $L$ calculates the loss of the model based on the difference of the prediction $\hat{y}$ and the true label $y$.
-There exist different loss functions to calculate various types of losses, which are also referred to as error of the model.
+There exist different loss functions to calculate various types of losses.
 Depending on the loss the weights of the model are adjusted, to make a better prediction and reduce the error.
-An algorithm called backpropagation is used to perform this adjustment.
-The term \textit{learning} refers to this process.
+Usually, an algorithm called backpropagation \cite{Lin76-Backprob} is used to derive the gradient of the loss with respect to all the weights of the model.
+With this, \gls{sgd} can be used to iteratively update the weights and optimize the model.
+In the context of \gls{ml} the term \textit{learning} refers to this process.
 
 % Generalization error of a model
 The goodness of a model can be defined by the performance on the training set $\mathcal{S}$, test set $\mathcal{S}_2$, and validation set $\mathcal{S}_3$.
 The two main causes of failure are underfitted or overfitted models.
-An underfitted model is not complex enough to understand the interrelations in the data and therefore does not perform well.
+An underfitted model is not complex enough to understand the interrelations in the data and therefore, does not perform well.
 Common reasons for underfitted models are missing complexity in the model architecture or too small and not representative datasets.
 Overfitted models perform great on the training set $\mathcal{S}$, but poorly on the test set $\mathcal{S}_2$ and validation set $\mathcal{S}_3$.
 This happens, when the model does not generalize well enough and instead learns the features of the training set by heart.
@@ -68,10 +69,17 @@ Important hyperparameters are the learning rate $\lambda$ , the number of traini
 
 \subsection{Deep Learning}\label{ord:ch2:sec1:subsec2}
 
-A \gls{nn} is one of the standard \gls{ml} methods.
-It consists out of multiple neurons, that are connected in a layer-wise architecture.
+For this thesis, it is assumed that the reader is already familiar with the field of \gls{dl}. 
+If this is not the case, \cite{Goodfellow-et-al-2016} and \cite{Ger17-HandsOn} provide a detailed introduction to this topic.
+A \gls{nn} is one of the standard \gls{ml} methods and consists out of multiple neurons.
+The architecture principle is characterized by layer-wise order of the neurons.
+Similar as for basic \gls{ml} models, a \gls{nn} processes an input $ \textbf{x} $ to create a prediction $ \hat{y} $, which for the task of classification is a class $ c_i $.
 If an architecture consists out of multiple layers, the network is also described as \textit{deep}, resulting in the terms \gls{dl} and \gls{dnn}.
-% A \gls{nn} processes a given input $\textbf{x}$ and makes a prediction $\hat{y}$, similar as a \gls{ml} model.
+The neurons are connected layer by layer, each neuron receives $ n $ inputs $ \left[\textbf{x}_1, \dots \textbf{x}_n \right] $ from the previous layer and passes the output to the next layer.
+A neuron sums its input values and applies an activation function to create an output, a frequently used activation function is the \gls{relu} function, an overview is provided in \Cite{SSA20-Activationfunctions}. 
+
+Each connection between neurons is weighted, which determines the relevance of the input $ \textbf{x}_i $ for the individual neuron.
+This is done by weights $ \theta $, which are adjusted during the training as the model is in the \textit{learning} process as described previously.
 
 Nowadays, in order to solve various tasks, a variety of different network types exist \eg convolutional, graph or recurrent neural networks.
 For the popular task of image processing \glspl{cnn} have proven themselves to be most adequate to classify, localize, or segment objects in images.
@@ -79,7 +87,7 @@ The main component of \glspl{cnn} are convolutional layers, that are used to pro
 In these layers a convolution operation is performed on the input by applying $c$ convolution kernels.
 The output of a layer is defined as a feature map $F_c$, with also $c$ representing the amount of channels in the feature map.
 Further, pooling layers are commonly used, in order to reduce the size of feature maps.
-
+% TODO example image of CNN
 
 \subsection{Evaluation}\label{ord:ch2:sec1:subsec3}
 

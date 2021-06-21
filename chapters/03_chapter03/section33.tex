@@ -54,18 +54,18 @@ The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create i
 
 % One feature map with extreme points
 Second, the four extreme points are converted into one heatmap.
-This heatmap is referred to as foreground heatmap, where the extreme points are located on the boundary of the object.
+The points in this heatmap are located on the boundary of the object.
 
-To highlight the extreme points a 2D Gaussian is centered around each point by
+To highlight the extreme points a 2D Gaussian is centered around each point $ \textbf{p} (x_p, y_p) $ by
 % Impelemtation in HDevelop:
-% ResGauss := exp(-4 * log(2) * ((Rows-PointRow)*(Rows-PointRow) + (Cols-PointCol)*(Cols-PointCol)) / (GaussSigma * GaussSigma))
+% ResGauss := exp(-4 \cdot log(2) $\cdot$ ((Rows-PointRow)*(Rows-PointRow) + (Cols-PointCol)*(Cols-PointCol)) / (GaussSigma * GaussSigma))
 \begin{equation} \label{equ:gauss}
 	\centering
-	Gauss = \frac{\exp{-4 * \log 2 }}{\sigma^{2}}
+	Gauss \left( x,y \right)  = max \left( g\left( x,y\right) , \frac{\exp(- 4 \log_{2}(| x - p |_2)}{\sigma^{2}}\right) 
 \end{equation}
-with $\sigma = 10$ representing the standard deviation of the Gauss filter.
-% TODO is sigman truely the standard deviation for a guass filter?
+where $ g (x,y) $ is the current grayvalue of the heatmap at position $ (x, y) $ and $ \sigma = 10 $ representing the standard deviation of the Gauss filter.
 This heatmap is vital for the method, because of the high level guidance for the deep segmentation network.
+%TODO ist die Formel jetzt wie Paddo gemeint hat?
 A closeup of a point centered by the 2D Gaussian is visualized in Figure \ref{fig:ch3:sec3:gauss_centered_point}.
 
 Third, the heatmap has the size of $512 \times 512$ \Unit{px} and is concatenated with the RGB image.
@@ -105,7 +105,7 @@ This results in the four-channel \gls{dextr} model input, which is illustrated i
 
 As encoder for the segmentation network \textit{ResNet-101} \cite{He16-ResNet} is selected, which also referred to as \textit{backbone}.
 The ResNet-101 is a deep \gls{cnn} containing 101 layers.
-The core components of any ResNets are \textit{residual units}, that are also referred to as \textit{bottleneck block}.
+The core components of any ResNets are \textit{residual units}, whose main feature is the use of skip connections \cite{Ger17-HandsOn}.
 The ResNet-101 is structured in four blocks, that contain 3, 4, 23 and 3 bottleneck blocks.
 
 The ResNet-101 used for \gls{dextr} is modified by including atrous convolution in the last two blocks and removing the fully connected layers.

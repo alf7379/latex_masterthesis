@@ -20,7 +20,7 @@ Second, simulations are used to apply the \gls{iog} and \gls{dextr} methods on v
 	\centering
 	\begin{tabular}{l|c c c c}
 		\toprule 		
-		& \centering $ Polygon $	& \centering $ Watersheds $  	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $} \\
+		& \centering $ Polygon $	& \centering $ Watershed $  	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $} \\
 		\midrule
 		$ n_{annots} $			& \centering 81				& \centering 328				& \centering 82 			& \multicolumn{1}{c}{69}  \\
 		$ H_{0} $				& \multicolumn{4}{c}{$ med \left( IoU_{Standard} \right) = med \left( IoU_{Urban} \right) = med \left( IoU_{Industrial} \right)$}  \\  
@@ -28,7 +28,7 @@ Second, simulations are used to apply the \gls{iog} and \gls{dextr} methods on v
 		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
 		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
 		$ \textnormal{\textit{p-value}} $
-		& \centering 0.3948			& \centering $ 1.3 * 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
+								& \centering 0.3948		& \centering $ 1.3 \cdot 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
 		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
 		\bottomrule
 	\end{tabular}
@@ -61,7 +61,7 @@ In contrast, for the domains $ Industrial $ and $ Anomaly $ $ H_{0} $ is rejecte
 		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
 		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
 		$ \textnormal{\textit{p-value}} $
-								& \centering 0.3948			& \centering $ 1.3 * 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
+								& \centering 0.3948			& \centering $ 1.3 \cdot 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
 		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
 		\bottomrule
 	\end{tabular}
@@ -115,58 +115,54 @@ As a result, the simulated user clicks are almost perfect.
 More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec3}.
 
 The performance of the \gls{dextr} and \gls{iog} method on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
-% TODO decide abou this part with the threshold?
-As the output of the segmentation model is a probability map with, which predicts if a pixel either belongs to the foreground or background, a threshold needs to be applied.
-The \gls{dextr} method performs best at a threshold of $ 0.5 $, while the best threshold value for \gls{iog} is $ 0.8 $.
-The \gls{miou} values presented are achieved by the most suitable threshold value for each method.
-
 It can be seen, that the examined methods perform very similar on the applied datasets.
-This is interesting, because the \gls{dextr} method gave the impression to be advantageous in the previous evaluation.
+This is interesting, because the \gls{dextr} method gave the impression to be advantageous in the previous evaluation on the benchmark study.
 % TODO Vermutung, dass die DEXTR methode intiuitiver ist und für echte User bessere ergebnisse Einfährt als IOG
 
-%TODO apply more datasets?
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{l|c c}
 		\toprule 		
-										& mIoU by DEXTR & mIoU by IOG	\\
+										& \multicolumn{2}{c}{mIoU}\\
+										&  DEXTR 	& IOG		\\
 		\midrule
 		PASCAL (VP \cmark)				& 0.9103 	& 0.9251	\\
 		PASCAL (VP \xmark)				& 0.7805	& 0.8086	\\
 		Benchmark 						& 0.8394 	& 0.8201	\\
-		MVTec D2S \cite{Paddo18-D2S}	& 0.9297	& 0.9342	\\
-		Segmentation and Counting		& 0.8280	& 0.8797 	\\
-		MAD	??							& - 		& -		\\
-		tbd	??							& -			& - 	\\									
+		MVTec D2S						& 0.9297	& 0.9342	\\
+		Segmentation and Counting		& 0.8280	& 0.8797 	\\							
 		\bottomrule
 	\end{tabular}
 	\caption[Generalization of IOG and DEXTR]{
 		The \gls{dextr} and \gls{iog} method are applied on multiple datasets to evaluate their performance over several domains.
-		The performance is measured by the \gls{miou} with (\gls{vp} \cmark) and without (\gls{vp} \xmark) the application of the \gls{vp}.
+		For the PASCAL \gls{voc} dataset the performance is measured with (\gls{vp} \cmark) and without (\gls{vp} \xmark) the application of the \gls{vp}.
 	}\label{tab:ch5:tests_on_datasets}
 \end{table}
 
-% point out weakness of VP
 % TODO enforce this part
-The dubious use of \gls{vp} already is pointed out in the introduction of the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} from Subsection \ref{ord:ch2:sec2}.
-The effect of \gls{vp} on the \gls{miou} can be seen clearly, the difference is up to almost 13\%.
-By the presentation of such results, unrealistic expectations are raised on the method's performance, which are mostly not achievable in real world application.
+The difference in accuracy for the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} with and without the application of \gls{vp} is especially interesting.
+The meaningfulness of \gls{vp} is already addressed in Subsection \ref{ord:ch2:sec2} and their effect can be observed in Table \ref{tab:ch5:tests_on_datasets}.
+For \Gls{dextr} the difference in \gls{miou} is around $ 0.13 $ and for \gls{iog} almost $ 0.12 $.
+This represents a significant decrease in accuracy, which raises doubts how expressive the results with the applications of \gls{vp} are.
+This is especially problematic, because the \gls{vp} are located at the edge of an object, which is generally difficult to predict.
+Therefore, it may not be recognized if a model's weakness at the prediction of the borders.
+Based on this unrealistic expectations are raised on the method's accuracy, which are mostly not achievable in real world application.
 
 \subsubsection{Refinement Prediction}
 
 % Show a table displaying the performance for various refinement clicks on multiple dataset
 Last, the performance of the method with the application of refinement is evaluated on different datasets.
 Thereby, for each method five refinement clicks were simulated.
-For the \gls{iog} method, the refinement clicks can be on the fore-and background, while the \gls{dextr} methods only allows refinement clicks on the border, which are categorized as foreground clicks.
+For the \gls{iog} method, the refinement clicks can be on the fore- and background, while the \gls{dextr} method only allows refinement clicks on the border.
 The refinement clicks are simulated using the \gls{gt}.
-A click is set on the greatest error region from the previous prediction.
+A click is set on the region where the previous prediction fails.
 
 \begin{table}[h!]
 	\centering
 	\resizebox{\textwidth}{!}{
 	\begin{tabular}{l l|c c c c c c}
 		\toprule
-				&						& \multicolumn{6}{c}{mIoU for $ n_{\textnormal{\textit{refine clicks}}} $ refinement clicks } \\
+				&						& \multicolumn{6}{c}{mIoU} \\
 				& {$ n_{\textnormal{\textit{refine clicks}}} $} 
 										& 0			& 1			& 2			& 3 		& 4 		& 5			\\
 		\midrule
@@ -190,5 +186,5 @@ A click is set on the greatest error region from the previous prediction.
 In Table \ref{tab:ch5:tests_on_refinement_datasets} the performance of the methods is presented for various refinement clicks.
 For \gls{dextr} mostly only the first refinement clicks leads to a improvement, while the further clicks keep or decrease the \gls{miou}.
 In contrast, the \gls{iog} method is able to profit from each refinement click and increase the \gls{miou}. 
-From the ninth click, the improvement stagnates or worsens slightly as shown in Appendix \ref{tab:appendix_refinementclicks}.
+From the ninth click, the improvement stagnates or worsens slightly as shown in Table \ref{tab:appendix_refinementclicks}.
 It can be stated, that refinement process generalizes well and performs expected over several domains.

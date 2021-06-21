@@ -1,15 +1,15 @@
-[1] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[18] Config.pm:315> INFO - Logfile is 'main.blg'
-[477] biber-MSWIN64:330> INFO - === 
-[818] Biber.pm:415> INFO - Reading 'main.bcf'
-[1029] Biber.pm:952> INFO - Found 69 citekeys in bib section 0
-[1146] Biber.pm:4334> INFO - Processing section 0
-[1203] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[1466] bibtex.pm:1682> INFO - LaTeX decoding ...
-[1629] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[2225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2241] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2257] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[2273] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[2447] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[4717] bbl.pm:754> INFO - Output to main.bbl
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[16] Config.pm:315> INFO - Logfile is 'main.blg'
+[320] biber-MSWIN64:330> INFO - === 
+[601] Biber.pm:415> INFO - Reading 'main.bcf'
+[789] Biber.pm:952> INFO - Found 71 citekeys in bib section 0
+[890] Biber.pm:4334> INFO - Processing section 0
+[924] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[1094] bibtex.pm:1682> INFO - LaTeX decoding ...
+[1249] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[1940] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1955] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1987] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[2004] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[2146] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[4481] bbl.pm:754> INFO - Output to main.bbl

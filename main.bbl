@@ -1895,6 +1895,37 @@
       \verb 10.1109/CVPR.2019.00540
       \endverb
     \endentry
+    \entry{Lin76-Backprob}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=feb126d622289728d7900e403b771539}{%
+           family={Linnainmaa},
+           familyi={L\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{feb126d622289728d7900e403b771539}
+      \strng{fullhash}{feb126d622289728d7900e403b771539}
+      \strng{bibnamehash}{feb126d622289728d7900e403b771539}
+      \strng{authorbibnamehash}{feb126d622289728d7900e403b771539}
+      \strng{authornamehash}{feb126d622289728d7900e403b771539}
+      \strng{authorfullhash}{feb126d622289728d7900e403b771539}
+      \field{labelalpha}{Lin76}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BIT Numerical Mathematics}
+      \field{number}{2}
+      \field{title}{Taylor expansion of the accumulated rounding error.}
+      \field{volume}{16}
+      \field{year}{1976}
+      \field{pages}{146\bibrangedash 160}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/BF01931367
+      \endverb
+    \endentry
     \entry{LSD15-FCN}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=17faae490b91366d25e0e2d774e7b6b1}{%
@@ -2717,6 +2748,49 @@
       \endverb
       \verb{url}
       \verb https://books.google.de/books?id=dgdOswEACAAJ
+      \endverb
+    \endentry
+    \entry{SSA20-Activationfunctions}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=83999a6b17e58aef39a20853f9007c01}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Siddharth},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02b76ea846825e9079301c2264e967fd}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a981cdebb500cb081aee6ab3896c41c}{%
+           family={Athaiya},
+           familyi={A\bibinitperiod},
+           given={Anidhya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \strng{fullhash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \strng{bibnamehash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \strng{authorbibnamehash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \strng{authornamehash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \strng{authorfullhash}{dfe141c83e8f9f6df31bd9d895722da1}
+      \field{labelalpha}{SSA20}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering Applied Sciences and Technology}
+      \field{month}{05}
+      \field{title}{Activation Functions in Neural Netwrorks}
+      \field{volume}{04}
+      \field{year}{2020}
+      \field{pages}{310\bibrangedash 316}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.33564/IJEAST.2020.v04i12.054
       \endverb
     \endentry
     \entry{SZ15-VGG16}{inproceedings}{}

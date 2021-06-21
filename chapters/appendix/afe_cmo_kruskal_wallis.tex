@@ -1,0 +1,50 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Kruskal-Wallis tests on the IoU and Time of two users}
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		\toprule 		
+							& $ Polygon $	&  $ Watershed $  	&  $ DEXTR $ 	& $ IOG $ \\
+		\midrule
+		% $ n_{annots} $		& 81				&  328				&  82 			& 69  \\
+		$ H_{0} $			& \multicolumn{4}{c}{$ med \left( IoU_{\textnormal{\textit{User 1}}} \right) = med \left( IoU_{\textnormal{\textit{User 2}}} \right) $ }  \\  
+		$ H_{A} $		 	& \multicolumn{4}{c}{$ med \left( IoU_{\textnormal{\textit{User 1}}} \right) \not= med \left( IoU_{\textnormal{\textit{User 2}}} \right) $}  \\ 	
+		$ \alpha $		 	& $ 5\% $ 		&  $ 5\% $ 			&  $ 5\% $ 		& $ 5\% $	\\ 	
+		Statistic		 	&  2.7384		&  1.9246 			&  1.4589		& 2.8829 	\\ 
+		$ \textnormal{\textit{p-value}} $
+							& 0.0979		&  0.1654			&  0.2271		& 0.0895	\\
+		$ H_{0} $		  	&  accepted 	&  accepted	  		&  accepted 	& accepted  \\ 										
+		\bottomrule
+	\end{tabular}
+	\caption[Kruskal-Wallis on $ IoU $ from two users]{
+		The Kruskal-Wallis test is applied four times to statistically prove the equality of the $ IoU $ obtained from $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $.
+		If the $ \textnormal{\textit{p-value}} $ is greater than the significance level $ \alpha = 5\% $, $ H_{0} $ is accepted.
+		For all methods $ H_{0} $ can be confirmed at $ \alpha = 5\% $.	  
+	}\label{tab:appendix:afe_cmo_kruskal_wallis_iou}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		\toprule 		
+							& $ Polygon $			&  $ Watershed $  		&  $ DEXTR $ 	& $ IOG $ 	\\
+		\midrule
+		$ H_{0} $			& \multicolumn{4}{c}{$ med \left( time_{\textnormal{\textit{User 1}}} \right) = med \left( time_{\textnormal{\textit{User 2}}} \right) $ }  \\  
+		$ H_{A} $		 	& \multicolumn{4}{c}{$ med \left( time_{\textnormal{\textit{User 1}}} \right) \not= med \left( time_{\textnormal{\textit{User 2}}} \right) $}  \\ 	
+		$ \alpha $		 	& $ 1\% $ 				&  $ 1\% $ 				&  $ 5\% $ 		& $ 5\% $	\\ 	
+		Statistic		 	&  69.4736				&  128.74 				&  1.4589		& 2.8829	\\ 
+		$ \textnormal{\textit{p-value}} $
+							& $ 7.7 \cdot 10^{-17} $	& $ 7.7 \cdot 10^{-30} $	& 0.2271		& 0.0895 	\\
+		$ H_{0} $		  	&  rejected 			&  rejected	  			&  accepted 	& accepted  \\ 										
+		\bottomrule
+	\end{tabular}
+	\caption[Kruskal-Wallis on $ time $ from two users]{
+		The Kruskal-Wallis test is applied four times to statistically prove the equality of the $ time $ obtained from $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $.
+		For Polygon and Watershed $ H_{0} $ is rejected and $ H_{A} $ accepted at $ \alpha = 1\% $.	
+		For \gls{dextr} and \gls{iog} $ H_{0} $ is accepted at $ \alpha = 5\% $.	
+	}\label{tab:appendix:afe_cmo_kruskal_wallis_time}
+\end{table}

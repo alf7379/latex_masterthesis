@@ -3,7 +3,8 @@
 
 \section{Suitability Of DEXTR and IOG Annotations For Training} \label{ord:ch5:sec5_retrain}
 % RE-1470
-In this section it is examined if annotations created by the \gls{dextr} and \gls{iog} method are suitable to train a new \gls{dl} model for semantic segmentation. %TODO or instance segmentation?
+In this section it is examined if annotations created by the \gls{dextr} and \gls{iog} method are suitable to train a new \gls{dl} model for semantic segmentation.
+Thereby, the statement form Manisis \etal, that models trained on \gls{dextr} annotations perform equally well\cite{Man18-DEXTR}, is taken into account as well.
 In the following the experimental setup is described in three stages: creation of annotations, model training, and model evaluation.
  
 % Create annotations.
@@ -17,7 +18,7 @@ The goodness of the newly created annotations $ \textbf{Y}_{new} $ is at least a
 
 % Train model.
 In the second step, the new annotations $ \textbf{Y}_{new} $ of the train split, are used to train semantic segmentation models $ m $.
-As backbone of a model the Mask-RCNN \cite{He17-MaskR-CNN} is used, which is pretrained on the COCO dataset \cite{Lin14-Coco}.
+As backbone of the models the Mask-RCNN \cite{He17-MaskR-CNN} is used, which is pretrained on the COCO dataset \cite{Lin14-Coco}.
 All trainings are performed with the same settings, to enable a fair comparison.
 A training lasts $ n_{epochs} = 30 $ epochs, with the learning rate $ \lambda = 0.001 $ and \gls{sgd} optimizer \cite{Ruder16-SGD}.
 To establish a benchmark for comparison, also two models are trained on the original \gls{gt} of the normal and augmented \gls{d2s} dataset.
@@ -28,7 +29,7 @@ Third, the performance of the created model is evaluated by the \gls{miou} and t
 Based on the \gls{map}, the models trained on the \gls{dextr} and \gls{iog} annotations, perform approximately as good as the model trained on the original \gls{gt}.
 This approximately applies to both \gls{d2s} dataset, but for the augmented \gls{d2s} dataset the model trained on the original \gls{gt} performs slightly better.
 
-%For the \gls{d2s} dataset the model trained on the \gls{dextr} annotations even achieves a \gls{map} $ mAP = 0.4459 $ and therefore is slightly better than the model trained on the original \gls{gt} with $ mAP = 0.4398 $.
+%For the \gls{d2s} dataset the model trained on the \gls{dextr} annotations even achieves a \gls{map} $ mAP = 0.4459 $ and therefore, is slightly better than the model trained on the original \gls{gt} with $ mAP = 0.4398 $.
 However, differences between the models can be observed when considering the IoU for certain degrees of IoU.
 The \gls{ap} for annotations at $ IoU < 0.75 $ are at an equal level for all methods.
 From there on, the \gls{ap} tends to decrease for a higher \gls{iou}.
@@ -76,7 +77,7 @@ So, in order to make create predictions with very high \gls{iou} and rich detail
 
 In conclusion, the statement from Manisis \etal is reviewed again, which claim that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}.
 It can be said, that the \gls{dextr} and \gls{iog} annotations are suitable to train a new model, which performs equivalent on a lower $ IoU$ level and the \gls{map}.
-However, for a high \gls{iou} the model trained on the \gls{dextr} annotations performs a bit worse, while the one from \gls{iog} annotations performs significantly worse.
+However, for a high \gls{iou} the model trained on the \gls{dextr} annotations performs slightly worse, while the one from \gls{iog} annotations performs significantly worse.
 Depending on the required level of precision of the model, the \gls{dextr} and \gls{iog} annotations are suitable for training.
 
 It has to be noted, that these experiments are only performed on one dataset and the underlying model was already pretrained.

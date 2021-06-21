@@ -328,6 +328,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{relu}{}%
+{%
+\gls@defglossaryentry{relu}%
+{%
+name={ReLU},%
+sort={ReLU},%
+type={acronym},%
+first={rectified linear units\glsspace (ReLU)},%
+firstplural={rectified linear unitss\glsspace (ReLUs)},%
+text={ReLU},%
+plural={ReLUs},%
+description={rectified linear units},%
+descriptionplural={rectified linear units\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={rectified linear units},%
+longplural={rectified linear unitss},%
+short={ReLU},%
+shortplural={ReLUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{gt}{}%
 {%
 \gls@defglossaryentry{gt}%
@@ -1025,12 +1055,12 @@ parent={},%
 name={ANOVA},%
 sort={ANOVA},%
 type={acronym},%
-first={Analysis Of Variance\glsspace (ANOVA)},%
-firstplural={Analysis Of Variances\glsspace (ANOVAs)},%
+first={analysis of variance\glsspace (ANOVA)},%
+firstplural={analysis of variances\glsspace (ANOVAs)},%
 text={ANOVA},%
 plural={ANOVAs},%
-description={Analysis Of Variance},%
-descriptionplural={Analysis Of Variance\acrpluralsuffix },%
+description={analysis of variance},%
+descriptionplural={analysis of variance\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1039,8 +1069,8 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Analysis Of Variance},%
-longplural={Analysis Of Variances},%
+long={analysis of variance},%
+longplural={analysis of variances},%
 short={ANOVA},%
 shortplural={ANOVAs},%
 counter={page},%
