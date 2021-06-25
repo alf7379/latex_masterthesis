@@ -12,8 +12,8 @@ Depending on the type of user interaction the interactive method may be more or 
 This leads to a fundamental difficulty of interactive methods, because user interaction is considered to time elaborate and therefore expensive.
 
 The interactive segmentation of an instance may be interpreted as semantic segmentation with two classes: the foreground object to segment and the background.
+Within this segmentation process no class is assigned, with which class-agnostic instance segmentation is represented.
 In order to segment multiple objects in an image, multiple applications of these interactive methods are required.
-% TODO scope of interactive segmentation here, the class is assigned manually?
 In the following the principles of interactive segmentation concepts are introduced, on which the methods used in the benchmark study are built on.
 
 \subsection{Classical Concepts}\label{ord:ch2:sec3:subsec1}
@@ -31,7 +31,6 @@ Another still relevant method to perform instance segmentation is the watershed 
 This method interactively collects fore- and background markers from users in order to perform segmentation.
 The watershed method is part of the benchmark study and elaborately examined in Section \ref{ord:ch3:sec2}.
 
-% TODO decide if superpixel shoudl stay or not???
 % Superpixels
 % Last, an algorithm using so-called \textit{Superpixels} was introduced in 2003 \cite{RM03-Superpixel}.
 % Superpixels are groups of connected pixels, that share similarities in color or low-level features as contour, brightness or texture.
@@ -80,9 +79,11 @@ If there is only one type of points, there also exists only one heatmap.
 % Modification of points -> gauss or euclidean
 The heatmaps are further processed, in order to highlight the set user points.
 This may be achieved by the conversion into an Euclidean distance map \cite{Dan80-EuclideanDistanceMapping} (see Figure \ref{fig:ch2:sec3:ifcn}) or the application of a Gauss filter.
-Thereby, the a Gauss filter leads to slightly better results the Euclidean distance map, as examined in \cite{Man18-DEXTR} and \cite{MVL18-ITIS}.
-
-% TODO  Evtl. könnte man auch damit argumentieren, dass damit die Ungenauigkeit der User-Clicks adressiert wird und man vermeiden will, dass man nur ein binäres, sehr sparses Signal an das Modell übergibt. Wäre eigentlich mal eine interessante Ablation study ob es wirklich notwendig ist diese Gauß-Anwendung durchzuführen.
+Further, the focus of a click on a single point is weakened by the Euclidean distance map or the Gauss filter.
+This can address small inaccuracies in the user clicks and reduce the model's sensitivity to them.
+Although the positive effect of processing the points seems logical, no evidence of this has been found in the current literature.
+However, it has been proven, that a Gauss filter leads to slightly better results than the Euclidean distance map \cite{Man18-DEXTR} \cite{MVL18-ITIS}.
+Thereby, the Euclidean distance map was replaced by the Gauss filter as the state-of-the-art method for point processing.
 
 % 3 RGB Channels + 2 Heatmaps = 5-Channel input
 The image is usually colored with the three \gls{rgb} channels.
@@ -173,11 +174,10 @@ For example, the minimal required amount of clicks may be lower or higher than t
 % Problems with the evaluation of time.
 For interactive methods, the time required for the user interaction is fundamental for the application, because as many images as possible should be labeled as quickly as possible.
 Since a uniform setup is not given, the measured times of single papers are not comparable.
-% TODO Den Satz, dass nicht klar ist wie lange man für einen Klick braucht (und dass das von Methode zu Methode unterschiedlich schwer ist) könnte man auch weiter vor ziehen. Ein Beispiel, dass etwa in DEXTR möglichst genau der Rand getroffen werden muss, bei IOG aber nur grob die Mitte des Objekts wäre auch hilfreich für den Leser. Dann wird sofort klar was damit gemeint ist.
-% The measured time by single papers is not comparable, due to the missing of a common setup to perform uniform user studies for these novel methods.
-With these metrics the time is only approximated by the number of clicks.
-But these metrics do not include indicators that describe how much effort it takes to set a click and how much time it takes.
-Further, there is no common metric to evaluate the usability of these interactive methods.
+Therefore, in literature the number of clicks is established as metric of comparison, in order to approximate the time.
+However, it has to be noted, that the number of click do not indicate how much effort it takes to set a click and how much time it takes.
+This may vary for different methods, due to their underlying concept.
+Further, there is also no common metric to evaluate the usability of these interactive methods.
 
 Nevertheless, these metrics are currently the preferred method to evaluate interactive segmentation methods.
 They are still suitable to compare interactive segmentation models in a meaningful way, but with the mentioned limitations.
@@ -192,7 +192,6 @@ A comparison of several referred methods and the current state-of-the-art method
 		\textbf{Model} 	& \textbf{Number of clicks} & \textbf{mIoU (\%) @ 4 clicks} \\
 						& PASCAL VOC @ 85\% mIoU 	& PASCAL VOC \\
 		\hline
-		% TODO add watersheds if available for PASCAL VOC
 		Graph Cut \cite{BJ01-GraphCut}									  & > 20 & 41.1\\
 		\glsentryshort{ifcn} \cite{Xu16-InteractiveObjectSelection}       & 6.9  & 75.2\\
 		\glsentryshort{risnet} \cite{Liew17-RegionalInteractiveImageSeg}  & 5.7  & 80.7\\
@@ -203,9 +202,8 @@ A comparison of several referred methods and the current state-of-the-art method
 	\end{tabular}
 	\caption[Comparison of interactive segmentation models.]{
 		Comparison of interactive segmentation models on the PASCAL \gls{voc} 2012 test set with application of the \gls{vp}.
-		It can be seen, that interactive segmentation methods have developed quickly. 
-		They strongly improved in terms of required clicks and \gls{iou}.
-		% TODO ?? PASCAL \gls{voc} is at its limit to be suitable to evaluate semantic segmentation.
+		Interactive segmentation methods have developed quickly and strongly improved in terms of required clicks and \gls{iou}.
+		Although the latest version of Pascal \gls{voc} is from 2012, it is still the most used benchmark dataset.
 	} \label{tab:ch2:interactive-stae-of-the-art}
 \end{table}
 

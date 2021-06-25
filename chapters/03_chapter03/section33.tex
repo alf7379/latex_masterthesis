@@ -6,8 +6,6 @@
 In \cite{Man18-DEXTR} the \gls{dextr} method for interactive segmentation is introduced.
 This method follows a user point centered approach based on \gls{dl}, as introduced in Subsection \ref{ord:ch2:sec3:subsec2}.
 
-%TODO subsection for training of DEXTR (and IOG)??
-
 \subsection{Method Description}\label{ord:ch3:sec3:subsec1}
 
 % Workflow
@@ -33,8 +31,7 @@ First, the image is preprocessed.
 A bounding box is derived from the extreme points. 
 This bounding box is enlarged by $p_{{box}}$ \Unit{px}, to include context from the surrounding region.
 % Zero Padding
-If the enlarged bounding box extends over the original image boundary, the grayvalues of the pixels outside the image domain are set to zero.
-%TODO grayvalues in RGB images?
+If the enlarged bounding box extends over the original image boundary, the intensity values of the pixels outside the image domain are set to zero.
 Manisis \etal refers to this treatment as \textit{zero padding} \cite{Man18-DEXTR}, which is illustrated at the bottom of Figure \ref{fig:ch3:sec3:user_interaction} and \ref{fig:ch3:sec3:rgb_channel}.
 In order to focus on the object of interest, the image is cropped based on the enlarged bounding box.
 The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create inputs of constant size for the segmentation network.
@@ -56,16 +53,15 @@ The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create i
 Second, the four extreme points are converted into one heatmap.
 The points in this heatmap are located on the boundary of the object.
 
-To highlight the extreme points a 2D Gaussian is centered around each point $ \textbf{p} (x_p, y_p) $ by
+To highlight the extreme points a 2D Gaussian is centered around each point $ \textbf{p} (x_p, y_p) $ with the another points $ \mathbf{x} = (x, y) $ by
 % Impelemtation in HDevelop:
 % ResGauss := exp(-4 \cdot log(2) $\cdot$ ((Rows-PointRow)*(Rows-PointRow) + (Cols-PointCol)*(Cols-PointCol)) / (GaussSigma * GaussSigma))
 \begin{equation} \label{equ:gauss}
 	\centering
-	Gauss \left( x,y \right)  = max \left( g\left( x,y\right) , \frac{\exp(- 4 \log_{2}(| x - p |_2)}{\sigma^{2}}\right) 
+	Gauss \left( x,y \right)  = max \left( g\left( x,y\right) , \frac{\exp(- 4 \log_{2}(| \textbf{x} - \textbf{p} |_2)}{\sigma^{2}}\right) 
 \end{equation}
 where $ g (x,y) $ is the current grayvalue of the heatmap at position $ (x, y) $ and $ \sigma = 10 $ representing the standard deviation of the Gauss filter.
 This heatmap is vital for the method, because of the high level guidance for the deep segmentation network.
-%TODO ist die Formel jetzt wie Paddo gemeint hat?
 A closeup of a point centered by the 2D Gaussian is visualized in Figure \ref{fig:ch3:sec3:gauss_centered_point}.
 
 Third, the heatmap has the size of $512 \times 512$ \Unit{px} and is concatenated with the RGB image.
@@ -111,9 +107,12 @@ The ResNet-101 is structured in four blocks, that contain 3, 4, 23 and 3 bottlen
 The ResNet-101 used for \gls{dextr} is modified by including atrous convolution in the last two blocks and removing the fully connected layers.
 After the backbone a four staged \gls{psp} module is applied to preserve global context.
 The decoder of this architecture does not consist of several convolution layers, instead bilinear interpolation is used to retrieve original spatial dimension of $512 \times 512$ \Unit{px}.
-Finally, a sigmoid function is applied to obtain the final prediction $\textbf{y}$ as a  probability map.
-% TODO footnote for sigmoid fucntion.
-% Special thing about this network is the basically missing decoder and skip connections over the network -> that shows how valuable the border-click information is?
+Finally, a sigmoid function is applied to obtain the final prediction $\textbf{y}$ as a  probability map. \footnote{Wolfram Math world, Sigmoid Function\url{https://mathworld.wolfram.com/SigmoidFunction.html}}
+
+% Training settings.
+The model is trained for $ n_{epochs} = 100 $ epochs on the PASCAL \gls{voc} 2012 Segmentation and further $ n_{epochs} = 10 $ epochs on the COCO dataset.
+The learning rate is $ \lambda = 10^{-8} $ and the momentum is $ 0.9 $.
+
 
 \subsection{Refinement}\label{ord:ch3:sec3:subsec4}
 
@@ -125,7 +124,7 @@ In Figure \ref{fig:ch3:sec3:refinement} the effect of an additional refinement c
 Each refinement click triggers a new model execution.
 The refinement process may be applied iteratively.
 
-% TODO use an example where the initial prediction actually fails and the refinement succeeds.
+% TODO plots use an example where the initial prediction actually fails and the refinement succeeds.
 \begin{figure} 
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
@@ -157,9 +156,8 @@ The experiments and evaluations presented in \cite{Man18-DEXTR} contain various 
 Among them is also an examination of the performance on unseen classes and the generalization capability of the method.
 Thereby, the model was trained with the PASCAL \gls{voc} or COCO dataset and evaluated on both datasets.
 Despite these results seem reliable, it must be taken into account that the PASCAL \gls{voc} and COCO datasets are very similar and cover the same type of \textit{general} objects.
-The evaluation of the generalization capabilities of the method continues in detail in Section \ref{ord:ch5:sec2_generalization_domains}.
+The evaluation of the generalization capabilities of the method continues in detail in Section \ref{ord:ch5:sec2_generalization_image_domains}.
 
 An introduced application for the \gls{dextr} method is to create annotations and use them as new \gls{gt} to train \gls{dl} models.
 Manisis \etal claim, that models trained on \gls{dextr} annotations perform equally well as models trained on the original \gls{gt}\cite{Man18-DEXTR}.
-This statement is further examined in Subsection \ref{ord:ch5:sec5_retrain}.
-% TODO ref section with RE-1470.
+This statement is further examined in Section \ref{ord:ch5:sec5_retrain}.

@@ -1,0 +1,77 @@
+% !TeX root = ../../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\section{Summary}
+
+In this thesis four interactive segmentation methods are evaluated by the use of a benchmark study performed by real users.
+Thereby, the segmentation methods are rated based on their performance and generalization capabilities over various image domains and user.
+%%% Review of contests covered in the thesis.
+
+% Kreis schließen zur Einleitung
+
+% Description of the single chapters (middle detail with focus on the outcome -> repeat the dicovered results)
+% Chapter 1
+Chapter \ref{ord:ch1} provides an introduction by highlighting the relevance of interactive segmentation methods and giving an overview about the structure of this thesis.
+
+%%% Chapter 2 
+In Chapter \ref{ord:ch2} the theoretical basics for this thesis are presented.
+Here \gls{ml} is introduced quickly, while the task of semantic segmentation is examined in detail.
+Further, interactive segmentation and different approaches are examined.
+Of particular focus are the methods based on \gls{dl}, where the user interaction is realized by mouse clicks on the object to segment.
+Here is especially interesting how the user clicks are transformed into heatmaps and processed in the segmentation model as in the \gls{dextr} and \gls{iog} method.
+Last, methods for statistical analysis are introduced in this chapter to provide the basis for the evaluation.
+
+%%% Chapter 3
+The individual the methods, that are part of the benchmark study, are presented in Chapter \ref{ord:ch3}.
+As non-interactive baseline polygon drawing is introduced, while as classical interactive segmentation method the watershed transformation is presented.
+Furthermore, the \gls{dextr} \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} method are presented as representatives of state-of-the-art interactive segmentation methods based on \gls{dl}.
+
+%%% Chapter 4
+In Chapter \ref{ord:ch4} the setup of the benchmark study is explained, which is the core component of this thesis.
+The compilation of the image dataset for the benchmark study is described by the presentation of the considered image attributes and the image domains $ Standard $, $ Urban $, $ Industrial $, and $ Anomaly $.
+Further, it is described what user statistics are recorded in the benchmark study and what the process of participating in the benchmark study was like.
+
+%%% Chapter 5
+% DL-based methods vs. classical methods
+The results of the benchmark study and further experiments are evaluated in Chapter \ref{ord:ch5}.
+To begin the research question posed in Chapter \ref{ord:ch1} is examined, if interactive segmentation methods based on \gls{dl} improve the labeling process compared to methods without \gls{dl}.
+The comparison is based on the benchmark results and takes the accuracy and the annotation time into account as presented in Section \ref{ord:ch5:sec1}.
+The accuracy of the \gls{dextr} method performed best, while the the \gls{iog} method performs worst, as presented.
+Therefore, in this regard neither classical or \gls{dl} based methods are advantageous, but as single method \gls{dextr} is superior.
+With respect to annotation time, it could be clearly established that \gls{dl} based methods are significantly faster in application than classical methods.
+
+% Generalization over domains
+Further, the generalization capabilities over several image domains are evaluated in Section \ref{ord:ch5:sec2_generalization_image_domains}.
+It is found that the $ IoU $ is about the same for over the image domains, except for the domain $ Anomaly $, what is caused by the basic nature of anomaly images.
+In terms of the annotation time, it is discovered that the domains $ Standard $ and $ Urban $ are more elaborate to annotate, which is evident across all methods.
+
+% Generalization over users
+In Section \ref{ord:ch5:sec_3_generalization_user}, the generalization over benchmark participants is evaluated.
+It is shown, that the annotation time for the \gls{dextr} and \gls{iog} method contains less variance over the users.
+In relation to accuracy the \gls{dextr} method performs the most constant over various users.
+It experienced, that the annotation time highly depends on the individual user.
+In general, the \gls{dextr} method generalizes best over various image domains and user based on the results from the user benchmark.
+
+Further on, in Section \ref{ord:ch5:sec4_survey} the survey filled out by the benchmark participants and their results is presented.
+The outcome of this small survey indicates, that a pleasant user experience requires a good performing method and vice versa.
+
+Last, in Section \ref{ord:ch5:sec5_retrain} the statement from Manisis \etal is examined, that \gls{dl} models trained on \gls{dextr} annotations perform equally as models trained with the original \gls{gt} \cite{Man18-DEXTR}.
+The experiments of this thesis show, that this statement can be confirmed in a limited way.
+The different models perform similar based on the \gls{map}, but the models trained on the \gls{dextr} annotations perform significantly worse for high \gls{iou} values. 
+
+
+% Void Pixel 
+An additional insight is about the use of \gls{vp} in the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC}.
+As presented in Table \ref{tab:ch5:tests_on_datasets} the \gls{miou} differs significantly with and without the use of \gls{vp}.
+By presenting the results with \gls{vp}, unrealistically high expectations are created that cannot be met on real world data or datasets without \gls{vp}.
+The inclusion of the results with \gls{vp} would lead to more transparently and awareness of the purpose of \gls{vp}.
+
+% Final tought
+% Antwort auf Research Frage -> if interactive segmentation methods based on \gls{dl} improve the process of labeling based on the annotation time and accuracy.
+In conclusion, it can be said that interactive segmentation methods based on \gls{dl} outperform  methods without \gls{dl} based on the annotation time, while in terms of accuracy, both methods are competitive on a similar level.
+The generalization capabilities over different image domains are similar, while \gls{dl} based methods generalize better over various users, which is most probably caused by the guided design of the user interaction.
+Thereby, the \gls{dextr} method with the direct and simple user interactions performs best on the benchmark study.
+
+
+%%% Future Work
+ 

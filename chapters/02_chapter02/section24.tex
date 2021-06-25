@@ -9,7 +9,6 @@ In statistics the data, which is analyzed, is also referred to as sample.
 
 
 \subsection{Normality Assumption in Statistics} \label{ord:ch2:sec4:subsec1}
-%TODO ref normal distribution
 A common assumption for statistical analysis is, that the data points of a sample follow a normal distribution.
 This is often a requirement for the application of statistical methods, this group of methods is also referred to as parametric methods.
 In contrast, non-parametric methods do not require normally distributed samples.
@@ -58,12 +57,15 @@ The evaluation is based on the mean value $\overline{x}$ of each factor.
 
 \subsection{Mann-Whitney U-Test}\label{ord:ch2:sec4:subsec3}
 
-The Mann-Whitney U-Test \cite{MW47-MannWhitneyTest} is a non-parametric hypothesis test.
-This test is also referred to as non-parametric counterpart to the Student's t-test.
-Mann-Whitney compares independent random samples of two factors.
-These random samples are ranked based on their value.
-Therefore the tendency $ten \left( x \right) $ in the sample is determined.
-$H_{0}$ assumes that both samples have the same tendency $ten \left( x \right) $, while $H_{A}$ states the opposite.
+The Mann-Whitney U-Test \cite{MW47-MannWhitneyTest} is a non-parametric hypothesis test, which is also referred to as non-parametric counterpart to the Student's t-test.
+It tests two independent samples for equality of their parameters.
+Thereby the items of the samples are ranked based on their values.
+From this the tendency $ten \left( \textbf{x} \right) $ in sample $ \textbf{x} $ is determined.
+$H_{0}$ assumes that the samples are equal by
+\begin{equation}
+	H_{0}: ten \left( \textbf{x} \right) = ten \left( \textbf{y} \right)
+\end{equation}
+ while $H_{A}$ states the opposite.
 
 
 \subsection{Kruskal-Wallis Test}\label{ord:ch2:sec4:subsec4}

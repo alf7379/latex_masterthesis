@@ -70,8 +70,8 @@ The annotation time is evaluated in detail in Subsection \ref{ord:ch5:sec1:subse
 	\end{tabular}}
 	\caption[Correlation table]{
 		Correlation table based on the \textit{Pearson} standard correlation coefficient \cite{Kirch08-CorrPearson}.
-		The redundant part of the table was left empty. 
-		The variables $ n_{clicks} $, $ n_{strokes} $, $ time_{strokes} $, and $ ws $ all show a intermediate correlation with $ time_{annot} $, while their combination $ cws $ shows a strong correlation. 
+		The redundant part of the table is left empty. 
+		The variables $ n_{clicks} $, $ n_{strokes} $, $ time_{strokes} $, and $ ws $ all show a intermediate correlation with $ time_{annot} $, while their combination $ cws $ shows a strong correlation with $ 0.8610 $. 
 		The correlation between $ IoU $ and $ time_{annot} $ indicates almost not relationship $ 0.0379 $.
 	}\label{tab:ch5:correlation-matrix}
 \end{table}
@@ -162,9 +162,9 @@ The information value of this conclusion is especially strong, due to the applic
 		$H_{0}$			& $ \overline{IoU}_{classical} = \overline{IoU}_{dl} $ & $ med \left( IoU_{classical} \right)  = med \left( IoU_{dl} \right) $ & $ t_{dl} = t_{classical} $ 		\\
 		$ H_{A} $		 	& $ \overline{IoU}_{classical} < \overline{IoU}_{dl} $ & $ med \left( IoU_{classical} \right) < med \left( IoU_{dl} \right) $ & $ ten \left( IoU_{dl} \right) \not= ten \left( IoU_{classical} \right) $ 	\\
 		$ \alpha $		& $ 5\% $ 			& $ 5\% $ 		 		& $ 5\% $ 		\\ 	
-		Statistic		& 0.0914 			& 786426	     		& 0.0711    	\\ 
+		Statistic		& 0.3494			& 825786	     		& 0.0035    	\\ 
 		$ \textnormal{\textit{p-value}} $ 
-						& 0.9272 			& 0.3949 		 		& 0.7898		\\ 
+						& 0.7268 			& 0.4765 		 		& 0.9529		\\ 
 		$ H_{0} $		& accepted 			& accepted		 		& accepted 		\\
 		\bottomrule
 	\end{tabular}}
@@ -185,7 +185,7 @@ The corresponding null hypothesis
 \end{equation}
 states, that the median values do not differ significantly at $ \alpha=1\% $.
 $ H_{A} $ assumes that $ H_{0} $ is not true, but does not define which factor is different.
-As result the statistic returns $ \textnormal{\textit{p-value}} = 0.0015 $, therefore $ H_{0} $ is rejected and $ H_{A} $ accepted.
+As result the statistic returns $ \textnormal{\textit{p-value}} = 7.8 \cdot 10 ^{-8} $, therefore $ H_{0} $ is rejected and $ H_{A} $ accepted.
 
 It can be determined what factors differ significantly, by the application of the DSCFs  test \cite{CF91-dscf}.
 In this test it is shown that, $ med \left( IoU_{DEXTR} \right) $ is greater, while $ med \left( IoU_{IOG} \right) $ is lower than the other factors. 
@@ -197,13 +197,13 @@ The number of outliers may seem large, but must be put in proportion to the size
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/chap51_boxplot_iou.png}
-	\caption[Box plot IoU per method]{
+	\caption[Box plots method on $ IoU $]{
 		Box plot of the variable $ IoU $ for the four benchmark methods.
 		$ med \left( IoU_{DEXTR} \right) $ is slightly greater than the other factors, while $ med \left( IoU_{IOG} \right) $ is the smallest worst.
 		The classical methods to not differ significantly in their median values $ med \left( IoU_{Polygon} \right) $ and $ med \left( IoU_{Polygon} \right) $.
 	} \label{fig:ch5:sec1:iou_box_plot}
 \end{figure}
-% TODO sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
+% TODO plot sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
 
 
 
@@ -254,7 +254,6 @@ $X_{trans}$ is similar to a normal distribution, which is also supported by the 
 		The corresponding normal probability plot of $X_{trans}$ is shown in c), which confrims the normal characteristics of $X_{trans}$.
 	}\label{fig:ch5:sec1:time_transformation_iou}
 \end{figure}
-% TODO state number of samples per test
 
 
 
@@ -281,9 +280,9 @@ The information value of this conclusion is especially expressive, due to the ap
 		$H_{0}$			& $\overline{time}_{classical} = \overline{time}_{dl}$ & $med \left( time_{classical} \right)  = med \left( time_{dl} \right)$ & $ten \left( time_{dl} \right) = ten \left( time_{classical} \right)$ 		\\
 		$H_{A}$		 	& $\overline{time}_{classical} > \overline{time}_{dl}$ & $med \left( time_{classical} \right) > med \left( time_{dl} \right) $ & $ten \left( time_{dl} \right) \not= ten \left( time_{classical}\right) $ 	\\
 		$\alpha$		& $1\%$ 			& $1\%$ 		 		& $1\%$ 		\\ 	
-		Statistic		& 29.2979			& 332052	     		& 635.327    	\\ 
+		Statistic		& 28.6792			& 355045	     		& 627.875\\ 
 		$\textnormal{\textit{p-value}}$ 
-		& $1.3 \cdot 10^{-159}$		& $1.7 \cdot 10^{-140}$ 		 		& $3.4 \cdot 10^{-140}$ 		\\ 
+		& $4.8\cdot 10^{-155}$				& $7.2 \cdot 10^{-139}$ & $1.4 \cdot 10^{-138}$ 		\\ 
 		$H_{0}$		  	& rejected 			& rejected		 		& rejected 		\\
 		\bottomrule
 	\end{tabular}}
@@ -295,7 +294,6 @@ The information value of this conclusion is especially expressive, due to the ap
 		The same result is achieved by all three different statistical tests, which supports its reliability.
 	}\label{tab:ch5:tests_on_time}
 \end{table}
-%TODO Mann-Whitney U-test - as one sided test - in which direction goes the smaller or greater sign.
 % Kruskal-Wallis Test for four factors rejects H0.
 Second, the variable $ time $ is evaluated for the four benchmark methods by the Kruskal-Wallis test.
 The null hypothesis 
@@ -304,7 +302,7 @@ The null hypothesis
 \end{equation}
 assumes, that the median values do not differ significantly at $ \alpha=1\% $.
 $ H_{A} $ states that $ H_{0} $ is not true.
-The statistic returns $ \textnormal{\textit{p-value}} = 2.7 \cdot 10^{-143} $, as a result $ H_{0} $ is rejected and $ H_{A} $ accepted.
+The statistic returns $ \textnormal{\textit{p-value}} = 7.1 \cdot 10^{-141} $, as a result $ H_{0} $ is rejected and $ H_{A} $ accepted.
  
 Based on the post analysis by the DSCF test \cite{CF91-dscf}, the factors polygon and Watershed do not differ significantly.
 In contrast, the difference between $ med \left( time_{DEXTR} \right) $ and $ med \left( time_{IOG} \right) $ may be titled significant.
@@ -319,14 +317,14 @@ This is perhaps caused, due to the possibility for editing is designed more open
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/chap51_time_boxplot.png}
-	\caption[Box plot IoU per method]{
-		Box plot of the variable $ time $ for the four benchmark methods.
+	\caption[Box plots of the methods on $ IoU  $]{
+		Box plots of the variable $ time $ for the four benchmark methods.
 		It can be seen clearly, that $ med \left( time_{DEXTR} \right) $ and $ med \left( time_{IOG} \right) $ are lower than $ med \left( time_{Polygon} \right) $ and $ med \left( time_{Polygon} \right) $.
 		In general, the polygon and watersheds method require a longer annotation time, where the last quarter of the box plot covers a relatively wide range with many outliers. 
 		%Despite the difference
 	} \label{fig:ch5:sec1:time_box_plot}
 \end{figure}
-% TODO sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
+%TODO plots sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
 
 
 Combining the results of the evaluation from $ IoU $ and the $ time_{annot} $, it can be said that all methods may achieve an approximately the same level of accuracy.

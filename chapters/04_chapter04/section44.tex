@@ -15,10 +15,10 @@ Thereby, images from various datasets are included: sPASCAL \gls{voc} \cite{Eve2
 %--- MVTec closed packed & occluded object detection dataset (CPOD)
 % Nachlabeln von Bildern
 For some images from open source datasets the \gls{gt} was improved, in order to achieve a consistent goodness of the \gls{gt} for the benchmark dataset.
-% TODO appendix with various examples of the image selection?
+% TODO plots appendix with various examples of the image selection?
 
 % Amount of images
-The benchmark dataset contains 87 images with 225 annotations.
+The benchmark dataset contains 87 images with 133 annotations.
 % Vergleichsweise klein
 In the context of \gls{dl}, this evaluation datasets is comparatively small.
 It was kept small on purpose, to enable users to label the majority of the images in a reasonable expenditure of time.
@@ -49,18 +49,20 @@ In order to ensure the variety of the benchmark dataset, each image was categori
 	\begin{tabular}{l|c|c|c|c}
 		Domain				& Standard & Urban & Industrial & Anomaly \\
 		\hline
-		Number of images 	& - & - & - & - \\
-		Number of object 	& - & - & - & - \\
+		Number of images 	& 21 & 12 & 31 & 23 \\
+		Number of object 	& 24 & 15 & 73 & 23 \\
 	\end{tabular}
-	\caption[tbd.]{
-		tbd.
+	\caption[Overview of image domains]{
+		Distribution of the benchmark images over the four image domains.
+		An image may contain multiple objects to annotate, that belong to the same image domain.
 		} \label{tab:ch4:domains_overview}
 \end{table}
 
 \subsection{Attributes}\label{ord:ch4:sec2:subsec2}
 
-The attributes of the benchmark images and objects also have a great impact on the segmentation and evaluation.
-To further evaluate their effect and how well the methods generalize, the following attribute categories have been established and assigned for each image.
+The attributes of the benchmark images and objects also impact the segmentation and evaluation.
+In order to create a balanced benchmark dataset, the selection of each image is not only based on the image domains, but also based on these attributes.
+The image attributes may further be used in evaluation, the following attribute categories have been established and assigned for each image.
 % TODO Comment von Paddo - Werden die überhaupt verwendet? Bitte angeben falls nicht!
 
 \begin{itemize}
@@ -75,7 +77,4 @@ To further evaluate their effect and how well the methods generalize, the follow
 	\item \textbf{Reflection}, binary describes if the objects are reflecting.
 	\item \textbf{Background texture}, describes the background of the image as plain, textured or cluttered.
 	\item \textbf{Foreground texture}, describes the foreground of the image as plain, textured or cluttered.
-	% TODO decide if to remove some attributes if they are not used in the evaluation anyway.
 \end{itemize}
-
-% TODO Comment von Paddo - Sowohl für Attributes als auch Domains wäre eine Tabelle ganz nett wo man sieht wieviele Bilder den Attributen zugeordnet wurden.

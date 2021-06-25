@@ -1,0 +1,32 @@
+% !TeX root = ../../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\section{Future Work}
+
+In this concluding section, two approaches are briefly discussed to further apply or develop components of the methods presented in this thesis.
+
+% BBox detector + IOG idea\\
+In the context of this thesis, an idea was discussed, which was not implemented, but is still worth mentioning.
+Their origin lies in the desire of automation and the fact, that interactive methods are limited by the requirement of user interaction. 
+The idea is to enable the application of an interactive segmentation method without any user interaction nor the use of \gls{gt}.
+For this an object detection network should predict possible bounding boxes for objects in an image.
+Selected bounding boxes should then serve as input for the interactive method.
+The \gls{iog} method would be used for this.
+The background points can be obtained from the bounding box, while the point on the foreground is represented by the center of the bounding box.
+A critical component here would be the pre-selection of the proposed bounding boxes.
+This represents a significant simplification of the methodology, but would be interesting to  investigate.
+
+% Use of multichannel input RGB+heatmap enforced by Gauss
+Further, various interactive segmentation methods \cite{Xu16-InteractiveObjectSelection}  \cite{MVL18-ITIS} \cite{Man18-DEXTR} \cite{Zha20-IOG} demonstrated the usefulness of additional information, such as user clicks on foreground, background, or even the object's boundary.
+This additional input is combined with the \gls{rgb} image and a \gls{dl} network is successfully trained on this multi-channel data.
+This methodology could be applied to other areas where multiple kinds inputs are available.
+An possible application would be in sensor data fusion, e.g. an imaging sensor and a sensor providing depth information (LiDAR, RADAR, ultrasound sensor).
+If such fused data from different sources would be applied to advanced \gls{dl} models, is maybe is possible to improve the performance.
+
+% Closing with durchgehender Entwicklung, deren Bedeutung dauerhaft zunehmen wird
+% Industrie kann diese Methoden für neue GT nutzen -> mehr Automatisierung
+As shown, further development offers some interesting possibilities.
+The trend in image processing based on \gls{dl} also supports the research in modern methods.
+Their application in industry benefits the automatization process.
+Thereby, interactive segmentation methods stand out due to the ability to create \gls{gt} in a simplified and inexpensive manner.
+This may be a significant factor to widely spread mordern image processing and promote the development of automation.

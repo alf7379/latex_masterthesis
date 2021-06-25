@@ -34,13 +34,11 @@ However, differences between the models can be observed when considering the IoU
 The \gls{ap} for annotations at $ IoU < 0.75 $ are at an equal level for all methods.
 From there on, the \gls{ap} tends to decrease for a higher \gls{iou}.
 This observation is extreme for $ IoU > 0.95 $. 
-Exemplary for the models trained on the normal dataset, the original \gls{gt} enables a performance of $ AP = 0.2198 $, while the performance of the \gls{dextr} and \gls{iog} model dropped to $ AP = 0.1549 $ respectively $ AP = 0.0384 $.
+Exemplary for the models trained on the normal dataset, the original \gls{gt} enables a performance of $ AP = 0.2198 $, while the performance of the \gls{dextr} is $ AP = 0.1549 $ and \gls{iog} dropped to $ AP = 0.0384 $.
 This effect also occurs for the augmented \gls{d2s} dataset.
 From this follows that, the models trained on the \gls{dextr} and \gls{iog} annotations are not able to make prediction with a high level of detail.
 The missing details in the model predictions, is probably caused by the \gls{dextr} and \gls{iog} annotations, which are also not perfect at the detail level.
 So, in order to make create predictions with very high \gls{iou} and rich detail, the original \gls{gt} delivers better results.
-%TODO reread the upper part once.
-
 
 \begin{table}[h!]
 	\centering
@@ -53,16 +51,16 @@ So, in order to make create predictions with very high \gls{iou} and rich detail
 		\midrule
 		$ m $					& mAP 					& 0.4398	& 0.4459	& 0.4138	& 0.7581	& 0.7374	& 0.6993	\\
 		
-								& AP @ $ IoU >= 0.5 $	& 0.4987	& 0.5221	& 0.5179	& 0.8574	& 0.8572	& 0.8543	\\
-								& AP @ $ IoU = 0.55 $ 	& 0.4926	& 0.5145	& 0.5135	& 0.8565	& 0.8518	& 0.8502	\\
-								& AP @ $ IoU = 0.6 $	& 0.4859	& 0.5063	& 0.5083	& 0.8526	& 0.8471	& 0.8451	\\
-								& AP @ $ IoU = 0.65 $ 	& 0.4834	& 0.5035	& 0.5038	& 0.8476	& 0.8419	& 0.8343	\\
-								& AP @ $ IoU = 0.7 $	& 0.4788	& 0.4967	& 0.4955	& 0.8425	& 0.8336	& 0.8162	\\
-								& AP @ $ IoU = 0.75 $ 	& 0.4685	& 0.4876	& 0.4715	& 0.8276	& 0.8188	& 0.7899	\\
-								& AP @ $ IoU = 0.8 $	& 0.4540	& 0.4687	& 0.4381	& 0.8016	& 0.7849	& 0.7370	\\
-								& AP @ $ IoU = 0.85 $ 	& 0.4293	& 0.4401	& 0.3850	& 0.7641	& 0.7328	& 0.6718	\\
-								& AP @ $ IoU = 0.9 $	& 0.3868	& 0.3651	& 0.2662	& 0.6617	& 0.6008	& 0.5050	\\
-								& AP @ $ IoU = 0.95 $ 	& 0.2198	& 0.1549	& 0.0384	& 0.2694	& 0.2047	& 0.0982	\\
+								& AP @ $ IoU <= 0.5 $	& 0.4987	& 0.5221	& 0.5179	& 0.8574	& 0.8572	& 0.8543	\\
+								& AP @ $ IoU <= 0.55 $ 	& 0.4926	& 0.5145	& 0.5135	& 0.8565	& 0.8518	& 0.8502	\\
+								& AP @ $ IoU <= 0.6 $	& 0.4859	& 0.5063	& 0.5083	& 0.8526	& 0.8471	& 0.8451	\\
+								& AP @ $ IoU <= 0.65 $ 	& 0.4834	& 0.5035	& 0.5038	& 0.8476	& 0.8419	& 0.8343	\\
+								& AP @ $ IoU <= 0.7 $	& 0.4788	& 0.4967	& 0.4955	& 0.8425	& 0.8336	& 0.8162	\\
+								& AP @ $ IoU <= 0.75 $ 	& 0.4685	& 0.4876	& 0.4715	& 0.8276	& 0.8188	& 0.7899	\\
+								& AP @ $ IoU <= 0.8 $	& 0.4540	& 0.4687	& 0.4381	& 0.8016	& 0.7849	& 0.7370	\\
+								& AP @ $ IoU <= 0.85 $ 	& 0.4293	& 0.4401	& 0.3850	& 0.7641	& 0.7328	& 0.6718	\\
+								& AP @ $ IoU <= 0.9 $	& 0.3868	& 0.3651	& 0.2662	& 0.6617	& 0.6008	& 0.5050	\\
+								& AP @ $ IoU <= 0.95 $ 	& 0.2198	& 0.1549	& 0.0384	& 0.2694	& 0.2047	& 0.0982	\\
 		\bottomrule
 	\end{tabular}
 	\caption[Performance of models trained with DEXTR and IOG annotations]{
@@ -73,7 +71,6 @@ So, in order to make create predictions with very high \gls{iou} and rich detail
 		The performance of the model is evaluated with the \gls{map} and the \gls{ap} for different \gls{iou} levels.		
 	}\label{tab:ch5:results_annot_usability}
 \end{table}
-%TODO determine if $ IoU >= 0.5 $ ot $ IoU = 0.5 $
 
 In conclusion, the statement from Manisis \etal is reviewed again, which claim that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}.
 It can be said, that the \gls{dextr} and \gls{iog} annotations are suitable to train a new model, which performs equivalent on a lower $ IoU$ level and the \gls{map}.

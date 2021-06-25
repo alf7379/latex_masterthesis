@@ -5,38 +5,36 @@
 %%% Motivation
 % Fast development in computer science -> ML and automation of processes in the industry.
 The development in computer science has continued to make great strides in recent years. 
-Here two areas are emphasized in particular for this thesis: \gls{ml} and the automation of industrial processes.
+For this thesis two areas are emphasized in particular: \gls{ml} and the automation of industrial processes.
 The former is driven by an energetic research community, resulting in novel methods and application areas.
 % Increasing automation == increasing application of image processing (-> application of DL).
-The latter enjoys the benefits of increasing digitization and the developments in digital image processing \cite{Rah19-IoT}.
-Especially for the automation of visual applications, image processing is the main component.
+The latter enjoys the benefits of increasing digitization and the developments in image processing due to \gls{ml} .
+% Especially, for the automation of visual applications, the main component, image processing, has evolved revolutionary.
 % Semantic Segmentation of Images as valueable method with increasing application.
-In this field the segmentation of an image is a valuable instrument, in order to identify and localize objects in images.
+A widely used method in image processing is segmentation, which is a valuable instrument, in order to identify and localize objects in images.
 Recently, segmentation methods based on \gls{ml} emerged, resulting in advanced performance in the form of higher accuracy and richer detail.
+A popular application is the automation of repetitive processes in industrial manufacturing as the detection of errors, the counting of instances or the control of quality \cite{Rah19-IoT} \cite{Chen19-AnomalyDetectionManufacturing}.
 
 % -> Interactive Semantic Segmentation 
-Further, it is possible to apply segmentation methods interactively, whereby the object to be segmented can be determined more precisely by a user.
+Further, it is possible to apply interactive segmentation methods in order to segment objects with the support of a user.
+Thereby, the user interaction often is realized by mouse clicks on the object of interest.
 % Use cases for interactive methods
-Possible use cases for interactive segmentation methods are segmentation itself and the creation of new annotations \cite{Man18-DEXTR}.
-
+A promising use cases for interactive segmentation methods is the creation of annotations, that further may be used as \gls{gt} \cite{Man18-DEXTR}.
+%In industrial contexts interactive methods may be used for various applications.
 % Importance of strong generalization capabilities. 
-In industrial contexts interactive methods may be used for various applications.
-Thereby the interactive method can be operated differently by various users.
-Also, a wide range of images from unknown domains may be applied. 
-To overcome these challenges, interactive methods must have good generalization capabilities over several image domains and user behaviors.
-
-A popular application for such advanced image processing methods is the automation of repetitive processes in industrial manufacturing.
-This includes, for example, the detection of errors, the counting of instances or the control of quality \cite{Chen19-AnomalyDetectionManufacturing}.
+For interactive segmentation methods to become established and widely used, they must have strong generalization capabilities.
+This includes the generalization over various image domains and users, which use the method differently.
 \\
 \newline
 %%% Scope of this thesis
-This thesis attempts to give an overview of interactive methods for semantic segmentation and their abilities.
-First, basic types of interactive segmentation methods are presented.
-Next, four methods are explained in detail, two of which represent the state-of-the-art and are based on \gls{ml}.
-The core of this work is a benchmark study, where real users apply the presented methods on a custom dataset.
-The results from the benchmark are used to examine if interactive segmentation methods based on \gls{ml} improve the process of labeling based on the annotation time and accuracy.
+This thesis gives an overview of interactive methods for semantic segmentation and evaluates the abilities of specific methods in detail.
+In Chapter \ref{ord:ch2} basic types of interactive segmentation methods are presented.
+Four interactive methods are extensively explained in Chapter \ref{ord:ch3}, two of which represent the state-of-the-art and are based on \gls{ml}.
+In Chapter \ref{ord:ch4} a benchmark study is presented, which is the core of this thesis.
+Thereby, real users apply the presented interactive segmentation methods to label a custom created dataset.
+The results from the benchmark study are evaluated in Chapter \ref{ord:ch5}.
+Here it is examined to what extend interactive segmentation methods based on \gls{ml} improve the process of labeling based on the annotation time and accuracy.
 A focus is placed on the generalization capabilities of the methods, which are fundamental for a successful application.
-Last, Chapter \ref{ord:ch6} summarizes the results in a conclusion.
-
-% TODO inlcude research question here??
+It is also investigated whether annotations created by interactive segmentation models are suitable to be used as training data to train a new \gls{ml} model.
+Last, a final conclusion over the results of the benchmark study and the performance of the methods is provided in Chapter \ref{ord:ch6}.
 

@@ -16,9 +16,11 @@ This section examines the generalization capabilities of the benchmark methods a
 % Motivation: generalization over user -> an interactive method really performs well and reliable if it delivers good results for all possible users.
 
 
+
+
 \subsection{Benchmark Participants Evaluation}\label{ord:ch5:sec3:subsec1}
 
-In the following the performance of the methods is evaluated over the \getNumberBenchmarkParticipants \space participants is evaluated.
+In the following the performance of the methods is evaluated over the \getNumberBenchmarkParticipants \space participants.
 In contrast to the previous evaluation, here the benchmark runs performed by the colleagues, who are working on this topic, are excluded.
 This is done intentionally, in order to not distort the evaluation, since the users are explicitly evaluated here and these experienced users would be strongly biased.
 
@@ -28,14 +30,14 @@ The combined mean and $ \sigma $ for the participants are presented in Table \re
 It can be observed, that $ \sigma_{IoU} $ is very similar for the benchmark methods and only ranges from $ \sigma_{IoU} = 0.1187 $ for \gls{dextr} to $ \sigma_{IoU} = 0.1669 $ for watersheds.
 In the opposite $ \sigma_{time} $ shows a strong deviation, with $ \sigma_{time} = 15.0977 $ for \gls{dextr} the deviation is more than double than $ \sigma_{time} = 39.0214 $ for polygon.
 The mean value is presented to put $ \sigma $ into context.
-A graphical illustration if the deviation of $ IoU $ and $ time $ is already presented in the boxplots from Figure \ref{fig:ch5:sec1:iou_box_plot} and \ref{fig:ch5:sec1:time_box_plot}.
+A graphical illustration if the deviation of $ IoU $ and $ time $ is already presented in the box plots from Figure \ref{fig:ch5:sec1:iou_box_plot} and \ref{fig:ch5:sec1:time_box_plot}.
 Further. these results support the conclusion of Subsection \ref{ord:ch5:sec1:subsec2} and \ref{ord:ch5:sec1:subsec3}, which state that $ \overline{IoU} $ and $ med(IoU) $ do not differ significantly over the methods, while $ \overline{time} $ and $ med(time) $ do differ over the benchmark methods.
 % Calculate the variance for time and iou.
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{l|c c c c}
 		\toprule 		
-		Method 				& $ Polygon $  	& $ Watershed $ 	& $ DEXTR $ 	& $ IOG $	\\
+			 				& $ Polygon $  	& $ Watershed $ 	& $ DEXTR $ 	& $ IOG $	\\
 		\midrule
 		$ \overline{IoU} $	& 0.8066 		& 0.8166		 	& 0.8543		& 0.8020	\\
 		$ \sigma_{IoU} $	& 0.1287 		& 0.1669		 	& 0.1187 		& 0.1559	\\
@@ -43,7 +45,7 @@ Further. these results support the conclusion of Subsection \ref{ord:ch5:sec1:su
 		$ \sigma_{time} $	& 39.021 		& 37.796			& 15.098 		& 17.383	\\
 		\bottomrule
 	\end{tabular}
-	\caption[Mean and standard deviation over benchmark methods]{
+	\caption[Mean and standard deviation of the benchmark methods]{
 		Presentation of the mean and standard deviation $ \sigma $ for $ IoU $ and $ time $.
 		It can be seen that $ \sigma_{IoU} $ stays almost constant over the benchmark methods.
 		In contrast, $ \sigma_{time} $ differs between the methods.
@@ -51,16 +53,14 @@ Further. these results support the conclusion of Subsection \ref{ord:ch5:sec1:su
 	}\label{tab:ch5:all_benchmark_users_varaince}	
 \end{table}
 
-To get even deeper insights about the generalization across different users, in Figure \ref{fig:ch5:sec3:all_benchmark} the boxplots for $ IoU $ and $ time $ are shown for all single participants.
+To get even deeper insights about the generalization across different users, in Figure \ref{fig:ch5:sec3:all_benchmark} the box plots for $ IoU $ and $ time $ are shown for all single participants.
 Here, no statistical tests for equality within the methods were performed, because the visualization already anticipates that there are strong deviations in each method.
-These variations of individual users are present in all methods and most likely caused by the different experience levels and how well a user got along with the method.
-However, it can be stated that \gls{dextr} has the smallest deviation and is the most constant method over all participants.
-This observation applies for the $ IoU $ and $ time $ as evaluated parameter.
-In terms of $ time $ the \gls{iog} method has also only few deviations, but varies strongly based on the $ IoU $.
+The variations between the individual users are present in all methods and most likely due to the user's bias as introduced in the beginning of this section.
+% \eg different experience levels, how , and how well a user got along with the method.
 
-In conclusion, the \gls{dextr} method generalizes best over multiple users based on $ IoU $ and $ time $, while the other models do no achieve a constant performance over various users.
+However, it can be stated that for $IoU$ the \gls{dextr} has the smallest deviation and is the most constant method over all participants, while the other methods still perform similar.
 
-% Boxplot of all BenchmarkParticipants (not experienced user aka me)
+% Box plot of all BenchmarkParticipants (not experienced user aka me)
 \begin{figure} [h!]
 	\centering
 	\begin{subfigure}[t]{1.0\textwidth}
@@ -79,52 +79,76 @@ In conclusion, the \gls{dextr} method generalizes best over multiple users based
 			In contrast for the polygon and watershed method consistency over various user is not give.			
 		} \label{fig:ch5:sec3:all_benchmark_time}
 	\end{subfigure}
-	\caption[Boxplots of $ IoU $ and $ time $ over benchmark participants]{		
-		The boxplots of $ IoU $ and $ time $ over the \getNumberBenchmarkParticipants \space benchmark participants.
-		The single boxplots indicate how the methods performed over the single users. 
-		Large differences between the boxplots within a method indicate poor generalization capabilities and vise versa.
+	\caption[Box plots of benchmark participants on $ IoU $ and $ time$.]{		
+		The box plots of $ IoU $ and $ time $ over the \getNumberBenchmarkParticipants \space benchmark participants.
+		The single box plots indicate how the methods performed over the single users, the order of the users is the same for both figures. 
+		Large differences between the box plots within a method indicate poor generalization capabilities and vise versa.
 	}\label{fig:ch5:sec3:all_benchmark}
 \end{figure}
+
+In terms of $ time $ the \gls{dl} based methods show less variance over the users than the classical methods.
+The \gls{dextr} method performs best, while the \gls{iog} method has two bigger outliers.
+The difference between \gls{dl} based and classical methods is partly caused by the design of the methods, which guides the user more or less.
+On the one side, the polygon and watersheds method do little to guide the user,
+but give the user a lot of freedom when performing the label task.
+This room for interpretation is used differently by the users, which leads to different label times and therefore higher variance.
+On the other side, the \gls{dextr} and \gls{iog} method provide strong guidance by defining the amount of clicks required for an initial prediction.
+Although the application of refinement is still possible, this prevents users from spending too much time on an initial prediction.
+This strong guidance of the user while applying the method leads to a more constant annotation time and thereby a lower variance in $ time $.
+% polygon and watersheds are more freely
+
+In conclusion, for $IoU$ the \gls{dextr} method generalizes best over multiple users, while the other models do no achieve a constant performance over various users.
+For $ time $ it is observed, that methods with strong guidance as \gls{dextr} and \gls{iog} are more constant in $ time $, than the polygon and watershed method, that are designed more open and therefore allow higher variance.
+
 
 \subsection{Two Experienced User} \label{ord:ch5:sec3:subsec2_cmo_afe}
 
 Normally, the participants have labeled only a part of the benchmark images. 
 In the following, eight benchmark runs are evaluated where all benchmark images were labeled by two users who have more experience by working on this topic.
 Although only two different users are compared with each other, the significance is given, since all images of the benchmark were labeled.
-% Mehrwert dieser Eval - ganzer Benchmark Datensatz wurde durchgemacht
-% Big experienced users --> less noise, but still different understandings of being done"
-
+However, it must be mentioned that the experience level of both users is not the same, because $ \textnormal{\textit{User 2}} $ is more trained than and $ \textnormal{\textit{User 1}} $.
 
 % No significant difference in the IoU between the two user could be detected -> generalize well over various users (few user, large data)
-For the $ IoU $ the boxplot in Figure \ref{fig:ch5:sec3:cmo_afe_iou} indicates, that the $ IoU $ is more or less equal over $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 1}} $ for the four benchmark methods.
+For the $ IoU $ the box plots in Figure \ref{fig:ch5:sec3:cmo_afe_iou} indicates, that the $ IoU $ is more or less equal over $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $ for the four benchmark methods.
 The equality of the obtained values from both users are statistically confirmed by the Kruskal-Wallis test, the details of the tests are presented in Table \ref{tab:appendix:afe_cmo_kruskal_wallis_iou}.
 
-An equivalent analysis was performed for $ time $, interestingly here the annotation time between $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 1}} $ differs strongly for polygon and watershed, while the annotation time is very similar for \gls{dextr} and \gls{iog}.
-The statistical relevance is again confirmed by the Kruskal-Walli test, presented in detail in Table \ref{tab:appendix:afe_cmo_kruskal_wallis_time}.
+An equivalent analysis was performed for $ time $, as presented in Figure \ref{fig:ch5:sec3:cmo_afe_time}.
+Interestingly here the annotation time between $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $ differs strongly for polygon and watershed, while the annotation time is very similar for \gls{dextr} and \gls{iog}.
+The statistical relevance is again confirmed by the Kruskal-Wallis test, presented in detail in Table \ref{tab:appendix:afe_cmo_kruskal_wallis_time}.
 
 \begin{figure} [h!]
  	\centering
- 	\begin{subfigure}[t]{0.49\textwidth}
+ 	\begin{subfigure}[t]{0.45\textwidth}
  		\centering
  		\includegraphics[width=\textwidth]{figures/chap53_afe_cmo_iou.png}
  		\caption{
- 			tbd
+ 			Box plots of the $ IoU $ for the four benchmark methods of $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $.
+ 			The visualization does not indicate any significant difference in $ IoU $.
  		} \label{fig:ch5:sec3:cmo_afe_iou}
  	\end{subfigure}
  	\hfill
- 	\begin{subfigure}[t]{0.49\textwidth}
+ 	\begin{subfigure}[t]{0.45\textwidth}
  		\centering
  		\includegraphics[width=\textwidth]{figures/chap53_afe_cmo_time.png}
  		\caption{
- 			tbd
+ 			Box plots of the $ time $ for the four benchmark methods of $ \textnormal{\textit{User 1}} $ and $ \textnormal{\textit{User 2}} $.
+ 			A significant difference in accuracy for the polygon and watershed is shown, while the \gls{dextr} and \gls{iog} methods perform similar.
  		}\label{fig:ch5:sec3:cmo_afe_time}
  	\end{subfigure}
- 	\caption[IoU Sample Transformation]{		
- 		Tbd
+ 	\caption[Box plots of two experienced user on $ IoU $ and $ time$.]{		
+ 		These two figures show the comparison of the two users over the several benchmark methods based on $ IoU $ and $ time $.
+ 		The hypothesis based on the graphical visualizations are statistically supported by the Kruskal-Wallis test as presented in detail in Table \ref{tab:appendix:afe_cmo_kruskal_wallis_iou} and \ref{tab:appendix:afe_cmo_kruskal_wallis_time}.
  	}\label{fig:ch5:sec3:cmo_afe}
 \end{figure}
 
-\subsection{Simulations With Different Click Patterns / Noise}\label{ord:ch5:sec3:subsec3}
+% User 2 more experienced that User 1
+This large difference for Polygon and Watershed was not expected, but it emphasizes again how large the variance can be between different users who achieve the same performance.
+This difference may be partly caused by the different level of experience of the two users.
+Anyway, it is not surprising that this occurs for the classical methods, that are more freely interpretable and therefore. leave the user a more open application.
+Rather this supports the conclusion of the previous subsection, that methods with stronger guidance perform more consistent in the annotation time.
+
+
+\subsection{Simulations With Different Click Patterns}\label{ord:ch5:sec3:subsec3}
 % RE-1468
 
 % Simulations are easily scalable, faster and cheaper than the acquisition of manual clicks from real users.
@@ -150,16 +174,16 @@ This procedure is applied to the extreme points of the \gls{dextr} method and to
 	\resizebox{\textwidth}{!}{
 	\begin{tabular}{l l|c c c c c c c}
 		\toprule
-				&							& \multicolumn{7}{c}{mIoU} \\
-				& {$ n_{deviation} $} 		& 0	\Unit{px}	& 5	\Unit{px}	& 10 \Unit{px}	& 15 \Unit{px}	& 20 \Unit{px}	& 25 \Unit{px}	& 30 \Unit{px}	\\
+				&						& \multicolumn{7}{c}{mIoU} \\
+				& {$ n_{deviation} $} 	& 0	\Unit{px}	& 5	\Unit{px}	& 10 \Unit{px}	& 15 \Unit{px}	& 20 \Unit{px}	& 25 \Unit{px}	& 30 \Unit{px}	\\
 		\midrule
 		DEXTR 	& PASCAL (VP \cmark)	& 0.9103	& 0.8323	& 0.7626	& 0.7032 	& 0.6479	& 0.6047	& 0.5626		\\
 				& PASCAL (VP \xmark)	& 0.7807	& 0.7523	& 0.7019	& 0.6543 	& 0.6085	& 0.5695	& 0.5317		\\
-				& Benchmark			& 0.8414	& 0.7743	& 0.6887	& 0.6240 	& 0.5579	& 0.5027	& 0.4892		\\
+				& Benchmark				& 0.8414	& 0.7743	& 0.6887	& 0.6240 	& 0.5579	& 0.5027	& 0.4892		\\
 		\midrule
 		IOG 	& PASCAL (VP \cmark)	& 0.9267	& 0.8846	& 0.8092	& 0.7352 	& 0.6578	& 0.5953 	& 0.5457		\\
 				& PASCAL (VP \xmark)	& 0.8081	& 0.7720	& 0.7099	& 0.6476 	& 0.5979	& 0.5337	& 0.4873		\\
-				& Benchmark			& 0.8219	& 0.7865	& 0.7173	& 0.6027 	& 0.5268	& 0.4493 	& 0.4058		\\
+				& Benchmark				& 0.8219	& 0.7865	& 0.7173	& 0.6027 	& 0.5268	& 0.4493 	& 0.4058		\\
 		\bottomrule
 	\end{tabular}}
 	\caption[Simulations with different click patterns]{

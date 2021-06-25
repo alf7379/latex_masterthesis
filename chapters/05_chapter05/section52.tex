@@ -1,44 +1,112 @@
 % !TeX root = ../../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\section{Generalization Over Domains} \label{ord:ch5:sec2_generalization_domains}
+\section{Generalization Over Domains} \label{ord:ch5:sec2_generalization_image_domains}
 % RE-1467
-
 % Motivation - get insights of the performance on other domains (anomaly and industrial)
 The ability of methods to generalize well may be crucial to their success in application.
 For \gls{dl} methods the generalization capability is mostly based on the dataset used for training.
-The \gls{iog} and \gls{dextr} method are trained on a combination of PASCAL \gls{voc} and COCO.
+The \gls{dextr} and \gls{iog} method are trained on a combination of PASCAL \gls{voc} and COCO.
 These datasets mostly cover general objects and do not contains images from special domains.
-Therefore, the methods are evaluated on several image domains.
+In order to examine the method's generalization capabilities, they are evaluated over different domains and datasets.
 First, the generalization capabilities of the four benchmark methods are evaluated over image domains from the benchmark study.
-Second, simulations are used to apply the \gls{iog} and \gls{dextr} methods on various datasets.
+Thereby, the performance of $ IoU $ and $ time $ are examined.
+Second, simulations are used to evaluate the $ IoU $ of the \gls{dextr} and \gls{iog} method on various datasets.
 
-% Groupes by method with dataset as factor
-\subsection{Generalization Of Methods Over Domains}
+\subsection{Generalization Over Domains}
+% Each method is evaluated over the four domains
+In the following it is evaluated how well the four benchmark methods generalize over the four image domains: $ Standard $, $ Industrial $, $ Anomaly $, and $ Urban $.
+Thereby, the evaluation of the generalization capabilities is twofold based on the $ IoU $ and $ time $.
+
+% IoU
+\subsubsection{IoU}
+The generalization over the accuracy measured by the $ IoU $ is examined.
+The accuracy per method and domain is visualized in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{figures/chap52_iou_mehtods_over_domains_boxplot.png}
+	\caption [Box plots of image domains and methods on  $ IoU $]{
+		Box plots of $ IoU $ based on the image domains and benchmark methods.
+		The $ IoU $ for the domain $ Anomaly $ differs strongly for all methods, which can be explained by the different nature of this domain.
+		It seems, that for the other domains all methods perform on a approximately similar level.
+	}\label{fig:ch5:sec2:methods_over_domain_iou}
+\end{figure}
+% TODO plot change order of domains -> Standard-Urban-Industrial-Anomaly
+
+% Performance of Anomaly
+It is immediately noticeable that the \gls{iou} in the domain $ Anomaly $ is significantly worse for each method.
+This is reasonable due to the different nature of the annotations from this domain.
+It was experienced in the review of the user annotations, that for the domain $ Anomaly $ the users often have a varying understanding what belongs to the anomaly and what should be labeled.
+These ambiguities create room for misinterpretations of the anomaly, which in turn affects the $ IoU $.
+However, it may be noted that the \gls{dextr} method performs best on the domain $ Anomaly $ most probably due to the strong and direct type of guidance provided by the extreme points.
+
+% Performance of Standard, Urban, and Industrial
+Further, the four methods deliver comparatively similar results on the three other image domains $ Standard $, $ Urban $, and $ Industrial $.
+Thereby, the Kruskal-Wallis test is applied with the $ H_{0} $ already excluding the domain $ Anomaly $, because it already can be seen in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}, that $ IoU_{Anomaly} $ strongly deviates.
+The details of the test are presented in Table \ref{tab:ch5:tests_on_methods}.
+Only for the polygon method $ H_{0} $ is rejected at $ \alpha = 1\% $, while for the other methods $ H_{0} $ is narrowly accepted.
+However, it is important to highlight, that this results strongly depends on the chosen significance level $ \alpha $.
+The close decisions diminishes the significance of the statistical analysis and state that there is no clear decision as here.
+
+However, it may be said that for the methods watershed, \gls{dextr}, and \gls{iog} the accuracy does not differs strongly over the three image domains $ Standard $, $ Urban $, and $ Industrial $.
+From this it can be concluded that these methods sufficiently generalize over different domains.
+It is notable, that the \gls{dextr} and \gls{iog} method do not necessarily perform better on the domain $ Standard $, even though they have been explicitly trained with this type of images. 
+This also confirms the results from \cite{Man18-DEXTR} and \cite{Zha20-IOG}, which emphasize the performance of their methods across domains.
+Although in general, an improvement of performance is still possible if the model would be trained on the same type of images that are used for the evaluation.
+This is a general assumption, which is not proven within the scope of this thesis.
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{l|c c c c}
+	\begin{tabular}{l|p{25mm} p{25mm} p{25mm} p{25mm}}
 		\toprule 		
-		& \centering $ Polygon $	& \centering $ Watershed $  	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $} \\
+		& \centering $ Polygon $	& \centering $ Watershed $ 	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $}	\\
 		\midrule
-		$ n_{annots} $			& \centering 81				& \centering 328				& \centering 82 			& \multicolumn{1}{c}{69}  \\
-		$ H_{0} $				& \multicolumn{4}{c}{$ med \left( IoU_{Standard} \right) = med \left( IoU_{Urban} \right) = med \left( IoU_{Industrial} \right)$}  \\  
-		$ H_{A} $		 		& \multicolumn{4}{c}{$ H_{0} = false $}  \\ 	
-		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
-		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
+		$ n_{annots} $	& \centering 81				& \centering 98				& \centering 87			& \multicolumn{1}{c}{81}  		\\
+		$ H_{0} $		& \multicolumn{4}{c}{$ med \left( IoU_{Standard} \right) = med \left( IoU_{Urban} \right) = med \left( IoU_{Industrial} \right)$}  \\  
+		$ H_{A} $		& \multicolumn{4}{c}{$ H_{0} = false $}  \\ 	
+		$ \alpha $		& \centering $ 1\% $ 		& \centering $ 1\% $ 		& \centering $ 1\% $ 	& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
+		Statistic		& \centering 12.5154		& \centering 6.3355      	& \centering 9.0211		& \multicolumn{1}{c}{1.3372}  	\\ 
 		$ \textnormal{\textit{p-value}} $
-								& \centering 0.3948		& \centering $ 1.3 \cdot 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
-		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
+		& \centering 0.0019			& \centering 0.0421 		& \centering 0.0109		& \multicolumn{1}{c}{0.5124}	\\
+		$ H_{0} $		& \centering rejected 		& \centering accepted	  	& \centering accepted 	& \multicolumn{1}{c}{accepted}  \\ 										
 		\bottomrule
 	\end{tabular}
-	\caption[Kruskal-Wallis tests over domains]{
-		Four Kruskal-Wallis tests are applied for the domain scopes $ Standard $, $ Industrial $, $ Anomaly $, and $ Urban $.
-		The four benchmark methods are used as factors for each test.
-		All tests are performed on the same $ H_{0} $, $ H_{A} $ and the same sample $X_{raw}$.
+	\caption[Kruskal-Wallis test performed on methods over domains]{
+		For each benchmark method the Kruskal-Wallis test is applied to compare the $ IoU $ over the benchmark domains $ Standard $, $ Urban $, and $ Industrial $.
+		The domain $ Anomaly $ is not included in this test, because it already can be seen in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}, that the $ IoU $ differs for this domain.
+		All tests are performed on the same $ H_{0} $ and $ H_{A} $.
+		The number of annotations $ n_{annots} $ varies, because for each method the Kruskal-Wallis test requires the same size for the factors.
 	}\label{tab:ch5:tests_on_methods}
 \end{table}
 
+% Time
+\subsubsection{Time}
+Further, the method's generalization capabilities are evaluated based on $ time $.
+An overview of the annotation time per method and domain is provided by the box plots in Figure \ref{fig:ch5:sec2:methods_over_domain_time}.
+% For Polygon and Watershed the domains Standard and urban require much time while the Industrial and Anomaly are fast.
+It is easy to see that more time is spent on the domains $ Standard $ and $ Urban $ than on the domains $ Industrial $ and $ Anomaly $.
+This probably follows from the fact that the objects from domains $ Standard $ and $ Urban $ are more complicated and therefore require more annotation time.
+% This behaviour may also be observed for DEXTR and IOG but not this extreme -> good generalization.
+This behavior is extreme for watershed method and decrease continuously across the methods polygon, \Gls{iog}, and \gls{dextr}.
+
+% Noteable in general is the larger annotation time for Polygon and Watersheds
+In general, this demonstrates that the longer annotation time of watershed and polygon spans across the image domains.
+It can be said that the \gls{dextr} and \gls{iog} method also generalize well based on the annotation time, since the values for $ time $ are in a similar range over the image domains.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{figures/chap52_time_mehtods_over_domains_boxplot.png}
+	\caption[Box plots of image domains and methods on  $ time $]{
+		Box plots of $ time $ based on the image domains and benchmark methods.
+		For the domains $ Standard $ and $ Urban $ the $ time $ is clearly higher, than for the other domains.
+		This is extreme for the methods polygon and watershed.
+		A difference may be noted for \gls{dextr} and \gls{iog} as well, but in general the generalization capabilities are sufficient.	
+	} \label{fig:ch5:sec2:methods_over_domain_time}
+\end{figure}
+% TODO plots change order of domains -> Standard-Urban-Industrial-Anomaly
+
+\begin{comment}
 % Grouped by dataset with methods as factors
 \subsection{Generalization Of Domains Over Methods} \label{ord:ch5:sec2:subsec1}
 % For all methods - Kruskal-Wallis test (or even ANOVA) for the domains as factors
@@ -53,16 +121,16 @@ In contrast, for the domains $ Industrial $ and $ Anomaly $ $ H_{0} $ is rejecte
 	\centering
 	\begin{tabular}{l|p{25mm} p{25mm} p{25mm} p{25mm}}
 		\toprule 		
-								& \centering $ Standard $	& \centering $ Industrial $  	& \centering $ Anomaly $ 	& \multicolumn{1}{c}{$ Urban $} \\
+								& \centering $ Standard $	& \centering $ Urban $  		& \centering $ Industrial $ & \multicolumn{1}{c}{$ Anomaly $} \\
 		\midrule
-		$ n_{annots} $			& \centering 81				& \centering 328				& \centering 82 			& \multicolumn{1}{c}{69}  \\
+		$ n_{annots} $			& \centering 105				& \centering 81				& \centering 351 			& \multicolumn{1}{c}{82}  \\
 		$ H_{0} $				& \multicolumn{4}{c}{$ med \left( IoU_{polygon} \right) = med \left( IoU_{watershed} \right) = med \left( IoU_{IOG} \right) = med \left( IoU_{DEXTR} \right) $}  \\  
 		$ H_{A} $		 		& \multicolumn{4}{c}{$ H_{0} = false $}  \\ 	
 		$ \alpha $		 		& \centering $ 1\% $ 		& \centering $ 1\% $ 		  	& \centering $ 1\% $ 		& \multicolumn{1}{c}{$ 1\% $} 	\\ 	
-		Statistic		 		& \centering 2.9793			& \centering 30.071	      		& \centering 15.4029		& \multicolumn{1}{c}{8.4354}  	\\ 
+		Statistic		 		& \centering 4.8254			& \centering 12.692	      		& \centering 30.3888			& \multicolumn{1}{c}{14.4029}  	\\ 
 		$ \textnormal{\textit{p-value}} $
-								& \centering 0.3948			& \centering $ 1.3 \cdot 10^{-6} $ 	& \centering 0.0015			& \multicolumn{1}{c}{0.0378}	\\
-		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{accepted}  \\ 										
+								& \centering 0.1850			& 0.0054 	& \centering $ 1.1 \cdot 10^{-6}$		& \multicolumn{1}{c}{0.0015}	\\
+		$ H_{0} $		  		& \centering accepted 		& \centering rejected	  		& \centering rejected 		& \multicolumn{1}{c}{rejected}  \\ 										
 		\bottomrule
 	\end{tabular}
 	\caption[Kruskal-Wallis tests over domains]{
@@ -71,7 +139,6 @@ In contrast, for the domains $ Industrial $ and $ Anomaly $ $ H_{0} $ is rejecte
 		All tests are performed on the same $ H_{0} $, $ H_{A} $ and the same sample $X_{raw}$.
 	}\label{tab:ch5:tests_on_domains}
 \end{table}
-%TODO allgin table properly
 
 The post analysis is performed by the DSCF test \cite{CF91-dscf}, which determines the factor, that differs significantly in the domains $ Industrial $ and $ Anomaly $.
 As a result, for the domain $ Industrial $ only the \gls{iog} method gave evidence for a statistical significant decrease in performance.
@@ -97,7 +164,8 @@ The good performance of the polygon and \gls{dextr} method in the domain $ Anoma
 
 In conclusion it may be stated, that the examined benchmark methods mostly do not significantly vary over common domains, excluding the domain $ Anomaly $.
 Only for the \gls{iog} method did not generalize as well as the other methods on the domain $ Industrial $.
-
+some comment
+\end{comment}
 
 \subsection{Generalization Over Datasets} \label{ord:ch5:sec2:subsec2}
 
@@ -115,9 +183,8 @@ As a result, the simulated user clicks are almost perfect.
 More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec3}.
 
 The performance of the \gls{dextr} and \gls{iog} method on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
-It can be seen, that the examined methods perform very similar on the applied datasets.
-This is interesting, because the \gls{dextr} method gave the impression to be advantageous in the previous evaluation on the benchmark study.
-% TODO Vermutung, dass die DEXTR methode intiuitiver ist und für echte User bessere ergebnisse Einfährt als IOG
+It can be seen, that in general the \gls{iog} method performs best, except for the benchmark dataset, where \gls{dextr} achieves a higher \gls{miou}.
+The superiority in the simulation of \gls{dextr} on this data set is consistent with the results from the real users from the benchmark study.
 
 \begin{table}[h!]
 	\centering
@@ -128,7 +195,7 @@ This is interesting, because the \gls{dextr} method gave the impression to be ad
 		\midrule
 		PASCAL (VP \cmark)				& 0.9103 	& 0.9251	\\
 		PASCAL (VP \xmark)				& 0.7805	& 0.8086	\\
-		Benchmark 						& 0.8394 	& 0.8201	\\
+		Benchmark Dataset				& 0.8394 	& 0.8201	\\
 		MVTec D2S						& 0.9297	& 0.9342	\\
 		Segmentation and Counting		& 0.8280	& 0.8797 	\\							
 		\bottomrule
@@ -139,14 +206,14 @@ This is interesting, because the \gls{dextr} method gave the impression to be ad
 	}\label{tab:ch5:tests_on_datasets}
 \end{table}
 
-% TODO enforce this part
 The difference in accuracy for the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} with and without the application of \gls{vp} is especially interesting.
 The meaningfulness of \gls{vp} is already addressed in Subsection \ref{ord:ch2:sec2} and their effect can be observed in Table \ref{tab:ch5:tests_on_datasets}.
-For \Gls{dextr} the difference in \gls{miou} is around $ 0.13 $ and for \gls{iog} almost $ 0.12 $.
+For \gls{dextr} the difference in \gls{miou} is around $ 0.13 $ and for \gls{iog} almost $ 0.12 $.
 This represents a significant decrease in accuracy, which raises doubts how expressive the results with the applications of \gls{vp} are.
 This is especially problematic, because the \gls{vp} are located at the edge of an object, which is generally difficult to predict.
-Therefore, it may not be recognized if a model's weakness at the prediction of the borders.
-Based on this unrealistic expectations are raised on the method's accuracy, which are mostly not achievable in real world application.
+Therefore, it may not be recognized if a model's weakness is the prediction of the edges.
+This may leads to unrealistic expectations on the method's accuracy, which are mostly not achievable in real world application.
+The presentation of the performance without \gls{vp} would lead to more transparency and awareness of this characteristic.
 
 \subsubsection{Refinement Prediction}
 
@@ -177,7 +244,7 @@ A click is set on the region where the previous prediction fails.
 				& MVTec D2S				& 0.9343	& 0.9358 	& 0.9424	& 0.9468 	& 0.9499	& 0.9523	\\
 		\bottomrule
 	\end{tabular}}
-	\caption[Generalization of IOG and DEXTR Refinement]{
+	\caption[Generalization of IOG and DEXTR refinement]{
 		Performance of the \gls{dextr} and \gls{iog} method for different number of refinement clicks.
 		At $ n_{\textnormal{\textit{refine clicks}}} = 0 $, no refinement click is set, which is equivalent to the initial prediction.
 	}\label{tab:ch5:tests_on_refinement_datasets}
