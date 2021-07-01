@@ -11,6 +11,7 @@ First, the saved segmentation results are used to calculate the \gls{iou} as mea
 % #2 User interactions.
 Second, the user interactions were recorded, that are required to perform the interactive methods.
 % Based on these statistics the usability of the labeling process is evaluated.
+For illustration an exemplary part of the recorded statistics is presented in Table \ref{tab:ch4:presentation_statistics}.
 These statistics on the user interactions exist for every annotation, the most important are presented in the following:
 \begin{itemize}
 	\item \textbf{Used method}, the interactive method used to create the annotation.
@@ -54,8 +55,6 @@ These statistics on the user interactions exist for every annotation, the most i
 	\end{comment}	
 \end{itemize}
 
-For illustration an exemplary part of the recorded statistics is presented in Table \ref{tab:ch4:presentation_statistics}.
-
 % #3 Survey to get an idea about the soft factors.
 Third, the participants filled out a survey, after completing the benchmark study.
 This survey enables insights on the usability and user experience of the individual methods.
@@ -68,14 +67,14 @@ This survey enables insights on the usability and user experience of the individ
 		\toprule	 
 		Method 		& $ IoU $ 	& $ time_{annot} $	& $ n_{clicks} $ 	& $ n_{strokes} $ 	& $ time_{strokes} $ 	& Domain		& User ID \\
 		\midrule		
-		polygon 	& 0.9819 	& 51.99				& 35				& 0					& 0						& Urban 		& User 13 \\
-		polygon 	& 0.9156 	& 41.07				& 8					& 4					& 4.47					& Industrial 	& User 9  \\
-		watershed	& 0.7134 	& 23.08				& 13				& 1					& 1.29					& Industrial  	& User 2  \\
-		watershed	& 0.3346 	& 12.3				& 2					& 4					& 4.82					& Anomaly	  	& User 23 \\
-		DEXTR		& 0.8897 	& 7.54				& 4					& 0					& 0						& Standard		& User 29 \\
-		DEXTR		& 0.8688 	& 24.85				& 13				& 0					& 0						& Industrial	& User 23 \\
-		IOG			& 0.8944 	& 17.0				& 5					& 1					& 1.9					& Industrial	& User 27 \\
-		IOG			& 0.7269 	& 28.44				& 6					& 1					& 5.09					& Standard		& User 19 \\
+		polygon 	& 0.9819 	& 51.99				& 35				& 0					& 0						& $ urban $ 		& User 13 \\
+		polygon 	& 0.9156 	& 41.07				& 8					& 4					& 4.47					& $ industrial $ 	& User 9  \\
+		watershed	& 0.7134 	& 23.08				& 13				& 1					& 1.29					& $ industrial $  	& User 2  \\
+		watershed	& 0.3346 	& 12.3				& 2					& 4					& 4.82					& $ anomaly $	  	& User 23 \\
+		DEXTR		& 0.8897 	& 7.54				& 4					& 0					& 0						& $ standard $		& User 29 \\
+		DEXTR		& 0.8688 	& 24.85				& 13				& 0					& 0						& $ industrial $	& User 23 \\
+		IOG			& 0.8944 	& 17.0				& 5					& 1					& 1.9					& $ industrial $	& User 27 \\
+		IOG			& 0.7269 	& 28.44				& 6					& 1					& 5.09					& $ standard $ 		& User 19 \\
 		\bottomrule
 	\end{tabular}}
 	\caption[Sample presentation of recorded user statistics]{

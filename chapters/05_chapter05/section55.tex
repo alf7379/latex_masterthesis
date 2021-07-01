@@ -4,7 +4,7 @@
 \section{Suitability Of DEXTR and IOG Annotations For Training} \label{ord:ch5:sec5_retrain}
 % RE-1470
 In this section it is examined if annotations created by the \gls{dextr} and \gls{iog} method are suitable to train a new \gls{dl} model for semantic segmentation.
-Thereby, the statement form Manisis \etal, that models trained on \gls{dextr} annotations perform equally well\cite{Man18-DEXTR}, is taken into account as well.
+Thereby, the statement form Manisis \etal, that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}, is taken into account as well.
 In the following the experimental setup is described in three stages: creation of annotations, model training, and model evaluation.
  
 % Create annotations.
@@ -25,7 +25,7 @@ To establish a benchmark for comparison, also two models are trained on the orig
 The models itself do not contain any novelty, but are just used to be trained with the new annotations $ \textbf{Y}_{new} $.
 
 % Eval model.
-Third, the performance of the created model is evaluated by the \gls{miou} and the \gls{ap} at different levels if \gls{iou}, as presented in Table \ref{tab:ch5:results_annot_usability}.
+Third, the performance of the created model is evaluated by the \gls{miou} and the \gls{ap} at different levels of \gls{iou}, as presented in Table \ref{tab:ch5:results_annot_usability}.
 Based on the \gls{map}, the models trained on the \gls{dextr} and \gls{iog} annotations, perform approximately as good as the model trained on the original \gls{gt}.
 This approximately applies to both \gls{d2s} dataset, but for the augmented \gls{d2s} dataset the model trained on the original \gls{gt} performs slightly better.
 
@@ -38,7 +38,7 @@ Exemplary for the models trained on the normal dataset, the original \gls{gt} en
 This effect also occurs for the augmented \gls{d2s} dataset.
 From this follows that, the models trained on the \gls{dextr} and \gls{iog} annotations are not able to make prediction with a high level of detail.
 The missing details in the model predictions, is probably caused by the \gls{dextr} and \gls{iog} annotations, which are also not perfect at the detail level.
-So, in order to make create predictions with very high \gls{iou} and rich detail, the original \gls{gt} delivers better results.
+So, in order to create predictions with very high \gls{iou} and rich detail, the original \gls{gt} delivers better results.
 
 \begin{table}[h!]
 	\centering

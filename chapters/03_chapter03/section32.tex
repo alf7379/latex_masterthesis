@@ -15,11 +15,10 @@ Thereby geometrical and topological concepts are applied and a region-based segm
 
 % Segmentation with markers.
 The automatic application of the watershed transformation tends to over-segment the image into many small homogeneous regions \cite{Beu00-Watersheds}.
-To improve the segmentation result, \cite{MS90-MorpologicalSegmentation} introduced a segmentation controlled by markers.
-The markers supply the method with the location of the object of interest.
-The two types of markers are fore- and background markers.
-Foreground markers define the location of the object to segment and are also referred to as object markers.
-Background markers define the area, where no part of the object is located.
+To improve the segmentation result, \cite{MS90-MorpologicalSegmentation} introduced a segmentation controlled by markers, that are set interactively.
+There are two types of markers, that supply the method with the location of the object of interest.
+First, foreground markers define the location of the object to segment and are also referred to as object markers.
+Second, background markers define the area, where no part of the object is located.
 
 % Flooding
 % "In watershed segmentation an image is regarded as a topographic landscape with ridges and valleys. The elevation values of the landscape are typically defined by the gray values of the respective pixels or their gradient magnitude."
@@ -36,14 +35,14 @@ Finally, the watershed lines are used to create a segmentation of the images int
 \subsection{Application}\label{ord:ch3:sec2:subsec2}
 % Implementation
 The watershed transformation may be performed with or without user interaction.
-Since this thesis is about interactive methods, user interaction is required to perform the watershed transformation
+Since this thesis is about interactive methods, user interaction is required to perform the watershed transformation.
 In this implementation first a bounding box is drawn around the object and the image is cropped, in order to focus on the object of interest.
 Second, foreground markers define the regions that should belong to the foreground, while background markers define the region of the background.
 The markers are set interactively by the users on the cropped object image.
 To create a valid segmentation, at least one fore- and background marker must be set.
 The segmentation is immediately executed after a marker is set.
 This allows the user to directly readjust the segmentation result by setting additional markers.
-The application of watersheds by setting multiple markers in shown exemplary in Figure \ref{fig:ch3:sec2:application}.
+The application of watershed by setting multiple markers in shown exemplary in Figure \ref{fig:ch3:sec2:application}.
 
 \begin{figure}
 	\centering

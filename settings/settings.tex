@@ -22,7 +22,11 @@
 \usepackage{booktabs,siunitx,rotating}
 \usepackage{pifont}
 \usepackage{verbatim} 
-% \usepackage{footmisc}
+\usepackage{float}
+\usepackage{dblfloatfix}
+\usepackage[bottom]{footmisc}
+\usepackage{alphalph}
+\renewcommand*{\thesubfigure}{\alphalph{\value{subfigure}}}
 
 \usepackage[printonlyused]{acronym}
 \usepackage[acronym, automake, toc, nonumberlist]{glossaries}

@@ -1,21 +1,38 @@
 \chapter{\abstractname}
 
-% Importance of interactive semantic segmentation
-Due to the rapid development of ML, semantic segmentation has become an important instrument in image processing.
-Recently published methods also propose interactive approaches for the task of semantic segmentation \cite{Xu16-InteractiveObjectSelection} \cite{JG18-ClickCarving} \cite{Liew17-RegionalInteractiveImageSeg}.
-Interactive methods require a form of user interaction, that provide additional information on the object of interest.
-The user interaction is often realized by mouse clicks on the image and serves as additional guidance for the based segmentation model \cite{Man18-DEXTR} \cite{Zha20-IOG}. 
-Thereby, the segmentation task is transformed into a class-agnostic segmentation of a foreground object from the background.
-Interactive methods can be used to support the label process and therefore reduce the label costs.
-This is particularly interesting as new datasets can be created more easily, allowing labels to be created for image domains, that are rather underrepresented in the research community.
+% Ein Abstract ist immer eine Kurzform der gesamten Arbeit, er enthält also genauso wie deine Arbeit
+% Introduction  --> Motivation/ Worum gehts / mit was genau befasst du dich
+% Related Work  --> was wurde bisher gemacht / was ist deine Contribution
+% Experiments   --> Ergebnisse
+% Conclusion 	--> Welche Schlüsse kann man ziehen.
 
-% Quick summary of the Chapters.
-This thesis examines the abilities of multiple interactive segmentation methods by the performance of a benchmark study on real users.
-Thereby, the fields of semantic segmentation and interactive segmentation are introduced.
-Four interactive segmentation methods (polygon drawing, watershed transformation, \gls{dextr}\cite{Man18-DEXTR}, and \gls{iog}\cite{Zha20-IOG}) are implemented and applied in a benchmark study.
-In this benchmark study, these methods are used by real users to create annotation for different images.
-The results of the benchmark study are evaluated by the use of statistical analysis.
-Thereby, special attention is paid to the generalization capabilities over various domains and users.
-% Research question(s)
-In general it is examined to what extent interactive segmentation methods based on \gls{ml} improve the labeling process compared to rather classical methods without \gls{dl}.
-It is also shortly evaluated if annotations, created by interactive segmentation method, are suitable as training data.
+
+%%% 1 - Introduction: 
+% Sinn von interactive segmentation methods = labeling!!
+Interactive segmentation methods aim to segment an image by pixel-wise classification, thereby object labels are created.
+A foreground object is segmented from the background, this task is often interpreted as class-agnostic segmentation.
+Interactive methods require a form of user interaction, which is often realized by mouse clicks on the image. 
+In application these methods are often used to support the label process and therefore reduce the label costs.
+This is particularly interesting as new datasets can be created more easily, allowing labels to be created for image domains, that are rather underrepresented in the research community.
+% The development on this topic has benefited from the general development in deep learning and the interest in image datasets with pixel-precise labels.
+
+%%% 2 - Related Work  
+The comparison of interactive methods applied by real user is not possible, due to inconsistent baseline requirements.
+Therefore, mostly simulations are applied in order to generate the required user interaction and evaluate the model's performance.
+This leads to a limited informative value, since authentic user behavior cannot be exactly reproduced in simulations.
+
+%%% 3 / 4 - Methods of the benchmark study.
+The benefit of this thesis in particular is the use of a benchmark study to evaluate four interactive methods.
+Among the benchmark methods are polygon drawing as baseline for manual labeling, watershed transformation, and two state-of-the-art deep learning methods: \glsentrylong{dextr} and \glsentrylong{iog}.
+The benchmark study provides a significant contribution, due to the inclusion of real users, in order to gain realistic insights.
+Further, the benchmark study is performed on a hand picked dataset, that contains images of various domains, in order to examine the model's generalization capabilities.
+
+%%% 5 - Experitmens -> IoU, Time, over domains, over users, survery and suitability.
+Based on the accuracy and annotation time it is investigated which methods perform best and if modern methods based on deep learning are in general advantageous.
+Further, the generalization capabilities over various users and domains are evaluated.
+The real user data is particularly valuable here, additionally various simulations are applied as well.
+Insights on the user experience of the interactive methods are obtained by a survey.
+
+%%% 6 - Conclusion
+In general it is concluded, that interactive segmentation methods based on deep learning are in general advantageous based on the annotation time, but the accuracy does not differ strongly to classical segmentation methods. 
+Finally, the suitability of annotations created by interactive segmentation method as training data is confirmed.

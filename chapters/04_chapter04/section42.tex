@@ -14,3 +14,17 @@ Based on the comparison from Table \ref{tab:ch2:interactive-stae-of-the-art}, th
 While the \gls{dextr} method only processed user clicks on the boundary of the object.
 
 In order to keep the scope of this thesis feasible, the benchmark study contains these four interactive segmentation methods.
+
+% State of the art
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		Method					& polygon 	& watershed & DEXTR & IOG 	\\
+		\hline
+		Number of annotations 	& 764 		&  	785		& 806 	& 643 	\\
+	\end{tabular}
+	\caption[Overview of benchmark methods]{
+		Distribution of the benchmark annotations over the four benchmark methods.
+		An image may contain multiple objects to annotate, that belong to the same image domain.
+	} \label{tab:ch4:methods_overview}
+\end{table}

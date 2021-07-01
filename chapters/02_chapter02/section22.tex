@@ -81,7 +81,6 @@ In \cite{Jad20-LossFunction} several loss functions for image segmentation are e
 Jadon concludes, that there is no universal loss function, instead their performance depends on the characteristics of the dataset.
 Cross entropy loss works best on a balanced dataset, while for imbalanced datasets the dice coefficient or focal loss is suitable.
 
-% TODO introductional sentence that this is important for the architecture???
 The task of semantic segmentation aims to answer the questions of classification \emph{what is in the image?} and the question of localization \emph{where is it in the image?}.
 The network extracts features and learns to answer the question of classification.
 During this process the size of feature maps decrease and localization information is lost.
@@ -108,11 +107,12 @@ It was experienced, that especially for thin, long objects (\eg plants or the sp
 Second, the PASCAL \gls{voc} datasets have so-called \gls{vp}, that are located around each object as a boundary, as illustrated in Figure \ref{fig:ch2:sec2:segmentation_image}.
 They were established to prevent the inclusion of wrongly labeled \gls{gt} pixels, as label inaccuracies especially take place around the boundary of the object.  
 \gls{vp} are excluded from the training and evaluation, which leads to a distorted evaluation result.
+A selection of images from the PASCAL \gls{voc} dataset, that contain questionable labels due to the use of \gls{vp} is shown in Figure \ref{fig:appendix_pascal_voc}.
+
 In most comparisons the presented results on PASCAL \gls{voc} datasets are created with the application of \gls{vp}.
 This does not lead to a realistic evaluation, since the boundary, which is particularly difficult to segment, is ignored.
 Evaluating the performance, this must be taken into account, because real world data do have \gls{vp}. 
 In Section \ref{ord:ch5:sec2_generalization_image_domains}, experiments demonstrate, that the performance significantly drops without the use of \gls{vp}.
-% TODO ref appendix for examples
 
 \subsection{Evaluation Metric}\label{ord:ch2:sec2:subsec_metric}
 To ensure an objective comparison of several methods a evaluation metric is required, which measures the quality of obtained segmentation.
@@ -139,17 +139,17 @@ It is defined as
 \end{equation}
 and is calculated for each instance or segmentation class.
 To evaluate all instances or classes of an image or a dataset the \gls{iou} is averaged, which results in the \gls{miou}.\footnote{An open source implementation can be found, \eg in TensorFlow: \textit{tf.keras.metrics.MeanIoU}: \url{https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU}}
-%TODO other reference here than open source stuff??
 
-\begin{figure}
+\begin{figure} [!b]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/chap222_iou.png}
 	\caption[Intersection over Union]{
 		\glsentrylong{iou}. The \textit{area of overlap} represents the intersection of the \gls{gt} with the made prediction $\hat{y}$. 
-		The \textit{area of union} represents the total area of \gls{gt} and the prediction $\hat{y}$ \cite{Sha18-DLCV}. \textit{TODO recreate a visualization like this by myself}}
-	\label{fig:ch2:sec2:iou}
+		The \textit{area of union} represents the total area of \gls{gt} and the prediction $\hat{y}$ \cite{Sha18-DLCV}.
+		\copyright 2016 CC BY-SA 4.0. Reprinted by permission.\footnotemark
+	} \label{fig:ch2:sec2:iou}
 \end{figure}
-% TODO get licence or change grafic 
+\footnotetext{Rosebrock A., 2016, \textit{Intersection over Union - visual equation} \url{https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection}}
 
 An advantage of this metric is the inclusion of \textit{false positives} and \textit{false negatives} into the calculation.
 A limitation of the \gls{iou} metric is that the boundary correctness of the region's boundaries is not taken into account. 
@@ -182,36 +182,38 @@ The basic components of this reconstruction are the operations \textit{unpooling
 After the encoder network generally a softmax classifier is applied, that predicts the class for each pixel.
 The output is a probability map $\hat{y}$ with $K$ channels for $K$ number of classes \cite{Bad17-SegNet}.
 
-\begin{figure}
+\begin{figure} [!b]
 	\includegraphics[width=\linewidth]{figures/chap223_segnet_arch.png}
 	\caption[Encoder-Decoder-Architecture]{
 		Encoder-Decoder-Architecture from SegNet. 
 		On the left the encoder network, which reduces the size of the feature maps while processing. 
 		On the right is the decoder network, which reconstructs the feature map to the size of the original input. 
 		The yellow layer on the very right is the classification layer, here represented as softmax layer to create the output segmentation. 
-		Copyright \copyright 2017 Creative Commons License. Reprinted by permission from \cite{Bad17-SegNet}.}
+		\copyright 2017 CC BY-SA 4.0. Reprinted by permission from \cite{Bad17-SegNet}.}
 	\label{fig:ch2:sec2:encoder-decoder}
 \end{figure}
 
 \paragraph{Unpooling.}
 The unpooling operation is the equivalent of the pooling operation.
 Instead of reducing the size of feature maps $F^{n}_{c}$, they are enlarged.
-As for pooling, no features are learned and there exist multiple methods to perform unpooling, two of them are illustrated in Figure \ref{fig:ch2:sec2:unpooling_1}.
 Nevertheless, unpooling is not capable to fully reconstruct the information lost during the process of downsampling.
-The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while for \textit{nearest neighbor} the feature maps $F^{n}_{c}$ contain redundant information.
-% In order to achieve a fine and detailed segmentation result, this is an interfering effect.
-%For an architecture with max pooling and a mirrored structure of encoder and decoder network, this effect can be mitigated by saving the location of the maximal value during max pooling.
-% In the following the unpooling result can be specified based on this information, as exemplified in Figure \ref{fig:ch2:sec2:unpooling_2} \cite{NHH15-DeConvNet} \cite{Fer19-SemSeg}.
+As for pooling, no features are learned and there exist multiple methods to perform unpooling, two of them are called \textit{bed of nails} and \textit{nearest neighbor}. \footnote{Li, Fei-Fei and Johnson, Justin and Yeung, Serena, 2018, \textit{Lecture on Detection and segmentation} \url{http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf}}
 
-% TODO recreate figure by myself with drawing program.
+
+\begin{comment}
+illustrated in Figure \ref{fig:ch2:sec2:unpooling_1}.
+The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while for \textit{nearest neighbor} the feature maps $F^{n}_{c}$ contain redundant information.
+In order to achieve a fine and detailed segmentation result, this is an interfering effect.
+For an architecture with max pooling and a mirrored structure of encoder and decoder network, this effect can be mitigated by saving the location of the maximal value during max pooling.
+In the following the unpooling result can be specified based on this information, as exemplified in Figure \ref{fig:ch2:sec2:unpooling_2} \cite{NHH15-DeConvNet} \cite{Fer19-SemSeg}.
+
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap223_unpooling1.png}
 	\caption[Unpooling methods \textit{nearest neighbor} and \textit{bed of nails}]{
 		Unpooling methods \textit{nearest neighbor} and \textit{bed of nails}.
 		With \textit{nearest neighbor} enlarged feature maps are filled up with the same input value. 
 		With \textit{bed of nails} sparse feature maps are created, that contain the input value filled up with zeros.
-		\textit{TODO recreate figure with drawing program}}	
-	\label{fig:ch2:sec2:unpooling_1}
+	} \label{fig:ch2:sec2:unpooling_1}
 \end{figure}
 % \footref{fn:LJY10_StanfordLecture}
 %	\footnotemark{\ref{footnote:LJY10_StanfordLecture}} 
@@ -224,12 +226,12 @@ The result for \textit{bed of nails} are sparse feature maps $F^{n}_{c}$, while 
 
 % We can observe that coarse-tofine object structures are reconstructed through the propagation in the deconvolutional layers; lower layers tend to capture overall coarse configuration of an object (e.g. location, shape and region), while more complex patterns are discovered in higher layers. 
 % Note that unpooling and deconvolution play different roles for the construction of segmentation masks. Unpooling captures example-specific structures by tracing the original locations with strong activations back to image space. As a result, it effectively reconstructs the detailed structure of an object in finer resolutions. On the other hand, learned filters in deconvolutional layers tend to capture class-specific shapes. Through deconvolutions, the activations closely related to the target classes are amplified while noisy activations from other regions are suppressed effectively. By the combination of unpooling and deconvolution, our network generates accurate segmentation maps \cite{NHH15-DeConvNet}.
+\end{comment}
 
 \paragraph{Transposed Convolution.}
 As for pooling it is unpooling, the counterpart of convolution is transposed convolution.
 Therefore, these operations also share common features and characteristics, like learnable filters or hyperparameters as \textit{kernel size}, \textit{padding} and \textit{stride}.
 Transposed convolution can be used to enlarge feature maps or dense sparse feature maps, as created by the unpooling method "bed of nails".
-% TODO clarify if Noh or Noh et al.
 % Purpose of transposed conv for reconstruction.
 In \cite{NHH15-DeConvNet} it is observed, that the lower layers of the decoder network handle coarse details (\eg location, shape and region), while the higher layers capture the fine and more complicated details.
 This leads to a coarse-to-fine approach for the reconstruction through the decoder network.
@@ -237,7 +239,7 @@ In literature transposed convolution is also referred to as  \textit{deconvoluti
 A visualization of transposed convolution is provided in \cite{DV19-ConvolutionGuide}.
 % \footnote{F.-F. Li, J. Johnson and S. Yeung, 2018, "Stanford Lecture Detection and Segmentation": \url{http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture11.pdf}\label{fn:LJY10_StanfordLecture}}.
 
-% TODO recreate figure by myself with drawing program.
+\begin{comment}
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap223_transpose_conv.png}
 	\caption[Transposed Convolution]{
@@ -245,10 +247,10 @@ A visualization of transposed convolution is provided in \cite{DV19-ConvolutionG
 		On the left is the input of size $2 \times 2$ \Unit{px} before the application of transposed convolution.
 		On the right is the output of size $4 \times 4$ \Unit{px}. 
 		The red and blue square visualize the application of the convolution kernel with $stride = 2$. 
-		\textit{TODO recreate figure with drawing program}}
-	\label{fig:ch2:sec2:transposed-conv}
+	} \label{fig:ch2:sec2:transposed-conv}
 \end{figure}
 
+\end{comment}
 
 \subsubsection{Skip Connections} \label{ord:ch2:sec2:subsec_arch:skipconnections}
 
@@ -269,7 +271,7 @@ By doing so, layers that still contain localization information can be directly 
 		U-Net architecture. The left part of the shown network architecture represents the encoder network, while the right part represents the decoder network. 
 		In between, the skip connections establish additional lateral links (visualized in gray) between the encoder and decoder network. 
 		The skip connections exist on several levels to persistently combine classification and localization information. 
-		Copyright \copyright 2015 Springer Nature. Reprinted by permission from \cite{RF15-U-Net}.}
+		\copyright 2015 Springer Nature. Reprinted by permission from \cite{RF15-U-Net}.}
 	\label{fig:ch2:sec2:unet}
 \end{figure}
 
@@ -285,7 +287,7 @@ The \gls{fcn}-16s and \gls{fcn}-8s require less upsampling, due to their fusion 
 		Results of several variants of the \gls{fcn}. 
 		It can be observed that the \gls{fcn}-32s creates a relatively coarse prediction compared to the networks with skip connections.
 		In contrast the \gls{fcn}-8s achieves the best result with significantly improved level of detail and sharper borders.
-		Copyright \copyright 2015 IEEE. Reprinted by permission from \cite{LSD15-FCN}.}
+		\copyright 2015 IEEE. Reprinted by permission from \cite{LSD15-FCN}.}
 	\label{fig:ch2:sec2:fcn_res}
 \end{figure}
 The results shown in Figure \ref{fig:ch2:sec2:fcn_res} highlight the effect of skip connections in order to solve the question of localization.
@@ -322,7 +324,7 @@ This \gls{psp} module enables the model to use more contextual information and t
 		The number of pyramid levels and their size can be modified.
 		The results are upsampled to a mutual size and concatenated with another and the feature maps from (b).
 		After the concatenation a final convolution is applied, which results in the final prediction (d) in the form of a segmentation map.
-		Copyright \copyright 2015 IEEE. Reprinted by permission from \cite{Zhao17-PSP}.}
+		\copyright 2015 IEEE. Reprinted by permission from \cite{Zhao17-PSP}.}
 	\label{fig:ch2:sec2:psp}
 \end{figure}
 
@@ -355,7 +357,6 @@ For a dataset to be suitable in the field of \gls{dl} among others the following
 	\item The quality of the training data has a high impact on the model performance as well.
 	Data, that is inconsistent, incomplete, erroneous, or too noisy, can lead to a significant decrease in performance \cite{Gudivada2017-DataQuality}.
 	Training with poor quality data makes it more difficult for a model to detect and understand the elemental features and patterns, that are required by a model to perform well \cite{Ger17-HandsOn}.
-	% TODO affect of poor quality data for object detection or segmentation segmentation. "With respect to the task of segmentation segmentation correctness is very significant, for the accuracy of the edges is crucial if a pixel is labelled with the correct class or not."	
 	% Representative data.
 	\item The capability of dataset to represent a given problem is another elemental characteristic.
 	To enable a model to generalize and perform well, it is essential for the training data to be representative for the problem \cite{Ger17-HandsOn}.
@@ -363,9 +364,10 @@ For a dataset to be suitable in the field of \gls{dl} among others the following
 	The best approach to do so, is to include samples of this specific problem or of samples from the same domain.	
 	
 	If the given problem is not represented within the samples of the used datasets, this may cause a decrease in performance.
-	This may happen if a specific problem should be solved by a model, that is trained on general 'all-use-datasets', like PASCAL \gls{voc} \cite{Eve20-PascalVOC}, COCO \cite{Lin14-Coco} or ImageNet \cite{Deng09-ImageNet}.
+	This may happen if a specific problem should be solved by a model, that is trained on general 'all-use-datasets', like PASCAL \gls{voc} \cite{Eve20-PascalVOC}, MS COCO \cite{Lin14-Coco} or ImageNet \cite{Deng09-ImageNet}.
+	In \cite{Xu16-InteractiveObjectSelection} the performance of an interactive segmentation model is evaluated on seen and unseen categories of the MS COCO dataset.
+	Thereby, the model achieved a \gls{miou} of 48.35\% on the seen categories and dropped to 42.92\% on the unseen categories. 
 	Therefore, it is important to pay attention to representation capability of the used dataset.
-	% TODO \cite{Xu16-InteractiveObjectSelection}  The performance is evaluated on MS COCO with seen and unseen categories. Two points can be seen here: 	1. The significant drop in IU (Intersection over Union) from seen to unseen categories.  2. This network using user interaction suffers a way smaller drop in IU.
 	%	For example, the aim of a DL model may be to detect a certain manufacturing part from an industrial scope.
 	%	But without a dataset that represents this problem well enough, by containing samples from industrial scopes, the performance of the DL model may be significantly worse.
 	%	This may results in a decrease of performance, because the capabilities of \gls{dl} models are strongly connected with the representation of the data \cite{Goodfellow-et-al-2016}.

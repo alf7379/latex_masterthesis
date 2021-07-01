@@ -15,7 +15,6 @@ Thereby, images from various datasets are included: sPASCAL \gls{voc} \cite{Eve2
 %--- MVTec closed packed & occluded object detection dataset (CPOD)
 % Nachlabeln von Bildern
 For some images from open source datasets the \gls{gt} was improved, in order to achieve a consistent goodness of the \gls{gt} for the benchmark dataset.
-% TODO plots appendix with various examples of the image selection?
 
 % Amount of images
 The benchmark dataset contains 87 images with 133 annotations.
@@ -34,20 +33,152 @@ The established dataset fulfills this evaluation purpose, as described in Chapte
 In order to ensure the variety of the benchmark dataset, each image was categorized into one of four domains:
 %
 \begin{itemize}
-	\item \textbf{Standard}, contains casual objects and scenes, that are common in daily life.
+	\item \textbf{standard}, contains casual objects and scenes, that are common in daily life.
 	The images mostly origin from \textit{general-use} datasets as PASCAL \gls{voc}, COCO, and DAVIS.
-	\item \textbf{Urban}, represents images of urban road scenes as in CityScapes.
-	\item \textbf{Industrial}, focuses on images from an industrial context, that are usually underrepresented in  \textit{general-use} datasets.
-	Images from \gls{d2s}, MVTec Screws and other unpublished dataset are included.
-	\item \textbf{Anomaly}, contains images from the \gls{mad} dataset, which originally was used for anomaly detection.
+	\item \textbf{urban}, represents images of urban road scenes as in CityScapes.
+	\item \textbf{industrial}, focuses on images from an industrial context, that are usually underrepresented in \textit{general-use} datasets.
+	Images from \gls{d2s}, MVTec Screws, and other unpublished dataset are included.
+	\item \textbf{anomaly}, contains images from the \gls{mad} dataset, which originally was used for anomaly detection.
 	These images contain objects with defects such as cracks, contaminations, or holes.
 \end{itemize}
+
+An exemplary illustration of images from the different domains is presented in Figure \ref{fig:ch4:sec4:image_domains}, while multiple benchmark images are presented in \ref{fig:appendix_benchmark_domains}.
+
+% Presentation of image domains.
+\begin{figure} 
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_standard.png}
+		\caption{
+			Example image from domain $ standard $.
+		} \label{fig:ch4:sec4:domain_standard}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_industrial.png}
+		\caption{
+			Example image from domain $ industrial $.
+		} \label{fig:ch4:sec4:domain_industrial}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_urban.png}
+		\caption{
+			Example image from domain $ urban $.
+		} \label{fig:ch4:sec4:domain_urban}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_anomaly.png}
+		\caption{
+			Example image from domain $ anomaly $.
+			To clearly visualize the anomaly, the image is shown with an without mask.
+		} \label{fig:ch4:sec4:domain_anomaly}
+	\end{subfigure}
+	\caption[Illustration of benchmark images]{
+		Presentation of benchmark images from the domain $ standard $, $ urban $, $ industrial $, and $ anomaly $.
+	} \label{fig:ch4:sec4:image_domains}
+\end{figure}
+
+% TODO maybe enlarge this part so at least the whole page is completely filled up.
+
+\begin{comment}
+% Domain Standard
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap44_standard_collage.png}
+	\caption[Images from the benchmark domains $ standard $]{
+		Presentation of benchmark images from the domain $ standard $.
+	}
+	\label{fig:ch4:sec4:collage_standard}
+\end{figure}
+
+% Domain Urban
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap44_urban_collage.png}
+	\caption[Images from the benchmark domains $ urban $]{
+		Presentation of benchmark images from the domain $ urban $.
+	}
+	\label{fig:ch4:sec4:collage_urban}
+\end{figure}
+
+% Domain Industrial
+\begin{figure}
+	\includegraphics[width=\linewidth]{figures/chap44_industrial_collage.png}
+	\caption[Images from the benchmark domains $ industrial $]{
+		Presentation of benchmark images from the domain $ industrial $.
+		Only the objects that should be labeled are shown with their object mask.
+		In the images with a lot of objects only a limited part should be labeled.
+	}
+	\label{fig:ch4:sec4:collage_industrial}
+\end{figure}
+
+% Domain anomaly
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect1_comb.png}
+		\caption{
+			The black capsule of the pill is cracked.
+		} \label{fig:ch4:sec4:anomaly1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect3_comb.png}
+		\caption{
+			The error in the picture is, that the neck of the bottle has cracked.
+		} \label{fig:ch4:sec4:anomaly2}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect4_comb.png}
+		\caption{
+			The anomaly is that there are scratches and marks on the wood.
+		} \label{fig:ch4:sec4:anomaly3}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect5_comb.png}
+		\caption{
+			One part of the fabric is torn, while a large part is still intact.
+		} \label{fig:ch4:sec4:anomaly4}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect6_comb.png}
+		\caption{
+			The pill is slightly cracked at the surface on the bottom.
+		} \label{fig:ch4:sec4:anomaly5}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect7_comb.png}
+		\caption{
+			The nut is broken and has a big hole.
+		} \label{fig:ch4:sec4:anomaly6}
+	\end{subfigure}
+	\caption [Images from the benchmark domains $ anomaly $]{		
+		Presentation of benchmark images from the domain $ anomaly $.
+		In order to make the error clearly visible, the image was displayed once with and once without the object mask, which is above the anomaly.
+		The images with such anomalies mostly origin from industrial contexts with the aim of detecting errors.
+	} \label{fig:ch4:sec4:images_anomaly}
+\end{figure}
+\end{comment}
 
 % State of the art
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{l|c|c|c|c}
-		Domain				& Standard & Urban & Industrial & Anomaly \\
+	\begin{tabular}{l|c c c c}
+		Domain				& $ standard $ & $ urban $ & $ industrial $ & $ anomaly $ \\
 		\hline
 		Number of images 	& 21 & 12 & 31 & 23 \\
 		Number of object 	& 24 & 15 & 73 & 23 \\
@@ -55,15 +186,17 @@ In order to ensure the variety of the benchmark dataset, each image was categori
 	\caption[Overview of image domains]{
 		Distribution of the benchmark images over the four image domains.
 		An image may contain multiple objects to annotate, that belong to the same image domain.
-		} \label{tab:ch4:domains_overview}
+	} \label{tab:ch4:domains_overview}
 \end{table}
+
+
 
 \subsection{Attributes}\label{ord:ch4:sec2:subsec2}
 
 The attributes of the benchmark images and objects also impact the segmentation and evaluation.
 In order to create a balanced benchmark dataset, the selection of each image is not only based on the image domains, but also based on these attributes.
-The image attributes may further be used in evaluation, the following attribute categories have been established and assigned for each image.
-% TODO Comment von Paddo - Werden die überhaupt verwendet? Bitte angeben falls nicht!
+In general, the image attributes also could be used to further evaluate the generalization capabilities in detail, but this in not realized within the scope of this thesis.
+The following attribute categories have been established and assigned for each image.
 
 \begin{itemize}
 	\item \textbf{Illumination}, states if an image is underexposed, overexposed, or normal.
@@ -73,8 +206,8 @@ The image attributes may further be used in evaluation, the following attribute 
 	\item \textbf{Overlap}, states if multiple objects are touching, overlapping, or there is no contact at all.
 	\item \textbf{Number of objects}, gives a simplified idea about the amount of objects in the image (single, few, or many).
 	\item \textbf{Error type}, describes the type of error for images of the domain \textit{anomaly}.
-	The error types categories are \textit{holes}, \textit{cracks}, \textit{contamination} or \textit{none} as default. 
+	The error types categories are \textit{holes}, \textit{cracks}, \textit{contamination}, or \textit{none} as default.
 	\item \textbf{Reflection}, binary describes if the objects are reflecting.
-	\item \textbf{Background texture}, describes the background of the image as plain, textured or cluttered.
-	\item \textbf{Foreground texture}, describes the foreground of the image as plain, textured or cluttered.
+	\item \textbf{Background texture}, describes the background of the image as plain, textured, or cluttered.
+	\item \textbf{Foreground texture}, describes the foreground of the image as plain, textured, or cluttered.
 \end{itemize}

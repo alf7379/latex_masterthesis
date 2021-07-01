@@ -3,29 +3,28 @@
 
 \section{Improvement In Time And IoU}\label{ord:ch5:sec1}
 
-This section focuses of the variables annotation time $time_{annot}$ and the precision measure $IoU$ from the benchmark measurements.
+This section focuses on the annotation time $time_{annot}$ and the precision measure $IoU$ from the benchmark measurements.
 First, the relationship between time and user clicks is examined.
-Second, the variable $IoU$ is evaluated based on the four benchmark methods.
-Third, the same evaluation evaluation is performed with the variable $time_{annot}$. 
+Second, the $IoU$ is evaluated based on the four benchmark methods.
+Third, the same evaluation evaluation is performed with the $time_{annot}$. 
 
 
 \subsection{Correlation Between Time And Clicks}\label{ord:ch5:sec1:subsec1}
 
 % RE-1464 
-In the following the relationship between time and user clicks and strokes is investigated, in order to promote the further analysis, which is strongly based on $time_{annot}$. 
+In the following the relationship between time and the user interaction as clicks and strokes is investigated, in order to promote the further analysis, which is strongly based on $time_{annot}$. 
 As introduced in Subsection \ref{ch2:sec3:eval_interactive_methods}, a common metric to measure the level of user interaction is the number of clicks $n_{clicks}$.
 Thereby, $n_{clicks}$ functions as indicator for $time_{annot}$, which is the more meaningful variable in terms of ranking the amount of user interaction.
-In general, $n_{clicks}$ is not necessarily fair parameter, because the time per click may differ for user interaction of varying complexity.
+In general, $n_{clicks}$ is not necessarily fair indicator, because the time per click may differ for user interaction of methods with varying complexity.
 
-In the benchmark study the user interaction was recorded by the number of clicks $n_{clicks}$, number of strokes $n_{strokes}$, and the time required to perform the strokes $time_{strokes}$ .
-The informative value of each single variable is limited, because either only clicks or strokes were used or both combined.
+In the benchmark study the user interaction was recorded by the number of clicks $n_{clicks}$, number of strokes $n_{strokes}$, and required time to perform the strokes $time_{strokes}$ .
+The informative value of each single variable is limited, because the user interaction may consists out of either only clicks or strokes, or a combination of both.
 The stroke related variables are combined to the weighted strokes $ ws $ by
 \begin{equation} \label{equ:ws}
 	ws = f_{stroke} \cdot time_{strokes} + n_{strokes} 
 \end{equation}
 with the weighting factor $ f_{stroke} $.
-It is estimated that $ f_{stroke}=1.0 $, so that one second of stroking has the same value as one click.
-In manual analysis of the data $ f_{stroke} $ was determined, expecting a fair trade-off clicks and strokes.
+Based on a manual analysis of the data $ f_{stroke} = 1.0 $ was determined, so that one second of stroking has the same value as one click, which is expected to be a fair trade-off between clicks and strokes.
 To facilitate the comparison a single variable $ cws $ is established by 
 \begin{equation}
 	cws = n_{clicks} + ws
@@ -33,13 +32,14 @@ To facilitate the comparison a single variable $ cws $ is established by
 which combines clicks and strokes.
 
 The relationship of the single variables is presented within a correlation matrix in Table \ref{tab:ch5:correlation-matrix}.
-The reliability of the correlation matrix is supported by the size of the dataset with \getNumberBenchmarkAnnotations \space annotations.
+The reliability of the correlation matrix is supported by the size of the dataset with \getNumberBenchmarkAnnotations annotations.
+This includes the annotations from all four benchmark methods, between which no distinction is made in this subsection.
 % Correlation between time_{annot} and cws
 The correlation between the time and weighted clicks and strokes $ corr \left(time_{annot}, cws \right) = 0.8610 $ is strong.
 This confirms the relationship between these variables and supports their suitability for further evaluation.
 
 Although, it should be noted that, the correlation value of $ time_{annot} $ and $ cws $ is not maximal.
-This supports the hypothesis that $ cws $ does not constitute a flawless representation of $ time_{annot} $ and thereby is not a perfectly suitable performance measure.
+This assists the hypothesis that $ cws $ does not constitute a flawless representation of $ time_{annot} $ and thereby is not a perfectly suitable performance measure.
 However, $ cws $ is still sufficient for the comparison of interactive methods, but the limitations have to be noted.
 For the further evaluation mostly $ time_{annot} $ will be used to represent the user interaction.
 
@@ -72,26 +72,31 @@ The annotation time is evaluated in detail in Subsection \ref{ord:ch5:sec1:subse
 		Correlation table based on the \textit{Pearson} standard correlation coefficient \cite{Kirch08-CorrPearson}.
 		The redundant part of the table is left empty. 
 		The variables $ n_{clicks} $, $ n_{strokes} $, $ time_{strokes} $, and $ ws $ all show a intermediate correlation with $ time_{annot} $, while their combination $ cws $ shows a strong correlation with $ 0.8610 $. 
-		The correlation between $ IoU $ and $ time_{annot} $ indicates almost not relationship $ 0.0379 $.
+		The correlation between $ IoU $ and $ time_{annot} $ indicates almost no relationship $ 0.0379 $.
 	}\label{tab:ch5:correlation-matrix}
 \end{table}
 
 
 \subsection{Analysis Of IoU}\label{ord:ch5:sec1:subsec2}
 
-In the following the variable $IoU$ is evaluated in detail by the application of the statistical methods introduced in Section \ref{ord:ch2:sec4}.
+In the following the $IoU$ is evaluated in detail by the application of the statistical methods introduced in Section \ref{ord:ch2:sec4}, but first a limitation of the benchmark study is set forth.
 
 % Limitation - The resulting mask was shown to the user, which may lead to futher editing resulting in a better IoU and more time
-A limitation of the benchmark study, is that the resulting annotation is shown immediately to the user.
-Therefore, the user may directly further edit the initial annotation and the editing options are designed differently for the methods.
-For the \gls{dextr} and \gls{iog} method the user interaction is more guided, while the interaction in the polygon and watersheds method are designed more open.
-The design difference in the editing process has perhaps led to the effect that for the latter methods, the user has continued to edit until a satisfactory \gls{iou} has been achieved.
-Thereby, the annotations may have a similar \gls{iou}, but the time spent differs.
+It may be problematic, that the design of the user interaction differs between the benchmark methods.
+For the \gls{dextr} and \gls{iog} method the user interaction is strictly guided due to the limited amount of clicks for the initial prediction.
+For the polygon and watershed method the user interaction is designed more open and therefore, gives the user more freedom of choice.
+With the open design of these methods, the user may feel that he has not applied them well enough, if the shown results are unsatisfactory.
+As a results, the user may directly further edit the initial annotation in order to improve it.
+In contrast the strong guidance for the \gls{dextr} and \gls{iog} method gives the user confidence in having used the method correctly and assigns an insufficient annotation to the method itself.
+In general, users may find it more difficult to accept bad annotations, if the method gave them a lot of freedom in creating it. 
+This assumption also applies in reverse, for easy acceptance by methods with strong guidance.
+Therefore, the annotations may have a similar \gls{iou}, but the time spent differs as shown in Subsection \ref{ord:ch2:sec1:subsec3}.
 If the annotations had to be created in a certain time, the \gls{iou} would also be different, but it was decided against such a setup.
+
 
 \subsubsection{Data Transformation}
 Subsection \ref{ord:ch2:sec4:subsec1} already introduced the normality assumption for statistical methods as the Student's t-test and suggests a transformation of the data.
-The histogram of the variable $IoU$ illustrates that the sample is not distributed normally as shown in Figure \ref{fig:ch5:sec1:data_raw}.
+The histogram of the $IoU$ illustrates that the sample is not distributed normally as shown in Figure \ref{fig:ch5:sec1:data_raw}.
 The data points are heavily skewed to the right. 
 This is caused by many data points with a high \gls{iou} and comparatively few with a low \gls{iou}, produced by general good segmentation results.
 
@@ -128,7 +133,7 @@ Further the normality of $ X_{trans} $ is demonstrated by the probability plot s
 			Normal probability plot of $ X_{trans} $.
 		}\label{fig:ch5:sec1:probplot}
 	\end{subfigure}
-	\caption[IoU Sample Transformation]{		
+	\caption[Sample Transformation $ IoU $]{		
 		The sample $ X $ is transformed to achieve a normal distribution.
 		As shown in a) $ X_{raw} $ is skewed to the right and not distributed normally.
 		The transformation was performed by Equation \ref{equ:trans_iou}.
@@ -141,14 +146,14 @@ Further the normality of $ X_{trans} $ is demonstrated by the probability plot s
 % Hypothesis testing
 \subsubsection{Hypothesis Testing}
 
-In the following multiple hypothesis tests are described, which divide the sample in two or four factors.
+In the following multiple hypothesis tests are described, which divide the sample in two and four factors.
 
-First, it is tested if \gls{dl} based methods (\gls{iog} and \gls{dextr}) are advantageous over classical methods (polygon drawing and watershed transformation).
+First, it is tested if \gls{dl} based methods (\gls{iog} and \gls{dextr}) are advantageous over classical methods (polygon and watershed).
 This more general test results in the two factors $ IoU_{classical} $ and $ IoU_{dl} $.
 Three different hypothesis tests are applied on these two factors.
-Student's t-test evaluates the mean of the factors, Kruskal-Wallis the median of the factors, and Mann-Whitney the tendency of the factors as introduced in Subsection \ref{ord:ch2:sec4}.
+Student's t-test evaluates the mean of the factors, Kruskal-Wallis the median of the factors, and Mann-Whitney the general tendency of the factors as introduced in Subsection \ref{ord:ch2:sec4}.
 The detailed settings and results of the tests are presented in Table \ref{tab:ch5:tests_on_iou}.
-All three tests come to the conclusion to accept $ H_{0} $, that in general the \gls{iou} of \gls{dl} based methods do not differ significantly from the \gls{iou} of classical methods.
+All three tests come to the conclusion to accept $ H_{0} $, that in general the $ IoU $ of \gls{dl} based methods do not differ significantly from the $ IoU $ of classical methods.
 The information value of this conclusion is especially strong, due to the application of three different tests with various null hypotheses.
 
 \begin{table}[h!]
@@ -159,8 +164,12 @@ The information value of this conclusion is especially strong, due to the applic
 			 			& Student's t-test	& Kruskal-Wallis test 	& Mann-Whitney U-test \\
 		\midrule
 		data			& $ X_{trans} $		& $ X_{raw} $ 	 		& $ X_{raw} $ 	\\ 
-		$H_{0}$			& $ \overline{IoU}_{classical} = \overline{IoU}_{dl} $ & $ med \left( IoU_{classical} \right)  = med \left( IoU_{dl} \right) $ & $ t_{dl} = t_{classical} $ 		\\
-		$ H_{A} $		 	& $ \overline{IoU}_{classical} < \overline{IoU}_{dl} $ & $ med \left( IoU_{classical} \right) < med \left( IoU_{dl} \right) $ & $ ten \left( IoU_{dl} \right) \not= ten \left( IoU_{classical} \right) $ 	\\
+		$H_{0}$			& $ \overline{IoU}_{classical} = \overline{IoU}_{dl} $ 
+											& $ med \left( IoU_{classical} \right)  = med \left( IoU_{dl} \right) $ 
+																	& $ ten \left( IoU_{dl} \right)  = ten \left( IoU_{classical} \right) $ 	\\
+		$ H_{A} $		& $ \overline{IoU}_{classical} < \overline{IoU}_{dl} $ 
+											& $ med \left( IoU_{classical} \right) < med \left( IoU_{dl} \right) $ 
+																	& $ ten \left( IoU_{dl} \right) \not= ten \left( IoU_{classical} \right) $ 	\\
 		$ \alpha $		& $ 5\% $ 			& $ 5\% $ 		 		& $ 5\% $ 		\\ 	
 		Statistic		& 0.3494			& 825786	     		& 0.0035    	\\ 
 		$ \textnormal{\textit{p-value}} $ 
@@ -170,7 +179,7 @@ The information value of this conclusion is especially strong, due to the applic
 	\end{tabular}}
 	\caption[Hypothesis Tests on $ IoU $]{
 		Overview and results of the statistical tests.
-		The variable $ IoU $ is evaluated by various values as the mean, median and tendency of the sample.
+		The $ IoU $ is evaluated by various values as the mean, median and tendency of the sample.
 		Both factors $ IoU_{classical} $ and $ IoU_{dl} $ contain 1286 annotations.
 		If the $ \textnormal{\textit{p-value}} $ is greater than the significance level $ \alpha $, $ H_{0} $ is accepted.
 		The same result is achieved by all three different statistical tests, which supports its reliability.
@@ -178,41 +187,40 @@ The information value of this conclusion is especially strong, due to the applic
 \end{table}
 
 % Kruskal-Wallis Test for four factors rejects H0.
-Second, the variable $ IoU $ is evaluated in detail, thereby the Kruskal-Wallis test is applied using the four benchmark methods as factors.
+Second, the $ IoU $ is evaluated in detail, thereby the Kruskal-Wallis test is applied using the four benchmark methods as factors.
 The corresponding null hypothesis 
 \begin{equation}
 	H_{0}: med \left( IoU_{Polygon} \right) = med \left( IoU_{Watershed} \right) = med \left( IoU_{IOG} \right) = med \left( IoU_{DEXTR} \right)
 \end{equation}
-states, that the median values do not differ significantly at $ \alpha=1\% $.
+states, that the median values do not differ significantly.
 $ H_{A} $ assumes that $ H_{0} $ is not true, but does not define which factor is different.
-As result the statistic returns $ \textnormal{\textit{p-value}} = 7.8 \cdot 10 ^{-8} $, therefore $ H_{0} $ is rejected and $ H_{A} $ accepted.
+As result the statistic returns $ \textnormal{\textit{p-value}} = 7.8 \cdot 10 ^{-8} $, therefore $ H_{0} $ is rejected and $ H_{A} $ accepted at $ \alpha=5\% $.
 
 It can be determined what factors differ significantly, by the application of the DSCFs  test \cite{CF91-dscf}.
 In this test it is shown that, $ med \left( IoU_{DEXTR} \right) $ is greater, while $ med \left( IoU_{IOG} \right) $ is lower than the other factors. 
-In Figure \ref{fig:ch5:sec1:iou_box_plot} this may seems like a small difference, but the statistical relevance is confirmed.
+This is also visualized in Figure \ref{fig:ch5:sec1:iou_box_plot} and may seem like a small difference, but the statistical relevance is confirmed.
 Conspicuous in the plot shown are the high amount of outliers and the wide range of the lower quarter of the box plot.
-An explanation for this are demanding annotations from the domain anomaly or the failure of the methods on single annotations.
-The number of outliers may seem large, but must be put in proportion to the size of the data with \getNumberBenchmarkAnnotations \space annotations.
+An explanation for this are demanding annotations from the domain $ anomaly $ or the failure of the methods on single annotations.
+The number of outliers may seem large, but must be put in proportion to the size of the data with \getNumberBenchmarkAnnotations annotations.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/chap51_boxplot_iou.png}
+	\includegraphics[width=0.6\textwidth]{figures/chap51_iou_boxplot.png}
 	\caption[Box plots method on $ IoU $]{
-		Box plot of the variable $ IoU $ for the four benchmark methods.
+		Box plot of the $ IoU $ for the four benchmark methods.
 		$ med \left( IoU_{DEXTR} \right) $ is slightly greater than the other factors, while $ med \left( IoU_{IOG} \right) $ is the smallest worst.
 		The classical methods to not differ significantly in their median values $ med \left( IoU_{Polygon} \right) $ and $ med \left( IoU_{Polygon} \right) $.
 	} \label{fig:ch5:sec1:iou_box_plot}
 \end{figure}
-% TODO plot sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
 
 
 
 \subsection{Analysis Of Time}\label{ord:ch5:sec1:subsec3}
 % RE-1466
-Now the variable $time_{annot}$ is evaluated, the evaluation procedure is analog to the previous evaluation of the variable $IoU$.
+Now the $time_{annot}$ is evaluated, the evaluation procedure is analog to the previous evaluation of the $IoU$.
 \subsubsection{Data Transformation}
 
-The histogram of the raw sample for the variable $time_{annot}$ does not fit a normal distribution as shown in Figure \ref{fig:ch5:sec1:time_raw}.
+The histogram of the raw sample for the $time_{annot}$ does not fit a normal distribution as shown in Figure \ref{fig:ch5:sec1:time_raw}.
 Instead, the data points are heavily skewed to the left, because $time_{annot}$ is usually short, but can also be larger.
 \cite{PS16-Statistics} suggests to transform the sample by the logarithmic function 
 \begin{equation} \label{equ:trans_time}
@@ -246,7 +254,7 @@ $X_{trans}$ is similar to a normal distribution, which is also supported by the 
 			Normal Probability Plot of $X_{trans}$.
 		}\label{fig:ch5:sec1:time_probplot}
 	\end{subfigure}
-	\caption[Time Sample Transformation]{
+	\caption[Sample Transformation $ time $]{
 		Transformation of the sample to achieve a normal distribution.
 		In a) $X_{raw}$ is shown, which is skewed to the left and not normally distributed.
 		The sample is transformed by Equation \ref{equ:trans_time}.
@@ -261,7 +269,7 @@ $X_{trans}$ is similar to a normal distribution, which is also supported by the 
 \subsubsection{Hypothesis Testing}
 
 The setting for this hypothesis testing is analog to the previous tests on $IoU$.
-In further evaluation the variable $time_{annot}$ is referred to as $time$, in order to enable a simple distinction between the factors.
+In further evaluation the $time_{annot}$ is referred to as $time$, in order to enable a simple distinction between the factors.
 
 First, more general tests are applied on the factors $time_{classical}$ and $time_{dl}$.
 The Student's t-test, Kruskal-Wallis test, and Mann-Whitney are performed and their details are presented in Table \ref{tab:ch5:tests_on_time}.
@@ -287,15 +295,15 @@ The information value of this conclusion is especially expressive, due to the ap
 		\bottomrule
 	\end{tabular}}
 	\caption[Hypothesis Tests on $ time $]{
-		Overview and results of the various statistical test performed on the variable $ time $.
-		The variable $ time $ is evaluated by various values as the mean, median and tendency of the sample.
+		Overview and results of the various statistical test performed on the $ time $.
+		The $ time $ is evaluated by various values as the mean, median and tendency of the sample.
 		Each factor contains 629 annotations.
 		If the $ \textnormal{\textit{p-value}} $ is lower than the significance level $ \alpha $, $ H_{0} $ is rejected and $ H_{A} $ is accepted.
 		The same result is achieved by all three different statistical tests, which supports its reliability.
 	}\label{tab:ch5:tests_on_time}
 \end{table}
 % Kruskal-Wallis Test for four factors rejects H0.
-Second, the variable $ time $ is evaluated for the four benchmark methods by the Kruskal-Wallis test.
+Second, the $ time $ is evaluated for the four benchmark methods by the Kruskal-Wallis test.
 The null hypothesis 
 \begin{equation}
 	H_{0}: med \left( time_{Polygon} \right) = med \left( time_{Watershed} \right) = med \left( time_{IOG} \right) = med \left( time_{DEXTR} \right)
@@ -304,8 +312,8 @@ assumes, that the median values do not differ significantly at $ \alpha=1\% $.
 $ H_{A} $ states that $ H_{0} $ is not true.
 The statistic returns $ \textnormal{\textit{p-value}} = 7.1 \cdot 10^{-141} $, as a result $ H_{0} $ is rejected and $ H_{A} $ accepted.
  
-Based on the post analysis by the DSCF test \cite{CF91-dscf}, the factors polygon and Watershed do not differ significantly.
-In contrast, the difference between $ med \left( time_{DEXTR} \right) $ and $ med \left( time_{IOG} \right) $ may be titled significant.
+Based on the post analysis by the DSCF test \cite{CF91-dscf}, $ time $ does not differ significantly for the polygon and watershed method based on the median values.
+In contrast, the methods \gls{dextr} and \gls{iog} also differ significantly in $ time $ based on the median.
 
 The differences between the factors are illustrated in Figure \ref{fig:ch5:sec1:time_box_plot}.
 The \gls{iog} and \gls{dextr} method clearly demonstrate a lower annotation time than the polygon and watershed method.
@@ -318,16 +326,16 @@ This is perhaps caused, due to the possibility for editing is designed more open
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/chap51_time_boxplot.png}
 	\caption[Box plots of the methods on $ IoU  $]{
-		Box plots of the variable $ time $ for the four benchmark methods.
-		It can be seen clearly, that $ med \left( time_{DEXTR} \right) $ and $ med \left( time_{IOG} \right) $ are lower than $ med \left( time_{Polygon} \right) $ and $ med \left( time_{Polygon} \right) $.
-		In general, the polygon and watersheds method require a longer annotation time, where the last quarter of the box plot covers a relatively wide range with many outliers. 
+		Box plots of the $ time $ for the four benchmark methods.
+		It can be clearly seen, that the required time to perform the \gls{dextr} and \gls{iog} method is lower than for the polygon and watershed method.
+		This also applied for the $ med \left( time \right) $ of the single methods, which is statistically confirmed by the Kruskal-Wallis test.
+		In general, the polygon and watershed method require a longer annotation time, where the last quarter of the box plot covers a relatively wide range with many outliers. 
 		%Despite the difference
 	} \label{fig:ch5:sec1:time_box_plot}
 \end{figure}
-%TODO plots sort the box plot by method types -> Polygon, Watershed, DEXTR, IOG
 
 
-Combining the results of the evaluation from $ IoU $ and the $ time_{annot} $, it can be said that all methods may achieve an approximately the same level of accuracy.
+Combining the results of the evaluation from $ IoU $ and the $ time $, it can be said that all methods may achieve an approximately the same level of accuracy.
 But the difference between the two types of methods is that, \gls{dl} based method require significantly less time to achieve this state of \gls{iou}.
 
 

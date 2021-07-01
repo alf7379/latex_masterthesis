@@ -59,14 +59,14 @@ Further, the methods \gls{dextr}  \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-I
 Interactive segmentation networks are often based on normal segmentation networks, \eg the \gls{fcn} in the \gls{ifcn} \cite{Xu16-InteractiveObjectSelection} or the DeepLabv3+ in the \gls{itis} network \cite{MVL18-ITIS}.
 As for segmentation networks, the prediction $\hat{y}$ of interactive networks is a probability map.
 
-\begin{figure}
+\begin{figure} [!b]
 	\includegraphics[width=\linewidth]{figures/chap232_ifcn.png}
 	\caption[Interactively Fully Convolutional Network]{
 		Illustration of the pipeline from the \gls{ifcn}.
 		The input is a \gls{rgb} image with user clicks.
 		This input is displayed in its individual parts as \gls{rgb}, map of the fore- and background points.
 		The network in use is based on the \gls{fcn} and outputs a binary segmentation result.
-		Copyright \copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}
+		\copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}
 	}\label{fig:ch2:sec3:ifcn}
 \end{figure}
 

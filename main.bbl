@@ -1541,44 +1541,6 @@
       \verb 10.1109/CIBCB48159.2020.9277638
       \endverb
     \endentry
-    \entry{JG18-ClickCarving}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a6a96378ffc051702bd86b4931d86ded}{%
-           family={Jain},
-           familyi={J\bibinitperiod},
-           given={Suyog},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f67e08fa64fd602c4ec562da14d65216}{%
-           family={Grauman},
-           familyi={G\bibinitperiod},
-           given={Kristen},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{fullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{bibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authorbibnamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authornamehash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \strng{authorfullhash}{ba8f88ac2602a4e73832ac9fe9636eec}
-      \field{labelalpha}{JG16}
-      \field{sortinit}{J}
-      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{AAAI Conference on Human Computation and Crowdsourcing}
-      \field{number}{1}
-      \field{title}{Click Carving: Segmenting Objects in Video with Point Clicks}
-      \field{volume}{4}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
-      \endverb
-      \verb{url}
-      \verb https://ojs.aaai.org/index.php/HCOMP/article/view/13288
-      \endverb
-    \endentry
     \entry{Kirch08-CorrPearson}{inbook}{}
       \name{editor}{1}{}{%
         {{un=0,uniquepart=base,hash=20cc1db200372cc43722b25bd0232cfa}{%

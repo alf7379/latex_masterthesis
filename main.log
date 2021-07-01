@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.18)  25 JUN 2021 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.18)  1 JUL 2021 23:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -1182,6 +1182,59 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks42
 \verbatim@in@stream=\read4
 )
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count333
+\float@exts=\toks43
+\float@box=\box75
+\@float@everytoks=\toks44
+\@floatcapt=\box76
+)
+Package scrhack Info: loading float hack on input line 26.
+
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\float.hak
+File: float.hak 2020/09/21 v3.32 KOMA-Script scrhack part (hacking package floa
+t)
+Package scrhack Info: redefining \newfloat on input line 163.
+Package scrhack Info: redefining \listof on input line 163.
+Package scrhack Info: undefining \float@addtolists on input line 163.
+)
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/dblfloatfix\dblfloatf
+ix.sty
+Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/base\fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+)
+\@dblbotnum=\count334
+\c@dblbotnumber=\count335
+)
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks45
+\footnotemargin=\dimen298
+\c@pp@next@reset=\count336
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/generic/alphalph\alphalph.s
+ty
+Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
+)
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
 Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
 
@@ -1190,12 +1243,12 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count333
-\decimalpart=\count334
+\integerpart=\count337
+\decimalpart=\count338
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
-\AC@clearlist=\toks43
+\AC@clearlist=\toks46
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\gloss
 aries.sty
@@ -1208,16 +1261,16 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.te
 x
-\XKV@toks=\toks44
-\XKV@tempa@toks=\toks45
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count335
+\XKV@depth=\count339
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks46
-\@glsmrest=\toks47
+\@glsmfirst=\toks49
+\@glsmrest=\toks50
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -1235,52 +1288,52 @@ Package: amsmath 2020/09/23 v2.17i AMS math features
 For additional information on amsmath, use the `?' option.
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen298
+\pmbraise@=\dimen299
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count336
+\inf@bad=\count340
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count337
-\leftroot@=\count338
+\uproot@=\count341
+\leftroot@=\count342
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count339
-\DOTSCASE@=\count340
+\classnum@=\count343
+\DOTSCASE@=\count344
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box75
-\strutbox@=\box76
-\big@size=\dimen299
+\Mathstrutbox@=\box77
+\strutbox@=\box78
+\big@size=\dimen300
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count341
-\c@MaxMatrixCols=\count342
+\macc@depth=\count345
+\c@MaxMatrixCols=\count346
 \dotsspace@=\muskip17
-\c@parentequation=\count343
-\dspbrk@lvl=\count344
-\tag@help=\toks48
-\row@=\count345
-\column@=\count346
-\maxfields@=\count347
-\andhelp@=\toks49
-\eqnshift@=\dimen300
-\alignsep@=\dimen301
-\tagshift@=\dimen302
-\tagwidth@=\dimen303
-\totwidth@=\dimen304
-\lineht@=\dimen305
-\@envbody=\toks50
+\c@parentequation=\count347
+\dspbrk@lvl=\count348
+\tag@help=\toks51
+\row@=\count349
+\column@=\count350
+\maxfields@=\count351
+\andhelp@=\toks52
+\eqnshift@=\dimen301
+\alignsep@=\dimen302
+\tagshift@=\dimen303
+\tagwidth@=\dimen304
+\totwidth@=\dimen305
+\lineht@=\dimen306
+\@envbody=\toks53
 \multlinegap=\skip72
 \multlinetaggap=\skip73
-\mathdisplay@stack=\toks51
+\mathdisplay@stack=\toks54
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count348
+\c@su@anzahl=\count352
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.
 sty
@@ -1291,19 +1344,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count349
+\actioncount=\count353
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count350
-\FP@xia=\count351
-\FP@xib=\count352
-\FP@xfa=\count353
-\FP@xfb=\count354
-\FP@rega=\count355
-\FP@regb=\count356
-\FP@regs=\count357
-\FP@times=\count358
+\FP@xs=\count354
+\FP@xia=\count355
+\FP@xib=\count356
+\FP@xfa=\count357
+\FP@xfb=\count358
+\FP@rega=\count359
+\FP@regb=\count360
+\FP@regs=\count361
+\FP@times=\count362
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1322,7 +1375,7 @@ Package: fp-pas 1994/08/29
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count359
+\FPseed=\count363
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1333,15 +1386,15 @@ Package: fp-upn 1996/10/21
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks52
-\@dtl@tmpcount=\count360
+\@dtl@toks=\toks55
+\@dtl@tmpcount=\count364
 \dtl@tmplength=\skip74
-\dtl@sortresult=\count361
-\@dtl@numgrpsepcount=\count362
-\@dtl@datatype=\count363
-\dtl@codeA=\count364
-\dtl@codeB=\count365
-\@dtl@foreach@level=\count366
+\dtl@sortresult=\count365
+\@dtl@numgrpsepcount=\count366
+\@dtl@datatype=\count367
+\dtl@codeA=\count368
+\dtl@codeB=\count369
+\@dtl@foreach@level=\count370
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\gloss
 aries-compatible-307.sty
@@ -1361,13 +1414,13 @@ Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ossaries-english.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count367
-\@gls@tmpb=\toks53
+\gls@level=\count371
+\@gls@tmpb=\toks56
 \gls@tmplen=\skip75
-\glskeylisttok=\toks54
-\glslabeltok=\toks55
-\glsshorttok=\toks56
-\glslongtok=\toks57
+\glskeylisttok=\toks57
+\glslabeltok=\toks58
+\glsshorttok=\toks59
+\glslongtok=\toks60
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glo
 ssary-hypernav.sty
@@ -1388,17 +1441,17 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip78
 \LTpre=\skip79
 \LTpost=\skip80
-\LTchunksize=\count368
-\LTcapwidth=\dimen306
-\LT@head=\box77
-\LT@firsthead=\box78
-\LT@foot=\box79
-\LT@lastfoot=\box80
-\LT@cols=\count369
-\LT@rows=\count370
-\c@LT@tables=\count371
-\c@LT@chunks=\count372
-\LT@p@ftn=\toks58
+\LTchunksize=\count372
+\LTcapwidth=\dimen307
+\LT@head=\box79
+\LT@firsthead=\box80
+\LT@foot=\box81
+\LT@lastfoot=\box82
+\LT@cols=\count373
+\LT@rows=\count374
+\c@LT@tables=\count375
+\c@LT@chunks=\count376
+\LT@p@ftn=\toks61
 )
 Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip81
@@ -1411,21 +1464,21 @@ Package: glossary-super 2020/03/19 v4.46 (NLCT)
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertab
 ular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count373
-\ST@wd=\dimen307
+\c@tracingst=\count377
+\ST@wd=\dimen308
 \ST@rightskip=\skip83
 \ST@leftskip=\skip84
 \ST@parfillskip=\skip85
-\ST@pageleft=\dimen308
-\ST@headht=\dimen309
-\ST@tailht=\dimen310
-\ST@pagesofar=\dimen311
-\ST@pboxht=\dimen312
-\ST@lineht=\dimen313
-\ST@prevht=\dimen314
-\ST@toadd=\dimen315
-\ST@dimen=\dimen316
-\ST@pbox=\box81
+\ST@pageleft=\dimen309
+\ST@headht=\dimen310
+\ST@tailht=\dimen311
+\ST@pagesofar=\dimen312
+\ST@pboxht=\dimen313
+\ST@lineht=\dimen314
+\ST@prevht=\dimen315
+\ST@toadd=\dimen316
+\ST@dimen=\dimen317
+\ST@pbox=\box83
 ))
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glo
 ssary-tree.sty
@@ -1436,63 +1489,63 @@ Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 29.
+Package glossaries Info: Writing glossary file main.glo on input line 33.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 29.
+Package glossaries Info: Writing glossary file main.acn on input line 33.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count374
+\lrq@indent=\count378
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count375
-\c@listtotal=\count376
-\c@listcount=\count377
-\c@liststart=\count378
-\c@liststop=\count379
-\c@citecount=\count380
-\c@citetotal=\count381
-\c@multicitecount=\count382
-\c@multicitetotal=\count383
-\c@instcount=\count384
-\c@maxnames=\count385
-\c@minnames=\count386
-\c@maxitems=\count387
-\c@minitems=\count388
-\c@citecounter=\count389
-\c@maxcitecounter=\count390
-\c@savedcitecounter=\count391
-\c@uniquelist=\count392
-\c@uniquename=\count393
-\c@refsection=\count394
-\c@refsegment=\count395
-\c@maxextratitle=\count396
-\c@maxextratitleyear=\count397
-\c@maxextraname=\count398
-\c@maxextradate=\count399
-\c@maxextraalpha=\count400
-\c@abbrvpenalty=\count401
-\c@highnamepenalty=\count402
-\c@lownamepenalty=\count403
-\c@maxparens=\count404
-\c@parenlevel=\count405
-\blx@tempcnta=\count406
-\blx@tempcntb=\count407
-\blx@tempcntc=\count408
-\blx@maxsection=\count409
-\blx@maxsegment@0=\count410
-\blx@notetype=\count411
-\blx@parenlevel@text=\count412
-\blx@parenlevel@foot=\count413
-\blx@sectionciteorder@0=\count414
-\blx@entrysetcounter=\count415
-\blx@biblioinstance=\count416
+\c@tabx@nest=\count379
+\c@listtotal=\count380
+\c@listcount=\count381
+\c@liststart=\count382
+\c@liststop=\count383
+\c@citecount=\count384
+\c@citetotal=\count385
+\c@multicitecount=\count386
+\c@multicitetotal=\count387
+\c@instcount=\count388
+\c@maxnames=\count389
+\c@minnames=\count390
+\c@maxitems=\count391
+\c@minitems=\count392
+\c@citecounter=\count393
+\c@maxcitecounter=\count394
+\c@savedcitecounter=\count395
+\c@uniquelist=\count396
+\c@uniquename=\count397
+\c@refsection=\count398
+\c@refsegment=\count399
+\c@maxextratitle=\count400
+\c@maxextratitleyear=\count401
+\c@maxextraname=\count402
+\c@maxextradate=\count403
+\c@maxextraalpha=\count404
+\c@abbrvpenalty=\count405
+\c@highnamepenalty=\count406
+\c@lownamepenalty=\count407
+\c@maxparens=\count408
+\c@parenlevel=\count409
+\blx@tempcnta=\count410
+\blx@tempcntb=\count411
+\blx@tempcntc=\count412
+\blx@maxsection=\count413
+\blx@maxsegment@0=\count414
+\blx@notetype=\count415
+\blx@parenlevel@text=\count416
+\blx@parenlevel@foot=\count417
+\blx@sectionciteorder@0=\count418
+\blx@entrysetcounter=\count419
+\blx@biblioinstance=\count420
 \labelnumberwidth=\skip87
 \labelalphawidth=\skip88
 \biblabelsep=\skip89
@@ -1504,9 +1557,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write7
 \blx@langwohyphens=\language80
-\c@mincomprange=\count417
-\c@maxcomprange=\count418
-\c@mincompwidth=\count419
+\c@mincomprange=\count421
+\c@maxcomprange=\count422
+\c@mincompwidth=\count423
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1517,74 +1570,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count420
-\c@savedafterword=\count421
-\c@annotator=\count422
-\c@savedannotator=\count423
-\c@author=\count424
-\c@savedauthor=\count425
-\c@bookauthor=\count426
-\c@savedbookauthor=\count427
-\c@commentator=\count428
-\c@savedcommentator=\count429
-\c@editor=\count430
-\c@savededitor=\count431
-\c@editora=\count432
-\c@savededitora=\count433
-\c@editorb=\count434
-\c@savededitorb=\count435
-\c@editorc=\count436
-\c@savededitorc=\count437
-\c@foreword=\count438
-\c@savedforeword=\count439
-\c@holder=\count440
-\c@savedholder=\count441
-\c@introduction=\count442
-\c@savedintroduction=\count443
-\c@namea=\count444
-\c@savednamea=\count445
-\c@nameb=\count446
-\c@savednameb=\count447
-\c@namec=\count448
-\c@savednamec=\count449
-\c@translator=\count450
-\c@savedtranslator=\count451
-\c@shortauthor=\count452
-\c@savedshortauthor=\count453
-\c@shorteditor=\count454
-\c@savedshorteditor=\count455
-\c@labelname=\count456
-\c@savedlabelname=\count457
-\c@institution=\count458
-\c@savedinstitution=\count459
-\c@lista=\count460
-\c@savedlista=\count461
-\c@listb=\count462
-\c@savedlistb=\count463
-\c@listc=\count464
-\c@savedlistc=\count465
-\c@listd=\count466
-\c@savedlistd=\count467
-\c@liste=\count468
-\c@savedliste=\count469
-\c@listf=\count470
-\c@savedlistf=\count471
-\c@location=\count472
-\c@savedlocation=\count473
-\c@organization=\count474
-\c@savedorganization=\count475
-\c@origlocation=\count476
-\c@savedoriglocation=\count477
-\c@origpublisher=\count478
-\c@savedorigpublisher=\count479
-\c@publisher=\count480
-\c@savedpublisher=\count481
-\c@language=\count482
-\c@savedlanguage=\count483
-\c@origlanguage=\count484
-\c@savedoriglanguage=\count485
-\c@pageref=\count486
-\c@savedpageref=\count487
+\c@afterword=\count424
+\c@savedafterword=\count425
+\c@annotator=\count426
+\c@savedannotator=\count427
+\c@author=\count428
+\c@savedauthor=\count429
+\c@bookauthor=\count430
+\c@savedbookauthor=\count431
+\c@commentator=\count432
+\c@savedcommentator=\count433
+\c@editor=\count434
+\c@savededitor=\count435
+\c@editora=\count436
+\c@savededitora=\count437
+\c@editorb=\count438
+\c@savededitorb=\count439
+\c@editorc=\count440
+\c@savededitorc=\count441
+\c@foreword=\count442
+\c@savedforeword=\count443
+\c@holder=\count444
+\c@savedholder=\count445
+\c@introduction=\count446
+\c@savedintroduction=\count447
+\c@namea=\count448
+\c@savednamea=\count449
+\c@nameb=\count450
+\c@savednameb=\count451
+\c@namec=\count452
+\c@savednamec=\count453
+\c@translator=\count454
+\c@savedtranslator=\count455
+\c@shortauthor=\count456
+\c@savedshortauthor=\count457
+\c@shorteditor=\count458
+\c@savedshorteditor=\count459
+\c@labelname=\count460
+\c@savedlabelname=\count461
+\c@institution=\count462
+\c@savedinstitution=\count463
+\c@lista=\count464
+\c@savedlista=\count465
+\c@listb=\count466
+\c@savedlistb=\count467
+\c@listc=\count468
+\c@savedlistc=\count469
+\c@listd=\count470
+\c@savedlistd=\count471
+\c@liste=\count472
+\c@savedliste=\count473
+\c@listf=\count474
+\c@savedlistf=\count475
+\c@location=\count476
+\c@savedlocation=\count477
+\c@organization=\count478
+\c@savedorganization=\count479
+\c@origlocation=\count480
+\c@savedoriglocation=\count481
+\c@origpublisher=\count482
+\c@savedorigpublisher=\count483
+\c@publisher=\count484
+\c@savedpublisher=\count485
+\c@language=\count486
+\c@savedlanguage=\count487
+\c@origlanguage=\count488
+\c@savedoriglanguage=\count489
+\c@pageref=\count490
+\c@savedpageref=\count491
 \shorthandwidth=\skip95
 \shortjournalwidth=\skip96
 \shortserieswidth=\skip97
@@ -1622,19 +1675,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-\c@textcitecount=\count488
-\c@textcitetotal=\count489
-\c@textcitemaxnames=\count490
-\c@biburlbigbreakpenalty=\count491
-\c@biburlbreakpenalty=\count492
-\c@biburlnumpenalty=\count493
-\c@biburlucpenalty=\count494
-\c@biburllcpenalty=\count495
+\c@textcitecount=\count492
+\c@textcitetotal=\count493
+\c@textcitemaxnames=\count494
+\c@biburlbigbreakpenalty=\count495
+\c@biburlbreakpenalty=\count496
+\c@biburlnumpenalty=\count497
+\c@biburlucpenalty=\count498
+\c@biburllcpenalty=\count499
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count496
+\c@smartand=\count500
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -1648,8 +1701,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard
 .bbx
 File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count497
-\c@bbx:relatedtotal=\count498
+\c@bbx:relatedcount=\count501
+\c@bbx:relatedtotal=\count502
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -1716,17 +1769,17 @@ Package scrbase Info: activating american \listtablename on input line 29.
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count499
-\scratchdimen=\dimen317
-\scratchbox=\box82
-\nofMPsegments=\count500
-\nofMParguments=\count501
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count502
-\MPscratchDim=\dimen318
-\MPnumerator=\count503
-\makeMPintoPDFobject=\count504
-\everyMPtoPDFconversion=\toks60
+\scratchcounter=\count503
+\scratchdimen=\dimen318
+\scratchbox=\box84
+\nofMPsegments=\count504
+\nofMParguments=\count505
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count506
+\MPscratchDim=\dimen319
+\MPnumerator=\count507
+\makeMPintoPDFobject=\count508
+\everyMPtoPDFconversion=\toks63
 )
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
 -base.sty
@@ -1742,7 +1795,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
-\c@lstlisting=\count505
+\c@lstlisting=\count509
 Package scrhack Info: undefining \float@addtolists on input line 29.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1763,6 +1816,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -1784,7 +1838,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 itlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count506
+\c@section@level=\count510
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1808,7 +1862,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.d
 ef
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count507
+\BKM@id=\count511
 ))
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tr
 anslations-basic-dictionary-english.trsl
@@ -2019,7 +2073,7 @@ File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 
  (pages/acknowledgments.tex
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 22.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 26.
  [3
 
 
@@ -2071,16 +2125,30 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 46
 (chapters/01_chapter01/chapter1.tex
 chapter 1.
 (chapters/01_chapter01/section11.tex
-Underfull \hbox (badness 10000) in paragraph at lines 19--40
+<figures/chap1_general_objects.png, id=112, 415.5525pt x 266.9975pt>
+File: figures/chap1_general_objects.png Graphic file (type png)
+<use figures/chap1_general_objects.png>
+Package pdftex.def Info: figures/chap1_general_objects.png  used on input line 
+28.
+(pdftex.def)             Requested size: 167.29967pt x 107.48969pt.
+<figures/chap1_industrial_objects.png, id=114, 415.5525pt x 266.9975pt>
+File: figures/chap1_industrial_objects.png Graphic file (type png)
+<use figures/chap1_industrial_objects.png>
+Package pdftex.def Info: figures/chap1_industrial_objects.png  used on input li
+ne 36.
+(pdftex.def)             Requested size: 167.29967pt x 107.48969pt.
+ [1
+
+
+
+
+ <./figures/chap1_general_objects.png> <./figures/chap1_industrial_objects.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 62--78
 
  []
 
-)) [1
-
-
-
-
-] [2]
+)) [2]
 \openout2 = `chapters/02_chapter02/chapter2.aux'.
 
  (chapters/02_chapter02/chapter2.tex
@@ -2098,35 +2166,20 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 
-] [4]) (chapters/02_chapter02/section22.tex [5]
+] [4]
+<figures/chap21_cnn.png, id=197, 1043.9pt x 321.2pt>
+File: figures/chap21_cnn.png Graphic file (type png)
+<use figures/chap21_cnn.png>
+Package pdftex.def Info: figures/chap21_cnn.png  used on input line 92.
+(pdftex.def)             Requested size: 334.60571pt x 102.95763pt.
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 
-24.
+98.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
-<figures/chap22_image.jpg, id=239, 501.875pt x 282.05376pt>
-File: figures/chap22_image.jpg Graphic file (type jpg)
-<use figures/chap22_image.jpg>
-Package pdftex.def Info: figures/chap22_image.jpg  used on input line 38.
-(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
-<figures/chap22_semantic_seg.png, id=240, 501.875pt x 282.05376pt>
-File: figures/chap22_semantic_seg.png Graphic file (type png)
-<use figures/chap22_semantic_seg.png>
-Package pdftex.def Info: figures/chap22_semantic_seg.png  used on input line 46
-.
-(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
-<figures/chap22_instance_seg.png, id=243, 501.875pt x 282.05376pt>
-File: figures/chap22_instance_seg.png Graphic file (type png)
-<use figures/chap22_instance_seg.png>
-Package pdftex.def Info: figures/chap22_instance_seg.png  used on input line 55
-.
-(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
-
-[6 <./figures/chap22_image.jpg> <./figures/chap22_semantic_seg.png> <./figures/
-chap22_instance_seg.png>] [7]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-41.
+01.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -2135,142 +2188,168 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<figures/chap222_iou.png, id=305, 646.91687pt x 299.1175pt>
+
+[5 <./figures/chap21_cnn.png>]) (chapters/02_chapter02/section22.tex
+<figures/chap22_image.jpg, id=232, 501.875pt x 282.05376pt>
+File: figures/chap22_image.jpg Graphic file (type jpg)
+<use figures/chap22_image.jpg>
+Package pdftex.def Info: figures/chap22_image.jpg  used on input line 38.
+(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
+<figures/chap22_semantic_seg.png, id=233, 501.875pt x 282.05376pt>
+File: figures/chap22_semantic_seg.png Graphic file (type png)
+<use figures/chap22_semantic_seg.png>
+Package pdftex.def Info: figures/chap22_semantic_seg.png  used on input line 46
+.
+(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
+<figures/chap22_instance_seg.png, id=236, 501.875pt x 282.05376pt>
+File: figures/chap22_instance_seg.png Graphic file (type png)
+<use figures/chap22_instance_seg.png>
+Package pdftex.def Info: figures/chap22_instance_seg.png  used on input line 55
+.
+(pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./figures/chap22_image.jpg> <./figures/chap22_semantic_seg.png> <./figu
+res/chap22_instance_seg.png>] [8]
+<figures/chap222_iou.png, id=321, 602.25pt x 469.755pt>
 File: figures/chap222_iou.png Graphic file (type png)
 <use figures/chap222_iou.png>
-Package pdftex.def Info: figures/chap222_iou.png  used on input line 146.
-(pdftex.def)             Requested size: 209.12778pt x 96.69627pt.
-
-[8]
-<figures/chap223_segnet_arch.png, id=342, 823.075pt x 229.85875pt>
+Package pdftex.def Info: figures/chap222_iou.png  used on input line 145.
+(pdftex.def)             Requested size: 209.12778pt x 163.11932pt.
+ [9 <./figures/chap222_iou.png>]
+<figures/chap223_segnet_arch.png, id=358, 823.075pt x 229.85875pt>
 File: figures/chap223_segnet_arch.png Graphic file (type png)
 <use figures/chap223_segnet_arch.png>
 Package pdftex.def Info: figures/chap223_segnet_arch.png  used on input line 18
 6.
 (pdftex.def)             Requested size: 418.25555pt x 116.80551pt.
- [9 <./figures/chap222_iou.png>]
-<figures/chap223_unpooling1.png, id=359, 1368.61313pt x 365.11406pt>
-File: figures/chap223_unpooling1.png Graphic file (type png)
-<use figures/chap223_unpooling1.png>
-Package pdftex.def Info: figures/chap223_unpooling1.png  used on input line 208
-.
-(pdftex.def)             Requested size: 418.25555pt x 111.57968pt.
-<figures/chap223_transpose_conv.png, id=365, 1279.78125pt x 581.92406pt>
-File: figures/chap223_transpose_conv.png Graphic file (type png)
-<use figures/chap223_transpose_conv.png>
-Package pdftex.def Info: figures/chap223_transpose_conv.png  used on input line
- 242.
-(pdftex.def)             Requested size: 418.25555pt x 190.17973pt.
- [10 <./figures/chap223_segnet_arch.png>]
-[11 <./figures/chap223_unpooling1.png> <./figures/chap223_transpose_conv.png>]
-<figures/chap223_unet.png, id=388, 689.07437pt x 447.6725pt>
+ [10]
+<figures/chap223_unet.png, id=387, 689.07437pt x 447.6725pt>
 File: figures/chap223_unet.png Graphic file (type png)
 <use figures/chap223_unet.png>
-Package pdftex.def Info: figures/chap223_unet.png  used on input line 267.
+Package pdftex.def Info: figures/chap223_unet.png  used on input line 269.
 (pdftex.def)             Requested size: 418.25555pt x 271.7273pt.
-<figures/chap223_fcn_results.png, id=399, 2259.1903pt x 931.22906pt>
+<figures/chap223_fcn_results.png, id=398, 2259.1903pt x 931.22906pt>
 File: figures/chap223_fcn_results.png Graphic file (type png)
 <use figures/chap223_fcn_results.png>
 Package pdftex.def Info: figures/chap223_fcn_results.png  used on input line 28
-3.
+5.
 (pdftex.def)             Requested size: 418.25555pt x 172.40256pt.
-<figures/chap223_psp.png, id=416, 912.91063pt x 273.02pt>
+ [11 <./figures/chap223_segnet_arch.png>] [12 <./figures/chap223_unet.png>] [13
+ <./figures/chap223_fcn_results.png>]
+<figures/chap223_psp.png, id=443, 912.91063pt x 273.02pt>
 File: figures/chap223_psp.png Graphic file (type png)
 <use figures/chap223_psp.png>
-Package pdftex.def Info: figures/chap223_psp.png  used on input line 314.
+Package pdftex.def Info: figures/chap223_psp.png  used on input line 316.
 (pdftex.def)             Requested size: 418.25555pt x 125.08247pt.
+ [14 <./figures/chap223_psp.png>] [15])
+(chapters/02_chapter02/section23.tex
 
-[12] [13 <./figures/chap223_unet.png>] [14 <./figures/chap223_fcn_results.png>]
-[15 <./figures/chap223_psp.png>] [16]
-Underfull \hbox (badness 1072) in paragraph at lines 385--385
-  [][][]\T1/pplx/m/n/9 (+20) E. Cerna, \T1/pplx/m/it/9 (+20) Im-age An-no-ta-ti
-on Tools: Which One to Pick in 2020? []$\T1/cmtt/m/n/9 https : / / bohemian . a
-i / blog /
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (chapters/02_chapter02/section23.tex [17] [18]
-<figures/chap232_ifcn.png, id=577, 2454.16875pt x 505.13719pt>
+[16] [17]
+<figures/chap232_ifcn.png, id=578, 2454.16875pt x 505.13719pt>
 File: figures/chap232_ifcn.png Graphic file (type png)
 <use figures/chap232_ifcn.png>
 Package pdftex.def Info: figures/chap232_ifcn.png  used on input line 63.
 (pdftex.def)             Requested size: 418.25555pt x 86.088pt.
- [19 <./figures/chap232_ifcn.png>] [20] [21]
+ [18 <./figures/chap232_ifcn.png>] [19] [20]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22]) (chapters/02_chapter02/section24.tex
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-  [][][]\T1/pplx/m/n/9 (+20) Wolfram Re-search (2010), Prob-a-bil-i-ty-Plot []$
-\T1/cmtt/m/n/9 https : / / reference . wolfram . com / language / ref /
+[21]) (chapters/02_chapter02/section24.tex [22]
+Underfull \hbox (badness 6032) in paragraph at lines 21--21
+[][]\T1/pplx/m/n/9 (+20) Wolfram Re-search (2010), Prob-a-bil-i-ty-Plot []$\T1/
+cmtt/m/n/9 https : / / reference . wolfram . com / language / ref /
  []
 
-[23] [24]
-Underfull \hbox (badness 7379) in paragraph at lines 81--81
-  [][][]\T1/pplx/m/n/9 (+20) Scikit-Posthocs (2021), posthocs API []$\T1/cmtt/m
-/n/9 https : / / scikit-[]posthocs . readthedocs . io / en / latest /
+[23]
+Underfull \hbox (badness 1783) in paragraph at lines 81--81
+[][]\T1/pplx/m/n/9 (+20) Scikit-Posthocs (2021), posthocs API []$\T1/cmtt/m/n/9
+ https : / / scikit-[]posthocs . readthedocs . io / en / latest /
  []
 
-)) [25]
+)) [24] [25]
 \openout2 = `chapters/03_chapter03/chapter3.aux'.
 
  (chapters/03_chapter03/chapter3.tex
 chapter 3.
-(chapters/03_chapter03/section31.tex) (chapters/03_chapter03/section32.tex
-[26
+(chapters/03_chapter03/section31.tex
+<figures/chap31_polygon_drawing.png, id=746, 423.08063pt x 277.53688pt>
+File: figures/chap31_polygon_drawing.png Graphic file (type png)
+<use figures/chap31_polygon_drawing.png>
+Package pdftex.def Info: figures/chap31_polygon_drawing.png  used on input line
+ 30.
+(pdftex.def)             Requested size: 188.21371pt x 123.46329pt.
+<figures/chap31_polygon_result.png, id=747, 424.08438pt x 280.54813pt>
+File: figures/chap31_polygon_result.png Graphic file (type png)
+<use figures/chap31_polygon_result.png>
+Package pdftex.def Info: figures/chap31_polygon_result.png  used on input line 
+39.
+(pdftex.def)             Requested size: 188.21371pt x 124.51175pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapters/03_chapter03/section32.tex [26
 
 
 
 
 
-]
-<figures/chap32_watershed_application1.png, id=745, 497.86pt x 289.58188pt>
+] [27 <./figures/chap31_polygon_drawing.png> <./figures/chap31_polygon_result.p
+ng>]
+<figures/chap32_watershed_application1.png, id=770, 497.86pt x 289.58188pt>
 File: figures/chap32_watershed_application1.png Graphic file (type png)
 <use figures/chap32_watershed_application1.png>
 Package pdftex.def Info: figures/chap32_watershed_application1.png  used on inp
-ut line 52.
+ut line 51.
 (pdftex.def)             Requested size: 188.21371pt x 109.47665pt.
-<figures/chap32_watershed_application2.png, id=746, 499.8675pt x 288.57813pt>
+<figures/chap32_watershed_application2.png, id=771, 499.8675pt x 288.57813pt>
 File: figures/chap32_watershed_application2.png Graphic file (type png)
 <use figures/chap32_watershed_application2.png>
 Package pdftex.def Info: figures/chap32_watershed_application2.png  used on inp
-ut line 60.
+ut line 59.
 (pdftex.def)             Requested size: 188.21371pt x 108.65686pt.
-<figures/chap32_watershed_application3.png, id=747, 499.8675pt x 289.08pt>
+<figures/chap32_watershed_application3.png, id=772, 499.8675pt x 289.08pt>
 File: figures/chap32_watershed_application3.png Graphic file (type png)
 <use figures/chap32_watershed_application3.png>
 Package pdftex.def Info: figures/chap32_watershed_application3.png  used on inp
-ut line 68.
+ut line 67.
 (pdftex.def)             Requested size: 188.21371pt x 108.84583pt.
-<figures/chap32_watershed_application4.png, id=748, 497.35812pt x 289.58188pt>
+<figures/chap32_watershed_application4.png, id=773, 497.35812pt x 289.58188pt>
 File: figures/chap32_watershed_application4.png Graphic file (type png)
 <use figures/chap32_watershed_application4.png>
 Package pdftex.def Info: figures/chap32_watershed_application4.png  used on inp
-ut line 76.
+ut line 75.
 (pdftex.def)             Requested size: 188.21371pt x 109.58713pt.
-<figures/chap32_watershed_application5.png, id=749, 499.36563pt x 288.07625pt>
+<figures/chap32_watershed_application5.png, id=774, 499.36563pt x 288.07625pt>
 File: figures/chap32_watershed_application5.png Graphic file (type png)
 <use figures/chap32_watershed_application5.png>
 Package pdftex.def Info: figures/chap32_watershed_application5.png  used on inp
-ut line 85.
+ut line 84.
 (pdftex.def)             Requested size: 188.21371pt x 108.57777pt.
-<figures/chap32_watershed_application6.png, id=750, 500.87125pt x 288.57813pt>
+<figures/chap32_watershed_application6.png, id=775, 500.87125pt x 288.57813pt>
 File: figures/chap32_watershed_application6.png Graphic file (type png)
 <use figures/chap32_watershed_application6.png>
 Package pdftex.def Info: figures/chap32_watershed_application6.png  used on inp
-ut line 93.
+ut line 92.
 (pdftex.def)             Requested size: 188.21371pt x 108.44109pt.
-) (chapters/03_chapter03/section33.tex [27] [28 <./figures/chap32_watershed_app
-lication1.png> <./figures/chap32_watershed_application2.png> <./figures/chap32_
-watershed_application3.png> <./figures/chap32_watershed_application4.png> <./fi
-gures/chap32_watershed_application5.png> <./figures/chap32_watershed_applicatio
-n6.png>]
-<figures/chap33_bear_bbox.png, id=780, 294.8616pt x 169.1118pt>
+)
+(chapters/03_chapter03/section33.tex [28] [29 <./figures/chap32_watershed_appli
+cation1.png> <./figures/chap32_watershed_application2.png> <./figures/chap32_wa
+tershed_application3.png> <./figures/chap32_watershed_application4.png> <./figu
+res/chap32_watershed_application5.png> <./figures/chap32_watershed_application6
+.png>]
+<figures/chap33_bear_bbox.png, id=802, 294.8616pt x 169.1118pt>
 File: figures/chap33_bear_bbox.png Graphic file (type png)
 <use figures/chap33_bear_bbox.png>
 Package pdftex.def Info: figures/chap33_bear_bbox.png  used on input line 40.
 (pdftex.def)             Requested size: 418.25555pt x 239.89528pt.
- [29] [30 <./figures/chap33_bear_bbox.png>]
-<figures/chap33_channel_rgb.png, id=803, 197.2971pt x 197.2971pt>
+ [30 <./figures/chap33_bear_bbox.png>]
+<figures/chap33_channel_rgb.png, id=817, 197.2971pt x 197.2971pt>
 File: figures/chap33_channel_rgb.png Graphic file (type png)
 <use figures/chap33_channel_rgb.png>
 Package pdftex.def Info: figures/chap33_channel_rgb.png  used on input line 74.
@@ -2281,7 +2360,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 [][][]|\T1/pplx/m/n/10 (+20) RGB im-age cropped
  []
 
-<figures/chap33_channel_fg.png, id=804, 197.2971pt x 197.2971pt>
+<figures/chap33_channel_fg.png, id=818, 197.2971pt x 197.2971pt>
 File: figures/chap33_channel_fg.png Graphic file (type png)
 <use figures/chap33_channel_fg.png>
 Package pdftex.def Info: figures/chap33_channel_fg.png  used on input line 81.
@@ -2291,7 +2370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 [][][]|\T1/pplx/m/n/10 (+20) Fore-ground heatmap
  []
 
-<figures/chap33_gaussian_point.png, id=805, 197.2971pt x 197.2971pt>
+<figures/chap33_gaussian_point.png, id=819, 197.2971pt x 197.2971pt>
 File: figures/chap33_gaussian_point.png Graphic file (type png)
 <use figures/chap33_gaussian_point.png>
 Package pdftex.def Info: figures/chap33_gaussian_point.png  used on input line 
@@ -2299,37 +2378,37 @@ Package pdftex.def Info: figures/chap33_gaussian_point.png  used on input line
 (pdftex.def)             Requested size: 125.47794pt x 125.48096pt.
 [31 <./figures/chap33_channel_rgb.png> <./figures/chap33_channel_fg.png> <./fig
 ures/chap33_gaussian_point.png>]
-<figures/chap33_bear_initial_result.png, id=826, 294.8616pt x 165.7392pt>
+<figures/chap33_bear_initial_result.png, id=841, 294.8616pt x 165.7392pt>
 File: figures/chap33_bear_initial_result.png Graphic file (type png)
 <use figures/chap33_bear_initial_result.png>
 Package pdftex.def Info: figures/chap33_bear_initial_result.png  used on input 
 line 132.
 (pdftex.def)             Requested size: 188.21371pt x 105.79199pt.
-<figures/chap33_bear_refine_result.png, id=827, 294.8616pt x 165.7392pt>
+<figures/chap33_bear_refine_result.png, id=842, 294.8616pt x 165.7392pt>
 File: figures/chap33_bear_refine_result.png Graphic file (type png)
 <use figures/chap33_bear_refine_result.png>
 Package pdftex.def Info: figures/chap33_bear_refine_result.png  used on input l
 ine 139.
 (pdftex.def)             Requested size: 188.21371pt x 105.79199pt.
-) (chapters/03_chapter03/section34.tex [32 <./figures/chap33_bear_initial_resul
-t.png> <./figures/chap33_bear_refine_result.png>]
-<figures/chap34_bear_2.png, id=862, 229.0959pt x 128.6406pt>
+ [32 <./figures/chap33_bear_initial_result.png> <./figures/chap33_bear_refine_r
+esult.png>])
+(chapters/03_chapter03/section34.tex [33]
+<figures/chap34_bear_2.png, id=884, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_2.png Graphic file (type png)
 <use figures/chap34_bear_2.png>
 Package pdftex.def Info: figures/chap34_bear_2.png  used on input line 39.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
-<figures/chap34_bear_3.png, id=863, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_3.png, id=885, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_3.png Graphic file (type png)
 <use figures/chap34_bear_3.png>
 Package pdftex.def Info: figures/chap34_bear_3.png  used on input line 46.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
-<figures/chap34_bear_5.png, id=864, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_5.png, id=886, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_5.png Graphic file (type png)
 <use figures/chap34_bear_5.png>
 Package pdftex.def Info: figures/chap34_bear_5.png  used on input line 53.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
- [33]
-<figures/chap34_channel_rgb.png, id=879, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_rgb.png, id=896, 140.4447pt x 140.4447pt>
 File: figures/chap34_channel_rgb.png Graphic file (type png)
 <use figures/chap34_channel_rgb.png>
 Package pdftex.def Info: figures/chap34_channel_rgb.png  used on input line 84.
@@ -2340,7 +2419,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--85
 [][][]|\T1/pplx/m/n/10 (+20) RGB im-age cropped
  []
 
-<figures/chap34_channel_fg.png, id=880, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_fg.png, id=897, 140.4447pt x 140.4447pt>
 File: figures/chap34_channel_fg.png Graphic file (type png)
 <use figures/chap34_channel_fg.png>
 Package pdftex.def Info: figures/chap34_channel_fg.png  used on input line 91.
@@ -2355,7 +2434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/pplx/m/n/10 (+20) with one fore-ground
  []
 
-<figures/chap34_channel_bg.png, id=881, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_bg.png, id=898, 140.4447pt x 140.4447pt>
 File: figures/chap34_channel_bg.png Graphic file (type png)
 <use figures/chap34_channel_bg.png>
 Package pdftex.def Info: figures/chap34_channel_bg.png  used on input line 98.
@@ -2372,19 +2451,19 @@ Underfull \hbox (badness 3769) in paragraph at lines 99--99
 
 [34 <./figures/chap34_bear_2.png> <./figures/chap34_bear_3.png> <./figures/chap
 34_bear_5.png>]
-<figures/chap34_iog_arch.png, id=904, 909.3975pt x 378.41376pt>
+<figures/chap34_iog_arch.png, id=919, 909.3975pt x 378.41376pt>
 File: figures/chap34_iog_arch.png Graphic file (type png)
 <use figures/chap34_iog_arch.png>
 Package pdftex.def Info: figures/chap34_iog_arch.png  used on input line 132.
 (pdftex.def)             Requested size: 418.25555pt x 174.04356pt.
  [35 <./figures/chap34_channel_rgb.png> <./figures/chap34_channel_fg.png> <./fi
 gures/chap34_channel_bg.png>] [36 <./figures/chap34_iog_arch.png>]
-<figures/chap34_bear_6.png, id=941, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_6.png, id=958, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_6.png Graphic file (type png)
 <use figures/chap34_bear_6.png>
 Package pdftex.def Info: figures/chap34_bear_6.png  used on input line 180.
 (pdftex.def)             Requested size: 188.21371pt x 105.6842pt.
-<figures/chap34_bear_8.png, id=942, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_8.png, id=959, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_8.png Graphic file (type png)
 <use figures/chap34_bear_8.png>
 Package pdftex.def Info: figures/chap34_bear_8.png  used on input line 187.
@@ -2404,22 +2483,48 @@ chapter 4.
 
 ]) (chapters/04_chapter04/section43.tex [40]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 54.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 55.
 
-) (chapters/04_chapter04/section44.tex [41] [42])
-(chapters/04_chapter04/section45.tex [43]
-<figures/chap45_labeltool_scrennshot.png, id=1033, 1358.07375pt x 694.09312pt>
+) (chapters/04_chapter04/section44.tex [41]
+<figures/chap44_standard.png, id=1030, 332.24126pt x 283.0575pt>
+File: figures/chap44_standard.png Graphic file (type png)
+<use figures/chap44_standard.png>
+Package pdftex.def Info: figures/chap44_standard.png  used on input line 52.
+(pdftex.def)             Requested size: 188.21371pt x 160.35104pt.
+<figures/chap44_industrial.png, id=1031, 388.45125pt x 360.84813pt>
+File: figures/chap44_industrial.png Graphic file (type png)
+<use figures/chap44_industrial.png>
+Package pdftex.def Info: figures/chap44_industrial.png  used on input line 60.
+(pdftex.def)             Requested size: 188.21371pt x 174.84044pt.
+<figures/chap44_urban.png, id=1032, 635.87563pt x 356.83313pt>
+File: figures/chap44_urban.png Graphic file (type png)
+<use figures/chap44_urban.png>
+Package pdftex.def Info: figures/chap44_urban.png  used on input line 68.
+(pdftex.def)             Requested size: 188.21371pt x 105.61876pt.
+<figures/chap44_anomaly.png, id=1033, 433.11812pt x 100.375pt>
+File: figures/chap44_anomaly.png Graphic file (type png)
+<use figures/chap44_anomaly.png>
+Package pdftex.def Info: figures/chap44_anomaly.png  used on input line 76.
+(pdftex.def)             Requested size: 188.21371pt x 43.61835pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42] [43 <./figures/chap44_standard.png> <./figures/chap44_industrial.png> <./f
+igures/chap44_urban.png> <./figures/chap44_anomaly.png>])
+(chapters/04_chapter04/section45.tex [44]
+<figures/chap45_labeltool_scrennshot.png, id=1065, 1358.07375pt x 694.09312pt>
 File: figures/chap45_labeltool_scrennshot.png Graphic file (type png)
 <use figures/chap45_labeltool_scrennshot.png>
 Package pdftex.def Info: figures/chap45_labeltool_scrennshot.png  used on input
  line 34.
 (pdftex.def)             Requested size: 418.25555pt x 213.75804pt.
-)) [44 <./figures/chap45_labeltool_scrennshot.png>]
+)) [45] [46 <./figures/chap45_labeltool_scrennshot.png>]
 \openout2 = `chapters/05_chapter05/chapter5.aux'.
 
  (chapters/05_chapter05/chapter5.tex
 chapter 5.
-(chapters/05_chapter05/section51.tex [45
+(chapters/05_chapter05/section51.tex [47
 
 
 
@@ -2431,209 +2536,223 @@ Underfull \hbox (badness 1038) in paragraph at lines 46--50
 ion be-tween [][]IoU[] and time
  []
 
-[46]
-<figures/chap51_iou_raw.png, id=1073, 462.528pt x 346.896pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48]
+<figures/chap51_iou_raw.png, id=1117, 813.7602pt x 643.9257pt>
 File: figures/chap51_iou_raw.png Graphic file (type png)
 <use figures/chap51_iou_raw.png>
-Package pdftex.def Info: figures/chap51_iou_raw.png  used on input line 110.
-(pdftex.def)             Requested size: 125.47794pt x 94.10779pt.
-<figures/chap51_iou_trans.png, id=1074, 462.528pt x 346.896pt>
+Package pdftex.def Info: figures/chap51_iou_raw.png  used on input line 115.
+(pdftex.def)             Requested size: 125.47794pt x 99.2867pt.
+<figures/chap51_iou_trans.png, id=1118, 814.4829pt x 645.3711pt>
 File: figures/chap51_iou_trans.png Graphic file (type png)
 <use figures/chap51_iou_trans.png>
-Package pdftex.def Info: figures/chap51_iou_trans.png  used on input line 118.
-(pdftex.def)             Requested size: 125.47794pt x 94.10779pt.
+Package pdftex.def Info: figures/chap51_iou_trans.png  used on input line 123.
+(pdftex.def)             Requested size: 125.47794pt x 99.42093pt.
 
-Underfull \hbox (badness 6016) in paragraph at lines 121--121
+Underfull \hbox (badness 6016) in paragraph at lines 126--126
 \T1/pplx/m/n/10 (+20) formed sam-ple $\OML/zplm/m/it/10 X[]$
  []
 
-<figures/chap51_iou_probplot.png, id=1075, 462.528pt x 346.896pt>
+<figures/chap51_iou_probplot.png, id=1119, 818.0964pt x 644.6484pt>
 File: figures/chap51_iou_probplot.png Graphic file (type png)
 <use figures/chap51_iou_probplot.png>
-Package pdftex.def Info: figures/chap51_iou_probplot.png  used on input line 12
-6.
-(pdftex.def)             Requested size: 125.47794pt x 94.10779pt.
+Package pdftex.def Info: figures/chap51_iou_probplot.png  used on input line 13
+1.
+(pdftex.def)             Requested size: 125.47794pt x 98.86696pt.
+[49]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47] [48 <./figures/chap51_iou_raw.png> <./figures/chap51_iou_trans.png> <./fig
-ures/chap51_iou_probplot.png>]
-<figures/chap51_boxplot_iou.png, id=1109, 497.9403pt x 349.7868pt>
-File: figures/chap51_boxplot_iou.png Graphic file (type png)
-<use figures/chap51_boxplot_iou.png>
-Package pdftex.def Info: figures/chap51_boxplot_iou.png  used on input line 199
+[50 <./figures/chap51_iou_raw.png> <./figures/chap51_iou_trans.png> <./figures/
+chap51_iou_probplot.png>]
+<figures/chap51_iou_boxplot.png, id=1150, 723.4227pt x 528.2937pt>
+File: figures/chap51_iou_boxplot.png Graphic file (type png)
+<use figures/chap51_iou_boxplot.png>
+Package pdftex.def Info: figures/chap51_iou_boxplot.png  used on input line 208
 .
-(pdftex.def)             Requested size: 334.60571pt x 235.04979pt.
-
-Underfull \hbox (badness 2608) in paragraph at lines 204--204
-[][][]|\T1/pplx/m/n/10.95 (+20) Box plot of the vari-able $\OML/zplm/m/it/10.95
- IoU$ \T1/pplx/m/n/10.95 (+20) for the four bench-mark meth-ods.
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 204--204
-\OML/zplm/m/it/10.95 med []$ \T1/pplx/m/n/10.95 (+20) is slightly greater than 
-the other fac-tors, while
- []
-
-<figures/chap51_time_raw.png, id=1114, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 250.95587pt x 183.26917pt.
+ [51]
+<figures/chap51_time_raw.png, id=1165, 823.1553pt x 648.9846pt>
 File: figures/chap51_time_raw.png Graphic file (type png)
 <use figures/chap51_time_raw.png>
-Package pdftex.def Info: figures/chap51_time_raw.png  used on input line 228.
-(pdftex.def)             Requested size: 125.47794pt x 94.10779pt.
-<figures/chap51_time_trans.png, id=1115, 462.528pt x 346.896pt>
+Package pdftex.def Info: figures/chap51_time_raw.png  used on input line 236.
+(pdftex.def)             Requested size: 125.47794pt x 98.92792pt.
+<figures/chap51_time_trans.png, id=1166, 821.7099pt x 644.6484pt>
 File: figures/chap51_time_trans.png Graphic file (type png)
 <use figures/chap51_time_trans.png>
-Package pdftex.def Info: figures/chap51_time_trans.png  used on input line 236.
+Package pdftex.def Info: figures/chap51_time_trans.png  used on input line 244.
 
-(pdftex.def)             Requested size: 125.47794pt x 94.10779pt.
+(pdftex.def)             Requested size: 125.47794pt x 98.43414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 [][][]|\T1/pplx/m/n/10 (+20) Trans-formed sam-ple
  []
 
-<figures/chap51_time_probplot.png, id=1116, 471.2004pt x 346.1733pt>
+<figures/chap51_time_probplot.png, id=1167, 825.3234pt x 647.5392pt>
 File: figures/chap51_time_probplot.png Graphic file (type png)
 <use figures/chap51_time_probplot.png>
 Package pdftex.def Info: figures/chap51_time_probplot.png  used on input line 2
-44.
-(pdftex.def)             Requested size: 125.47794pt x 92.18446pt.
+52.
+(pdftex.def)             Requested size: 125.47794pt x 98.44081pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49] [50 <./figures/chap51_boxplot_iou.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51 <./figures/chap51_time_raw.png> <./figures/chap51_time_trans.png> <./figure
-s/chap51_time_probplot.png>]
-<figures/chap51_time_boxplot.png, id=1153, 724.1454pt x 480.5955pt>
+[52 <./figures/chap51_iou_boxplot.png>] [53 <./figures/chap51_time_raw.png> <./
+figures/chap51_time_trans.png> <./figures/chap51_time_probplot.png>]
+<figures/chap51_time_boxplot.png, id=1196, 985.0401pt x 612.1269pt>
 File: figures/chap51_time_boxplot.png Graphic file (type png)
 <use figures/chap51_time_boxplot.png>
-Package pdftex.def Info: figures/chap51_time_boxplot.png  used on input line 31
-9.
-(pdftex.def)             Requested size: 376.42744pt x 249.83043pt.
-) (chapters/05_chapter05/section52.tex [52]
-[53 <./figures/chap51_time_boxplot.png>]
-<figures/chap52_iou_mehtods_over_domains_boxplot.png, id=1172, 1108.6218pt x 60
-7.068pt>
-File: figures/chap52_iou_mehtods_over_domains_boxplot.png Graphic file (type pn
+Package pdftex.def Info: figures/chap51_time_boxplot.png  used on input line 32
+7.
+(pdftex.def)             Requested size: 376.42744pt x 233.91827pt.
+ [54 <./figures/chap51_time_boxplot.png>]) (chapters/05_chapter05/section52.tex
+<figures/chap52_iou_methods_over_domains_boxplot.png, id=1216, 1009.6119pt x 50
+0.8311pt>
+File: figures/chap52_iou_methods_over_domains_boxplot.png Graphic file (type pn
 g)
-<use figures/chap52_iou_mehtods_over_domains_boxplot.png>
-Package pdftex.def Info: figures/chap52_iou_mehtods_over_domains_boxplot.png  u
+<use figures/chap52_iou_methods_over_domains_boxplot.png>
+Package pdftex.def Info: figures/chap52_iou_methods_over_domains_boxplot.png  u
 sed on input line 28.
-(pdftex.def)             Requested size: 418.25555pt x 229.03014pt.
- [54 <./figures/chap52_iou_mehtods_over_domains_boxplot.png>] [55]
-<figures/chap52_time_mehtods_over_domains_boxplot.png, id=1205, 1105.0083pt x 6
-08.5134pt>
-File: figures/chap52_time_mehtods_over_domains_boxplot.png Graphic file (type p
-ng)
-<use figures/chap52_time_mehtods_over_domains_boxplot.png>
-Package pdftex.def Info: figures/chap52_time_mehtods_over_domains_boxplot.png  
-used on input line 99.
-(pdftex.def)             Requested size: 418.25555pt x 230.32755pt.
- [56 <./figures/chap52_time_mehtods_over_domains_boxplot.png>] [57]) (chapters/
-05_chapter05/section53.tex [58]
+(pdftex.def)             Requested size: 418.25555pt x 207.48186pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[59]
-<figures/chap53_all_users_iou.png, id=1306, 1285.6833pt x 517.4532pt>
+[55]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56 <./figures/chap52_iou_methods_over_domains_boxplot.png>]
+<figures/chap52_time_methods_over_domains_boxplot.png, id=1251, 1010.3346pt x 5
+05.1673pt>
+File: figures/chap52_time_methods_over_domains_boxplot.png Graphic file (type p
+ng)
+<use figures/chap52_time_methods_over_domains_boxplot.png>
+Package pdftex.def Info: figures/chap52_time_methods_over_domains_boxplot.png  
+used on input line 98.
+(pdftex.def)             Requested size: 418.25555pt x 209.13177pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[57]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[58 <./figures/chap52_time_methods_over_domains_boxplot.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (chapters/05_chapter05/section53.tex [59] [60]
+<figures/chap53_all_users_iou.png, id=1352, 1157.7654pt x 525.4029pt>
 File: figures/chap53_all_users_iou.png Graphic file (type png)
 <use figures/chap53_all_users_iou.png>
 Package pdftex.def Info: figures/chap53_all_users_iou.png  used on input line 6
-8.
-(pdftex.def)             Requested size: 418.25555pt x 168.33609pt.
-<figures/chap53_all_users_time.png, id=1309, 1289.2968pt x 517.4532pt>
+7.
+(pdftex.def)             Requested size: 418.25555pt x 189.80229pt.
+<figures/chap53_all_users_time.png, id=1355, 1159.2108pt x 526.8483pt>
 File: figures/chap53_all_users_time.png Graphic file (type png)
 <use figures/chap53_all_users_time.png>
 Package pdftex.def Info: figures/chap53_all_users_time.png  used on input line 
-76.
-(pdftex.def)             Requested size: 418.25555pt x 167.86235pt.
+75.
+(pdftex.def)             Requested size: 418.25555pt x 190.09131pt.
+ [61] [62 <./figures/chap53_all_users_iou.png> <./figures/chap53_all_users_time
+.png>]
+<figures/chap53_afe_cmo_iou.png, id=1386, 676.4472pt x 513.117pt>
+File: figures/chap53_afe_cmo_iou.png Graphic file (type png)
+<use figures/chap53_afe_cmo_iou.png>
+Package pdftex.def Info: figures/chap53_afe_cmo_iou.png  used on input line 122
+.
+(pdftex.def)             Requested size: 188.21371pt x 142.76355pt.
+<figures/chap53_afe_cmo_time.png, id=1387, 676.4472pt x 514.5624pt>
+File: figures/chap53_afe_cmo_time.png Graphic file (type png)
+<use figures/chap53_afe_cmo_time.png>
+Package pdftex.def Info: figures/chap53_afe_cmo_time.png  used on input line 13
+1.
+(pdftex.def)             Requested size: 188.21371pt x 143.1657pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[60] [61 <./figures/chap53_all_users_iou.png> <./figures/chap53_all_users_time.
-png>]
-<figures/chap53_afe_cmo_iou.png, id=1341, 828.2142pt x 651.1527pt>
-File: figures/chap53_afe_cmo_iou.png Graphic file (type png)
-<use figures/chap53_afe_cmo_iou.png>
-Package pdftex.def Info: figures/chap53_afe_cmo_iou.png  used on input line 123
-.
-(pdftex.def)             Requested size: 188.21371pt x 147.97353pt.
-<figures/chap53_afe_cmo_time.png, id=1342, 831.105pt x 654.0435pt>
-File: figures/chap53_afe_cmo_time.png Graphic file (type png)
-<use figures/chap53_afe_cmo_time.png>
-Package pdftex.def Info: figures/chap53_afe_cmo_time.png  used on input line 13
-2.
-(pdftex.def)             Requested size: 188.21371pt x 148.1115pt.
- [62 <./figures/chap53_afe_cmo_iou.png> <./figures/chap53_afe_cmo_time.png>]) (
-chapters/05_chapter05/section54.tex
-<figures/chap54_q1.png, id=1370, 948.04187pt x 457.71pt>
+[63]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (chapters/05_chapter05/section54.tex
+<figures/chap54_q1.png, id=1417, 948.04187pt x 457.71pt>
 File: figures/chap54_q1.png Graphic file (type png)
 <use figures/chap54_q1.png>
 Package pdftex.def Info: figures/chap54_q1.png  used on input line 16.
 (pdftex.def)             Requested size: 200.76086pt x 96.92511pt.
-<figures/chap54_q2.png, id=1371, 946.53625pt x 460.72125pt>
+<figures/chap54_q2.png, id=1418, 946.53625pt x 460.72125pt>
 File: figures/chap54_q2.png Graphic file (type png)
 <use figures/chap54_q2.png>
 Package pdftex.def Info: figures/chap54_q2.png  used on input line 24.
 (pdftex.def)             Requested size: 200.76086pt x 97.71742pt.
-<figures/chap54_q3.png, id=1372, 948.54375pt x 461.22313pt>
+<figures/chap54_q3.png, id=1419, 948.54375pt x 461.22313pt>
 File: figures/chap54_q3.png Graphic file (type png)
 <use figures/chap54_q3.png>
 Package pdftex.def Info: figures/chap54_q3.png  used on input line 32.
 (pdftex.def)             Requested size: 200.76086pt x 97.61275pt.
-<figures/chap54_q5.png, id=1373, 948.04187pt x 465.74pt>
+<figures/chap54_q5.png, id=1420, 948.04187pt x 465.74pt>
 File: figures/chap54_q5.png Graphic file (type png)
 <use figures/chap54_q5.png>
 Package pdftex.def Info: figures/chap54_q5.png  used on input line 40.
 (pdftex.def)             Requested size: 200.76086pt x 98.62553pt.
-<figures/chap54_q4.png, id=1374, 947.54pt x 461.725pt>
+<figures/chap54_q4.png, id=1421, 947.54pt x 461.725pt>
 File: figures/chap54_q4.png Graphic file (type png)
 <use figures/chap54_q4.png>
 Package pdftex.def Info: figures/chap54_q4.png  used on input line 48.
 (pdftex.def)             Requested size: 200.76086pt x 97.82465pt.
- [63] [64 <./figures/chap54_q1.png> <./figures/chap54_q2.png> <./figures/chap54
-_q3.png> <./figures/chap54_q5.png> <./figures/chap54_q4.png>]) (chapters/05_cha
-pter05/section55.tex [65]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) [66] [67]
+[64 <./figures/chap53_afe_cmo_iou.png> <./figures/chap53_afe_cmo_time.png>])
+(chapters/05_chapter05/section55.tex [65] [66 <./figures/chap54_q1.png> <./figu
+res/chap54_q2.png> <./figures/chap54_q3.png> <./figures/chap54_q5.png> <./figur
+es/chap54_q4.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[67])) [68]
 \openout2 = `chapters/06_chapter06/chapter6.aux'.
 
  (chapters/06_chapter06/chapter6.tex
 chapter 6.
-(chapters/06_chapter06/section6_summary.tex [68
+(chapters/06_chapter06/section6_summary.tex [69
 
 
 
 
 
 ])
-(chapters/06_chapter06/section6_future_work.tex [69])) [70]
+(chapters/06_chapter06/section6_future_work.tex [70])) [71]
 Package tocbasic Info: character protrusion at lof deactivated on input line 63
 .
- (main.lof)
+ (main.lof [72
+
+
+
+
+])
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [71
 
-
-
-
-]
+[73]
 Package tocbasic Info: character protrusion at lot deactivated on input line 64
 .
-
-(main.lot)
+ (main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
- (main.gls) (main.acr [72
+ (main.gls) (main.acr [74
 
 
 ]
@@ -2648,36 +2767,343 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[73
+[75
 
 
 
 
-]) [74]
+]) [76]
 chapter without number
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[75
+[77
 
 
-] [76] [77] [78] [79] [80] [81] [82]
+] [78] [79] [80] [81] [82] [83] [84]
 \openout2 = `chapters/appendix/appendix_main.aux'.
 
  (chapters/appendix/appendix_main.tex
-(chapters/appendix/refinement_20clicks.tex
 chapter A.
-) (chapters/appendix/afe_cmo_kruskal_wallis.tex [83
+(chapters/appendix/pascal_voc_vp.tex
+<figures/appendix/pascal_voc/pascal_voc_collage.png, id=1797, 633.36626pt x 745
+.28438pt>
+File: figures/appendix/pascal_voc/pascal_voc_collage.png Graphic file (type png
+)
+<use figures/appendix/pascal_voc/pascal_voc_collage.png>
+Package pdftex.def Info: figures/appendix/pascal_voc/pascal_voc_collage.png  us
+ed on input line 8.
+(pdftex.def)             Requested size: 418.25555pt x 492.17352pt.
+
+
+LaTeX Warning: Float too large for page by 4.29344pt on input line 15.
+
+) (chapters/appendix/collages_from_benchmark_domains.tex
+<figures/appendix/benchmark_dataset_examples/standard_collage.png, id=1808, 103
+2.35687pt x 546.54187pt>
+File: figures/appendix/benchmark_dataset_examples/standard_collage.png Graphic 
+file (type png)
+<use figures/appendix/benchmark_dataset_examples/standard_collage.png>
+Package pdftex.def Info: figures/appendix/benchmark_dataset_examples/standard_c
+ollage.png  used on input line 8.
+(pdftex.def)             Requested size: 418.25555pt x 221.43164pt.
+<figures/appendix/benchmark_dataset_examples/urban_collage.png, id=1809, 1309.8
+9375pt x 723.20187pt>
+File: figures/appendix/benchmark_dataset_examples/urban_collage.png Graphic fil
+e (type png)
+<use figures/appendix/benchmark_dataset_examples/urban_collage.png>
+Package pdftex.def Info: figures/appendix/benchmark_dataset_examples/urban_coll
+age.png  used on input line 16.
+(pdftex.def)             Requested size: 418.25555pt x 230.9217pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/appendix/benchmark_dataset_examples/industrial_collage.png, id=1810, 5
+80.66937pt x 366.87062pt>
+File: figures/appendix/benchmark_dataset_examples/industrial_collage.png Graphi
+c file (type png)
+<use figures/appendix/benchmark_dataset_examples/industrial_collage.png>
+Package pdftex.def Info: figures/appendix/benchmark_dataset_examples/industrial
+_collage.png  used on input line 30.
+(pdftex.def)             Requested size: 418.25555pt x 264.2586pt.
+
+Package nag Warning: figure with no \caption on input line 37.
+
+<figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png, id=18
+11, 715.17188pt x 482.30188pt>
+File: figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png G
+raphic file (type png)
+<use figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png>
+Package pdftex.def Info: figures/appendix/benchmark_dataset_anomaly_examples/an
+omaly_collage.png  used on input line 43.
+(pdftex.def)             Requested size: 418.25555pt x 282.06819pt.
+
+Package nag Warning: figure with no \caption on input line 50.
+
+) (chapters/appendix/method_predictions.tex
+<figures/appendix/method_predictions/bag21_watershed.png, id=1812, 236.38312pt 
+x 219.82124pt>
+File: figures/appendix/method_predictions/bag21_watershed.png Graphic file (typ
+e png)
+<use figures/appendix/method_predictions/bag21_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/bag21_watershed.pn
+g  used on input line 12.
+(pdftex.def)             Requested size: 125.47794pt x 116.68918pt.
+<figures/appendix/method_predictions/bag21_dextr.png, id=1813, 354.57469pt x 33
+0.48468pt>
+File: figures/appendix/method_predictions/bag21_dextr.png Graphic file (type pn
+g)
+<use figures/appendix/method_predictions/bag21_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/bag21_dextr.png  u
+sed on input line 18.
+(pdftex.def)             Requested size: 125.47794pt x 116.95222pt.
+<figures/appendix/method_predictions/bag21_iog.png, id=1814, 236.38312pt x 220.
+32312pt>
+File: figures/appendix/method_predictions/bag21_iog.png Graphic file (type png)
+
+<use figures/appendix/method_predictions/bag21_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/bag21_iog.png  use
+d on input line 24.
+(pdftex.def)             Requested size: 125.47794pt x 116.95558pt.
+<figures/appendix/method_predictions/cereal67_watershed.png, id=1815, 286.06876
+pt x 235.37938pt>
+File: figures/appendix/method_predictions/cereal67_watershed.png Graphic file (
+type png)
+<use figures/appendix/method_predictions/cereal67_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cereal67_watershed
+.png  used on input line 31.
+(pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
+<figures/appendix/method_predictions/cereal67_dextr.png, id=1816, 286.06876pt x
+ 235.37938pt>
+File: figures/appendix/method_predictions/cereal67_dextr.png Graphic file (type
+ png)
+<use figures/appendix/method_predictions/cereal67_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cereal67_dextr.png
+  used on input line 37.
+(pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
+<figures/appendix/method_predictions/cereal67_iog.png, id=1817, 286.06876pt x 2
+35.37938pt>
+File: figures/appendix/method_predictions/cereal67_iog.png Graphic file (type p
+ng)
+<use figures/appendix/method_predictions/cereal67_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cereal67_iog.png  
+used on input line 43.
+(pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
+<figures/appendix/method_predictions/jet4_watershed.png, id=1818, 285.56688pt x
+ 247.42438pt>
+File: figures/appendix/method_predictions/jet4_watershed.png Graphic file (type
+ png)
+<use figures/appendix/method_predictions/jet4_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/jet4_watershed.png
+  used on input line 52.
+(pdftex.def)             Requested size: 125.47794pt x 108.71603pt.
+<figures/appendix/method_predictions/jet4_dextr.png, id=1819, 285.56688pt x 247
+.42438pt>
+File: figures/appendix/method_predictions/jet4_dextr.png Graphic file (type png
+)
+<use figures/appendix/method_predictions/jet4_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/jet4_dextr.png  us
+ed on input line 60.
+(pdftex.def)             Requested size: 125.47794pt x 108.71603pt.
+<figures/appendix/method_predictions/jet4_iog.png, id=1820, 428.35031pt x 371.1
+3657pt>
+File: figures/appendix/method_predictions/jet4_iog.png Graphic file (type png)
+<use figures/appendix/method_predictions/jet4_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/jet4_iog.png  used
+ on input line 68.
+(pdftex.def)             Requested size: 125.47794pt x 108.71416pt.
+<figures/appendix/method_predictions/cans75_watershed.png, id=1821, 257.46187pt
+ x 202.25563pt>
+File: figures/appendix/method_predictions/cans75_watershed.png Graphic file (ty
+pe png)
+<use figures/appendix/method_predictions/cans75_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cans75_watershed.p
+ng  used on input line 77.
+(pdftex.def)             Requested size: 125.47794pt x 98.5722pt.
+<figures/appendix/method_predictions/cans75_dextr.png, id=1822, 257.46187pt x 2
+02.25563pt>
+File: figures/appendix/method_predictions/cans75_dextr.png Graphic file (type p
+ng)
+<use figures/appendix/method_predictions/cans75_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cans75_dextr.png  
+used on input line 85.
+(pdftex.def)             Requested size: 125.47794pt x 98.5722pt.
+<figures/appendix/method_predictions/cans75_iog.png, id=1823, 257.96375pt x 202
+.25563pt>
+File: figures/appendix/method_predictions/cans75_iog.png Graphic file (type png
+)
+<use figures/appendix/method_predictions/cans75_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/cans75_iog.png  us
+ed on input line 93.
+(pdftex.def)             Requested size: 125.47794pt x 98.38086pt.
+
+
+LaTeX Warning: Float too large for page by 17.00781pt on input line 103.
+
+<figures/appendix/method_predictions/pill56_watershed.png, id=1832, 210.7875pt 
+x 210.28563pt>
+File: figures/appendix/method_predictions/pill56_watershed.png Graphic file (ty
+pe png)
+<use figures/appendix/method_predictions/pill56_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill56_watershed.p
+ng  used on input line 110.
+(pdftex.def)             Requested size: 125.47794pt x 125.18086pt.
+<figures/appendix/method_predictions/pill56_dextr.png, id=1833, 316.18124pt x 3
+15.42844pt>
+File: figures/appendix/method_predictions/pill56_dextr.png Graphic file (type p
+ng)
+<use figures/appendix/method_predictions/pill56_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill56_dextr.png  
+used on input line 118.
+(pdftex.def)             Requested size: 125.47794pt x 125.17764pt.
+<figures/appendix/method_predictions/pill56_iog.png, id=1834, 210.7875pt x 210.
+28563pt>
+File: figures/appendix/method_predictions/pill56_iog.png Graphic file (type png
+)
+<use figures/appendix/method_predictions/pill56_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill56_iog.png  us
+ed on input line 126.
+(pdftex.def)             Requested size: 125.47794pt x 125.18086pt.
+<figures/appendix/method_predictions/screw57_watershed.png, id=1835, 351.81438p
+t x 202.25563pt>
+File: figures/appendix/method_predictions/screw57_watershed.png Graphic file (t
+ype png)
+<use figures/appendix/method_predictions/screw57_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/screw57_watershed.
+png  used on input line 135.
+(pdftex.def)             Requested size: 125.47794pt x 72.1361pt.
+<figures/appendix/method_predictions/screw57_dextr.png, id=1836, 527.72156pt x 
+303.38344pt>
+File: figures/appendix/method_predictions/screw57_dextr.png Graphic file (type 
+png)
+<use figures/appendix/method_predictions/screw57_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/screw57_dextr.png 
+ used on input line 143.
+(pdftex.def)             Requested size: 125.47794pt x 72.13301pt.
+<figures/appendix/method_predictions/screw57_iog.png, id=1837, 351.81438pt x 20
+2.25563pt>
+File: figures/appendix/method_predictions/screw57_iog.png Graphic file (type pn
+g)
+<use figures/appendix/method_predictions/screw57_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/screw57_iog.png  u
+sed on input line 151.
+(pdftex.def)             Requested size: 125.47794pt x 72.1361pt.
+<figures/appendix/method_predictions/tea17_watershed.png, id=1838, 271.51437pt 
+x 193.22188pt>
+File: figures/appendix/method_predictions/tea17_watershed.png Graphic file (typ
+e png)
+<use figures/appendix/method_predictions/tea17_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/tea17_watershed.pn
+g  used on input line 160.
+(pdftex.def)             Requested size: 125.47794pt x 89.2959pt.
+<figures/appendix/method_predictions/tea17_dextr.png, id=1839, 407.27156pt x 28
+9.83281pt>
+File: figures/appendix/method_predictions/tea17_dextr.png Graphic file (type pn
+g)
+<use figures/appendix/method_predictions/tea17_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/tea17_dextr.png  u
+sed on input line 168.
+(pdftex.def)             Requested size: 125.47794pt x 89.29442pt.
+<figures/appendix/method_predictions/tea17_iog.png, id=1840, 271.51437pt x 193.
+22188pt>
+File: figures/appendix/method_predictions/tea17_iog.png Graphic file (type png)
+
+<use figures/appendix/method_predictions/tea17_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/tea17_iog.png  use
+d on input line 176.
+(pdftex.def)             Requested size: 125.47794pt x 89.2959pt.
+<figures/appendix/method_predictions/swan34_watershed.png, id=1841, 250.9375pt 
+x 213.29688pt>
+File: figures/appendix/method_predictions/swan34_watershed.png Graphic file (ty
+pe png)
+<use figures/appendix/method_predictions/swan34_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/swan34_watershed.p
+ng  used on input line 185.
+(pdftex.def)             Requested size: 125.47794pt x 106.65793pt.
+<figures/appendix/method_predictions/swan34_dextr.png, id=1842, 376.40625pt x 3
+19.94531pt>
+File: figures/appendix/method_predictions/swan34_dextr.png Graphic file (type p
+ng)
+<use figures/appendix/method_predictions/swan34_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/swan34_dextr.png  
+used on input line 193.
+(pdftex.def)             Requested size: 125.47794pt x 106.6563pt.
+<figures/appendix/method_predictions/swan34_iog.png, id=1843, 250.9375pt x 213.
+29688pt>
+File: figures/appendix/method_predictions/swan34_iog.png Graphic file (type png
+)
+<use figures/appendix/method_predictions/swan34_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/swan34_iog.png  us
+ed on input line 201.
+(pdftex.def)             Requested size: 125.47794pt x 106.65793pt.
+<figures/appendix/method_predictions/pill78_watershed.png, id=1844, 387.94937pt
+ x 194.7275pt>
+File: figures/appendix/method_predictions/pill78_watershed.png Graphic file (ty
+pe png)
+<use figures/appendix/method_predictions/pill78_watershed.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill78_watershed.p
+ng  used on input line 210.
+(pdftex.def)             Requested size: 125.47794pt x 62.9826pt.
+<figures/appendix/method_predictions/pill78_dextr.png, id=1845, 388.45125pt x 1
+94.7275pt>
+File: figures/appendix/method_predictions/pill78_dextr.png Graphic file (type p
+ng)
+<use figures/appendix/method_predictions/pill78_dextr.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill78_dextr.png  
+used on input line 218.
+(pdftex.def)             Requested size: 125.47794pt x 62.8994pt.
+<figures/appendix/method_predictions/pill78_iog.png, id=1846, 388.45125pt x 194
+.7275pt>
+File: figures/appendix/method_predictions/pill78_iog.png Graphic file (type png
+)
+<use figures/appendix/method_predictions/pill78_iog.png>
+Package pdftex.def Info: figures/appendix/method_predictions/pill78_iog.png  us
+ed on input line 226.
+(pdftex.def)             Requested size: 125.47794pt x 62.8994pt.
+
+Package nag Warning: figure with no \caption on input line 231.
+
+) (chapters/appendix/refinement_20clicks.tex)
+(chapters/appendix/afe_cmo_kruskal_wallis.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)) [85
 
 
 
-]
-chapter B.
-)) [84
+] [86 <./figures/appendix/pascal_voc/pascal_voc_collage.png>] [87]
+[88 <./figures/appendix/benchmark_dataset_examples/standard_collage.png> <./fig
+ures/appendix/benchmark_dataset_examples/urban_collage.png>] [89 <./figures/app
+endix/benchmark_dataset_examples/industrial_collage.png>] [90 <./figures/append
+ix/benchmark_dataset_anomaly_examples/anomaly_collage.png>] [91 <./figures/appe
+ndix/method_predictions/bag21_watershed.png> <./figures/appendix/method_predict
+ions/bag21_dextr.png> <./figures/appendix/method_predictions/bag21_iog.png> <./
+figures/appendix/method_predictions/cereal67_watershed.png> <./figures/appendix
+/method_predictions/cereal67_dextr.png> <./figures/appendix/method_predictions/
+cereal67_iog.png> <./figures/appendix/method_predictions/jet4_watershed.png> <.
+/figures/appendix/method_predictions/jet4_dextr.png> <./figures/appendix/method
+_predictions/jet4_iog.png> <./figures/appendix/method_predictions/cans75_waters
+hed.png> <./figures/appendix/method_predictions/cans75_dextr.png> <./figures/ap
+pendix/method_predictions/cans75_iog.png>] [92 <./figures/appendix/method_predi
+ctions/pill56_watershed.png> <./figures/appendix/method_predictions/pill56_dext
+r.png> <./figures/appendix/method_predictions/pill56_iog.png> <./figures/append
+ix/method_predictions/screw57_watershed.png> <./figures/appendix/method_predict
+ions/screw57_dextr.png> <./figures/appendix/method_predictions/screw57_iog.png>
+ <./figures/appendix/method_predictions/tea17_watershed.png> <./figures/appendi
+x/method_predictions/tea17_dextr.png> <./figures/appendix/method_predictions/te
+a17_iog.png> <./figures/appendix/method_predictions/swan34_watershed.png> <./fi
+gures/appendix/method_predictions/swan34_dextr.png> <./figures/appendix/method_
+predictions/swan34_iog.png> <./figures/appendix/method_predictions/pill78_water
+shed.png> <./figures/appendix/method_predictions/pill78_dextr.png> <./figures/a
+ppendix/method_predictions/pill78_iog.png>]
 
+Package nag Warning: 3 complaints in total.
 
-]
-No complaints by nag.
 (main.aux (pages/title.aux) (pages/disclaimer.aux) (pages/acknowledgments.aux)
 (pages/abstract.aux) (settings/acronyms.aux)
 (chapters/01_chapter01/chapter1.aux) (chapters/02_chapter02/chapter2.aux)
@@ -2691,33 +3117,60 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57096 strings out of 479697
- 1297820 string characters out of 2866183
- 2437583 words of memory out of 3000000
- 71729 multiletter control sequences out of 15000+200000
- 532597 words of font info for 733 fonts, out of 3000000 for 9000
+ 57677 strings out of 479697
+ 1315433 string characters out of 2866183
+ 2465796 words of memory out of 3000000
+ 72162 multiletter control sequences out of 15000+200000
+ 535587 words of font info for 776 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  112i,15n,113p,10601b,3251s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-tt1095.pk>{C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/
-8r.enc} <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
-00\ecsx1095.pk> <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ectt0900.pk><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/fertiga/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/fertiga/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/fer
-tiga/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/U
-sers/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.p
-fb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc
-8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino
-/uplb8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/pal
-atino/uplr8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/palatino/uplri8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (91 pages, 16881607 bytes).
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1095.pk>{C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r
+.enc} <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecsx1095.pk> <C:\Users\fertiga\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
+c/dpi600\ectt0900.pk><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/fertiga/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/fertiga/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ferti
+ga/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Use
+rs/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb
+><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a
+.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/u
+plb8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palat
+ino/uplr8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+palatino/uplri8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (99 pages, 43384406 bytes).
 PDF statistics:
- 2122 PDF objects out of 2487 (max. 8388607)
- 376 named destinations out of 1000 (max. 500000)
- 183337 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 2295 PDF objects out of 2487 (max. 8388607)
+ 394 named destinations out of 1000 (max. 500000)
+ 183524 words of extra memory for PDF output out of 184870 (max. 10000000)
 
