@@ -29,7 +29,7 @@ There two main variants to perform segmentation on images:
 	In the result several regions may have the same class, but are treated as independent instances of this class.
 \end{itemize}
 
-This thesis deals with the labeling of objects and therefore, it is further not distinguished between semantic and instance segmentation.
+This thesis deals with the labeling of objects and, therefore, it is further not distinguished between semantic and instance segmentation.
 This is why, the labeling process of an instance may also be seen as semantic segmentation on a limited domain.
 \begin{figure} [h]
 	\centering
@@ -311,7 +311,7 @@ Each pyramid level processes the same feature map in various sizes.
 Thereby, pooling layers with different filter sizes are applied to create feature maps of different sizes.
 These feature maps are futher processed by convolutional layers and afterwards upsampled to a mutual size.
 Last, the feature maps from the \gls{psp} module are concatenated with another and the features maps from the earlier processing step, as illustrated in Figure \ref{fig:ch2:sec2:psp}.
-This \gls{psp} module enables the model to use more contextual information and therefore, improve the segmentation result.
+This \gls{psp} module enables the model to use more contextual information and, therefore, improve the segmentation result.
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/chap223_psp.png}
 	\caption[Pyramid Scene Parsing Network]{
@@ -333,7 +333,7 @@ This \gls{psp} module enables the model to use more contextual information and t
 \subsubsection{DeepLab}
 DeepLab is a \gls{dl} model for semantic segmentation developed by researchers from Google and first published in \cite{Chen16-DeepLab}.
 It stands out due to the three techniques atrous convolution, \gls{aspp} \cite{He15-SPP} and, \gls{crf} \cite{KK12-CRF}, which are described in detail in \cite{Chen16-DeepLab}.
-These techniques focus on the image's reconstruction in the upsampling process and therefore, improve the performance of the network.
+These techniques focus on the image's reconstruction in the upsampling process and, therefore, improve the performance of the network.
 A further development of these techniques is the DeepLabv3+ \cite{Chen18-DeepLab3+}, which set new performance records in 2018.
 
 % \textbf{Atrous convolution} or dilated convolution modifies the kernel used for the convolution operation.	  The size of the kernel is extended and the upcoming gaps between the parameters are filled up with zeros.	The benefit is the coverage of a greater receptive field, without increasing the number of convolution parameters and so the computational load.

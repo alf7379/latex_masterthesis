@@ -47,132 +47,57 @@ An exemplary illustration of images from the different domains is presented in F
 % Presentation of image domains.
 \begin{figure} 
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap44_standard.png}
 		\caption{
 			Example image from domain $ standard $.
-		} \label{fig:ch4:sec4:domain_standard}
+		} \label{fig:ch4:sec4:domain_standard2}
 	\end{subfigure}
 	\hfill	
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/chap44_industrial.png}
-		\caption{
-			Example image from domain $ industrial $.
-		} \label{fig:ch4:sec4:domain_industrial}
-	\end{subfigure}
-	\\
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap44_urban.png}
 		\caption{
 			Example image from domain $ urban $.
+		} \label{fig:ch4:sec4:domain_industrial}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_industrial1.png}
+		\caption{
+			Example image from domain $ industrial $.
 		} \label{fig:ch4:sec4:domain_urban}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{figures/chap44_anomaly.png}
+		\includegraphics[width=\textwidth]{figures/chap44_industrial2.png}
+		\caption{
+			Example image from domain $ industrial $.
+		} \label{fig:ch4:sec4:domain_standard}
+	\end{subfigure}	
+	\\
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_anomaly1.png}
 		\caption{
 			Example image from domain $ anomaly $.
-			To clearly visualize the anomaly, the image is shown with an without mask.
-		} \label{fig:ch4:sec4:domain_anomaly}
+		} \label{fig:ch4:sec4:domain_anomaly1}
 	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/chap44_anomaly2.png}
+		\caption{
+			Example image from domain $ anomaly $.
+		} \label{fig:ch4:sec4:domain_anomaly2}
+	\end{subfigure}	
 	\caption[Illustration of benchmark images]{
-		Presentation of benchmark images from the domain $ standard $, $ urban $, $ industrial $, and $ anomaly $.
+		Presentation of benchmark images from the domain $ standard $, $ urban $, $ industrial $, and $ anomaly $, to show the diversity between the domains.
 	} \label{fig:ch4:sec4:image_domains}
 \end{figure}
-
-% TODO maybe enlarge this part so at least the whole page is completely filled up.
-
-\begin{comment}
-% Domain Standard
-\begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap44_standard_collage.png}
-	\caption[Images from the benchmark domains $ standard $]{
-		Presentation of benchmark images from the domain $ standard $.
-	}
-	\label{fig:ch4:sec4:collage_standard}
-\end{figure}
-
-% Domain Urban
-\begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap44_urban_collage.png}
-	\caption[Images from the benchmark domains $ urban $]{
-		Presentation of benchmark images from the domain $ urban $.
-	}
-	\label{fig:ch4:sec4:collage_urban}
-\end{figure}
-
-% Domain Industrial
-\begin{figure}
-	\includegraphics[width=\linewidth]{figures/chap44_industrial_collage.png}
-	\caption[Images from the benchmark domains $ industrial $]{
-		Presentation of benchmark images from the domain $ industrial $.
-		Only the objects that should be labeled are shown with their object mask.
-		In the images with a lot of objects only a limited part should be labeled.
-	}
-	\label{fig:ch4:sec4:collage_industrial}
-\end{figure}
-
-% Domain anomaly
-\begin{figure}
-	\centering
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect1_comb.png}
-		\caption{
-			The black capsule of the pill is cracked.
-		} \label{fig:ch4:sec4:anomaly1}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect3_comb.png}
-		\caption{
-			The error in the picture is, that the neck of the bottle has cracked.
-		} \label{fig:ch4:sec4:anomaly2}
-	\end{subfigure}
-	\\
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect4_comb.png}
-		\caption{
-			The anomaly is that there are scratches and marks on the wood.
-		} \label{fig:ch4:sec4:anomaly3}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect5_comb.png}
-		\caption{
-			One part of the fabric is torn, while a large part is still intact.
-		} \label{fig:ch4:sec4:anomaly4}
-	\end{subfigure}
-	\\
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect6_comb.png}
-		\caption{
-			The pill is slightly cracked at the surface on the bottom.
-		} \label{fig:ch4:sec4:anomaly5}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/appendix/benchmark_dataset_anomaly_examples/defect7_comb.png}
-		\caption{
-			The nut is broken and has a big hole.
-		} \label{fig:ch4:sec4:anomaly6}
-	\end{subfigure}
-	\caption [Images from the benchmark domains $ anomaly $]{		
-		Presentation of benchmark images from the domain $ anomaly $.
-		In order to make the error clearly visible, the image was displayed once with and once without the object mask, which is above the anomaly.
-		The images with such anomalies mostly origin from industrial contexts with the aim of detecting errors.
-	} \label{fig:ch4:sec4:images_anomaly}
-\end{figure}
-\end{comment}
 
 % State of the art
 \begin{table}[h!]

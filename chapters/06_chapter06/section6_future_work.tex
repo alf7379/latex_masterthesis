@@ -10,8 +10,7 @@ In the context of this thesis, an idea was discussed, which was not implemented,
 Their origin lies in the desire of automation and the fact, that interactive methods are limited by the requirement of user interaction. 
 The idea is to enable the application of an interactive segmentation method without any user interaction nor the use of \gls{gt}.
 For this an object detection network should predict possible bounding boxes for objects in an image.
-Selected bounding boxes should then serve as input for the interactive method.
-The \gls{iog} method would be used for this.
+Selected bounding boxes then serve as input for the interactive method, as the \gls{iog} method would be suitable.
 The background points can be obtained from the bounding box, while the point on the foreground is represented by the center of the bounding box.
 A critical component here would be the pre-selection of the proposed bounding boxes.
 This represents a significant simplification of the methodology, but would be interesting to  investigate.
@@ -21,7 +20,7 @@ Further, various interactive segmentation methods \cite{Xu16-InteractiveObjectSe
 This additional input is combined with the \gls{rgb} image and a \gls{dl} network is successfully trained on this multi-channel data.
 This methodology could be applied to other areas where multiple kinds inputs are available.
 An possible application would be in sensor data fusion, e.g. an imaging sensor and a sensor providing depth information (LiDAR, RADAR, ultrasound sensor).
-If such fused data from different sources would be applied to advanced \gls{dl} models, is maybe is possible to improve the performance.
+If such fused data from different sources would be applied to advanced \gls{dl} models, new possibilities can be opened up.
 
 % Closing with durchgehender Entwicklung, deren Bedeutung dauerhaft zunehmen wird
 % Industrie kann diese Methoden für neue GT nutzen -> mehr Automatisierung
@@ -29,4 +28,4 @@ As shown, further development offers some interesting possibilities.
 The trend in image processing based on \gls{dl} also supports the research in modern methods.
 Their application in industry benefits the automatization process.
 Thereby, interactive segmentation methods stand out due to the ability to create \gls{gt} in a simplified and inexpensive manner.
-This may be a significant factor to widely spread mordern image processing and promote the development of automation.
+This may be a significant factor to widely spread modern image processing and promote the development of automation.

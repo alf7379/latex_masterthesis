@@ -1,6 +1,5 @@
 \RequirePackage[l2tabu,orthodox]{nag}
 
-% TODO: decide if one-sided/two-sided
 %\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
@@ -14,9 +13,11 @@
 \newcommand*{\getAuthor}{Alexander Fertig}
 \newcommand*{\getDoctype}{Master's Thesis in Computer Science}
 \newcommand*{\getSupervisor}{Prof. Dr. David Spieler}
+\newcommand*{\getSecondSupervisor}{Prof. Dr. Alfred Nischwitz}
 \newcommand*{\getAdvisor}{Patrick Follmann}
-\newcommand*{\getSubmissionDate}{Submission date}
+\newcommand*{\getSubmissionDate}{Submission date} % TODO
 \newcommand*{\getSubmissionLocation}{Munich}
+\newcommand*{\getMatrikelNum}{13042718}
 \newcommand{\Unit}[1]{\thinspace #1}
 
 \newcommand*{\getNumberBenchmarkAnnotations}{2998\space}
@@ -36,6 +37,7 @@
 \frontmatter{}
 % import also possible with input, but then "\includeonly{}" is not applieable
 \include{pages/title}
+\include{pages/title_de}
 \include{pages/disclaimer}
 \include{pages/acknowledgments}
 \include{pages/abstract}

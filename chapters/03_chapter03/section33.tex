@@ -11,7 +11,7 @@ This method follows a user point centered approach based on \gls{dl}, as introdu
 % Workflow
 The required user interaction are four clicks in the form of extreme points.
 These points are the right-most, left-most, bottom, and top pixels of an object, illustrated in Figure \ref{fig:ch3:sec3:user_interaction}.
-They represent the most extreme pixels and therefore, are referred to as extreme points.
+They represent the most extreme pixels and, therefore, are referred to as extreme points.
 The obtained user clicks are further processed and the \gls{dl} model predicts an object mask.
 
 % Advantage over other methods
@@ -42,7 +42,7 @@ The image crop is resized to the size of $512 \times 512$ \Unit{px}, to create i
 		Image with the obtained user input for the \gls{dextr} method and the first processing step.
 		The extreme points are visualized as green crosses.
 		The bounding box is enlarged by $p_{{box}} = 50$ \Unit{px}, shown in red.
-		The enlarged bounding box extends the image boundary, therefore \textit{zero padding} is applied.
+		The enlarged bounding box extends the image boundary, therefore, \textit{zero padding} is applied.
 		The corresponding cropped and resized image is shown in Figure \ref{fig:ch3:sec3:rgb_channel}.
 	}
 	\label{fig:ch3:sec3:user_interaction}
@@ -69,21 +69,21 @@ This results in the four-channel input for the \gls{dextr} model, illustrated in
 
 \begin{figure}
 	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap33_channel_rgb.png}
-		\caption{RGB image cropped based on the bounding box (three channels).}
+		\caption{RGB image with the points cropped based on the bounding box (three channels).}
 		\label{fig:ch3:sec3:rgb_channel}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap33_channel_fg.png}
 		\caption{Foreground heatmap with four extreme points (one channel).}
 		\label{fig:ch3:sec3:fg_channel}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap33_gaussian_point.png}
 		\caption{Closeup of a point centered with a 2D Gaussian with $\sigma = 10$.}
@@ -161,3 +161,4 @@ The evaluation of the generalization capabilities of the method continues in det
 An introduced application for the \gls{dextr} method is to create annotations and use them as new \gls{gt} to train \gls{dl} models.
 Manisis \etal claim, that models trained on \gls{dextr} annotations perform equally well as models trained on the original \gls{gt}\cite{Man18-DEXTR}.
 This statement is further examined in Section \ref{ord:ch5:sec5_retrain}.
+Additional examples of segmentation results with the \gls{dextr} method are shown in Figure \ref{fig:appendix_model_predictions}.

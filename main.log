@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.18)  1 JUL 2021 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.18)  9 JUL 2021 22:45
 entering extended mode
 **./main.tex
 (main.tex
@@ -1729,42 +1729,42 @@ File: biblatex.cfg
 )))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+pplx on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for T1+pplx on input line 3
+0.
  (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
-) (main.aux (pages/title.aux) (pages/disclaimer.aux) (pages/acknowledgments.aux
-) (pages/abstract.aux) (settings/acronyms.aux)
+) (main.aux (pages/title.aux) (pages/title_de.aux) (pages/disclaimer.aux)
+(pages/acknowledgments.aux) (pages/abstract.aux) (settings/acronyms.aux)
 (chapters/01_chapter01/chapter1.aux) (chapters/02_chapter02/chapter2.aux)
 (chapters/03_chapter03/chapter3.aux) (chapters/04_chapter04/chapter4.aux)
 (chapters/05_chapter05/chapter5.aux) (chapters/06_chapter06/chapter6.aux)
 (chapters/appendix/appendix_main.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 30.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 29.
+line 30.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 29.
-Package scrbase Info: activating american \contentsname on input line 29.
-Package scrbase Info: activating american \listfigurename on input line 29.
-Package scrbase Info: activating american \listtablename on input line 29.
+ line 30.
+Package scrbase Info: activating american \contentsname on input line 30.
+Package scrbase Info: activating american \listfigurename on input line 30.
+Package scrbase Info: activating american \listtablename on input line 30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
@@ -1796,19 +1796,19 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
 \c@lstlisting=\count509
-Package scrhack Info: undefining \float@addtolists on input line 29.
+Package scrhack Info: undefining \float@addtolists on input line 30.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
-LaTeX Info: Redefining \microtypecontext on input line 29.
+LaTeX Info: Redefining \microtypecontext on input line 30.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 29.
+LaTeX Info: Redefining \showhyphens on input line 30.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1826,7 +1826,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1840,9 +1840,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count510
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
@@ -1854,7 +1854,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 29.
+(scrbook)           before \begin{document} on input line 30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1973,36 +1973,36 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 29.
-Package biblatex Info: Reference segment=0 on input line 29.
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 29.
+line 30.
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
-29.
+30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-29.
+30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-29.
+30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-29.
+30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-29.
+30.
 
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -2020,16 +2020,28 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(pages/cover.tex [1
+(pages/cover.tex
+<logos/hm_logo_full_2020.pdf, id=6, 234.8775pt x 64.24pt>
+File: logos/hm_logo_full_2020.pdf Graphic file (type pdf)
+<use logos/hm_logo_full_2020.pdf>
+Package pdftex.def Info: logos/hm_logo_full_2020.pdf  used on input line 17.
+(pdftex.def)             Requested size: 312.11435pt x 85.35826pt.
+ [1
 
 \openout4 = `main.ist'.
 
 
 
-{C:/Users/fertiga/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+{C:/Users/fertiga/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./logos/hm_lo
+go_full_2020.pdf>])
 \openout2 = `pages/title.aux'.
 
  (pages/title.tex
+File: logos/hm_logo_full_2020.pdf Graphic file (type pdf)
+<use logos/hm_logo_full_2020.pdf>
+Package pdftex.def Info: logos/hm_logo_full_2020.pdf  used on input line 9.
+(pdftex.def)             Requested size: 312.11435pt x 85.35826pt.
+
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\bab
 el-ngerman.tex
 (C:\Users\fertiga\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\bab
@@ -2062,19 +2074,34 @@ File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 
 
 ])
+\openout2 = `pages/title_de.aux'.
+
+ (pages/title_de.tex
+File: logos/hm_logo_full_2020.pdf Graphic file (type pdf)
+<use logos/hm_logo_full_2020.pdf>
+Package pdftex.def Info: logos/hm_logo_full_2020.pdf  used on input line 9.
+(pdftex.def)             Requested size: 312.11435pt x 85.35826pt.
+ [2
+
+
+
+
+
+])
 \openout2 = `pages/disclaimer.aux'.
 
- (pages/disclaimer.tex [2
+ (pages/disclaimer.tex [3
 
 
 
 ])
 \openout2 = `pages/acknowledgments.aux'.
 
- (pages/acknowledgments.tex
+
+(pages/acknowledgments.tex
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 26.
- [3
+ [4
 
 
 
@@ -2083,10 +2110,9 @@ LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 ])
 \openout2 = `pages/abstract.aux'.
 
-
-(pages/abstract.tex
+ (pages/abstract.tex
 chapter without number
-) [4
+) [5
 
 
 
@@ -2102,9 +2128,9 @@ chapter without number
 \openout9 = `main.glsdefs'.
 
 )
-Package tocbasic Info: character protrusion at toc deactivated on input line 46
+Package tocbasic Info: character protrusion at toc deactivated on input line 48
 .
- (main.toc [5
+ (main.toc [6
 
 
 
@@ -2118,20 +2144,20 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 46
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [6]
+ [7]
 \openout2 = `chapters/01_chapter01/chapter1.aux'.
 
 
 (chapters/01_chapter01/chapter1.tex
 chapter 1.
 (chapters/01_chapter01/section11.tex
-<figures/chap1_general_objects.png, id=112, 415.5525pt x 266.9975pt>
+<figures/chap1_general_objects.png, id=119, 415.5525pt x 266.9975pt>
 File: figures/chap1_general_objects.png Graphic file (type png)
 <use figures/chap1_general_objects.png>
 Package pdftex.def Info: figures/chap1_general_objects.png  used on input line 
 28.
 (pdftex.def)             Requested size: 167.29967pt x 107.48969pt.
-<figures/chap1_industrial_objects.png, id=114, 415.5525pt x 266.9975pt>
+<figures/chap1_industrial_objects.png, id=121, 415.5525pt x 266.9975pt>
 File: figures/chap1_industrial_objects.png Graphic file (type png)
 <use figures/chap1_industrial_objects.png>
 Package pdftex.def Info: figures/chap1_industrial_objects.png  used on input li
@@ -2167,7 +2193,7 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 ] [4]
-<figures/chap21_cnn.png, id=197, 1043.9pt x 321.2pt>
+<figures/chap21_cnn.png, id=204, 1043.9pt x 321.2pt>
 File: figures/chap21_cnn.png Graphic file (type png)
 <use figures/chap21_cnn.png>
 Package pdftex.def Info: figures/chap21_cnn.png  used on input line 92.
@@ -2190,18 +2216,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 [5 <./figures/chap21_cnn.png>]) (chapters/02_chapter02/section22.tex
-<figures/chap22_image.jpg, id=232, 501.875pt x 282.05376pt>
+<figures/chap22_image.jpg, id=240, 501.875pt x 282.05376pt>
 File: figures/chap22_image.jpg Graphic file (type jpg)
 <use figures/chap22_image.jpg>
 Package pdftex.def Info: figures/chap22_image.jpg  used on input line 38.
 (pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
-<figures/chap22_semantic_seg.png, id=233, 501.875pt x 282.05376pt>
+<figures/chap22_semantic_seg.png, id=241, 501.875pt x 282.05376pt>
 File: figures/chap22_semantic_seg.png Graphic file (type png)
 <use figures/chap22_semantic_seg.png>
 Package pdftex.def Info: figures/chap22_semantic_seg.png  used on input line 46
 .
 (pdftex.def)             Requested size: 125.47794pt x 70.51756pt.
-<figures/chap22_instance_seg.png, id=236, 501.875pt x 282.05376pt>
+<figures/chap22_instance_seg.png, id=244, 501.875pt x 282.05376pt>
 File: figures/chap22_instance_seg.png Graphic file (type png)
 <use figures/chap22_instance_seg.png>
 Package pdftex.def Info: figures/chap22_instance_seg.png  used on input line 55
@@ -2213,25 +2239,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6] [7 <./figures/chap22_image.jpg> <./figures/chap22_semantic_seg.png> <./figu
 res/chap22_instance_seg.png>] [8]
-<figures/chap222_iou.png, id=321, 602.25pt x 469.755pt>
+<figures/chap222_iou.png, id=328, 602.25pt x 469.755pt>
 File: figures/chap222_iou.png Graphic file (type png)
 <use figures/chap222_iou.png>
 Package pdftex.def Info: figures/chap222_iou.png  used on input line 145.
 (pdftex.def)             Requested size: 209.12778pt x 163.11932pt.
  [9 <./figures/chap222_iou.png>]
-<figures/chap223_segnet_arch.png, id=358, 823.075pt x 229.85875pt>
+<figures/chap223_segnet_arch.png, id=365, 823.075pt x 229.85875pt>
 File: figures/chap223_segnet_arch.png Graphic file (type png)
 <use figures/chap223_segnet_arch.png>
 Package pdftex.def Info: figures/chap223_segnet_arch.png  used on input line 18
 6.
 (pdftex.def)             Requested size: 418.25555pt x 116.80551pt.
  [10]
-<figures/chap223_unet.png, id=387, 689.07437pt x 447.6725pt>
+<figures/chap223_unet.png, id=394, 689.07437pt x 447.6725pt>
 File: figures/chap223_unet.png Graphic file (type png)
 <use figures/chap223_unet.png>
 Package pdftex.def Info: figures/chap223_unet.png  used on input line 269.
 (pdftex.def)             Requested size: 418.25555pt x 271.7273pt.
-<figures/chap223_fcn_results.png, id=398, 2259.1903pt x 931.22906pt>
+<figures/chap223_fcn_results.png, id=405, 2259.1903pt x 931.22906pt>
 File: figures/chap223_fcn_results.png Graphic file (type png)
 <use figures/chap223_fcn_results.png>
 Package pdftex.def Info: figures/chap223_fcn_results.png  used on input line 28
@@ -2239,7 +2265,7 @@ Package pdftex.def Info: figures/chap223_fcn_results.png  used on input line 28
 (pdftex.def)             Requested size: 418.25555pt x 172.40256pt.
  [11 <./figures/chap223_segnet_arch.png>] [12 <./figures/chap223_unet.png>] [13
  <./figures/chap223_fcn_results.png>]
-<figures/chap223_psp.png, id=443, 912.91063pt x 273.02pt>
+<figures/chap223_psp.png, id=450, 912.91063pt x 273.02pt>
 File: figures/chap223_psp.png Graphic file (type png)
 <use figures/chap223_psp.png>
 Package pdftex.def Info: figures/chap223_psp.png  used on input line 316.
@@ -2250,16 +2276,13 @@ Package pdftex.def Info: figures/chap223_psp.png  used on input line 316.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16] [17]
-<figures/chap232_ifcn.png, id=578, 2454.16875pt x 505.13719pt>
+<figures/chap232_ifcn.png, id=586, 2454.16875pt x 505.13719pt>
 File: figures/chap232_ifcn.png Graphic file (type png)
 <use figures/chap232_ifcn.png>
 Package pdftex.def Info: figures/chap232_ifcn.png  used on input line 63.
 (pdftex.def)             Requested size: 418.25555pt x 86.088pt.
- [18 <./figures/chap232_ifcn.png>] [19] [20]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[21]) (chapters/02_chapter02/section24.tex [22]
+ [18 <./figures/chap232_ifcn.png>] [19] [20] [21])
+(chapters/02_chapter02/section24.tex [22]
 Underfull \hbox (badness 6032) in paragraph at lines 21--21
 [][]\T1/pplx/m/n/9 (+20) Wolfram Re-search (2010), Prob-a-bil-i-ty-Plot []$\T1/
 cmtt/m/n/9 https : / / reference . wolfram . com / language / ref /
@@ -2277,13 +2300,13 @@ Underfull \hbox (badness 1783) in paragraph at lines 81--81
  (chapters/03_chapter03/chapter3.tex
 chapter 3.
 (chapters/03_chapter03/section31.tex
-<figures/chap31_polygon_drawing.png, id=746, 423.08063pt x 277.53688pt>
+<figures/chap31_polygon_drawing.png, id=753, 423.08063pt x 277.53688pt>
 File: figures/chap31_polygon_drawing.png Graphic file (type png)
 <use figures/chap31_polygon_drawing.png>
 Package pdftex.def Info: figures/chap31_polygon_drawing.png  used on input line
  30.
 (pdftex.def)             Requested size: 188.21371pt x 123.46329pt.
-<figures/chap31_polygon_result.png, id=747, 424.08438pt x 280.54813pt>
+<figures/chap31_polygon_result.png, id=754, 424.08438pt x 280.54813pt>
 File: figures/chap31_polygon_result.png Graphic file (type png)
 <use figures/chap31_polygon_result.png>
 Package pdftex.def Info: figures/chap31_polygon_result.png  used on input line 
@@ -2301,41 +2324,41 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [27 <./figures/chap31_polygon_drawing.png> <./figures/chap31_polygon_result.p
 ng>]
-<figures/chap32_watershed_application1.png, id=770, 497.86pt x 289.58188pt>
+<figures/chap32_watershed_application1.png, id=778, 497.86pt x 289.58188pt>
 File: figures/chap32_watershed_application1.png Graphic file (type png)
 <use figures/chap32_watershed_application1.png>
 Package pdftex.def Info: figures/chap32_watershed_application1.png  used on inp
-ut line 51.
+ut line 52.
 (pdftex.def)             Requested size: 188.21371pt x 109.47665pt.
-<figures/chap32_watershed_application2.png, id=771, 499.8675pt x 288.57813pt>
+<figures/chap32_watershed_application2.png, id=779, 499.8675pt x 288.57813pt>
 File: figures/chap32_watershed_application2.png Graphic file (type png)
 <use figures/chap32_watershed_application2.png>
 Package pdftex.def Info: figures/chap32_watershed_application2.png  used on inp
-ut line 59.
+ut line 60.
 (pdftex.def)             Requested size: 188.21371pt x 108.65686pt.
-<figures/chap32_watershed_application3.png, id=772, 499.8675pt x 289.08pt>
+<figures/chap32_watershed_application3.png, id=780, 499.8675pt x 289.08pt>
 File: figures/chap32_watershed_application3.png Graphic file (type png)
 <use figures/chap32_watershed_application3.png>
 Package pdftex.def Info: figures/chap32_watershed_application3.png  used on inp
-ut line 67.
+ut line 68.
 (pdftex.def)             Requested size: 188.21371pt x 108.84583pt.
-<figures/chap32_watershed_application4.png, id=773, 497.35812pt x 289.58188pt>
+<figures/chap32_watershed_application4.png, id=781, 497.35812pt x 289.58188pt>
 File: figures/chap32_watershed_application4.png Graphic file (type png)
 <use figures/chap32_watershed_application4.png>
 Package pdftex.def Info: figures/chap32_watershed_application4.png  used on inp
-ut line 75.
+ut line 76.
 (pdftex.def)             Requested size: 188.21371pt x 109.58713pt.
-<figures/chap32_watershed_application5.png, id=774, 499.36563pt x 288.07625pt>
+<figures/chap32_watershed_application5.png, id=782, 499.36563pt x 288.07625pt>
 File: figures/chap32_watershed_application5.png Graphic file (type png)
 <use figures/chap32_watershed_application5.png>
 Package pdftex.def Info: figures/chap32_watershed_application5.png  used on inp
-ut line 84.
+ut line 85.
 (pdftex.def)             Requested size: 188.21371pt x 108.57777pt.
-<figures/chap32_watershed_application6.png, id=775, 500.87125pt x 288.57813pt>
+<figures/chap32_watershed_application6.png, id=783, 500.87125pt x 288.57813pt>
 File: figures/chap32_watershed_application6.png Graphic file (type png)
 <use figures/chap32_watershed_application6.png>
 Package pdftex.def Info: figures/chap32_watershed_application6.png  used on inp
-ut line 92.
+ut line 93.
 (pdftex.def)             Requested size: 188.21371pt x 108.44109pt.
 )
 (chapters/03_chapter03/section33.tex [28] [29 <./figures/chap32_watershed_appli
@@ -2343,24 +2366,24 @@ cation1.png> <./figures/chap32_watershed_application2.png> <./figures/chap32_wa
 tershed_application3.png> <./figures/chap32_watershed_application4.png> <./figu
 res/chap32_watershed_application5.png> <./figures/chap32_watershed_application6
 .png>]
-<figures/chap33_bear_bbox.png, id=802, 294.8616pt x 169.1118pt>
+<figures/chap33_bear_bbox.png, id=812, 294.8616pt x 169.1118pt>
 File: figures/chap33_bear_bbox.png Graphic file (type png)
 <use figures/chap33_bear_bbox.png>
 Package pdftex.def Info: figures/chap33_bear_bbox.png  used on input line 40.
 (pdftex.def)             Requested size: 418.25555pt x 239.89528pt.
  [30 <./figures/chap33_bear_bbox.png>]
-<figures/chap33_channel_rgb.png, id=817, 197.2971pt x 197.2971pt>
+<figures/chap33_channel_rgb.png, id=826, 197.2971pt x 197.2971pt>
 File: figures/chap33_channel_rgb.png Graphic file (type png)
 <use figures/chap33_channel_rgb.png>
 Package pdftex.def Info: figures/chap33_channel_rgb.png  used on input line 74.
 
 (pdftex.def)             Requested size: 125.47794pt x 125.48096pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[][][]|\T1/pplx/m/n/10 (+20) RGB im-age cropped
+Underfull \hbox (badness 4859) in paragraph at lines 75--75
+[][][]|\T1/pplx/m/n/10 (+20) RGB im-age with the
  []
 
-<figures/chap33_channel_fg.png, id=818, 197.2971pt x 197.2971pt>
+<figures/chap33_channel_fg.png, id=827, 197.2971pt x 197.2971pt>
 File: figures/chap33_channel_fg.png Graphic file (type png)
 <use figures/chap33_channel_fg.png>
 Package pdftex.def Info: figures/chap33_channel_fg.png  used on input line 81.
@@ -2370,7 +2393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 [][][]|\T1/pplx/m/n/10 (+20) Fore-ground heatmap
  []
 
-<figures/chap33_gaussian_point.png, id=819, 197.2971pt x 197.2971pt>
+<figures/chap33_gaussian_point.png, id=828, 197.2971pt x 197.2971pt>
 File: figures/chap33_gaussian_point.png Graphic file (type png)
 <use figures/chap33_gaussian_point.png>
 Package pdftex.def Info: figures/chap33_gaussian_point.png  used on input line 
@@ -2378,13 +2401,13 @@ Package pdftex.def Info: figures/chap33_gaussian_point.png  used on input line
 (pdftex.def)             Requested size: 125.47794pt x 125.48096pt.
 [31 <./figures/chap33_channel_rgb.png> <./figures/chap33_channel_fg.png> <./fig
 ures/chap33_gaussian_point.png>]
-<figures/chap33_bear_initial_result.png, id=841, 294.8616pt x 165.7392pt>
+<figures/chap33_bear_initial_result.png, id=850, 294.8616pt x 165.7392pt>
 File: figures/chap33_bear_initial_result.png Graphic file (type png)
 <use figures/chap33_bear_initial_result.png>
 Package pdftex.def Info: figures/chap33_bear_initial_result.png  used on input 
 line 132.
 (pdftex.def)             Requested size: 188.21371pt x 105.79199pt.
-<figures/chap33_bear_refine_result.png, id=842, 294.8616pt x 165.7392pt>
+<figures/chap33_bear_refine_result.png, id=851, 294.8616pt x 165.7392pt>
 File: figures/chap33_bear_refine_result.png Graphic file (type png)
 <use figures/chap33_bear_refine_result.png>
 Package pdftex.def Info: figures/chap33_bear_refine_result.png  used on input l
@@ -2393,80 +2416,80 @@ ine 139.
  [32 <./figures/chap33_bear_initial_result.png> <./figures/chap33_bear_refine_r
 esult.png>])
 (chapters/03_chapter03/section34.tex [33]
-<figures/chap34_bear_2.png, id=884, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_2.png, id=895, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_2.png Graphic file (type png)
 <use figures/chap34_bear_2.png>
 Package pdftex.def Info: figures/chap34_bear_2.png  used on input line 39.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
-<figures/chap34_bear_3.png, id=885, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_3.png, id=896, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_3.png Graphic file (type png)
 <use figures/chap34_bear_3.png>
 Package pdftex.def Info: figures/chap34_bear_3.png  used on input line 46.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
-<figures/chap34_bear_5.png, id=886, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_5.png, id=897, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_5.png Graphic file (type png)
 <use figures/chap34_bear_5.png>
 Package pdftex.def Info: figures/chap34_bear_5.png  used on input line 53.
 (pdftex.def)             Requested size: 125.47794pt x 70.4581pt.
-<figures/chap34_channel_rgb.png, id=896, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_rgb.png, id=907, 178.7478pt x 178.7478pt>
 File: figures/chap34_channel_rgb.png Graphic file (type png)
 <use figures/chap34_channel_rgb.png>
-Package pdftex.def Info: figures/chap34_channel_rgb.png  used on input line 84.
+Package pdftex.def Info: figures/chap34_channel_rgb.png  used on input line 83.
 
-(pdftex.def)             Requested size: 125.47794pt x 125.48398pt.
+(pdftex.def)             Requested size: 125.47794pt x 125.47989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 [][][]|\T1/pplx/m/n/10 (+20) RGB im-age cropped
  []
 
-<figures/chap34_channel_fg.png, id=897, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_fg.png, id=908, 140.4447pt x 140.4447pt>
 File: figures/chap34_channel_fg.png Graphic file (type png)
 <use figures/chap34_channel_fg.png>
-Package pdftex.def Info: figures/chap34_channel_fg.png  used on input line 91.
+Package pdftex.def Info: figures/chap34_channel_fg.png  used on input line 90.
 (pdftex.def)             Requested size: 125.47794pt x 125.48398pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 [][][]|\T1/pplx/m/n/10 (+20) Fore-ground heatmap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 \T1/pplx/m/n/10 (+20) with one fore-ground
  []
 
-<figures/chap34_channel_bg.png, id=898, 140.4447pt x 140.4447pt>
+<figures/chap34_channel_bg.png, id=909, 140.4447pt x 140.4447pt>
 File: figures/chap34_channel_bg.png Graphic file (type png)
 <use figures/chap34_channel_bg.png>
-Package pdftex.def Info: figures/chap34_channel_bg.png  used on input line 98.
+Package pdftex.def Info: figures/chap34_channel_bg.png  used on input line 97.
 (pdftex.def)             Requested size: 125.47794pt x 125.48398pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 [][][]|\T1/pplx/m/n/10 (+20) Back-ground heatmap
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 99--99
+Underfull \hbox (badness 3769) in paragraph at lines 98--98
 \T1/pplx/m/n/10 (+20) with four back-ground
  []
 
 [34 <./figures/chap34_bear_2.png> <./figures/chap34_bear_3.png> <./figures/chap
 34_bear_5.png>]
-<figures/chap34_iog_arch.png, id=919, 909.3975pt x 378.41376pt>
+<figures/chap34_iog_arch.png, id=929, 909.3975pt x 378.41376pt>
 File: figures/chap34_iog_arch.png Graphic file (type png)
 <use figures/chap34_iog_arch.png>
-Package pdftex.def Info: figures/chap34_iog_arch.png  used on input line 132.
+Package pdftex.def Info: figures/chap34_iog_arch.png  used on input line 131.
 (pdftex.def)             Requested size: 418.25555pt x 174.04356pt.
  [35 <./figures/chap34_channel_rgb.png> <./figures/chap34_channel_fg.png> <./fi
 gures/chap34_channel_bg.png>] [36 <./figures/chap34_iog_arch.png>]
-<figures/chap34_bear_6.png, id=958, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_6.png, id=967, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_6.png Graphic file (type png)
 <use figures/chap34_bear_6.png>
-Package pdftex.def Info: figures/chap34_bear_6.png  used on input line 180.
+Package pdftex.def Info: figures/chap34_bear_6.png  used on input line 179.
 (pdftex.def)             Requested size: 188.21371pt x 105.6842pt.
-<figures/chap34_bear_8.png, id=959, 229.0959pt x 128.6406pt>
+<figures/chap34_bear_8.png, id=968, 229.0959pt x 128.6406pt>
 File: figures/chap34_bear_8.png Graphic file (type png)
 <use figures/chap34_bear_8.png>
-Package pdftex.def Info: figures/chap34_bear_8.png  used on input line 187.
+Package pdftex.def Info: figures/chap34_bear_8.png  used on input line 186.
 (pdftex.def)             Requested size: 188.21371pt x 105.6842pt.
  [37])) [38 <./figures/chap34_bear_6.png> <./figures/chap34_bear_8.png>]
 \openout2 = `chapters/04_chapter04/chapter4.aux'.
@@ -2486,34 +2509,51 @@ chapter 4.
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 55.
 
 ) (chapters/04_chapter04/section44.tex [41]
-<figures/chap44_standard.png, id=1030, 332.24126pt x 283.0575pt>
+<figures/chap44_standard.png, id=1044, 332.24126pt x 189.70876pt>
 File: figures/chap44_standard.png Graphic file (type png)
 <use figures/chap44_standard.png>
 Package pdftex.def Info: figures/chap44_standard.png  used on input line 52.
-(pdftex.def)             Requested size: 188.21371pt x 160.35104pt.
-<figures/chap44_industrial.png, id=1031, 388.45125pt x 360.84813pt>
-File: figures/chap44_industrial.png Graphic file (type png)
-<use figures/chap44_industrial.png>
-Package pdftex.def Info: figures/chap44_industrial.png  used on input line 60.
-(pdftex.def)             Requested size: 188.21371pt x 174.84044pt.
-<figures/chap44_urban.png, id=1032, 635.87563pt x 356.83313pt>
+(pdftex.def)             Requested size: 188.21371pt x 107.46931pt.
+<figures/chap44_urban.png, id=1045, 331.73938pt x 190.21063pt>
 File: figures/chap44_urban.png Graphic file (type png)
 <use figures/chap44_urban.png>
-Package pdftex.def Info: figures/chap44_urban.png  used on input line 68.
-(pdftex.def)             Requested size: 188.21371pt x 105.61876pt.
-<figures/chap44_anomaly.png, id=1033, 433.11812pt x 100.375pt>
-File: figures/chap44_anomaly.png Graphic file (type png)
-<use figures/chap44_anomaly.png>
-Package pdftex.def Info: figures/chap44_anomaly.png  used on input line 76.
-(pdftex.def)             Requested size: 188.21371pt x 43.61835pt.
+Package pdftex.def Info: figures/chap44_urban.png  used on input line 60.
+(pdftex.def)             Requested size: 188.21371pt x 107.91617pt.
+<figures/chap44_industrial1.png, id=1046, 302.12875pt x 291.0875pt>
+File: figures/chap44_industrial1.png Graphic file (type png)
+<use figures/chap44_industrial1.png>
+Package pdftex.def Info: figures/chap44_industrial1.png  used on input line 68.
 
+(pdftex.def)             Requested size: 188.21371pt x 181.33405pt.
+<figures/chap44_industrial2.png, id=1047, 302.12875pt x 291.0875pt>
+File: figures/chap44_industrial2.png Graphic file (type png)
+<use figures/chap44_industrial2.png>
+Package pdftex.def Info: figures/chap44_industrial2.png  used on input line 76.
+
+(pdftex.def)             Requested size: 188.21371pt x 181.33405pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[][][]|\T1/pplx/m/n/10 (+20) Ex-am-ple im-age from do-main
+ []
+
+<figures/chap44_anomaly1.png, id=1048, 177.16188pt x 137.51375pt>
+File: figures/chap44_anomaly1.png Graphic file (type png)
+<use figures/chap44_anomaly1.png>
+Package pdftex.def Info: figures/chap44_anomaly1.png  used on input line 84.
+(pdftex.def)             Requested size: 188.21371pt x 146.0954pt.
+<figures/chap44_anomaly2.png, id=1049, 177.16188pt x 137.51375pt>
+File: figures/chap44_anomaly2.png Graphic file (type png)
+<use figures/chap44_anomaly2.png>
+Package pdftex.def Info: figures/chap44_anomaly2.png  used on input line 92.
+(pdftex.def)             Requested size: 188.21371pt x 146.0954pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42] [43 <./figures/chap44_standard.png> <./figures/chap44_industrial.png> <./f
-igures/chap44_urban.png> <./figures/chap44_anomaly.png>])
+[42] [43 <./figures/chap44_standard.png> <./figures/chap44_urban.png> <./figure
+s/chap44_industrial1.png> <./figures/chap44_industrial2.png> <./figures/chap44_
+anomaly1.png> <./figures/chap44_anomaly2.png>])
 (chapters/04_chapter04/section45.tex [44]
-<figures/chap45_labeltool_scrennshot.png, id=1065, 1358.07375pt x 694.09312pt>
+<figures/chap45_labeltool_scrennshot.png, id=1083, 1358.07375pt x 694.09312pt>
 File: figures/chap45_labeltool_scrennshot.png Graphic file (type png)
 <use figures/chap45_labeltool_scrennshot.png>
 Package pdftex.def Info: figures/chap45_labeltool_scrennshot.png  used on input
@@ -2524,187 +2564,187 @@ Package pdftex.def Info: figures/chap45_labeltool_scrennshot.png  used on input
 
  (chapters/05_chapter05/chapter5.tex
 chapter 5.
-(chapters/05_chapter05/section51.tex [47
+<figures/placeholder.png, id=1098, 978.65625pt x 652.68843pt>
+File: figures/placeholder.png Graphic file (type png)
+<use figures/placeholder.png>
+Package pdftex.def Info: figures/placeholder.png  used on input line 17.
+(pdftex.def)             Requested size: 125.47794pt x 83.67728pt.
+File: figures/placeholder.png Graphic file (type png)
+<use figures/placeholder.png>
+Package pdftex.def Info: figures/placeholder.png  used on input line 25.
+(pdftex.def)             Requested size: 125.47794pt x 83.67728pt.
+File: figures/placeholder.png Graphic file (type png)
+<use figures/placeholder.png>
+Package pdftex.def Info: figures/placeholder.png  used on input line 33.
+(pdftex.def)             Requested size: 125.47794pt x 83.67728pt.
+(chapters/05_chapter05/section51.tex
+<figures/chap51_iou_vs_time.png, id=1100, 995.8806pt x 609.9588pt>
+File: figures/chap51_iou_vs_time.png Graphic file (type png)
+<use figures/chap51_iou_vs_time.png>
+Package pdftex.def Info: figures/chap51_iou_vs_time.png  used on input line 18.
+
+(pdftex.def)             Requested size: 334.60571pt x 204.93546pt.
+ [47
 
 
 
 
 
-]
-Underfull \hbox (badness 1038) in paragraph at lines 46--50
-[]\T1/pplx/m/n/10.95 (+20) Last, at-ten-tion should be drawn to the cor-re-la-t
-ion be-tween [][]IoU[] and time
+ <./figures/placeholder.png>] [48 <./figures/chap51_iou_vs_time.png>]
+Underfull \hbox (badness 1168) in paragraph at lines 60--64
+[]\T1/pplx/m/n/10.95 (+20) Attention should be drawn also to the cor-re-la-tion
+ be-tween [][]IoU[] and time
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48]
-<figures/chap51_iou_raw.png, id=1117, 813.7602pt x 643.9257pt>
+[49]
+<figures/chap51_iou_raw.png, id=1148, 813.7602pt x 643.9257pt>
 File: figures/chap51_iou_raw.png Graphic file (type png)
 <use figures/chap51_iou_raw.png>
-Package pdftex.def Info: figures/chap51_iou_raw.png  used on input line 115.
+Package pdftex.def Info: figures/chap51_iou_raw.png  used on input line 130.
 (pdftex.def)             Requested size: 125.47794pt x 99.2867pt.
-<figures/chap51_iou_trans.png, id=1118, 814.4829pt x 645.3711pt>
+<figures/chap51_iou_trans.png, id=1149, 814.4829pt x 645.3711pt>
 File: figures/chap51_iou_trans.png Graphic file (type png)
 <use figures/chap51_iou_trans.png>
-Package pdftex.def Info: figures/chap51_iou_trans.png  used on input line 123.
+Package pdftex.def Info: figures/chap51_iou_trans.png  used on input line 138.
 (pdftex.def)             Requested size: 125.47794pt x 99.42093pt.
 
-Underfull \hbox (badness 6016) in paragraph at lines 126--126
+Underfull \hbox (badness 6016) in paragraph at lines 141--141
 \T1/pplx/m/n/10 (+20) formed sam-ple $\OML/zplm/m/it/10 X[]$
  []
 
-<figures/chap51_iou_probplot.png, id=1119, 818.0964pt x 644.6484pt>
+<figures/chap51_iou_probplot.png, id=1150, 818.0964pt x 644.6484pt>
 File: figures/chap51_iou_probplot.png Graphic file (type png)
 <use figures/chap51_iou_probplot.png>
-Package pdftex.def Info: figures/chap51_iou_probplot.png  used on input line 13
-1.
+Package pdftex.def Info: figures/chap51_iou_probplot.png  used on input line 14
+6.
 (pdftex.def)             Requested size: 125.47794pt x 98.86696pt.
-[49]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[50 <./figures/chap51_iou_raw.png> <./figures/chap51_iou_trans.png> <./figures/
-chap51_iou_probplot.png>]
-<figures/chap51_iou_boxplot.png, id=1150, 723.4227pt x 528.2937pt>
-File: figures/chap51_iou_boxplot.png Graphic file (type png)
-<use figures/chap51_iou_boxplot.png>
-Package pdftex.def Info: figures/chap51_iou_boxplot.png  used on input line 208
-.
-(pdftex.def)             Requested size: 250.95587pt x 183.26917pt.
- [51]
-<figures/chap51_time_raw.png, id=1165, 823.1553pt x 648.9846pt>
-File: figures/chap51_time_raw.png Graphic file (type png)
-<use figures/chap51_time_raw.png>
-Package pdftex.def Info: figures/chap51_time_raw.png  used on input line 236.
-(pdftex.def)             Requested size: 125.47794pt x 98.92792pt.
-<figures/chap51_time_trans.png, id=1166, 821.7099pt x 644.6484pt>
-File: figures/chap51_time_trans.png Graphic file (type png)
-<use figures/chap51_time_trans.png>
-Package pdftex.def Info: figures/chap51_time_trans.png  used on input line 244.
-
-(pdftex.def)             Requested size: 125.47794pt x 98.43414pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--247
-[][][]|\T1/pplx/m/n/10 (+20) Trans-formed sam-ple
- []
-
-<figures/chap51_time_probplot.png, id=1167, 825.3234pt x 647.5392pt>
-File: figures/chap51_time_probplot.png Graphic file (type png)
-<use figures/chap51_time_probplot.png>
-Package pdftex.def Info: figures/chap51_time_probplot.png  used on input line 2
-52.
-(pdftex.def)             Requested size: 125.47794pt x 98.44081pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[50]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52 <./figures/chap51_iou_boxplot.png>] [53 <./figures/chap51_time_raw.png> <./
-figures/chap51_time_trans.png> <./figures/chap51_time_probplot.png>]
-<figures/chap51_time_boxplot.png, id=1196, 985.0401pt x 612.1269pt>
+[51 <./figures/chap51_iou_raw.png> <./figures/chap51_iou_trans.png> <./figures/
+chap51_iou_probplot.png>]
+<figures/chap51_iou_boxplot.png, id=1181, 723.4227pt x 528.2937pt>
+File: figures/chap51_iou_boxplot.png Graphic file (type png)
+<use figures/chap51_iou_boxplot.png>
+Package pdftex.def Info: figures/chap51_iou_boxplot.png  used on input line 223
+.
+(pdftex.def)             Requested size: 250.95587pt x 183.26917pt.
+ [52] [53 <./figures/chap51_iou_boxplot.png>]
+<figures/chap51_time_raw.png, id=1207, 823.1553pt x 648.9846pt>
+File: figures/chap51_time_raw.png Graphic file (type png)
+<use figures/chap51_time_raw.png>
+Package pdftex.def Info: figures/chap51_time_raw.png  used on input line 286.
+(pdftex.def)             Requested size: 125.47794pt x 98.92792pt.
+<figures/chap51_time_trans.png, id=1208, 821.7099pt x 644.6484pt>
+File: figures/chap51_time_trans.png Graphic file (type png)
+<use figures/chap51_time_trans.png>
+Package pdftex.def Info: figures/chap51_time_trans.png  used on input line 294.
+
+(pdftex.def)             Requested size: 125.47794pt x 98.43414pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[][][]|\T1/pplx/m/n/10 (+20) Trans-formed sam-ple
+ []
+
+<figures/chap51_time_probplot.png, id=1209, 825.3234pt x 647.5392pt>
+File: figures/chap51_time_probplot.png Graphic file (type png)
+<use figures/chap51_time_probplot.png>
+Package pdftex.def Info: figures/chap51_time_probplot.png  used on input line 3
+02.
+(pdftex.def)             Requested size: 125.47794pt x 98.44081pt.
+[54 <./figures/chap51_time_raw.png> <./figures/chap51_time_trans.png> <./figure
+s/chap51_time_probplot.png>]
+<figures/chap51_time_boxplot.png, id=1237, 985.0401pt x 612.1269pt>
 File: figures/chap51_time_boxplot.png Graphic file (type png)
 <use figures/chap51_time_boxplot.png>
-Package pdftex.def Info: figures/chap51_time_boxplot.png  used on input line 32
-7.
+Package pdftex.def Info: figures/chap51_time_boxplot.png  used on input line 37
+8.
 (pdftex.def)             Requested size: 376.42744pt x 233.91827pt.
- [54 <./figures/chap51_time_boxplot.png>]) (chapters/05_chapter05/section52.tex
-<figures/chap52_iou_methods_over_domains_boxplot.png, id=1216, 1009.6119pt x 50
+ [55] [56 <./figures/chap51_time_boxplot.png>])
+(chapters/05_chapter05/section52.tex
+<figures/chap52_iou_methods_over_domains_boxplot.png, id=1269, 1009.6119pt x 50
 0.8311pt>
 File: figures/chap52_iou_methods_over_domains_boxplot.png Graphic file (type pn
 g)
 <use figures/chap52_iou_methods_over_domains_boxplot.png>
 Package pdftex.def Info: figures/chap52_iou_methods_over_domains_boxplot.png  u
-sed on input line 28.
+sed on input line 26.
 (pdftex.def)             Requested size: 418.25555pt x 207.48186pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[55]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[56 <./figures/chap52_iou_methods_over_domains_boxplot.png>]
-<figures/chap52_time_methods_over_domains_boxplot.png, id=1251, 1010.3346pt x 5
+[57] [58 <./figures/chap52_iou_methods_over_domains_boxplot.png>]
+<figures/chap52_time_methods_over_domains_boxplot.png, id=1302, 1010.3346pt x 5
 05.1673pt>
 File: figures/chap52_time_methods_over_domains_boxplot.png Graphic file (type p
 ng)
 <use figures/chap52_time_methods_over_domains_boxplot.png>
 Package pdftex.def Info: figures/chap52_time_methods_over_domains_boxplot.png  
-used on input line 98.
+used on input line 97.
 (pdftex.def)             Requested size: 418.25555pt x 209.13177pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[58 <./figures/chap52_time_methods_over_domains_boxplot.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (chapters/05_chapter05/section53.tex [59] [60]
-<figures/chap53_all_users_iou.png, id=1352, 1157.7654pt x 525.4029pt>
+[59] [60 <./figures/chap52_time_methods_over_domains_boxplot.png>] [61])
+(chapters/05_chapter05/section53.tex [62] [63]
+<figures/chap53_all_users_iou.png, id=1410, 1157.7654pt x 525.4029pt>
 File: figures/chap53_all_users_iou.png Graphic file (type png)
 <use figures/chap53_all_users_iou.png>
-Package pdftex.def Info: figures/chap53_all_users_iou.png  used on input line 6
-7.
+Package pdftex.def Info: figures/chap53_all_users_iou.png  used on input line 7
+3.
 (pdftex.def)             Requested size: 418.25555pt x 189.80229pt.
-<figures/chap53_all_users_time.png, id=1355, 1159.2108pt x 526.8483pt>
+<figures/chap53_all_users_time.png, id=1413, 1159.2108pt x 526.8483pt>
 File: figures/chap53_all_users_time.png Graphic file (type png)
 <use figures/chap53_all_users_time.png>
 Package pdftex.def Info: figures/chap53_all_users_time.png  used on input line 
-75.
+81.
 (pdftex.def)             Requested size: 418.25555pt x 190.09131pt.
- [61] [62 <./figures/chap53_all_users_iou.png> <./figures/chap53_all_users_time
+ [64] [65 <./figures/chap53_all_users_iou.png> <./figures/chap53_all_users_time
 .png>]
-<figures/chap53_afe_cmo_iou.png, id=1386, 676.4472pt x 513.117pt>
+<figures/chap53_afe_cmo_iou.png, id=1447, 676.4472pt x 513.117pt>
 File: figures/chap53_afe_cmo_iou.png Graphic file (type png)
 <use figures/chap53_afe_cmo_iou.png>
-Package pdftex.def Info: figures/chap53_afe_cmo_iou.png  used on input line 122
+Package pdftex.def Info: figures/chap53_afe_cmo_iou.png  used on input line 128
 .
 (pdftex.def)             Requested size: 188.21371pt x 142.76355pt.
-<figures/chap53_afe_cmo_time.png, id=1387, 676.4472pt x 514.5624pt>
+<figures/chap53_afe_cmo_time.png, id=1448, 676.4472pt x 514.5624pt>
 File: figures/chap53_afe_cmo_time.png Graphic file (type png)
 <use figures/chap53_afe_cmo_time.png>
 Package pdftex.def Info: figures/chap53_afe_cmo_time.png  used on input line 13
-1.
+7.
 (pdftex.def)             Requested size: 188.21371pt x 143.1657pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[63]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (chapters/05_chapter05/section54.tex
-<figures/chap54_q1.png, id=1417, 948.04187pt x 457.71pt>
+ [66 <./figures/chap53_afe_cmo_iou.png> <./figures/chap53_afe_cmo_time.png>])
+(chapters/05_chapter05/section54.tex
+<figures/chap54_q1.png, id=1477, 948.04187pt x 457.71pt>
 File: figures/chap54_q1.png Graphic file (type png)
 <use figures/chap54_q1.png>
 Package pdftex.def Info: figures/chap54_q1.png  used on input line 16.
 (pdftex.def)             Requested size: 200.76086pt x 96.92511pt.
-<figures/chap54_q2.png, id=1418, 946.53625pt x 460.72125pt>
+<figures/chap54_q2.png, id=1478, 946.53625pt x 460.72125pt>
 File: figures/chap54_q2.png Graphic file (type png)
 <use figures/chap54_q2.png>
 Package pdftex.def Info: figures/chap54_q2.png  used on input line 24.
 (pdftex.def)             Requested size: 200.76086pt x 97.71742pt.
-<figures/chap54_q3.png, id=1419, 948.54375pt x 461.22313pt>
+<figures/chap54_q3.png, id=1479, 948.54375pt x 461.22313pt>
 File: figures/chap54_q3.png Graphic file (type png)
 <use figures/chap54_q3.png>
 Package pdftex.def Info: figures/chap54_q3.png  used on input line 32.
 (pdftex.def)             Requested size: 200.76086pt x 97.61275pt.
-<figures/chap54_q5.png, id=1420, 948.04187pt x 465.74pt>
+<figures/chap54_q5.png, id=1480, 948.04187pt x 465.74pt>
 File: figures/chap54_q5.png Graphic file (type png)
 <use figures/chap54_q5.png>
 Package pdftex.def Info: figures/chap54_q5.png  used on input line 40.
 (pdftex.def)             Requested size: 200.76086pt x 98.62553pt.
-<figures/chap54_q4.png, id=1421, 947.54pt x 461.725pt>
+<figures/chap54_q4.png, id=1481, 947.54pt x 461.725pt>
 File: figures/chap54_q4.png Graphic file (type png)
 <use figures/chap54_q4.png>
 Package pdftex.def Info: figures/chap54_q4.png  used on input line 48.
@@ -2713,29 +2753,25 @@ Package pdftex.def Info: figures/chap54_q4.png  used on input line 48.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[64 <./figures/chap53_afe_cmo_iou.png> <./figures/chap53_afe_cmo_time.png>])
-(chapters/05_chapter05/section55.tex [65] [66 <./figures/chap54_q1.png> <./figu
-res/chap54_q2.png> <./figures/chap54_q3.png> <./figures/chap54_q5.png> <./figur
-es/chap54_q4.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[67])) [68]
+[67] [68 <./figures/chap54_q1.png> <./figures/chap54_q2.png> <./figures/chap54_
+q3.png> <./figures/chap54_q5.png> <./figures/chap54_q4.png>])
+(chapters/05_chapter05/section55.tex [69] [70])) [71]
 \openout2 = `chapters/06_chapter06/chapter6.aux'.
 
- (chapters/06_chapter06/chapter6.tex
+
+(chapters/06_chapter06/chapter6.tex
 chapter 6.
-(chapters/06_chapter06/section6_summary.tex [69
+(chapters/06_chapter06/section6_summary.tex [72
 
 
 
 
 
-])
-(chapters/06_chapter06/section6_future_work.tex [70])) [71]
-Package tocbasic Info: character protrusion at lof deactivated on input line 63
+] [73])
+(chapters/06_chapter06/section6_future_work.tex)) [74]
+Package tocbasic Info: character protrusion at lof deactivated on input line 65
 .
- (main.lof [72
+ (main.lof [75
 
 
 
@@ -2744,15 +2780,15 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 63
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
-
-[73]
-Package tocbasic Info: character protrusion at lot deactivated on input line 64
+ [76]
+Package tocbasic Info: character protrusion at lot deactivated on input line 66
 .
- (main.lot)
+
+(main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
- (main.gls) (main.acr [74
+ (main.gls) (main.acr [77
 
 
 ]
@@ -2767,26 +2803,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[75
+[78
 
 
 
 
-]) [76]
+]) [79]
 chapter without number
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[77
+[80
 
 
-] [78] [79] [80] [81] [82] [83] [84]
+] [81] [82] [83] [84] [85] [86] [87]
 \openout2 = `chapters/appendix/appendix_main.aux'.
 
  (chapters/appendix/appendix_main.tex
 chapter A.
 (chapters/appendix/pascal_voc_vp.tex
-<figures/appendix/pascal_voc/pascal_voc_collage.png, id=1797, 633.36626pt x 745
+<figures/appendix/pascal_voc/pascal_voc_collage.png, id=1864, 633.36626pt x 745
 .28438pt>
 File: figures/appendix/pascal_voc/pascal_voc_collage.png Graphic file (type png
 )
@@ -2799,7 +2835,7 @@ ed on input line 8.
 LaTeX Warning: Float too large for page by 4.29344pt on input line 15.
 
 ) (chapters/appendix/collages_from_benchmark_domains.tex
-<figures/appendix/benchmark_dataset_examples/standard_collage.png, id=1808, 103
+<figures/appendix/benchmark_dataset_examples/standard_collage.png, id=1875, 103
 2.35687pt x 546.54187pt>
 File: figures/appendix/benchmark_dataset_examples/standard_collage.png Graphic 
 file (type png)
@@ -2807,7 +2843,7 @@ file (type png)
 Package pdftex.def Info: figures/appendix/benchmark_dataset_examples/standard_c
 ollage.png  used on input line 8.
 (pdftex.def)             Requested size: 418.25555pt x 221.43164pt.
-<figures/appendix/benchmark_dataset_examples/urban_collage.png, id=1809, 1309.8
+<figures/appendix/benchmark_dataset_examples/urban_collage.png, id=1876, 1309.8
 9375pt x 723.20187pt>
 File: figures/appendix/benchmark_dataset_examples/urban_collage.png Graphic fil
 e (type png)
@@ -2819,30 +2855,33 @@ age.png  used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/appendix/benchmark_dataset_examples/industrial_collage.png, id=1810, 5
-80.66937pt x 366.87062pt>
+<figures/appendix/benchmark_dataset_examples/industrial_collage.png, id=1877, 5
+80.1675pt x 722.7pt>
 File: figures/appendix/benchmark_dataset_examples/industrial_collage.png Graphi
 c file (type png)
 <use figures/appendix/benchmark_dataset_examples/industrial_collage.png>
 Package pdftex.def Info: figures/appendix/benchmark_dataset_examples/industrial
 _collage.png  used on input line 30.
-(pdftex.def)             Requested size: 418.25555pt x 264.2586pt.
+(pdftex.def)             Requested size: 418.25555pt x 521.01628pt.
 
 Package nag Warning: figure with no \caption on input line 37.
 
+
+LaTeX Warning: Float too large for page by 22.41617pt on input line 37.
+
 <figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png, id=18
-11, 715.17188pt x 482.30188pt>
+78, 714.67pt x 673.01437pt>
 File: figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png G
 raphic file (type png)
 <use figures/appendix/benchmark_dataset_anomaly_examples/anomaly_collage.png>
 Package pdftex.def Info: figures/appendix/benchmark_dataset_anomaly_examples/an
-omaly_collage.png  used on input line 43.
-(pdftex.def)             Requested size: 418.25555pt x 282.06819pt.
+omaly_collage.png  used on input line 42.
+(pdftex.def)             Requested size: 418.25555pt x 393.88127pt.
 
-Package nag Warning: figure with no \caption on input line 50.
+Package nag Warning: figure with no \caption on input line 49.
 
 ) (chapters/appendix/method_predictions.tex
-<figures/appendix/method_predictions/bag21_watershed.png, id=1812, 236.38312pt 
+<figures/appendix/method_predictions/bag21_watershed.png, id=1879, 236.38312pt 
 x 219.82124pt>
 File: figures/appendix/method_predictions/bag21_watershed.png Graphic file (typ
 e png)
@@ -2850,7 +2889,7 @@ e png)
 Package pdftex.def Info: figures/appendix/method_predictions/bag21_watershed.pn
 g  used on input line 12.
 (pdftex.def)             Requested size: 125.47794pt x 116.68918pt.
-<figures/appendix/method_predictions/bag21_dextr.png, id=1813, 354.57469pt x 33
+<figures/appendix/method_predictions/bag21_dextr.png, id=1880, 354.57469pt x 33
 0.48468pt>
 File: figures/appendix/method_predictions/bag21_dextr.png Graphic file (type pn
 g)
@@ -2858,7 +2897,7 @@ g)
 Package pdftex.def Info: figures/appendix/method_predictions/bag21_dextr.png  u
 sed on input line 18.
 (pdftex.def)             Requested size: 125.47794pt x 116.95222pt.
-<figures/appendix/method_predictions/bag21_iog.png, id=1814, 236.38312pt x 220.
+<figures/appendix/method_predictions/bag21_iog.png, id=1881, 236.38312pt x 220.
 32312pt>
 File: figures/appendix/method_predictions/bag21_iog.png Graphic file (type png)
 
@@ -2866,7 +2905,7 @@ File: figures/appendix/method_predictions/bag21_iog.png Graphic file (type png)
 Package pdftex.def Info: figures/appendix/method_predictions/bag21_iog.png  use
 d on input line 24.
 (pdftex.def)             Requested size: 125.47794pt x 116.95558pt.
-<figures/appendix/method_predictions/cereal67_watershed.png, id=1815, 286.06876
+<figures/appendix/method_predictions/cereal67_watershed.png, id=1882, 286.06876
 pt x 235.37938pt>
 File: figures/appendix/method_predictions/cereal67_watershed.png Graphic file (
 type png)
@@ -2874,7 +2913,7 @@ type png)
 Package pdftex.def Info: figures/appendix/method_predictions/cereal67_watershed
 .png  used on input line 31.
 (pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
-<figures/appendix/method_predictions/cereal67_dextr.png, id=1816, 286.06876pt x
+<figures/appendix/method_predictions/cereal67_dextr.png, id=1883, 286.06876pt x
  235.37938pt>
 File: figures/appendix/method_predictions/cereal67_dextr.png Graphic file (type
  png)
@@ -2882,7 +2921,7 @@ File: figures/appendix/method_predictions/cereal67_dextr.png Graphic file (type
 Package pdftex.def Info: figures/appendix/method_predictions/cereal67_dextr.png
   used on input line 37.
 (pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
-<figures/appendix/method_predictions/cereal67_iog.png, id=1817, 286.06876pt x 2
+<figures/appendix/method_predictions/cereal67_iog.png, id=1884, 286.06876pt x 2
 35.37938pt>
 File: figures/appendix/method_predictions/cereal67_iog.png Graphic file (type p
 ng)
@@ -2890,7 +2929,7 @@ ng)
 Package pdftex.def Info: figures/appendix/method_predictions/cereal67_iog.png  
 used on input line 43.
 (pdftex.def)             Requested size: 125.47794pt x 103.24399pt.
-<figures/appendix/method_predictions/jet4_watershed.png, id=1818, 285.56688pt x
+<figures/appendix/method_predictions/jet4_watershed.png, id=1885, 285.56688pt x
  247.42438pt>
 File: figures/appendix/method_predictions/jet4_watershed.png Graphic file (type
  png)
@@ -2898,7 +2937,7 @@ File: figures/appendix/method_predictions/jet4_watershed.png Graphic file (type
 Package pdftex.def Info: figures/appendix/method_predictions/jet4_watershed.png
   used on input line 52.
 (pdftex.def)             Requested size: 125.47794pt x 108.71603pt.
-<figures/appendix/method_predictions/jet4_dextr.png, id=1819, 285.56688pt x 247
+<figures/appendix/method_predictions/jet4_dextr.png, id=1886, 285.56688pt x 247
 .42438pt>
 File: figures/appendix/method_predictions/jet4_dextr.png Graphic file (type png
 )
@@ -2906,14 +2945,14 @@ File: figures/appendix/method_predictions/jet4_dextr.png Graphic file (type png
 Package pdftex.def Info: figures/appendix/method_predictions/jet4_dextr.png  us
 ed on input line 60.
 (pdftex.def)             Requested size: 125.47794pt x 108.71603pt.
-<figures/appendix/method_predictions/jet4_iog.png, id=1820, 428.35031pt x 371.1
+<figures/appendix/method_predictions/jet4_iog.png, id=1887, 428.35031pt x 371.1
 3657pt>
 File: figures/appendix/method_predictions/jet4_iog.png Graphic file (type png)
 <use figures/appendix/method_predictions/jet4_iog.png>
 Package pdftex.def Info: figures/appendix/method_predictions/jet4_iog.png  used
  on input line 68.
 (pdftex.def)             Requested size: 125.47794pt x 108.71416pt.
-<figures/appendix/method_predictions/cans75_watershed.png, id=1821, 257.46187pt
+<figures/appendix/method_predictions/cans75_watershed.png, id=1888, 257.46187pt
  x 202.25563pt>
 File: figures/appendix/method_predictions/cans75_watershed.png Graphic file (ty
 pe png)
@@ -2921,7 +2960,7 @@ pe png)
 Package pdftex.def Info: figures/appendix/method_predictions/cans75_watershed.p
 ng  used on input line 77.
 (pdftex.def)             Requested size: 125.47794pt x 98.5722pt.
-<figures/appendix/method_predictions/cans75_dextr.png, id=1822, 257.46187pt x 2
+<figures/appendix/method_predictions/cans75_dextr.png, id=1889, 257.46187pt x 2
 02.25563pt>
 File: figures/appendix/method_predictions/cans75_dextr.png Graphic file (type p
 ng)
@@ -2929,7 +2968,7 @@ ng)
 Package pdftex.def Info: figures/appendix/method_predictions/cans75_dextr.png  
 used on input line 85.
 (pdftex.def)             Requested size: 125.47794pt x 98.5722pt.
-<figures/appendix/method_predictions/cans75_iog.png, id=1823, 257.96375pt x 202
+<figures/appendix/method_predictions/cans75_iog.png, id=1890, 257.96375pt x 202
 .25563pt>
 File: figures/appendix/method_predictions/cans75_iog.png Graphic file (type png
 )
@@ -2939,9 +2978,9 @@ ed on input line 93.
 (pdftex.def)             Requested size: 125.47794pt x 98.38086pt.
 
 
-LaTeX Warning: Float too large for page by 17.00781pt on input line 103.
+LaTeX Warning: Float too large for page by 31.28786pt on input line 103.
 
-<figures/appendix/method_predictions/pill56_watershed.png, id=1832, 210.7875pt 
+<figures/appendix/method_predictions/pill56_watershed.png, id=1895, 210.7875pt 
 x 210.28563pt>
 File: figures/appendix/method_predictions/pill56_watershed.png Graphic file (ty
 pe png)
@@ -2949,7 +2988,7 @@ pe png)
 Package pdftex.def Info: figures/appendix/method_predictions/pill56_watershed.p
 ng  used on input line 110.
 (pdftex.def)             Requested size: 125.47794pt x 125.18086pt.
-<figures/appendix/method_predictions/pill56_dextr.png, id=1833, 316.18124pt x 3
+<figures/appendix/method_predictions/pill56_dextr.png, id=1896, 316.18124pt x 3
 15.42844pt>
 File: figures/appendix/method_predictions/pill56_dextr.png Graphic file (type p
 ng)
@@ -2957,7 +2996,7 @@ ng)
 Package pdftex.def Info: figures/appendix/method_predictions/pill56_dextr.png  
 used on input line 118.
 (pdftex.def)             Requested size: 125.47794pt x 125.17764pt.
-<figures/appendix/method_predictions/pill56_iog.png, id=1834, 210.7875pt x 210.
+<figures/appendix/method_predictions/pill56_iog.png, id=1897, 210.7875pt x 210.
 28563pt>
 File: figures/appendix/method_predictions/pill56_iog.png Graphic file (type png
 )
@@ -2965,7 +3004,7 @@ File: figures/appendix/method_predictions/pill56_iog.png Graphic file (type png
 Package pdftex.def Info: figures/appendix/method_predictions/pill56_iog.png  us
 ed on input line 126.
 (pdftex.def)             Requested size: 125.47794pt x 125.18086pt.
-<figures/appendix/method_predictions/screw57_watershed.png, id=1835, 351.81438p
+<figures/appendix/method_predictions/screw57_watershed.png, id=1898, 351.81438p
 t x 202.25563pt>
 File: figures/appendix/method_predictions/screw57_watershed.png Graphic file (t
 ype png)
@@ -2973,7 +3012,7 @@ ype png)
 Package pdftex.def Info: figures/appendix/method_predictions/screw57_watershed.
 png  used on input line 135.
 (pdftex.def)             Requested size: 125.47794pt x 72.1361pt.
-<figures/appendix/method_predictions/screw57_dextr.png, id=1836, 527.72156pt x 
+<figures/appendix/method_predictions/screw57_dextr.png, id=1899, 527.72156pt x 
 303.38344pt>
 File: figures/appendix/method_predictions/screw57_dextr.png Graphic file (type 
 png)
@@ -2981,7 +3020,7 @@ png)
 Package pdftex.def Info: figures/appendix/method_predictions/screw57_dextr.png 
  used on input line 143.
 (pdftex.def)             Requested size: 125.47794pt x 72.13301pt.
-<figures/appendix/method_predictions/screw57_iog.png, id=1837, 351.81438pt x 20
+<figures/appendix/method_predictions/screw57_iog.png, id=1900, 351.81438pt x 20
 2.25563pt>
 File: figures/appendix/method_predictions/screw57_iog.png Graphic file (type pn
 g)
@@ -2989,7 +3028,7 @@ g)
 Package pdftex.def Info: figures/appendix/method_predictions/screw57_iog.png  u
 sed on input line 151.
 (pdftex.def)             Requested size: 125.47794pt x 72.1361pt.
-<figures/appendix/method_predictions/tea17_watershed.png, id=1838, 271.51437pt 
+<figures/appendix/method_predictions/tea17_watershed.png, id=1901, 271.51437pt 
 x 193.22188pt>
 File: figures/appendix/method_predictions/tea17_watershed.png Graphic file (typ
 e png)
@@ -2997,7 +3036,7 @@ e png)
 Package pdftex.def Info: figures/appendix/method_predictions/tea17_watershed.pn
 g  used on input line 160.
 (pdftex.def)             Requested size: 125.47794pt x 89.2959pt.
-<figures/appendix/method_predictions/tea17_dextr.png, id=1839, 407.27156pt x 28
+<figures/appendix/method_predictions/tea17_dextr.png, id=1902, 407.27156pt x 28
 9.83281pt>
 File: figures/appendix/method_predictions/tea17_dextr.png Graphic file (type pn
 g)
@@ -3005,7 +3044,7 @@ g)
 Package pdftex.def Info: figures/appendix/method_predictions/tea17_dextr.png  u
 sed on input line 168.
 (pdftex.def)             Requested size: 125.47794pt x 89.29442pt.
-<figures/appendix/method_predictions/tea17_iog.png, id=1840, 271.51437pt x 193.
+<figures/appendix/method_predictions/tea17_iog.png, id=1903, 271.51437pt x 193.
 22188pt>
 File: figures/appendix/method_predictions/tea17_iog.png Graphic file (type png)
 
@@ -3013,7 +3052,7 @@ File: figures/appendix/method_predictions/tea17_iog.png Graphic file (type png)
 Package pdftex.def Info: figures/appendix/method_predictions/tea17_iog.png  use
 d on input line 176.
 (pdftex.def)             Requested size: 125.47794pt x 89.2959pt.
-<figures/appendix/method_predictions/swan34_watershed.png, id=1841, 250.9375pt 
+<figures/appendix/method_predictions/swan34_watershed.png, id=1904, 250.9375pt 
 x 213.29688pt>
 File: figures/appendix/method_predictions/swan34_watershed.png Graphic file (ty
 pe png)
@@ -3021,7 +3060,7 @@ pe png)
 Package pdftex.def Info: figures/appendix/method_predictions/swan34_watershed.p
 ng  used on input line 185.
 (pdftex.def)             Requested size: 125.47794pt x 106.65793pt.
-<figures/appendix/method_predictions/swan34_dextr.png, id=1842, 376.40625pt x 3
+<figures/appendix/method_predictions/swan34_dextr.png, id=1905, 376.40625pt x 3
 19.94531pt>
 File: figures/appendix/method_predictions/swan34_dextr.png Graphic file (type p
 ng)
@@ -3029,7 +3068,7 @@ ng)
 Package pdftex.def Info: figures/appendix/method_predictions/swan34_dextr.png  
 used on input line 193.
 (pdftex.def)             Requested size: 125.47794pt x 106.6563pt.
-<figures/appendix/method_predictions/swan34_iog.png, id=1843, 250.9375pt x 213.
+<figures/appendix/method_predictions/swan34_iog.png, id=1906, 250.9375pt x 213.
 29688pt>
 File: figures/appendix/method_predictions/swan34_iog.png Graphic file (type png
 )
@@ -3037,7 +3076,7 @@ File: figures/appendix/method_predictions/swan34_iog.png Graphic file (type png
 Package pdftex.def Info: figures/appendix/method_predictions/swan34_iog.png  us
 ed on input line 201.
 (pdftex.def)             Requested size: 125.47794pt x 106.65793pt.
-<figures/appendix/method_predictions/pill78_watershed.png, id=1844, 387.94937pt
+<figures/appendix/method_predictions/pill78_watershed.png, id=1907, 387.94937pt
  x 194.7275pt>
 File: figures/appendix/method_predictions/pill78_watershed.png Graphic file (ty
 pe png)
@@ -3045,7 +3084,7 @@ pe png)
 Package pdftex.def Info: figures/appendix/method_predictions/pill78_watershed.p
 ng  used on input line 210.
 (pdftex.def)             Requested size: 125.47794pt x 62.9826pt.
-<figures/appendix/method_predictions/pill78_dextr.png, id=1845, 388.45125pt x 1
+<figures/appendix/method_predictions/pill78_dextr.png, id=1908, 388.45125pt x 1
 94.7275pt>
 File: figures/appendix/method_predictions/pill78_dextr.png Graphic file (type p
 ng)
@@ -3053,7 +3092,7 @@ ng)
 Package pdftex.def Info: figures/appendix/method_predictions/pill78_dextr.png  
 used on input line 218.
 (pdftex.def)             Requested size: 125.47794pt x 62.8994pt.
-<figures/appendix/method_predictions/pill78_iog.png, id=1846, 388.45125pt x 194
+<figures/appendix/method_predictions/pill78_iog.png, id=1909, 388.45125pt x 194
 .7275pt>
 File: figures/appendix/method_predictions/pill78_iog.png Graphic file (type png
 )
@@ -3072,15 +3111,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) [85
+)) [88
 
 
 
-] [86 <./figures/appendix/pascal_voc/pascal_voc_collage.png>] [87]
-[88 <./figures/appendix/benchmark_dataset_examples/standard_collage.png> <./fig
-ures/appendix/benchmark_dataset_examples/urban_collage.png>] [89 <./figures/app
-endix/benchmark_dataset_examples/industrial_collage.png>] [90 <./figures/append
-ix/benchmark_dataset_anomaly_examples/anomaly_collage.png>] [91 <./figures/appe
+] [89 <./figures/appendix/pascal_voc/pascal_voc_collage.png>] [90]
+[91 <./figures/appendix/benchmark_dataset_examples/standard_collage.png> <./fig
+ures/appendix/benchmark_dataset_examples/urban_collage.png>] [92 <./figures/app
+endix/benchmark_dataset_examples/industrial_collage.png>] [93 <./figures/append
+ix/benchmark_dataset_anomaly_examples/anomaly_collage.png>] [94 <./figures/appe
 ndix/method_predictions/bag21_watershed.png> <./figures/appendix/method_predict
 ions/bag21_dextr.png> <./figures/appendix/method_predictions/bag21_iog.png> <./
 figures/appendix/method_predictions/cereal67_watershed.png> <./figures/appendix
@@ -3089,7 +3128,7 @@ cereal67_iog.png> <./figures/appendix/method_predictions/jet4_watershed.png> <.
 /figures/appendix/method_predictions/jet4_dextr.png> <./figures/appendix/method
 _predictions/jet4_iog.png> <./figures/appendix/method_predictions/cans75_waters
 hed.png> <./figures/appendix/method_predictions/cans75_dextr.png> <./figures/ap
-pendix/method_predictions/cans75_iog.png>] [92 <./figures/appendix/method_predi
+pendix/method_predictions/cans75_iog.png>] [95 <./figures/appendix/method_predi
 ctions/pill56_watershed.png> <./figures/appendix/method_predictions/pill56_dext
 r.png> <./figures/appendix/method_predictions/pill56_iog.png> <./figures/append
 ix/method_predictions/screw57_watershed.png> <./figures/appendix/method_predict
@@ -3104,8 +3143,8 @@ ppendix/method_predictions/pill78_iog.png>]
 
 Package nag Warning: 3 complaints in total.
 
-(main.aux (pages/title.aux) (pages/disclaimer.aux) (pages/acknowledgments.aux)
-(pages/abstract.aux) (settings/acronyms.aux)
+(main.aux (pages/title.aux) (pages/title_de.aux) (pages/disclaimer.aux)
+(pages/acknowledgments.aux) (pages/abstract.aux) (settings/acronyms.aux)
 (chapters/01_chapter01/chapter1.aux) (chapters/02_chapter02/chapter2.aux)
 (chapters/03_chapter03/chapter3.aux) (chapters/04_chapter04/chapter4.aux)
 (chapters/05_chapter05/chapter5.aux) (chapters/06_chapter06/chapter6.aux)
@@ -3117,13 +3156,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57677 strings out of 479697
- 1315433 string characters out of 2866183
- 2465796 words of memory out of 3000000
- 72162 multiletter control sequences out of 15000+200000
- 535587 words of font info for 776 fonts, out of 3000000 for 9000
+ 57733 strings out of 479697
+ 1317000 string characters out of 2866183
+ 2470258 words of memory out of 3000000
+ 72198 multiletter control sequences out of 15000+200000
+ 535344 words of font info for 773 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 112i,15n,113p,10601b,3251s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 112i,15n,113p,10601b,3257s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -3168,9 +3207,9 @@ plb8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palat
 ino/uplr8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 palatino/uplri8a.pfb><C:/Users/fertiga/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (99 pages, 43384406 bytes).
+Output written on main.pdf (103 pages, 44839810 bytes).
 PDF statistics:
- 2295 PDF objects out of 2487 (max. 8388607)
- 394 named destinations out of 1000 (max. 500000)
- 183524 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 2363 PDF objects out of 2487 (max. 8388607)
+ 408 named destinations out of 1000 (max. 500000)
+ 183549 words of extra memory for PDF output out of 184870 (max. 10000000)
 

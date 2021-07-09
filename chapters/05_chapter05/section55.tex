@@ -3,17 +3,17 @@
 
 \section{Suitability Of DEXTR and IOG Annotations For Training} \label{ord:ch5:sec5_retrain}
 % RE-1470
-In this section it is examined if annotations created by the \gls{dextr} and \gls{iog} method are suitable to train a new \gls{dl} model for semantic segmentation.
-Thereby, the statement form Manisis \etal, that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}, is taken into account as well.
+In this section it is examined if annotations created by the \gls{dextr} and \gls{iog} methods are suitable to train a new \gls{dl} model for semantic segmentation.
+Thereby, the statement from Manisis \etal, that models trained on \gls{dextr} annotations perform equally well \cite{Man18-DEXTR}, is taken into account as well.
 In the following the experimental setup is described in three stages: creation of annotations, model training, and model evaluation.
  
 % Create annotations.
 As first step, simulations are applied to create the required user input for the \gls{dextr} and \gls{iog} method.
 The resulting predictions from the models are treated as new labels $ \textbf{Y}_{new} $. 
 The simulation is performed with one refinement click for \gls{dextr} and four refinement clicks for \gls{iog}.
-Further, the simulation setup is without mayor randomization, as described in Subsection \ref{ord:ch5:sec2:subsec2}.
+Further, the simulation setup is without major randomization, as described in Subsection \ref{ord:ch5:sec2:subsec2}.
 The simulation is performed on the training split of the MVTec \gls{d2s} dataset \cite{Paddo18-D2S}, the test split is not altered.
-Thereby, two variants of the \gls{d2s} dataset are used, in the training split the normal version of has 4380 images and 6900 annotations, while the augmented version contains 14380 images and 83337 annotations.
+Two variants of the \gls{d2s} dataset are used, in the training split the normal version has 4380 images and 6900 annotations, while the augmented version contains 14380 images and 83337 annotations.
 The goodness of the newly created annotations $ \textbf{Y}_{new} $ is at least at 0.91 \gls{miou}, as presented in Table \ref{tab:ch5:results_annot_usability}.
 
 % Train model.
@@ -22,21 +22,22 @@ As backbone of the models the Mask-RCNN \cite{He17-MaskR-CNN} is used, which is 
 All trainings are performed with the same settings, to enable a fair comparison.
 A training lasts $ n_{epochs} = 30 $ epochs, with the learning rate $ \lambda = 0.001 $ and \gls{sgd} optimizer \cite{Ruder16-SGD}.
 To establish a benchmark for comparison, also two models are trained on the original \gls{gt} of the normal and augmented \gls{d2s} dataset.
-The models itself do not contain any novelty, but are just used to be trained with the new annotations $ \textbf{Y}_{new} $.
+The models themselves are not altered, but are just used to be trained with the new annotations $ \textbf{Y}_{new} $.
 
 % Eval model.
 Third, the performance of the created model is evaluated by the \gls{miou} and the \gls{ap} at different levels of \gls{iou}, as presented in Table \ref{tab:ch5:results_annot_usability}.
 Based on the \gls{map}, the models trained on the \gls{dextr} and \gls{iog} annotations, perform approximately as good as the model trained on the original \gls{gt}.
 This approximately applies to both \gls{d2s} dataset, but for the augmented \gls{d2s} dataset the model trained on the original \gls{gt} performs slightly better.
 
-%For the \gls{d2s} dataset the model trained on the \gls{dextr} annotations even achieves a \gls{map} $ mAP = 0.4459 $ and therefore, is slightly better than the model trained on the original \gls{gt} with $ mAP = 0.4398 $.
-However, differences between the models can be observed when considering the IoU for certain degrees of IoU.
-The \gls{ap} for annotations at $ IoU < 0.75 $ are at an equal level for all methods.
+%For the \gls{d2s} dataset the model trained on the \gls{dextr} annotations even achieves a \gls{map} $ mAP = 0.4459 $ and, therefore, is slightly better than the model trained on the original \gls{gt} with $ mAP = 0.4398 $.
+However, differences between the models can be observed when considering the \gls{map} for certain \gls{iou}-thresholds.
+% TODO Vllt solltest du irgendwo erwähnen, dass nur predictions die einen IoU über dem Threshold erzielen als true positives zählen!
+The \gls{ap} for annotations with \gls{iou} 0.75 are at an equal level for all methods.
 From there on, the \gls{ap} tends to decrease for a higher \gls{iou}.
 This observation is extreme for $ IoU > 0.95 $. 
 Exemplary for the models trained on the normal dataset, the original \gls{gt} enables a performance of $ AP = 0.2198 $, while the performance of the \gls{dextr} is $ AP = 0.1549 $ and \gls{iog} dropped to $ AP = 0.0384 $.
 This effect also occurs for the augmented \gls{d2s} dataset.
-From this follows that, the models trained on the \gls{dextr} and \gls{iog} annotations are not able to make prediction with a high level of detail.
+From this follows that, the models trained on the \gls{dextr} and \gls{iog} annotations are not able to make predictions with a high level of detail.
 The missing details in the model predictions, is probably caused by the \gls{dextr} and \gls{iog} annotations, which are also not perfect at the detail level.
 So, in order to create predictions with very high \gls{iou} and rich detail, the original \gls{gt} delivers better results.
 
@@ -51,16 +52,16 @@ So, in order to create predictions with very high \gls{iou} and rich detail, the
 		\midrule
 		$ m $					& mAP 					& 0.4398	& 0.4459	& 0.4138	& 0.7581	& 0.7374	& 0.6993	\\
 		
-								& AP @ $ IoU <= 0.5 $	& 0.4987	& 0.5221	& 0.5179	& 0.8574	& 0.8572	& 0.8543	\\
-								& AP @ $ IoU <= 0.55 $ 	& 0.4926	& 0.5145	& 0.5135	& 0.8565	& 0.8518	& 0.8502	\\
-								& AP @ $ IoU <= 0.6 $	& 0.4859	& 0.5063	& 0.5083	& 0.8526	& 0.8471	& 0.8451	\\
-								& AP @ $ IoU <= 0.65 $ 	& 0.4834	& 0.5035	& 0.5038	& 0.8476	& 0.8419	& 0.8343	\\
-								& AP @ $ IoU <= 0.7 $	& 0.4788	& 0.4967	& 0.4955	& 0.8425	& 0.8336	& 0.8162	\\
-								& AP @ $ IoU <= 0.75 $ 	& 0.4685	& 0.4876	& 0.4715	& 0.8276	& 0.8188	& 0.7899	\\
-								& AP @ $ IoU <= 0.8 $	& 0.4540	& 0.4687	& 0.4381	& 0.8016	& 0.7849	& 0.7370	\\
-								& AP @ $ IoU <= 0.85 $ 	& 0.4293	& 0.4401	& 0.3850	& 0.7641	& 0.7328	& 0.6718	\\
-								& AP @ $ IoU <= 0.9 $	& 0.3868	& 0.3651	& 0.2662	& 0.6617	& 0.6008	& 0.5050	\\
-								& AP @ $ IoU <= 0.95 $ 	& 0.2198	& 0.1549	& 0.0384	& 0.2694	& 0.2047	& 0.0982	\\
+								& AP @ $ IoU >= 0.5 $	& 0.4987	& 0.5221	& 0.5179	& 0.8574	& 0.8572	& 0.8543	\\
+								& AP @ $ IoU >= 0.55 $ 	& 0.4926	& 0.5145	& 0.5135	& 0.8565	& 0.8518	& 0.8502	\\
+								& AP @ $ IoU >= 0.6 $	& 0.4859	& 0.5063	& 0.5083	& 0.8526	& 0.8471	& 0.8451	\\
+								& AP @ $ IoU >= 0.65 $ 	& 0.4834	& 0.5035	& 0.5038	& 0.8476	& 0.8419	& 0.8343	\\
+								& AP @ $ IoU >= 0.7 $	& 0.4788	& 0.4967	& 0.4955	& 0.8425	& 0.8336	& 0.8162	\\
+								& AP @ $ IoU >= 0.75 $ 	& 0.4685	& 0.4876	& 0.4715	& 0.8276	& 0.8188	& 0.7899	\\
+								& AP @ $ IoU >= 0.8 $	& 0.4540	& 0.4687	& 0.4381	& 0.8016	& 0.7849	& 0.7370	\\
+								& AP @ $ IoU >= 0.85 $ 	& 0.4293	& 0.4401	& 0.3850	& 0.7641	& 0.7328	& 0.6718	\\
+								& AP @ $ IoU >= 0.9 $	& 0.3868	& 0.3651	& 0.2662	& 0.6617	& 0.6008	& 0.5050	\\
+								& AP @ $ IoU >= 0.95 $ 	& 0.2198	& 0.1549	& 0.0384	& 0.2694	& 0.2047	& 0.0982	\\
 		\bottomrule
 	\end{tabular}
 	\caption[Performance of models trained with DEXTR and IOG annotations]{

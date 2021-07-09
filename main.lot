@@ -23,23 +23,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Correlation table}}{49}{table.caption.58}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Correlation table}}{50}{table.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Hypothesis Tests on $ IoU $}}{51}{table.caption.64}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Hypothesis Tests on $ IoU $}}{52}{table.caption.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Hypothesis Tests on $ time $}}{53}{table.caption.71}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Method's best performance on $ IoU $}}{53}{table.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Kruskal-Wallis test performed on methods over domains}}{57}{table.caption.76}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Hypothesis Tests on $ time $}}{55}{table.caption.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Generalization of IOG and DEXTR}}{59}{table.caption.82}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Method's best performance on $ time $}}{57}{table.caption.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.6}{\ignorespaces Generalization of IOG and DEXTR refinement}}{60}{table.caption.85}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Kruskal-Wallis test performed on methods over domains}}{59}{table.caption.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.7}{\ignorespaces Mean and standard deviation of the benchmark methods}}{61}{table.caption.86}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Generalization of IOG and DEXTR}}{61}{table.caption.92}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.8}{\ignorespaces Simulations with different click patterns}}{65}{table.caption.89}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Generalization of IOG and DEXTR refinement}}{62}{table.caption.95}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.9}{\ignorespaces Performance of models trained with DEXTR and IOG annotations}}{68}{table.caption.91}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Mean and standard deviation of the benchmark methods}}{63}{table.caption.96}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.10}{\ignorespaces Simulations with different click patterns}}{67}{table.caption.99}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.11}{\ignorespaces Performance of models trained with DEXTR and IOG annotations}}{70}{table.caption.101}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -47,10 +51,10 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Performance of DEXTR and IOG on 20 refinement clicks.}}{85}{table.caption.103}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Performance of DEXTR and IOG on 20 refinement clicks.}}{88}{table.caption.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Kruskal-Wallis on $ IoU $ from two users}}{87}{table.caption.104}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Kruskal-Wallis on $ IoU $ from two users}}{90}{table.caption.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.3}{\ignorespaces Kruskal-Wallis on $ time $ from two users}}{87}{table.caption.105}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Kruskal-Wallis on $ time $ from two users}}{90}{table.caption.115}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {american}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgments}{iii}{Doc-Start}%
+\contentsline {chapter}{Acknowledgments}{iv}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}%
+\contentsline {chapter}{\nonumberline Abstract}{v}{chapter*.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -107,7 +107,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline CoarseNet}{35}{subsubsection*.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline FineNet}{35}{subsubsection*.51}%
+\contentsline {subsubsection}{\nonumberline FineNet}{37}{subsubsection*.51}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.4}Refinement}{37}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
@@ -133,60 +133,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Improvement In Time And IoU}{47}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Correlation Between Time And Clicks}{47}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Correlation Between Time And Clicks}{48}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Analysis Of IoU}{48}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Analysis Of IoU}{49}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Data Transformation}{49}{subsubsection*.60}%
+\contentsline {paragraph}{\nonumberline Limitation of the analysis}{49}{paragraph*.62}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{50}{subsubsection*.63}%
+\contentsline {subsubsection}{\nonumberline Data Transformation}{50}{subsubsection*.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Analysis Of Time}{51}{subsection.5.1.3}%
+\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{51}{subsubsection*.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Data Transformation}{51}{subsubsection*.67}%
+\contentsline {subsubsection}{\nonumberline Quantitative Comparison}{52}{subsubsection*.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{52}{subsubsection*.70}%
+\contentsline {subsection}{\numberline {5.1.3}Analysis Of Time}{53}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Generalization Over Domains}{55}{section.5.2}%
+\contentsline {subsubsection}{\nonumberline Data Transformation}{54}{subsubsection*.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Generalization Over Domains}{55}{subsection.5.2.1}%
+\contentsline {subsubsection}{\nonumberline Hypothesis Testing}{54}{subsubsection*.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline IoU}{55}{subsubsection*.74}%
+\contentsline {subsubsection}{\nonumberline Quantitative Comparison}{56}{subsubsection*.81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Time}{56}{subsubsection*.78}%
+\contentsline {section}{\numberline {5.2}Generalization Over Domains}{57}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Generalization Over Datasets}{57}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.1}Generalization Over Benchmark Domains}{57}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Initial Prediction}{57}{subsubsection*.81}%
+\contentsline {subsubsection}{\nonumberline IoU}{57}{subsubsection*.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Refinement Prediction}{59}{subsubsection*.84}%
+\contentsline {subsubsection}{\nonumberline Time}{59}{subsubsection*.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Generalization over users}{59}{section.5.3}%
+\contentsline {subsection}{\numberline {5.2.2}Generalization Over Datasets}{60}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Benchmark Participants Evaluation}{60}{subsection.5.3.1}%
+\contentsline {subsubsection}{\nonumberline Initial Prediction}{60}{subsubsection*.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Two Experienced Users}{63}{subsection.5.3.2}%
+\contentsline {subsubsection}{\nonumberline Refinement Prediction}{61}{subsubsection*.94}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Simulations With Different Click Patterns}{63}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.3}Generalization over users}{62}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Survey Evaluation}{64}{section.5.4}%
+\contentsline {subsection}{\numberline {5.3.1}Benchmark Participants Evaluation}{63}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Suitability Of DEXTR and IOG Annotations For Training}{65}{section.5.5}%
+\contentsline {subsection}{\numberline {5.3.2}Two Experienced Users}{64}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{69}{chapter.6}%
+\contentsline {subsection}{\numberline {5.3.3}Simulations With Different Click Patterns}{66}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Summary}{69}{section.6.1}%
+\contentsline {section}{\numberline {5.4}Survey Evaluation}{67}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Future Work}{71}{section.6.2}%
+\contentsline {section}{\numberline {5.5}Suitability Of DEXTR and IOG Annotations For Training}{69}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{72}{chapter*.92}%
+\contentsline {chapter}{\numberline {6}Conclusion}{72}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{74}{chapter*.93}%
+\contentsline {section}{\numberline {6.1}Summary}{72}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acronyms}{75}{section*.94}%
+\contentsline {section}{\numberline {6.2}Future Work}{74}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.96}%
+\contentsline {chapter}{\nonumberline List of Figures}{75}{chapter*.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{85}{appendix.A}%
+\contentsline {chapter}{\nonumberline List of Tables}{77}{chapter*.103}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronyms}{78}{section*.104}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{80}{chapter*.106}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix}{88}{appendix.A}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

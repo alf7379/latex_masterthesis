@@ -39,10 +39,11 @@ Since this thesis is about interactive methods, user interaction is required to 
 In this implementation first a bounding box is drawn around the object and the image is cropped, in order to focus on the object of interest.
 Second, foreground markers define the regions that should belong to the foreground, while background markers define the region of the background.
 The markers are set interactively by the users on the cropped object image.
-To create a valid segmentation, at least one fore- and background marker must be set.
+To create a valid segmentation, at least one foreground and background marker must be set.
 The segmentation is immediately executed after a marker is set.
 This allows the user to directly readjust the segmentation result by setting additional markers.
 The application of watershed by setting multiple markers in shown exemplary in Figure \ref{fig:ch3:sec2:application}.
+Additional examples of segmentation results with the watershed method are shown in Figure \ref{fig:appendix_model_predictions}.
 
 \begin{figure}
 	\centering
@@ -66,7 +67,7 @@ The application of watershed by setting multiple markers in shown exemplary in F
 		\centering
 		\includegraphics[width=\textwidth]{figures/chap32_watershed_application3.png}
 		\caption{
-			Two background markers (red) are set and the segmentation differentiates between fore- and background.\\
+			Two background markers (red) are set and the segmentation differentiates between foreground and background.\\
 		} \label{fig:ch3:sec3:application3}
 	\end{subfigure}
 	\hfill
@@ -95,7 +96,7 @@ The application of watershed by setting multiple markers in shown exemplary in F
 		} \label{fig:ch3:sec3:application6}
 	\end{subfigure}
 	\caption [Watershed User Interaction]{
-		Application of watershed segmentation on the image of a medical pill by setting fore- and background markers.
+		Application of watershed segmentation on the image of a medical pill by setting foreground and background markers.
 		The segmentation is based on two clicks on the foreground, four clicks and one stroke on the background.
 	} \label{fig:ch3:sec2:application}
 \end{figure}

@@ -12,7 +12,7 @@
 Interactive segmentation methods aim to segment an image by pixel-wise classification, thereby object labels are created.
 A foreground object is segmented from the background, this task is often interpreted as class-agnostic segmentation.
 Interactive methods require a form of user interaction, which is often realized by mouse clicks on the image. 
-In application these methods are often used to support the label process and therefore reduce the label costs.
+In application these methods are often used to speed up the labeling process and, therefore, reduce the annotation costs.
 This is particularly interesting as new datasets can be created more easily, allowing labels to be created for image domains, that are rather underrepresented in the research community.
 % The development on this topic has benefited from the general development in deep learning and the interest in image datasets with pixel-precise labels.
 
@@ -25,14 +25,14 @@ This leads to a limited informative value, since authentic user behavior cannot 
 The benefit of this thesis in particular is the use of a benchmark study to evaluate four interactive methods.
 Among the benchmark methods are polygon drawing as baseline for manual labeling, watershed transformation, and two state-of-the-art deep learning methods: \glsentrylong{dextr} and \glsentrylong{iog}.
 The benchmark study provides a significant contribution, due to the inclusion of real users, in order to gain realistic insights.
-Further, the benchmark study is performed on a hand picked dataset, that contains images of various domains, in order to examine the model's generalization capabilities.
+Further, the benchmark study is performed on a novel, hand picked dataset, that contains images of various domains, in order to examine the models' generalization capabilities.
 
 %%% 5 - Experitmens -> IoU, Time, over domains, over users, survery and suitability.
-Based on the accuracy and annotation time it is investigated which methods perform best and if modern methods based on deep learning are in general advantageous.
+Based on the accuracy and annotation time it is investigated which methods perform best and if modern methods based on deep learning show superior performance.
 Further, the generalization capabilities over various users and domains are evaluated.
 The real user data is particularly valuable here, additionally various simulations are applied as well.
 Insights on the user experience of the interactive methods are obtained by a survey.
 
 %%% 6 - Conclusion
-In general it is concluded, that interactive segmentation methods based on deep learning are in general advantageous based on the annotation time, but the accuracy does not differ strongly to classical segmentation methods. 
+In general it is concluded, that using interactive segmentation methods based on deep learning leads to a shorter annotation time, while the accuracy of these methods does not differ significantly.
 Finally, the suitability of annotations created by interactive segmentation method as training data is confirmed.

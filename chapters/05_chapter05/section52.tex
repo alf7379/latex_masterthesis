@@ -13,16 +13,14 @@ First, the generalization capabilities of the four benchmark methods are evaluat
 Thereby, the performance of $ IoU $ and $ time $ are examined.
 Second, simulations are used to evaluate the $ IoU $ of the \gls{dextr} and \gls{iog} method on various datasets.
 
-\subsection{Generalization Over Domains}
+\subsection{Generalization Over Benchmark Domains}
 % Each method is evaluated over the four domains
 In the following it is evaluated how well the four benchmark methods generalize over the four image domains: $ standard $, $ urban $, $ industrial $, and $ anomaly $.
-Thereby, the evaluation of the generalization capabilities is twofold based on the $ IoU $ and $ time $.
+Thereby, both the generalization capabilities with respect to $ IoU $ and $ time $ are evaluated.
 
 % IoU
 \subsubsection{IoU}
-The generalization over the accuracy measured by the $ IoU $ is examined.
-The accuracy per method and domain is visualized in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}.
-
+The accuracy measured in terms of $ IoU $ per method and domain is visualized in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}. %TODO Kontrolle dass hier kein Absatz ist
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{figures/chap52_iou_methods_over_domains_boxplot.png}
@@ -32,34 +30,33 @@ The accuracy per method and domain is visualized in Figure \ref{fig:ch5:sec2:met
 		It seems, that for the other domains all methods perform on a approximately similar level.
 	}\label{fig:ch5:sec2:methods_over_domain_iou}
 \end{figure}
-
 % Performance of Anomaly
 It is immediately noticeable that the \gls{iou} in the domain $ anomaly $ is significantly worse for each method.
 This is reasonable due to the different nature of the annotations from this domain.
 It was experienced in the review of the user annotations, that for the domain $ anomaly $ the users often have a varying understanding what belongs to the anomaly and what should be labeled.
 These ambiguities create room for misinterpretations of the anomaly, which in turn affects the $ IoU $.
-However, it may be noted that the \gls{dextr} method performs best on the domain $ anomaly $ most probably due to the strong and direct type of guidance provided by the extreme points.
+However, it should be noted that the \gls{dextr} method performs best on the domain $ anomaly $ most probably due to the strong and direct type of guidance provided by the extreme points.
 
 % Performance of , urban, and 
 Further, the four methods deliver comparatively similar results on the three other image domains $ standard $, $ urban $, and $ industrial $.
-Thereby, the Kruskal-Wallis test is applied with the $ H_{0} $ already excluding the domain $ anomaly $, because it already can be seen in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}, that $ IoU_{anomaly} $ strongly deviates.
+The Kruskal-Wallis test is applied excluding the domain $ anomaly $, because it already can be seen in Figure \ref{fig:ch5:sec2:methods_over_domain_iou}, that $ IoU_{anomaly} $ strongly deviates.
 The details of the test are presented in Table \ref{tab:ch5:tests_on_methods}.
-%Only for the polygon method $ H_{0} $ is rejected at $ \alpha = 1\% $, while for the other methods $ H_{0} $ is narrowly accepted.
-However, it is important to highlight, that this results strongly depends on the chosen significance level $ \alpha $.
-The close decisions diminishes the significance of the statistical analysis and state that there is no clear decision as here.
+It is important to mention, that the results strongly depend on the chosen significance level $ \alpha $, as the acceptance of $ H_0 $ depends on whether $ \alpha < p-value $.
+For example, a different significance level as $ \alpha = 5\% $ for watershed and \gls{iog} would lead to the contrary result and the rejection of $ H_0 $.
+These close decisions diminish the significance of the statistical analysis and indicate that there is no clear decision here.
 
-However, it may be said that for the methods watershed, \gls{dextr}, and \gls{iog} the accuracy does not differs strongly over the three image domains $ standard $, $ urban $, and $ industrial $.
-From this it can be concluded that these methods sufficiently generalize over different domains.
-It is notable, that the \gls{dextr} and \gls{iog} method do not necessarily perform better on the domain $ standard $, even though they have been explicitly trained with this type of images. 
-This also confirms the results from \cite{Man18-DEXTR} and \cite{Zha20-IOG}, which emphasize the performance of their methods across domains.
-Although in general, an improvement of performance could be still possible if the model would be trained on the same type of images that are used for the evaluation.
-This is strongly assumed, but not pursued further within the scope of this work.
+However, it is mentioned that for the methods watershed, \gls{dextr}, and \gls{iog} the accuracy does not differs strongly over the three image domains $ standard $, $ urban $, and $ industrial $.
+The results show that these methods sufficiently generalize over different domains.
+It is notable, that the \gls{dextr} and \gls{iog} methods do not necessarily perform better on the domain $ standard $, even though they have been explicitly trained with this type of images. 
+This also confirms the results from \cite{Man18-DEXTR} and \cite{Zha20-IOG}, who emphasize the performance of their methods across domains.
+Although, in general, an improvement of performance could be still possible if the model would be trained on the same type of images that are used for the evaluation.
+The verification of this assumption goes beyond the scope of this work.
 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{l|p{25mm} p{25mm} p{25mm} p{25mm}}
 		\toprule 		
-		& \centering $ Polygon $	& \centering $ Watershed $ 	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $}	\\
+		& \centering $ polygon $	& \centering $ watershed $ 	& \centering $ DEXTR $ 	& \multicolumn{1}{c}{$ IOG $}	\\
 		\midrule
 		$ n_{annots} $	& \centering 81				& \centering 98				& \centering 87			& \multicolumn{1}{c}{81}  		\\
 		$ H_{0} $		& \multicolumn{4}{c}{$ med \left( IoU_{standard} \right) = med \left( IoU_{urban} \right) = med \left( IoU_{industrial} \right)$}  \\  
@@ -79,15 +76,17 @@ This is strongly assumed, but not pursued further within the scope of this work.
 	}\label{tab:ch5:tests_on_methods}
 \end{table}
 
+%TODO Das versteh ich nicht ganz. Im Vergleich zu was variiert es denn? und hier willst du doch für jede Methode pro Domain dann gleich viele Annotationen verwenden, oder? Hat IOG dann 81 Annotationen für jede Domain oder nur insgesamt? Wie wurden die denn ausgewählt?
+
 % Time
 \subsubsection{Time}
-Further, the method's generalization capabilities are evaluated based on $ time $.
+Further, the method's generalization capabilities are evaluated with respect to $ time $.
 An overview of the annotation time per method and domain is provided by the box plots in Figure \ref{fig:ch5:sec2:methods_over_domain_time}.
 % For Polygon and Watershed the domains  and urban require much time while the  and Anomaly are fast.
 It is easy to see that more time is spent on the domains $ standard $ and $ urban $ than on the domains $ industrial $ and $ anomaly $.
-This probably follows from the fact that the objects from domains $ standard $ and $ urban $ are more complicated and therefore require more annotation time.
+This probably follows from the fact that the objects from domains $ standard $ and $ urban $ are less convex and more difficult to label.
 % This behaviour may also be observed for DEXTR and IOG but not this extreme -> good generalization.
-This behavior is extreme for watershed method and decrease continuously across the methods polygon, \Gls{iog}, and \gls{dextr}.
+This behavior is most pronounced for the polygon and watershed method and is much less severe for the methods \gls{iog} and \gls{dextr}.
 
 % Noteable in general is the larger annotation time for polygon and watershed.
 In general, this demonstrates that the longer annotation time of polygon and watershed spans across the image domains.
@@ -114,7 +113,8 @@ Due to the split by the four domains and the requirement of the same factor size
 The details and results of the tests is shown in Table \ref{tab:ch5:tests_on_domains} and the corresponding box plot of illustrated in Figure \ref{fig:ch5:sec2:domains_box_plot}.
 
 For the domains $ standard $ and $ urban $, which are similar to PASCAL \gls{voc} and COCO, $ H_{0} $ is accepted and the benchmark methods do not differ significantly.
-In contrast, for the domains $ industrial $ and $ anomaly $ $ H_{0} $ is rejected and $ H_{A} $ accepted. Therefore, there is some significant difference between the benchmark methods.
+In contrast, for the domains $ industrial $ and $ anomaly $ $ H_{0} $ is rejected and $ H_{A} $ accepted. 
+Therefore, there is some significant difference between the benchmark methods.
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{l|p{25mm} p{25mm} p{25mm} p{25mm}}
@@ -168,19 +168,19 @@ some comment
 \subsection{Generalization Over Datasets} \label{ord:ch5:sec2:subsec2}
 
 In order to further evaluate the \gls{dextr} and \gls{iog} method, simulations are applied on various datasets from various domains.
-To continue the evaluation of the generalization capabilities datasets from different domains are used.
-First, the performance of the initial prediction over multiple datasets is presented, while later the refinement results are examined. 
+To continue the evaluation of the generalization capabilities, datasets from different domains are used.
+First, the performance of the initial prediction over multiple datasets is presented, before the refinement results are examined. 
 
 \subsubsection{Initial Prediction}
 
 % Define simulation settings
-The different simulation setups from the original \gls{dextr} \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} have been implemented in HDevelop and unified to allow a fair comparison. 
-Thereby, the \gls{gt} is used to simulate the user clicks on fore- and background to create the required model input.
-It has to be highlighted, that this simulation setup only contains little deviation or randomness, similar to the original simulation setup from \gls{dextr} and \gls{iog}.
+The different simulation setups from \gls{dextr} \cite{Man18-DEXTR} and \gls{iog} \cite{Zha20-IOG} have been reimplemented in HDevelop and unified to allow a fair comparison. 
+In the simulations, the \gls{gt} is used to simulate the user clicks on foreground and background to create the required model input.
+It should be mentioned, that this simulation setup only contains little deviation or randomness, similar to the original simulation setup from \gls{dextr} and \gls{iog}.
 As a result, the simulated user clicks are almost perfect.
 More realistic user clicks can be simulated by the inclusion of random deviation, which is presented in Subsection \ref{ord:ch5:sec3:subsec3}.
 
-The performance of the \gls{dextr} and \gls{iog} method on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
+The performance of the \gls{dextr} and \gls{iog} methods on various datasets is shown in Table \ref{tab:ch5:tests_on_datasets}.
 It can be seen, that in general the \gls{iog} method performs best, except for the benchmark dataset, where \gls{dextr} achieves a higher \gls{miou}.
 The superiority in the simulation of \gls{dextr} on this data set is consistent with the results from the real users from the benchmark study.
 
@@ -203,22 +203,23 @@ The superiority in the simulation of \gls{dextr} on this data set is consistent 
 		For the PASCAL \gls{voc} dataset the performance is measured with (\gls{vp} \cmark) and without (\gls{vp} \xmark) the application of the \gls{vp}.
 	}\label{tab:ch5:tests_on_datasets}
 \end{table}
+%TODO Vllt noch angeben, dass beide Modelle auf Pascal VOC (&SBD??) vortrainiert sind?
 
 The difference in accuracy for the PASCAL \gls{voc} dataset \cite{Eve20-PascalVOC} with and without the application of \gls{vp} is especially interesting.
 The meaningfulness of \gls{vp} is already addressed in Subsection \ref{ord:ch2:sec2} and their effect can be observed in Table \ref{tab:ch5:tests_on_datasets}.
 For \gls{dextr} the difference in \gls{miou} is around $ 0.13 $ and for \gls{iog} almost $ 0.12 $.
 This represents a significant decrease in accuracy, which raises doubts how expressive the results with the applications of \gls{vp} are.
-Especially problematic is that the \gls{vp} are located at the edge of an object, which is generally difficult to predict.
-As a consequence, it may not be recognized if a model's weakness is the prediction of the edges.
-Therefore, the use of \gls{vp} may lead to unrealistic expectations on the method's accuracy, which are mostly not achievable in real world application.
+Especially problematic is that the \gls{vp} are located at the boundary of an object, which is generally difficult to predict.
+As a consequence, it may not be recognized if a model's weakness is the prediction of the correct object boundary.
+Therefore, the use of \gls{vp} may lead to unrealistic expectations about the method's accuracy, which are mostly not achievable in real world application.
 The presentation of the performance without \gls{vp} would lead to more transparency and awareness of this characteristic.
 
 \subsubsection{Refinement Prediction}
 
 % Show a table displaying the performance for various refinement clicks on multiple dataset
-Last, the performance of the method with the application of refinement is evaluated on different datasets.
-Thereby, for each method five refinement clicks were simulated.
-For the \gls{iog} method, the refinement clicks can be on the fore- and background, while the \gls{dextr} method only allows refinement clicks on the border.
+The performance of the method with the application of refinement is evaluated on different datasets.
+Therefore, for each method five refinement clicks are simulated.
+For the \gls{iog} method, the refinement clicks can be on the foreground and background, while the \gls{dextr} method only allows refinement clicks on the boundary.
 The refinement clicks are simulated using the \gls{gt}.
 A click is set on the region where the previous prediction fails.
 
@@ -248,8 +249,8 @@ A click is set on the region where the previous prediction fails.
 	}\label{tab:ch5:tests_on_refinement_datasets}
 \end{table}
 
-In Table \ref{tab:ch5:tests_on_refinement_datasets} the performance of the methods is presented for various refinement clicks.
-For \gls{dextr} mostly only the first refinement clicks leads to a improvement, while the further clicks keep or decrease the \gls{miou}.
-In contrast, the \gls{iog} method is able to profit from each refinement click and increase the \gls{miou}. 
-From the ninth click, the improvement stagnates or worsens slightly as shown in Table \ref{tab:appendix_refinementclicks}.
-It can be stated, that refinement process generalizes well and performs expected over several domains.
+In Table \ref{tab:ch5:tests_on_refinement_datasets} the performance of the methods is presented for up to five refinement clicks, while in the Appendix Table \ref{tab:appendix_refinementclicks} contains the results for up to 20 refinement clicks.
+For \gls{dextr} mostly only the first refinement click leads to an improvement, while with further refinement clicks the \gls{miou} remains constant or decreases
+In contrast, the \gls{iog} method is able to profit from much more refinement clicks as the \gls{miou} keeps increasing. 
+From the ninth click, the improvement stagnates or worsens slightly.
+Overall, the refinement process generalizes well and performs as expected over several domains.

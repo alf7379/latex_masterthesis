@@ -9,7 +9,7 @@ This additional information is especially beneficial, because it is manually pic
 Therefore, interactive segmentation networks are provided with high level guidance on the object of interest.
 This makes interactive segmentation especially suitable to label images on pixel level.
 Depending on the type of user interaction the interactive method may be more or less elaborate.
-This leads to a fundamental difficulty of interactive methods, because user interaction is considered to time elaborate and therefore expensive.
+This leads to a fundamental difficulty of interactive methods, because user interaction is considered to time elaborate and, therefore, expensive.
 
 The interactive segmentation of an instance may be interpreted as semantic segmentation with two classes: the foreground object to segment and the background.
 Within this segmentation process no class is assigned, with which class-agnostic instance segmentation is represented.
@@ -22,13 +22,13 @@ These methods also focus on the extraction of a foreground object from the backg
 
 % GraphCut and GrabCut
 Prominent algorithms are Graph Cut \cite{BJ01-GraphCut} and GrabCut \cite{RKB04-GrabCut}.
-As user interaction GrabCut requires a loose bounding box and optionally defining explicit image parts as fore- or background.
+As user interaction GrabCut requires a loose bounding box and optionally defining explicit image parts as foreground or background.
 %Everything outside the bounding box and the borders itself are defined as background, while the inside of the box is segmented based on contrast and color information.
-%Further, the goodness of the result may be enhanced by iteratively defining explicit image parts as fore- or background.
+%Further, the goodness of the result may be enhanced by iteratively defining explicit image parts as foreground or background.
 
 % Watershed
 Another still relevant method to perform instance segmentation is the watershed transformation \cite{VS91-Watershed}.
-This method interactively collects fore- and background markers from users in order to perform segmentation.
+This method interactively collects foreground and background markers from users in order to perform segmentation.
 The watershed method is part of the benchmark study and elaborately examined in Section \ref{ord:ch3:sec2}.
 
 % Superpixels
@@ -47,7 +47,7 @@ Although, these algorithms are based on classical image processing, they remain 
 % DL focus 
 Modern interactive segmentation algorithms combine \gls{dl} models and additional user input.
 As \gls{dl} models usually \glspl{cnn} for image segmentation are applied.
-% Obtaining points on fore- and background
+% Obtaining points on foreground and background
 User point centered concepts obtain the user input in the form of clicks on the image.
 The user clicks are often differentiated between clicks on the foreground object and clicks on the background.
 The input $\textbf{x}$ of an interactive segmentation network is a combination of the image and the user clicks.
@@ -64,7 +64,7 @@ As for segmentation networks, the prediction $\hat{y}$ of interactive networks i
 	\caption[Interactively Fully Convolutional Network]{
 		Illustration of the pipeline from the \gls{ifcn}.
 		The input is a \gls{rgb} image with user clicks.
-		This input is displayed in its individual parts as \gls{rgb}, map of the fore- and background points.
+		This input is displayed in its individual parts as \gls{rgb}, map of the foreground and background points.
 		The network in use is based on the \gls{fcn} and outputs a binary segmentation result.
 		\copyright 2016 IEEE. Reprinted by permission from \cite{Xu16-InteractiveObjectSelection}
 	}\label{fig:ch2:sec3:ifcn}
@@ -72,7 +72,7 @@ As for segmentation networks, the prediction $\hat{y}$ of interactive networks i
 
 \subsubsection{Representation of User Clicks and Model Input}
 The user clicks are transformed into points on heatmaps, that have the same spacial dimension as the input image.
-In order to distinguish between fore- and background points, there exist separate heatmaps for fore- and background.
+In order to distinguish between foreground and background points, there exist separate heatmaps for foreground and background.
 In some literature the foreground points are also called \textit{positive} points, while the background points are called \textit{negative} points.
 If there is only one type of points, there also exists only one heatmap.
 
@@ -89,12 +89,12 @@ Thereby, the Euclidean distance map was replaced by the Gauss filter as the stat
 The image is usually colored with the three \gls{rgb} channels.
 The heatmaps have the same size as the image and are concatenated to the image as additional channels.
 %This results in a five- or four-channel input for the interactive segmentation network, depending on the number of heatmaps.
-This results in a five-channel input using fore-and background heatmaps or in a four-channel input using just a foreground heatmap.
+This results in a five-channel input using foreground and background heatmaps or in a four-channel input using just a foreground heatmap.
 Many methods \cite{Man18-DEXTR} \cite{Zha20-IOG} crop the image and heatmaps based on the user points and then process only the reduced input, in order to direct the focus on the object of interest.
 
 The processed points on the heatmaps and the user clicks on the image are located exactly at the same position on different channels.
 This matching is vital for the functionality of the segmentation method.
-The user points provide high level guidance for the network to enhance the location and differentiation of fore- and background.
+The user points provide high level guidance for the network to enhance the location and differentiation of foreground and background.
 The multidimensional input is used as model input $\textbf{x}$ for the semantic segmentation network.
 
 
@@ -102,7 +102,7 @@ The multidimensional input is used as model input $\textbf{x}$ for the semantic 
 A fundamental advantage of interactive methods is the presence of a human user.
 The interactive segmentation network may not always deliver a satisfactory result in the initial execution.
 In this case, interactive methods often provide the option to refine the initial result.
-In order to apply the refinement, the user sets an additional click on the fore- or background region, where the segmentation fails.
+In order to apply the refinement, the user sets an additional click on the foreground or background region, where the segmentation fails.
 This refinement click is added to the corresponding heatmap and the network is executed again based on the updated input.
 This refinement process may be applied iteratively by the user and thereby also enforces guidance on the object to segment.
 Further, interactive refinement specifically focuses on regions of failure, while other models without user interaction must rely on their initial predictions.
@@ -113,13 +113,13 @@ Further, interactive refinement specifically focuses on regions of failure, whil
 Interactive segmentation networks have similar characteristics as normal segmentation networks.
 For training they require the multidimensional input $\textbf{x}$, while the label $y$ is just the mask from the object of interest.
 Interactive segmentation methods usually aims at segmenting an object, which represents the foreground, from the background.
-This results in a class-agnostic problem with the two classes fore- and background, while semantic segmentation distinguishes between several classes.
+This results in a class-agnostic problem with the two classes foreground and background, while semantic segmentation distinguishes between several classes.
 
 % Simulation of user clicks.
 To create a suitable input $\textbf{x}$ for training, the user clicks are regularly simulated, which requires that the corresponding \gls{gt} is available.
 Simulations are compulsory to create the associated user clicks for complete datasets, because it would be too expensive and inconsistent if the user clicks of whole datasets were created by real users.
 Therefore, also the evaluation of trained interactive segmentation methods is mostly based on simulations, due to their advantages in scalability, costs, and time.
-However, it should be noted that simulations cannot fully mimic real users and therefore, have certain drawbacks as discussed in Section \ref{ord:ch5:sec_3_generalization_user}.
+However, it should be noted that simulations cannot fully mimic real users and, therefore, have certain drawbacks as discussed in Section \ref{ord:ch5:sec_3_generalization_user}.
 
 % Refinement Training
 The training setup for iterative refinement is more elaborate.
@@ -141,7 +141,7 @@ While the presented concept is the most common approach and achieves state-of-th
 	However, it cannot reach the performance of state-of-the-art networks.
 	
 	\item The \textbf{\gls{fctsfn}} stands out, due to the separate processing of image and user clicks \cite{Hu19-TwoStreamFusionNetwork}.
-	% The fore- and background points are converted into two feature maps, that contain an Euclidean distance map.
+	% The foreground and background points are converted into two feature maps, that contain an Euclidean distance map.
 	The user clicks and the image are processed separately by two streams.
 	These two processing streams share the same architecture based on VGG16, but have their own weights.
 	The intent is to learn the deep features from image and user clicks individually.

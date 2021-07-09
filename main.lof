@@ -53,23 +53,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sample Transformation $ IoU $}}{50}{figure.caption.61}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces tbd}}{47}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Box plots method on $ IoU $}}{52}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Scatter plot of $ IoU $ and $ time $}}{48}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Sample Transformation $ time $}}{53}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sample Transformation $ IoU $}}{51}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Box plots of the methods on $ IoU $}}{54}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Box plots method on $ IoU $}}{53}{figure.caption.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Box plots of image domains and methods on $ IoU $}}{56}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sample Transformation $ time $}}{54}{figure.caption.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Box plots of image domains and methods on $ time $}}{58}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Box plots of the methods on $ IoU $}}{56}{figure.caption.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Box plots of benchmark participants on $ IoU $ and $ time$.}}{62}{figure.caption.87}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Box plots of image domains and methods on $ IoU $}}{58}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Box plots of two experienced user on $ IoU $ and $ time$.}}{64}{figure.caption.88}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Box plots of image domains and methods on $ time $}}{60}{figure.caption.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Watershed User Interaction}}{66}{figure.caption.90}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Box plots of benchmark participants on $ IoU $ and $ time$.}}{65}{figure.caption.97}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Box plots of two experienced user on $ IoU $ and $ time$.}}{66}{figure.caption.98}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Watershed User Interaction}}{68}{figure.caption.100}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -77,10 +81,10 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces PASCAL VOC images with instance masks}}{86}{figure.caption.97}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces PASCAL VOC images with instance masks}}{89}{figure.caption.107}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Illustration of various benchmark images}}{88}{figure.caption.98}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Illustration of various benchmark images}}{91}{figure.caption.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Predictions from watershed, DEXTR, and IOG}}{91}{figure.caption.101}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Predictions from watershed, DEXTR, and IOG}}{94}{figure.caption.111}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -9,13 +9,14 @@
 
   \centering
 
-  \IfFileExists{logos/tum.pdf}{%
-    \includegraphics[height=20mm]{logos/tum.pdf}
-  }{%
-    \vspace*{20mm}
-  }
+  \IfFileExists{logos/hm_logo_full_2020.pdf}{%
+	\vfill{}
+	\includegraphics[height=30mm]{logos/hm_logo_full_2020.pdf}
+	}{%
+		\vspace*{30mm}
+	}
 
-  \vspace{5mm}
+  \vspace{15mm}
   {\huge\MakeUppercase{\getFaculty{}}}\\
 
   \vspace{5mm}
@@ -30,8 +31,5 @@
   \vspace{15mm}
   {\LARGE \getAuthor{}}
 
-  \IfFileExists{logos/faculty.pdf}{%
-    \vfill{}
-    \includegraphics[height=20mm]{logos/faculty.pdf}
-  }{}
+
 \end{titlepage}

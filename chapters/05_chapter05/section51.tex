@@ -5,9 +5,23 @@
 
 This section focuses on the annotation time $time_{annot}$ and the precision measure $IoU$ from the benchmark measurements.
 First, the relationship between time and user clicks is examined.
-Second, the $IoU$ is evaluated based on the four benchmark methods.
-Third, the same evaluation evaluation is performed with the $time_{annot}$. 
+Second, the accuracy in terms of $ IoU $ to the GT annotations is evaluated for the four benchmark methods.
+Third, the same evaluation evaluation is performed for $time_{annot}$. 
+In Figure \ref{fig:ch5:sec1:iou_vs_time} an initial insight on the benchmark data is provided, by a plot of $ IoU $ against $ time $.
+The plot shows, that most annotations have high $ IoU $ and required less than 50 seconds in creation.
+It is noticeable, that the outliers with a low $ IoU $ are from all methods, while annotations with a long annotation time  are mostly from the methods polygon and watershed.
+In extreme cases the $ IoU $ is surprisingly small or the $ time $ is very long.
+One reason why the $ IoU $ is generally very high is that the participating users are only satisfied with annotations of this quality.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/chap51_iou_vs_time.png}
+	\caption[Scatter plot of $ IoU $ and $ time $]{
+		Scatter plot of $ IoU $ against $ time $.
+		The majority of the points have a high $ IoU $ and low $ time $, but there are many outliers.
+		Annotations with a low $ IoU $ are produced by all methods equally, while for a high $ time $ mostly the polygon and watershed method are used.	
+	} \label{fig:ch5:sec1:iou_vs_time}
+\end{figure}
 
 \subsection{Correlation Between Time And Clicks}\label{ord:ch5:sec1:subsec1}
 
@@ -15,9 +29,10 @@ Third, the same evaluation evaluation is performed with the $time_{annot}$.
 In the following the relationship between time and the user interaction as clicks and strokes is investigated, in order to promote the further analysis, which is strongly based on $time_{annot}$. 
 As introduced in Subsection \ref{ch2:sec3:eval_interactive_methods}, a common metric to measure the level of user interaction is the number of clicks $n_{clicks}$.
 Thereby, $n_{clicks}$ functions as indicator for $time_{annot}$, which is the more meaningful variable in terms of ranking the amount of user interaction.
-In general, $n_{clicks}$ is not necessarily fair indicator, because the time per click may differ for user interaction of methods with varying complexity.
+In general, $n_{clicks}$ is not necessarily a fair indicator, because the time per click may differ for user interaction in methods with varying complexity.
+For example, clicking approximately on the center of the object is in general much quicker than clicking on the right-most point of the object which has first to be identified.
 
-In the benchmark study the user interaction was recorded by the number of clicks $n_{clicks}$, number of strokes $n_{strokes}$, and required time to perform the strokes $time_{strokes}$ .
+In the benchmark study the user interaction was recorded by the number of clicks $n_{clicks}$, number of strokes $n_{strokes}$, and required time to perform the strokes $time_{strokes}$.
 The informative value of each single variable is limited, because the user interaction may consists out of either only clicks or strokes, or a combination of both.
 The stroke related variables are combined to the weighted strokes $ ws $ by
 \begin{equation} \label{equ:ws}
@@ -32,7 +47,6 @@ To facilitate the comparison a single variable $ cws $ is established by
 which combines clicks and strokes.
 
 The relationship of the single variables is presented within a correlation matrix in Table \ref{tab:ch5:correlation-matrix}.
-The reliability of the correlation matrix is supported by the size of the dataset with \getNumberBenchmarkAnnotations annotations.
 This includes the annotations from all four benchmark methods, between which no distinction is made in this subsection.
 % Correlation between time_{annot} and cws
 The correlation between the time and weighted clicks and strokes $ corr \left(time_{annot}, cws \right) = 0.8610 $ is strong.
@@ -43,7 +57,7 @@ This assists the hypothesis that $ cws $ does not constitute a flawless represen
 However, $ cws $ is still sufficient for the comparison of interactive methods, but the limitations have to be noted.
 For the further evaluation mostly $ time_{annot} $ will be used to represent the user interaction.
 
-Last, attention should be drawn to the correlation between \gls{iou} and time \linebreak $ corr \left(time_{annot}, IoU \right) = 0.0379 $.
+Attention should be drawn also to the correlation between \gls{iou} and time \linebreak $ corr \left(time_{annot}, IoU \right) = 0.0379 $.
 So in general, a long annotation time does not necessarily correspond to a high \gls{iou}.
 This indicates, that some methods can achieve a good IoU in little time, while other methods require more time.
 The annotation time is evaluated in detail in Subsection \ref{ord:ch5:sec1:subsec3}. 
@@ -71,32 +85,33 @@ The annotation time is evaluated in detail in Subsection \ref{ord:ch5:sec1:subse
 	\caption[Correlation table]{
 		Correlation table based on the \textit{Pearson} standard correlation coefficient \cite{Kirch08-CorrPearson}.
 		The redundant part of the table is left empty. 
-		The variables $ n_{clicks} $, $ n_{strokes} $, $ time_{strokes} $, and $ ws $ all show a intermediate correlation with $ time_{annot} $, while their combination $ cws $ shows a strong correlation with $ 0.8610 $. 
-		The correlation between $ IoU $ and $ time_{annot} $ indicates almost no relationship $ 0.0379 $.
+		The variables $ n_{clicks} $, $ n_{strokes} $, $ time_{strokes} $, and $ ws $ all show a intermediate correlation with $ time_{annot} $, while their combination $ cws $ shows a strong correlation of $ 0.8610 $. 
+		The correlation between $ IoU $ and $ time_{annot} $ indicates almost no relationship.
 	}\label{tab:ch5:correlation-matrix}
 \end{table}
 
 
 \subsection{Analysis Of IoU}\label{ord:ch5:sec1:subsec2}
 
-In the following the $IoU$ is evaluated in detail by the application of the statistical methods introduced in Section \ref{ord:ch2:sec4}, but first a limitation of the benchmark study is set forth.
+In the following the $IoU$ is evaluated in detail by the application of the statistical methods introduced in Section \ref{ord:ch2:sec4}.
 
 % Limitation - The resulting mask was shown to the user, which may lead to futher editing resulting in a better IoU and more time
-It may be problematic, that the design of the user interaction differs between the benchmark methods.
+\paragraph{Limitation of the analysis}
+It may be problematic that the design of the user interaction differs between the benchmark methods.
 For the \gls{dextr} and \gls{iog} method the user interaction is strictly guided due to the limited amount of clicks for the initial prediction.
-For the polygon and watershed method the user interaction is designed more open and therefore, gives the user more freedom of choice.
+For the polygon and watershed method the user interaction is designed more open and, therefore, gives the user more freedom of choice.
 With the open design of these methods, the user may feel that he has not applied them well enough, if the shown results are unsatisfactory.
 As a results, the user may directly further edit the initial annotation in order to improve it.
 In contrast the strong guidance for the \gls{dextr} and \gls{iog} method gives the user confidence in having used the method correctly and assigns an insufficient annotation to the method itself.
 In general, users may find it more difficult to accept bad annotations, if the method gave them a lot of freedom in creating it. 
 This assumption also applies in reverse, for easy acceptance by methods with strong guidance.
 Therefore, the annotations may have a similar \gls{iou}, but the time spent differs as shown in Subsection \ref{ord:ch2:sec1:subsec3}.
-If the annotations had to be created in a certain time, the \gls{iou} would also be different, but it was decided against such a setup.
+If the annotations had to be created in a certain time, the \gls{iou} would also be different, but it was decided against such a setup, for convenience.
 
 
 \subsubsection{Data Transformation}
-Subsection \ref{ord:ch2:sec4:subsec1} already introduced the normality assumption for statistical methods as the Student's t-test and suggests a transformation of the data.
-The histogram of the $IoU$ illustrates that the sample is not distributed normally as shown in Figure \ref{fig:ch5:sec1:data_raw}.
+Subsection \ref{ord:ch2:sec4:subsec1} already introduced the normality assumption for statistical methods such as the Student's t-test and suggests a transformation of the data.
+The histogram of the $IoU$ illustrates that it is not distributed normally as shown in Figure \ref{fig:ch5:sec1:data_raw}.
 The data points are heavily skewed to the right. 
 This is caused by many data points with a high \gls{iou} and comparatively few with a low \gls{iou}, produced by general good segmentation results.
 
@@ -137,7 +152,7 @@ Further the normality of $ X_{trans} $ is demonstrated by the probability plot s
 		The sample $ X $ is transformed to achieve a normal distribution.
 		As shown in a) $ X_{raw} $ is skewed to the right and not distributed normally.
 		The transformation was performed by Equation \ref{equ:trans_iou}.
-		The result of the transformation is $ X_{trans} $ and features normal characteristics, as illustrated in b) by the curve of the fitted normal distribution.
+		The result of the transformation $ X_{trans} $ is normally distributed, as illustrated in b) by the curve of the fitted normal distribution.
 		In c) a normal probability plot confirms the normality in $ X_{trans} $.
 	}\label{fig:ch5:sec1:data_transformation_iou}
 \end{figure}
@@ -194,30 +209,65 @@ The corresponding null hypothesis
 \end{equation}
 states, that the median values do not differ significantly.
 $ H_{A} $ assumes that $ H_{0} $ is not true, but does not define which factor is different.
-As result the statistic returns $ \textnormal{\textit{p-value}} = 7.8 \cdot 10 ^{-8} $, therefore $ H_{0} $ is rejected and $ H_{A} $ accepted at $ \alpha=5\% $.
+As result the statistic returns $ \textnormal{\textit{p-value}} = 7.8 \cdot 10 ^{-8} $, therefore, $ H_{0} $ is rejected and $ H_{A} $ accepted at $ \alpha=5\% $.
 
 It can be determined what factors differ significantly, by the application of the DSCFs  test \cite{CF91-dscf}.
 In this test it is shown that, $ med \left( IoU_{DEXTR} \right) $ is greater, while $ med \left( IoU_{IOG} \right) $ is lower than the other factors. 
 This is also visualized in Figure \ref{fig:ch5:sec1:iou_box_plot} and may seem like a small difference, but the statistical relevance is confirmed.
-Conspicuous in the plot shown are the high amount of outliers and the wide range of the lower quarter of the box plot.
+Interesting in the plot are the high amount of outliers and the wide range of the lower quarter of the box plot.
 An explanation for this are demanding annotations from the domain $ anomaly $ or the failure of the methods on single annotations.
-The number of outliers may seem large, but must be put in proportion to the size of the data with \getNumberBenchmarkAnnotations annotations.
+The number of outliers may seem large, but must be put in proportion to the total amount of data with \getNumberBenchmarkAnnotations annotations.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/chap51_iou_boxplot.png}
 	\caption[Box plots method on $ IoU $]{
 		Box plot of the $ IoU $ for the four benchmark methods.
-		$ med \left( IoU_{DEXTR} \right) $ is slightly greater than the other factors, while $ med \left( IoU_{IOG} \right) $ is the smallest worst.
+		It can be seen, that $ med \left( IoU_{DEXTR} \right) $ is slightly greater than the other factors, while $ med \left( IoU_{IOG} \right) $ has the smallest value.
 		The classical methods to not differ significantly in their median values $ med \left( IoU_{Polygon} \right) $ and $ med \left( IoU_{Polygon} \right) $.
 	} \label{fig:ch5:sec1:iou_box_plot}
 \end{figure}
 
 
+% Quantitative Comparison
+\subsubsection{Quantitative Comparison}
+
+% Motivation
+To further diversify the evaluation, the methods were ranked based on their results.
+This analysis aims to be more descriptive and less abstract than the presented statistical analysis.
+As shown in Figure \ref{fig:ch5:sec1:iou_box_plot}, based on the $ IoU $ there is no method clearly superior.
+%However, it is interesting to see which method performs best on different images based on a ranking.
+%  for the four benchmark methods the $ IoU $ on one image is ranked.
+In this analysis from all benchmark runs, the annotations from one image were used and averaged.
+The averages of the $ IoU $ from the four methods were ranked from best to worst.
+This was done for every image of the benchmark.
+It has to be noted, that the methods may have been applied to the images differently often and one image may contain multiple annotations.
+However, the amount of \getNumberBenchmarkAnnotations annotations ensures a reliable coverage of the images and multiple annotations from one image can be combined in this context due to their similarity.
+In Table \ref{tab:ch5:best_performance_iou}, it is shown how often (in percent) each method performed best.
+The best performance is achieved by polygon with 39.1\%, followed by \gls{dextr}, which performs best on one third of the images.
+Further behind are watershed and \gls{iog}.
+Similar to Figure \ref{fig:ch5:sec1:iou_box_plot}, \gls{iog} performs worst and is the first choice for 8.1\% of the images.
+These results differ slightly from the previous evaluation because here only the best value counts and is averaged over the annotations, however the informative value remains. 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		Method					& polygon 	& watershed & DEXTR 	& IOG  \\
+		\hline
+		Percentage of images 	& 39.1\%	& 16.1\% 	& 33.3\% 	& 8.1\% \\
+	\end{tabular}
+	\caption[Method's best performance on $ IoU $]{
+		Percentage of images the methods achieve the best $ IoU $.
+		For each image a ranking is established, that defines which method achieves the best $ IoU $, based on the mean of all annotations.
+		The percentages in this table show at how many images the corresponding method performed best.
+	} \label{tab:ch5:best_performance_iou}
+\end{table}
+
 
 \subsection{Analysis Of Time}\label{ord:ch5:sec1:subsec3}
 % RE-1466
-Now the $time_{annot}$ is evaluated, the evaluation procedure is analog to the previous evaluation of the $IoU$.
+In the following $time_{annot}$ is evaluated, the evaluation procedure is analog to the previous evaluation of the $IoU$.
+
 \subsubsection{Data Transformation}
 
 The histogram of the raw sample for the $time_{annot}$ does not fit a normal distribution as shown in Figure \ref{fig:ch5:sec1:time_raw}.
@@ -259,13 +309,12 @@ $X_{trans}$ is similar to a normal distribution, which is also supported by the 
 		In a) $X_{raw}$ is shown, which is skewed to the left and not normally distributed.
 		The sample is transformed by Equation \ref{equ:trans_time}.
 		The result is $X_{trans}$ now shows normal characteristics, as illustrated by the curve of the fitted normal distribution in b).
-		The corresponding normal probability plot of $X_{trans}$ is shown in c), which confrims the normal characteristics of $X_{trans}$.
+		The corresponding normal probability plot of $X_{trans}$ is shown in c), which confirms the normal characteristics of $X_{trans}$.
 	}\label{fig:ch5:sec1:time_transformation_iou}
 \end{figure}
+% TODO Paddo: Könnte man da nicht sogar nochmal log-transformieren?
 
-
-
-
+% Hypothesis testing
 \subsubsection{Hypothesis Testing}
 
 The setting for this hypothesis testing is analog to the previous tests on $IoU$.
@@ -312,15 +361,17 @@ assumes, that the median values do not differ significantly at $ \alpha=1\% $.
 $ H_{A} $ states that $ H_{0} $ is not true.
 The statistic returns $ \textnormal{\textit{p-value}} = 7.1 \cdot 10^{-141} $, as a result $ H_{0} $ is rejected and $ H_{A} $ accepted.
  
-Based on the post analysis by the DSCF test \cite{CF91-dscf}, $ time $ does not differ significantly for the polygon and watershed method based on the median values.
+Based on the post analysis by the DSCF test \cite{CF91-dscf}, the median of the annotation time is not significantly different for the polygon and watershed method.
 In contrast, the methods \gls{dextr} and \gls{iog} also differ significantly in $ time $ based on the median.
 
 The differences between the factors are illustrated in Figure \ref{fig:ch5:sec1:time_box_plot}.
 The \gls{iog} and \gls{dextr} method clearly demonstrate a lower annotation time than the polygon and watershed method.
 It is extraordinary to note that for all methods the last quarter of the box plot covers a larger area than the first quarter.
 One possible reason is that the different participants spent different amounts of time on particularly complicated objects.
-Notable, is that this effect is extreme for the polygon and watershed method, where approximately one quarter spent more than 60 seconds respectively 50 seconds on one annotation. 
-This is perhaps caused, due to the possibility for editing is designed more open for these methods and therefore, more time was spent on editing with these these methods, as mentioned at the beginning of this Section.
+Notable is that this effect is extreme for the polygon and watershed method, where approximately one quarter spent more than 60 seconds respectively 50 seconds on one annotation. 
+This is perhaps caused by the possibility of editing as long as the user wants. 
+In case of polygon and watershed the annotations do not converge as quickly as for the \gls{dl} based methods, i.e., changing the annotation significantly is still possible after a lot of clicks have already been made.
+Therefore, more time was spent on editing with these methods, as mentioned at the beginning of this Section.
 
 \begin{figure}
 	\centering
@@ -335,9 +386,35 @@ This is perhaps caused, due to the possibility for editing is designed more open
 \end{figure}
 
 
-Combining the results of the evaluation from $ IoU $ and the $ time $, it can be said that all methods may achieve an approximately the same level of accuracy.
-But the difference between the two types of methods is that, \gls{dl} based method require significantly less time to achieve this state of \gls{iou}.
+Combining the results of the evaluation from $ IoU $ and the $ time $, it can be said that all methods may achieve an approximately equal level of accuracy.
+But the difference between the two types of methods is that, \gls{dl} based method require significantly less time to achieve this level of \gls{iou}.
 
 
 
+% Quantitative Comparison
+\subsubsection{Quantitative Comparison}
+
+% Motivation
+As for the $ IoU $, also here, it is evaluated with respect to the $ time $, how often a method performed best. 
+That means, for which percentage of images each method was the fastest.
+The setup is the same as in the corresponding analysis of $ IoU $ and the results are presented in Table \ref{tab:ch5:best_performance_time}.
+
+On average \gls{dextr} is the fastest method for 65.5\% of the images, followed by \gls{iog} with 29.9\%.
+While polygon performs excellent in terms of $ IoU $, it it only in 1.2\% the best method based on the execution time.
+Last, the watershed method never performs the fastest.
+These results are confirmed by Figure \ref{fig:ch5:sec1:time_box_plot}, where it can be seen that the \gls{dl} based method need less annotation time than the classical methods.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l|c c c c}
+		Method					& polygon 	& watershed & DEXTR 	& IOG  		\\
+		\hline
+		Percentage of images 	& 1.2\%		& 0\% 		& 65.5\% 	& 29.9\% 	\\
+	\end{tabular}
+	\caption[Method's best performance on $ time $]{
+		Percentage of images the methods are the fasted in terms of $ time $.
+		For each image a ranking is established, that defines which method requires the lowest $ time $, based on the mean time of all annotations.
+		The percentages in this table show at how many images the corresponding method was the fastest.
+	} \label{tab:ch5:best_performance_time}
+\end{table}
 
